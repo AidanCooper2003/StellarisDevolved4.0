@@ -9,16 +9,17 @@ building_game_design_college = {
 	potential = {
 		exists = owner
 		NOR = {
-			has_modifier = resort_colony
 			has_modifier = slave_colony
-			has_modifier = crucible_colony
 		}
-		tec_ai_destroy_research_boosting_building = no
 		owner = { has_valid_civic = devolved_civic_god_is_a_gamer }
 	}
 
+	building_sets = {
+		research
+	}
+
 	allow = {
-		has_major_upgraded_capital = yes
+		capital_tier >= 2
 	}
 
 	resources = {
@@ -29,7 +30,7 @@ building_game_design_college = {
 	}
 
 	planet_modifier = {
-		planet_priests_society_research_produces_add = 2
+		planet_bureaucrats_society_research_produces_add = 1
 	}
 
 	triggered_planet_modifier = {
@@ -37,11 +38,11 @@ building_game_design_college = {
 			exists = owner
 			owner = { has_ethic = ethic_fanatic_spiritualist }
 		}
-		planet_priests_society_research_produces_add = 1
+		planet_bureaucrats_society_research_produces_add = 1
 	}
 
 	triggered_planet_modifier = {
-		job_devolved_game_designer_add = 1
+		job_devolved_game_designer_add = 100
 	}
 }
 
@@ -52,20 +53,22 @@ building_cooperian_culture_center = {
 
 	category = research
 
+	building_sets = {
+		government
+	}
 
 	potential = {
 		exists = owner
 		NOR = {
 			has_modifier = resort_colony
 			has_modifier = slave_colony
-			has_modifier = crucible_colony
+			has_modifier = penal_colony
 		}
-		tec_ai_destroy_research_boosting_building = no
 		owner = { has_valid_civic = devolved_civic_cooperian_culture }
 	}
 
 	allow = {
-		has_major_upgraded_capital = yes
+		capital_tier >= 2
 	}
 
 	resources = {
@@ -76,7 +79,7 @@ building_cooperian_culture_center = {
 	}
 
 	triggered_planet_modifier = {
-		job_devolved_cooperian_culturalist_add = 2
+		job_devolved_cooperian_culturalist_add = 200
 	}
 }
 
@@ -87,31 +90,32 @@ building_cooperian_culture_complex = {
 
 	category = research
 
+	building_sets = {
+		government
+	}
 
 	potential = {
 		exists = owner
 		NOR = {
 			has_modifier = resort_colony
 			has_modifier = slave_colony
-			has_modifier = crucible_colony
+			has_modifier = penal_colony
 		}
-		tec_ai_destroy_research_boosting_building = no
 		owner = { has_valid_civic = devolved_civic_cooperian_culture }
 	}
 
 	allow = {
-		has_major_upgraded_capital = yes
-		has_active_building = building_cooperian_culture_center
+		capital_tier >= 3
 	}
 
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 10000
+			minerals = 5000
 		}
 	}
 
 	triggered_planet_modifier = {
-		job_devolved_cooperian_culturalist_add = 6
+		pop_devolved_cooperian_bonus_culturalist_workforce_mult = 0.5
 	}
 }

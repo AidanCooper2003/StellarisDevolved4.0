@@ -28,42 +28,26 @@ devolved_trait_l_machine = {
 devolved_trait_micro_influencer = {
 	cost = 2
 	allowed_archetypes = {
-		BIOLOGICAL LITHOID REPLICANT
+		BIOLOGICAL LITHOID
 	}
 
 	modifier = {
-		pop_category_normal_resources_influence_produces_add = 0.01
-		planet_livestock_influence_add = 0.02
-	}
-
-	triggered_pop_modifier = {
-		pop_category_normal_resources_influence_produces_add = 0.01
-		planet_livestock_influence_add = 0.02
+		planet_jobs_influence_produces_add = 0.01
 	}
 
 	slave_cost = {
 		energy = 1000
-	}
-
-	assembly_score = {
-		modifier = {
-			add = 0.5
-		}
 	}
 }
 
 devolved_trait_mineral_despising = {
 	cost = -4
 	allowed_archetypes = {
-		BIOLOGICAL LITHOID REPLICANT
+		BIOLOGICAL LITHOID
 	}
 
 	modifier = {
-		pop_category_normal_resources_minerals_produces_add = -1
-	}
-
-	triggered_pop_modifier = {
-		pop_category_normal_resources_minerals_produces_add = -1
+		planet_jobs_minerals_produces_add = -1
 	}
 
 	slave_cost = {
@@ -80,7 +64,7 @@ devolved_trait_mineral_despising = {
 devolved_trait_violent_depression = {
 	cost = -10
 	allowed_archetypes = {
-		BIOLOGICAL LITHOID REPLICANT
+		BIOLOGICAL LITHOID
 	}
 
 	modifier = {

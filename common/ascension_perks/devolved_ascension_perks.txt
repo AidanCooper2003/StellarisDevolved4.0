@@ -6,8 +6,8 @@ devolved_ap_diplomatic_destroyers = {
 
 	possible = {
 		custom_tooltip = {
-			fail_text = "Requires 18 previous ascension perks."
-			num_ascension_perks >= 18
+			fail_text = "Requires 17 previous ascension perks."
+			num_ascension_perks >= 17
 		}
 	}
 
@@ -27,8 +27,8 @@ devolved_ap_merciless_military = {
 
 	possible = {
 		custom_tooltip = {
-			fail_text = "Requires 18 previous ascension perks."
-			num_ascension_perks >= 18
+			fail_text = "Requires 17 previous ascension perks."
+			num_ascension_perks >= 17
 		}
 	}
 
@@ -52,15 +52,15 @@ devolved_ap_economic_engine = {
 
 	possible = {
 		custom_tooltip = {
-			fail_text = "Requires 18 previous ascension perks."
-			num_ascension_perks >= 18
+			fail_text = "Requires 17 previous ascension perks."
+			num_ascension_perks >= 17
 		}
 	}
 
 
 	modifier = {
 		country_produces_mult = 0.5
-		megastructures_produces_mult = 2
+		pop_workforce_mult = 1
 		planet_max_districts_mult = 0.5
 		planetary_ascension_effect_mult = 1
 	}

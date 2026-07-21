@@ -1,0 +1,15 @@
+zone_cooperian = {
+	inline_script = {
+		script = zones/cooperian_zone
+		AMOUNT = 50
+	}
+
+	zone_sets = {
+		urban
+		habitat_urban
+	}
+
+	inline_script = {
+		script = zones/shared_city_non_urban_zone_modifiers
+	}
+}

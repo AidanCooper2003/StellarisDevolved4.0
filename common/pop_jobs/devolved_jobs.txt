@@ -43,7 +43,7 @@ devolved_cooperian_culturalist = {
 	resources = {
 		category = planet_culture_workers
 		upkeep = {
-			consumer_goods = 2
+			consumer_goods = 4
 		}
 	}
 
@@ -75,7 +75,7 @@ devolved_cooperian_culturalist = {
 			}
 		}
 		all_technology_research_speed = 0.01
-		num_tech_alternatives_add = 0.05
+		num_tech_alternatives_add = 0.025
 	}
 
 	# Fanatic Materialist
@@ -86,7 +86,7 @@ devolved_cooperian_culturalist = {
 			}
 		}
 		all_technology_research_speed = 0.02
-		num_tech_alternatives_add = 0.1
+		num_tech_alternatives_add = 0.05
 	}
 
 	# Elitist
@@ -142,8 +142,8 @@ devolved_cooperian_culturalist = {
 				has_ethic = ethic_authoritarian
 			}
 		}
-		planet_jobs_worker_produces_mult = 0.02
-		planet_jobs_slave_produces_mult = 0.04
+		planet_jobs_worker_produces_mult = 0.01
+		planet_jobs_slave_produces_mult = 0.02
 	}
 
 	# Fanatic Authoritarian
@@ -153,8 +153,8 @@ devolved_cooperian_culturalist = {
 				has_ethic = ethic_fanatic_authoritarian
 			}
 		}
-		planet_jobs_worker_produces_mult = 0.04
-		planet_jobs_slave_produces_mult = 0.08
+		planet_jobs_worker_produces_mult = 0.02
+		planet_jobs_slave_produces_mult = 0.04
 	}
 
 	# Egalitarian
@@ -164,7 +164,7 @@ devolved_cooperian_culturalist = {
 				has_ethic = ethic_egalitarian
 			}
 		}
-		pop_factions_produces_mult = 0.06
+		pop_factions_produces_mult = 0.04
 		faction_approval = 0.01
 	}
 
@@ -175,7 +175,7 @@ devolved_cooperian_culturalist = {
 				has_ethic = ethic_fanatic_egalitarian
 			}
 		}
-		pop_factions_produces_mult = 0.12
+		pop_factions_produces_mult = 0.08
 		faction_approval = 0.02
 	}
 
@@ -186,8 +186,7 @@ devolved_cooperian_culturalist = {
 				has_ethic = ethic_xenophobe
 			}
 		}
-		pop_growth_speed = 0.02
-		planet_pop_assembly_mult = 0.02
+		bonus_pop_growth_mult = 0.02
 	}
 
 	# Fanatic Xenophobe
@@ -197,8 +196,7 @@ devolved_cooperian_culturalist = {
 				has_ethic = ethic_fanatic_xenophobe
 			}
 		}
-		pop_growth_speed = 0.04
-		planet_pop_assembly_mult = 0.04
+		bonus_pop_growth_mult = 0.04
 	}
 
 	# Xenophile
@@ -208,7 +206,10 @@ devolved_cooperian_culturalist = {
 				has_ethic = ethic_xenophile
 			}
 		}
-		pop_growth_from_immigration = 0.06
+		planet_resettlement_unemployed_destination_mult = 0.04
+		refugee_attraction = 0.04
+		country_trust_cap_add = 1
+		country_trust_growth = 0.02
 	}
 
 	# Fanatic Xenophile
@@ -218,7 +219,10 @@ devolved_cooperian_culturalist = {
 				has_ethic = ethic_fanatic_xenophile
 			}
 		}
-		pop_growth_from_immigration = 0.12
+		planet_resettlement_unemployed_destination_mult = 0.08
+		refugee_attraction = 0.08
+		country_trust_cap_add = 2
+		country_trust_growth = 0.04
 	}
 
 	# Pacifist
@@ -229,6 +233,8 @@ devolved_cooperian_culturalist = {
 			}
 		}
 		planet_stability_add = 0.1
+		pop_workforce_mult = 0.001
+		empire_size_pops_mult = -0.01
 	}
 
 	# Fanatic Pacifist
@@ -239,6 +245,8 @@ devolved_cooperian_culturalist = {
 			}
 		}
 		planet_stability_add = 0.2
+		pop_workforce_mult = 0.002
+		empire_size_pops_mult = -0.02
 	}
 
 	# Militarist
@@ -269,7 +277,7 @@ devolved_cooperian_culturalist = {
 	triggered_country_modifier = {
 		potential = {
 			owner = {
-				has_ethic = ethic_industrialist
+				has_ethic = ethic_anthropocentric
 			}
 		}
 		planet_max_districts_add = 0.05
@@ -279,7 +287,7 @@ devolved_cooperian_culturalist = {
 	triggered_country_modifier = {
 		potential = {
 			owner = {
-				has_ethic = ethic_fanatic_industrialist
+				has_ethic = ethic_fanatic_anthropocentric
 			}
 		}
 		planet_max_districts_add = 0.1
@@ -289,11 +297,11 @@ devolved_cooperian_culturalist = {
 	triggered_country_modifier = {
 		potential = {
 			owner = {
-				has_ethic = ethic_ecologist
+				has_ethic = ethic_ecocentrist
 			}
 		}
-		planet_jobs_upkeep_mult = -0.02
-		pop_environment_tolerance = 0.02
+		planet_jobs_upkeep_mult = -0.01
+		pop_environment_tolerance = 0.01
 		terraform_speed_mult = 0.02
 	}
 
@@ -301,11 +309,11 @@ devolved_cooperian_culturalist = {
 	triggered_country_modifier = {
 		potential = {
 			owner = {
-				has_ethic = ethic_fanatic_ecologist
+				has_ethic = ethic_fanatic_ecocentric
 			}
 		}
-		planet_jobs_upkeep_mult = -0.04
-		pop_environment_tolerance = 0.04
+		planet_jobs_upkeep_mult = -0.02
+		pop_environment_tolerance = 0.02
 		terraform_speed_mult = 0.04
 	}
 
@@ -316,7 +324,7 @@ devolved_cooperian_culturalist = {
 				has_ethic = ethic_competitive
 			}
 		}
-		pop_job_trade_mult = 0.02
+		country_trade_produces_mult = 0.01
 	}
 	# Fanatic Competitive
 	triggered_country_modifier = {
@@ -325,7 +333,7 @@ devolved_cooperian_culturalist = {
 				has_ethic = ethic_fanatic_competitive
 			}
 		}
-		pop_job_trade_mult = 0.04
+		country_trade_produces_mult = 0.02
 	}
 	# Cooperative
 	triggered_country_modifier = {
@@ -334,12 +342,12 @@ devolved_cooperian_culturalist = {
 				has_ethic = ethic_cooperative
 			}
 		}
-		planet_housing_add = 0.2
-		planet_amenities_add = 0.2
-		planet_crime_add = -0.2
+		planet_housing_add = 20
+		planet_amenities_add = 20
+		planet_crime_add = -1
 		planet_decision_enact_speed_mult = 0.04
 		planet_building_build_speed_mult = 0.04
-		planet_pops_upkeep_mult = -0.02
+		planet_pops_upkeep_mult = -0.01
 	}
 	# Fanatic Cooperative
 	triggered_country_modifier = {
@@ -348,12 +356,12 @@ devolved_cooperian_culturalist = {
 				has_ethic = ethic_fanatic_cooperative
 			}
 		}
-		planet_housing_add = 0.4
-		planet_amenities_add = 0.4
-		planet_crime_add = -0.4
+		planet_housing_add = 40
+		planet_amenities_add = 40
+		planet_crime_add = -2
 		planet_decision_enact_speed_mult = 0.08
 		planet_building_build_speed_mult = 0.08
-		planet_pops_upkeep_mult = -0.04
+		planet_pops_upkeep_mult = -0.02
 	}
 	weight = {
 		weight = @specialist_job_weight

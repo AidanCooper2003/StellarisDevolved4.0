@@ -1,0 +1,44 @@
+icon = GFX_district_specialization_unity
+base_buildtime = @zone_buildtime
+potential = { # planet scope
+	hidden_trigger = { exists = owner }
+	owner = {
+		has_valid_civic = devolved_civic_cooperian_culture
+	}
+}
+
+unlock = { # planet scope
+	hidden_trigger = {
+		exists = owner
+		owner = {
+			has_valid_civic = devolved_civic_cooperian_culture
+		}
+	}
+}
+
+resources = {
+	category = planet_zones
+	inline_script = {
+		script = buildings/nomadic_cost_switcher
+		REGULAR_RESOURCE = minerals
+		NOMADIC_RESOURCE = alloys
+		COST = @zone_cost
+		NOMADIC_COST_MULT = 0.5
+	}
+}
+
+included_building_sets = {
+	urban
+}
+
+inline_script = {
+	script = jobs/zone_cooperian_jobs_add
+	AMOUNT = $AMOUNT$
+}
+
+planet_modifier = {
+	zone_building_slots_add = 1
+}
+
+
+ai_priority = 3

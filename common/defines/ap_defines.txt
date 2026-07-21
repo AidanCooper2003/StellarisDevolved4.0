@@ -1,0 +1,11 @@
+NGameplay = {
+		ASCENSION_PERKS_SLOTS	= 16
+		PLANET_ASCENSION_HARD_CAP			= 20
+		TRADITION_CATEGORIES_MAX = 14
+
+	
+	}
+
+NAI = {
+		NUM_TRADITIONS_FOR_EDICTS = 98 # (5 traditions + adoption effect + completion effect) * 16
+	}

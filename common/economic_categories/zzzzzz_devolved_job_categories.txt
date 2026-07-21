@@ -1,0 +1,13 @@
+planet_jobs_cooperian = {
+	parent = planet_jobs_specialist
+	generate_mult_modifiers = {
+		upkeep
+	}
+	
+	generate_add_modifiers = {
+		upkeep
+	}
+
+	modifier_category = colony
+
+}

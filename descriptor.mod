@@ -1,8 +1,8 @@
-version="3.10.4"
+version="1.0"
 tags={
 	"Species"
 	"Economy"
 	"Gameplay"
 }
 name="Stellaris Devolved - Alpha"
-supported_version="3.10.4"
+supported_version="4.5.*"

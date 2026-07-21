@@ -1,0 +1,769 @@
+# change this if you want more traditions
+# value must correspond with values used the .txt files located in the common sub-folders
+@traditions = 14
+guiTypes = {
+	################################################################
+	# ASCENSION PERKS ENTRY POSITIONS
+	################################################################
+	@ap_amount = 100
+	@ap_row_height = 49
+	@ap_pos_1 = 0
+	@ap_pos_2 = 58
+	@ap_pos_3 = 116
+	@ap_pos_4 = 174
+	@ap_pos_5 = 29
+	@ap_pos_6 = 87
+	@ap_pos_7 = 145
+	@ap_pos_8 = 203
+	positionType = { name = "ap_0"  position = { x = @ap_pos_1 y = 0 } }
+	positionType = { name = "ap_1"  position = { x = @ap_pos_2 y = 0 } }
+	positionType = { name = "ap_2"  position = { x = @ap_pos_3 y = 0 } }
+	positionType = { name = "ap_3"  position = { x = @ap_pos_4 y = 0 } }
+	positionType = { name = "ap_4"  position = { x = @ap_pos_5 y = @[ ap_row_height * 1 ] } }
+	positionType = { name = "ap_5"  position = { x = @ap_pos_6 y = @[ ap_row_height * 1 ] } }
+	positionType = { name = "ap_6"  position = { x = @ap_pos_7 y = @[ ap_row_height * 1 ] } }
+	positionType = { name = "ap_7"  position = { x = @ap_pos_8 y = @[ ap_row_height * 1 ] } }
+	positionType = { name = "ap_8"  position = { x = @ap_pos_1 y = @[ ap_row_height * 2 ] } }
+	positionType = { name = "ap_9"  position = { x = @ap_pos_2 y = @[ ap_row_height * 2 ] } }
+	positionType = { name = "ap_10" position = { x = @ap_pos_3 y = @[ ap_row_height * 2 ] } }
+	positionType = { name = "ap_11" position = { x = @ap_pos_4 y = @[ ap_row_height * 2 ] } }
+	positionType = { name = "ap_12" position = { x = @ap_pos_5 y = @[ ap_row_height * 3 ] } }
+	positionType = { name = "ap_13" position = { x = @ap_pos_6 y = @[ ap_row_height * 3 ] } }
+	positionType = { name = "ap_14" position = { x = @ap_pos_7 y = @[ ap_row_height * 3 ] } }
+	positionType = { name = "ap_15" position = { x = @ap_pos_8 y = @[ ap_row_height * 3 ] } }
+	positionType = { name = "ap_16" position = { x = @ap_pos_1 y = @[ ap_row_height * 4 ] } }
+	positionType = { name = "ap_17" position = { x = @ap_pos_2 y = @[ ap_row_height * 4 ] } }
+	positionType = { name = "ap_18" position = { x = @ap_pos_3 y = @[ ap_row_height * 4 ] } }
+	positionType = { name = "ap_19" position = { x = @ap_pos_4 y = @[ ap_row_height * 4 ] } }
+	positionType = { name = "ap_20" position = { x = @ap_pos_5 y = @[ ap_row_height * 5 ] } }
+	positionType = { name = "ap_21" position = { x = @ap_pos_6 y = @[ ap_row_height * 5 ] } }
+	positionType = { name = "ap_22" position = { x = @ap_pos_7 y = @[ ap_row_height * 5 ] } }
+	positionType = { name = "ap_23" position = { x = @ap_pos_8 y = @[ ap_row_height * 5 ] } }
+	positionType = { name = "ap_24" position = { x = @ap_pos_1 y = @[ ap_row_height * 6 ] } }
+	positionType = { name = "ap_25" position = { x = @ap_pos_2 y = @[ ap_row_height * 6 ] } }
+	positionType = { name = "ap_26" position = { x = @ap_pos_3 y = @[ ap_row_height * 6 ] } }
+	positionType = { name = "ap_27" position = { x = @ap_pos_4 y = @[ ap_row_height * 6 ] } }
+	positionType = { name = "ap_28" position = { x = @ap_pos_5 y = @[ ap_row_height * 7 ] } }
+	positionType = { name = "ap_29" position = { x = @ap_pos_6 y = @[ ap_row_height * 7 ] } }
+	positionType = { name = "ap_30" position = { x = @ap_pos_7 y = @[ ap_row_height * 7 ] } }
+	positionType = { name = "ap_31" position = { x = @ap_pos_8 y = @[ ap_row_height * 7 ] } }
+	positionType = { name = "ap_32" position = { x = @ap_pos_1 y = @[ ap_row_height * 8 ] } }
+	positionType = { name = "ap_33" position = { x = @ap_pos_2 y = @[ ap_row_height * 8 ] } }
+	positionType = { name = "ap_34" position = { x = @ap_pos_3 y = @[ ap_row_height * 8 ] } }
+	positionType = { name = "ap_35" position = { x = @ap_pos_4 y = @[ ap_row_height * 8 ] } }
+	positionType = { name = "ap_36" position = { x = @ap_pos_5 y = @[ ap_row_height * 9 ] } }
+	positionType = { name = "ap_37" position = { x = @ap_pos_6 y = @[ ap_row_height * 9 ] } }
+	positionType = { name = "ap_38" position = { x = @ap_pos_7 y = @[ ap_row_height * 9 ] } }
+	positionType = { name = "ap_39" position = { x = @ap_pos_8 y = @[ ap_row_height * 9 ] } }
+	positionType = { name = "ap_40" position = { x = @ap_pos_1 y = @[ ap_row_height * 10 ] } }
+	positionType = { name = "ap_41" position = { x = @ap_pos_2 y = @[ ap_row_height * 10 ] } }
+	positionType = { name = "ap_42" position = { x = @ap_pos_3 y = @[ ap_row_height * 10 ] } }
+	positionType = { name = "ap_43" position = { x = @ap_pos_4 y = @[ ap_row_height * 10 ] } }
+	positionType = { name = "ap_44" position = { x = @ap_pos_5 y = @[ ap_row_height * 11 ] } }
+	positionType = { name = "ap_45" position = { x = @ap_pos_6 y = @[ ap_row_height * 11 ] } }
+	positionType = { name = "ap_46" position = { x = @ap_pos_7 y = @[ ap_row_height * 11 ] } }
+	positionType = { name = "ap_47" position = { x = @ap_pos_8 y = @[ ap_row_height * 11 ] } }
+	positionType = { name = "ap_48" position = { x = @ap_pos_1 y = @[ ap_row_height * 12 ] } }
+	positionType = { name = "ap_49" position = { x = @ap_pos_2 y = @[ ap_row_height * 12 ] } }
+	positionType = { name = "ap_50" position = { x = @ap_pos_3 y = @[ ap_row_height * 12 ] } }
+	positionType = { name = "ap_51" position = { x = @ap_pos_4 y = @[ ap_row_height * 12 ] } }
+	positionType = { name = "ap_52" position = { x = @ap_pos_5 y = @[ ap_row_height * 13 ] } }
+	positionType = { name = "ap_53" position = { x = @ap_pos_6 y = @[ ap_row_height * 13 ] } }
+	positionType = { name = "ap_54" position = { x = @ap_pos_7 y = @[ ap_row_height * 13 ] } }
+	positionType = { name = "ap_55" position = { x = @ap_pos_8 y = @[ ap_row_height * 13 ] } }
+	positionType = { name = "ap_56" position = { x = @ap_pos_1 y = @[ ap_row_height * 14 ] } }
+	positionType = { name = "ap_57" position = { x = @ap_pos_2 y = @[ ap_row_height * 14 ] } }
+	positionType = { name = "ap_58" position = { x = @ap_pos_3 y = @[ ap_row_height * 14 ] } }
+	positionType = { name = "ap_59" position = { x = @ap_pos_4 y = @[ ap_row_height * 14 ] } }
+	positionType = { name = "ap_60" position = { x = @ap_pos_5 y = @[ ap_row_height * 15 ] } }
+	positionType = { name = "ap_61" position = { x = @ap_pos_6 y = @[ ap_row_height * 15 ] } }
+	positionType = { name = "ap_62" position = { x = @ap_pos_7 y = @[ ap_row_height * 15 ] } }
+	positionType = { name = "ap_63" position = { x = @ap_pos_8 y = @[ ap_row_height * 15 ] } }
+	positionType = { name = "ap_64" position = { x = @ap_pos_1 y = @[ ap_row_height * 16 ] } }
+	positionType = { name = "ap_65" position = { x = @ap_pos_2 y = @[ ap_row_height * 16 ] } }
+	positionType = { name = "ap_66" position = { x = @ap_pos_3 y = @[ ap_row_height * 16 ] } }
+	positionType = { name = "ap_67" position = { x = @ap_pos_4 y = @[ ap_row_height * 16 ] } }
+	positionType = { name = "ap_68" position = { x = @ap_pos_5 y = @[ ap_row_height * 17 ] } }
+	positionType = { name = "ap_69" position = { x = @ap_pos_6 y = @[ ap_row_height * 17 ] } }
+	positionType = { name = "ap_70" position = { x = @ap_pos_7 y = @[ ap_row_height * 17 ] } }
+	positionType = { name = "ap_71" position = { x = @ap_pos_8 y = @[ ap_row_height * 17 ] } }
+	positionType = { name = "ap_72" position = { x = @ap_pos_1 y = @[ ap_row_height * 18 ] } }
+	positionType = { name = "ap_73" position = { x = @ap_pos_2 y = @[ ap_row_height * 18 ] } }
+	positionType = { name = "ap_74" position = { x = @ap_pos_3 y = @[ ap_row_height * 18 ] } }
+	positionType = { name = "ap_75" position = { x = @ap_pos_4 y = @[ ap_row_height * 18 ] } }
+	positionType = { name = "ap_76" position = { x = @ap_pos_5 y = @[ ap_row_height * 19 ] } }
+	positionType = { name = "ap_77" position = { x = @ap_pos_6 y = @[ ap_row_height * 19 ] } }
+	positionType = { name = "ap_78" position = { x = @ap_pos_7 y = @[ ap_row_height * 19 ] } }
+	positionType = { name = "ap_79" position = { x = @ap_pos_8 y = @[ ap_row_height * 19 ] } }
+	positionType = { name = "ap_80" position = { x = @ap_pos_1 y = @[ ap_row_height * 20 ] } }
+	positionType = { name = "ap_81" position = { x = @ap_pos_2 y = @[ ap_row_height * 20 ] } }
+	positionType = { name = "ap_82" position = { x = @ap_pos_3 y = @[ ap_row_height * 20 ] } }
+	positionType = { name = "ap_83" position = { x = @ap_pos_4 y = @[ ap_row_height * 20 ] } }
+	positionType = { name = "ap_84" position = { x = @ap_pos_5 y = @[ ap_row_height * 21 ] } }
+	positionType = { name = "ap_85" position = { x = @ap_pos_6 y = @[ ap_row_height * 21 ] } }
+	positionType = { name = "ap_86" position = { x = @ap_pos_7 y = @[ ap_row_height * 21 ] } }
+	positionType = { name = "ap_87" position = { x = @ap_pos_8 y = @[ ap_row_height * 21 ] } }
+	positionType = { name = "ap_88" position = { x = @ap_pos_1 y = @[ ap_row_height * 22 ] } }
+	positionType = { name = "ap_89" position = { x = @ap_pos_2 y = @[ ap_row_height * 22 ] } }
+	positionType = { name = "ap_90" position = { x = @ap_pos_3 y = @[ ap_row_height * 22 ] } }
+	positionType = { name = "ap_91" position = { x = @ap_pos_4 y = @[ ap_row_height * 22 ] } }
+	positionType = { name = "ap_92" position = { x = @ap_pos_5 y = @[ ap_row_height * 23 ] } }
+	positionType = { name = "ap_93" position = { x = @ap_pos_6 y = @[ ap_row_height * 23 ] } }
+	positionType = { name = "ap_94" position = { x = @ap_pos_7 y = @[ ap_row_height * 23 ] } }
+	positionType = { name = "ap_95" position = { x = @ap_pos_8 y = @[ ap_row_height * 23 ] } }
+	positionType = { name = "ap_96" position = { x = @ap_pos_1 y = @[ ap_row_height * 24 ] } }
+	positionType = { name = "ap_97" position = { x = @ap_pos_2 y = @[ ap_row_height * 24 ] } }
+	positionType = { name = "ap_98" position = { x = @ap_pos_3 y = @[ ap_row_height * 24 ] } }
+	positionType = { name = "ap_99" position = { x = @ap_pos_4 y = @[ ap_row_height * 24 ] } }
+	positionType = { name = "ap_100" position = { x = @ap_pos_1 y = @[ ap_row_height * 25 ] } }
+	positionType = { name = "ap_101" position = { x = @ap_pos_2 y = @[ ap_row_height * 25 ] } }
+	positionType = { name = "ap_102" position = { x = @ap_pos_3 y = @[ ap_row_height * 25 ] } }
+	positionType = { name = "ap_103" position = { x = @ap_pos_4 y = @[ ap_row_height * 25 ] } }
+	positionType = { name = "ap_104" position = { x = @ap_pos_1 y = @[ ap_row_height * 26 ] } }
+	positionType = { name = "ap_105" position = { x = @ap_pos_2 y = @[ ap_row_height * 26 ] } }
+	positionType = { name = "ap_106" position = { x = @ap_pos_3 y = @[ ap_row_height * 26 ] } }
+	positionType = { name = "ap_107" position = { x = @ap_pos_4 y = @[ ap_row_height * 26 ] } }
+	positionType = { name = "ap_108" position = { x = @ap_pos_1 y = @[ ap_row_height * 27 ] } }
+	positionType = { name = "ap_109" position = { x = @ap_pos_2 y = @[ ap_row_height * 27 ] } }
+	positionType = { name = "ap_110" position = { x = @ap_pos_3 y = @[ ap_row_height * 27 ] } }
+	positionType = { name = "ap_111" position = { x = @ap_pos_4 y = @[ ap_row_height * 27 ] } }
+	positionType = { name = "ap_112" position = { x = @ap_pos_1 y = @[ ap_row_height * 28 ] } }
+	positionType = { name = "ap_113" position = { x = @ap_pos_2 y = @[ ap_row_height * 28 ] } }
+	positionType = { name = "ap_114" position = { x = @ap_pos_3 y = @[ ap_row_height * 28 ] } }
+	positionType = { name = "ap_115" position = { x = @ap_pos_4 y = @[ ap_row_height * 28 ] } }
+	positionType = { name = "ap_116" position = { x = @ap_pos_1 y = @[ ap_row_height * 29 ] } }
+	positionType = { name = "ap_117" position = { x = @ap_pos_2 y = @[ ap_row_height * 29 ] } }
+	positionType = { name = "ap_118" position = { x = @ap_pos_3 y = @[ ap_row_height * 29 ] } }
+	positionType = { name = "ap_119" position = { x = @ap_pos_4 y = @[ ap_row_height * 29 ] } }
+	positionType = { name = "ap_120" position = { x = @ap_pos_1 y = @[ ap_row_height * 30 ] } }
+	positionType = { name = "ap_121" position = { x = @ap_pos_2 y = @[ ap_row_height * 30 ] } }
+	positionType = { name = "ap_122" position = { x = @ap_pos_3 y = @[ ap_row_height * 30 ] } }
+	positionType = { name = "ap_123" position = { x = @ap_pos_4 y = @[ ap_row_height * 30 ] } }
+	positionType = { name = "ap_124" position = { x = @ap_pos_1 y = @[ ap_row_height * 31 ] } }
+	positionType = { name = "ap_125" position = { x = @ap_pos_2 y = @[ ap_row_height * 31 ] } }
+	positionType = { name = "ap_126" position = { x = @ap_pos_3 y = @[ ap_row_height * 31 ] } }
+	positionType = { name = "ap_127" position = { x = @ap_pos_4 y = @[ ap_row_height * 31 ] } }
+	positionType = { name = "ap_128" position = { x = @ap_pos_1 y = @[ ap_row_height * 32 ] } }
+	positionType = { name = "ap_129" position = { x = @ap_pos_2 y = @[ ap_row_height * 32 ] } }
+	positionType = { name = "ap_130" position = { x = @ap_pos_3 y = @[ ap_row_height * 32 ] } }
+	positionType = { name = "ap_131" position = { x = @ap_pos_4 y = @[ ap_row_height * 32 ] } }
+	positionType = { name = "ap_132" position = { x = @ap_pos_1 y = @[ ap_row_height * 33 ] } }
+	positionType = { name = "ap_133" position = { x = @ap_pos_2 y = @[ ap_row_height * 33 ] } }
+	positionType = { name = "ap_134" position = { x = @ap_pos_3 y = @[ ap_row_height * 33 ] } }
+	positionType = { name = "ap_135" position = { x = @ap_pos_4 y = @[ ap_row_height * 33 ] } }
+	positionType = { name = "ap_136" position = { x = @ap_pos_1 y = @[ ap_row_height * 34 ] } }
+	positionType = { name = "ap_137" position = { x = @ap_pos_2 y = @[ ap_row_height * 34 ] } }
+	positionType = { name = "ap_138" position = { x = @ap_pos_3 y = @[ ap_row_height * 34 ] } }
+	positionType = { name = "ap_139" position = { x = @ap_pos_4 y = @[ ap_row_height * 34 ] } }
+	positionType = { name = "ap_140" position = { x = @ap_pos_1 y = @[ ap_row_height * 35 ] } }
+	positionType = { name = "ap_141" position = { x = @ap_pos_2 y = @[ ap_row_height * 35 ] } }
+	positionType = { name = "ap_142" position = { x = @ap_pos_3 y = @[ ap_row_height * 35 ] } }
+	positionType = { name = "ap_143" position = { x = @ap_pos_4 y = @[ ap_row_height * 35 ] } }
+	positionType = { name = "ap_144" position = { x = @ap_pos_1 y = @[ ap_row_height * 36 ] } }
+	positionType = { name = "ap_145" position = { x = @ap_pos_2 y = @[ ap_row_height * 36 ] } }
+	positionType = { name = "ap_146" position = { x = @ap_pos_3 y = @[ ap_row_height * 36 ] } }
+	positionType = { name = "ap_147" position = { x = @ap_pos_4 y = @[ ap_row_height * 36 ] } }
+	positionType = { name = "ap_148" position = { x = @ap_pos_1 y = @[ ap_row_height * 37 ] } }
+	positionType = { name = "ap_149" position = { x = @ap_pos_2 y = @[ ap_row_height * 37 ] } }
+	positionType = { name = "ap_150" position = { x = @ap_pos_3 y = @[ ap_row_height * 37 ] } }
+	positionType = { name = "ap_151" position = { x = @ap_pos_4 y = @[ ap_row_height * 37 ] } }
+	positionType = { name = "ap_152" position = { x = @ap_pos_1 y = @[ ap_row_height * 38 ] } }
+	positionType = { name = "ap_153" position = { x = @ap_pos_2 y = @[ ap_row_height * 38 ] } }
+	positionType = { name = "ap_154" position = { x = @ap_pos_3 y = @[ ap_row_height * 38 ] } }
+	positionType = { name = "ap_155" position = { x = @ap_pos_4 y = @[ ap_row_height * 38 ] } }
+	positionType = { name = "ap_156" position = { x = @ap_pos_1 y = @[ ap_row_height * 39 ] } }
+	positionType = { name = "ap_157" position = { x = @ap_pos_2 y = @[ ap_row_height * 39 ] } }
+	positionType = { name = "ap_158" position = { x = @ap_pos_3 y = @[ ap_row_height * 39 ] } }
+	positionType = { name = "ap_159" position = { x = @ap_pos_4 y = @[ ap_row_height * 39 ] } }
+	positionType = { name = "ap_160" position = { x = @ap_pos_1 y = @[ ap_row_height * 40 ] } }
+	positionType = { name = "ap_161" position = { x = @ap_pos_2 y = @[ ap_row_height * 40 ] } }
+	positionType = { name = "ap_162" position = { x = @ap_pos_3 y = @[ ap_row_height * 40 ] } }
+	positionType = { name = "ap_163" position = { x = @ap_pos_4 y = @[ ap_row_height * 40 ] } }
+	positionType = { name = "ap_164" position = { x = @ap_pos_1 y = @[ ap_row_height * 40 ] } }
+	positionType = { name = "ap_165" position = { x = @ap_pos_2 y = @[ ap_row_height * 41 ] } }
+	positionType = { name = "ap_166" position = { x = @ap_pos_3 y = @[ ap_row_height * 41 ] } }
+	positionType = { name = "ap_167" position = { x = @ap_pos_4 y = @[ ap_row_height * 41 ] } }
+	positionType = { name = "ap_168" position = { x = @ap_pos_1 y = @[ ap_row_height * 41 ] } }
+	positionType = { name = "ap_169" position = { x = @ap_pos_2 y = @[ ap_row_height * 42 ] } }
+	positionType = { name = "ap_170" position = { x = @ap_pos_3 y = @[ ap_row_height * 42 ] } }
+	positionType = { name = "ap_171" position = { x = @ap_pos_4 y = @[ ap_row_height * 42 ] } }
+	positionType = { name = "ap_172" position = { x = @ap_pos_1 y = @[ ap_row_height * 42 ] } }
+	positionType = { name = "ap_173" position = { x = @ap_pos_2 y = @[ ap_row_height * 43 ] } }
+	positionType = { name = "ap_174" position = { x = @ap_pos_3 y = @[ ap_row_height * 43 ] } }
+	positionType = { name = "ap_175" position = { x = @ap_pos_4 y = @[ ap_row_height * 43 ] } }
+	positionType = { name = "ap_176" position = { x = @ap_pos_1 y = @[ ap_row_height * 43 ] } }
+	positionType = { name = "ap_177" position = { x = @ap_pos_2 y = @[ ap_row_height * 44 ] } }
+	positionType = { name = "ap_178" position = { x = @ap_pos_3 y = @[ ap_row_height * 44 ] } }
+	positionType = { name = "ap_179" position = { x = @ap_pos_4 y = @[ ap_row_height * 44 ] } }
+	positionType = { name = "ap_180" position = { x = @ap_pos_1 y = @[ ap_row_height * 44 ] } }
+	positionType = { name = "ap_181" position = { x = @ap_pos_2 y = @[ ap_row_height * 45 ] } }
+	positionType = { name = "ap_182" position = { x = @ap_pos_3 y = @[ ap_row_height * 45 ] } }
+	positionType = { name = "ap_183" position = { x = @ap_pos_4 y = @[ ap_row_height * 45 ] } }
+	positionType = { name = "ap_184" position = { x = @ap_pos_1 y = @[ ap_row_height * 46 ] } }
+	positionType = { name = "ap_185" position = { x = @ap_pos_2 y = @[ ap_row_height * 46 ] } }
+	positionType = { name = "ap_186" position = { x = @ap_pos_3 y = @[ ap_row_height * 46 ] } }
+	positionType = { name = "ap_187" position = { x = @ap_pos_4 y = @[ ap_row_height * 46 ] } }
+	positionType = { name = "ap_188" position = { x = @ap_pos_1 y = @[ ap_row_height * 47 ] } }
+	positionType = { name = "ap_189" position = { x = @ap_pos_2 y = @[ ap_row_height * 47 ] } }
+	positionType = { name = "ap_190" position = { x = @ap_pos_3 y = @[ ap_row_height * 47 ] } }
+	positionType = { name = "ap_191" position = { x = @ap_pos_4 y = @[ ap_row_height * 47 ] } }
+	positionType = { name = "ap_192" position = { x = @ap_pos_1 y = @[ ap_row_height * 48 ] } }
+	positionType = { name = "ap_193" position = { x = @ap_pos_2 y = @[ ap_row_height * 48 ] } }
+	positionType = { name = "ap_194" position = { x = @ap_pos_3 y = @[ ap_row_height * 48 ] } }
+	positionType = { name = "ap_195" position = { x = @ap_pos_4 y = @[ ap_row_height * 48 ] } }
+	positionType = { name = "ap_196" position = { x = @ap_pos_1 y = @[ ap_row_height * 49 ] } }
+	positionType = { name = "ap_197" position = { x = @ap_pos_2 y = @[ ap_row_height * 49 ] } }
+	positionType = { name = "ap_198" position = { x = @ap_pos_3 y = @[ ap_row_height * 49 ] } }
+	positionType = { name = "ap_199" position = { x = @ap_pos_4 y = @[ ap_row_height * 49 ] } }
+	################################################################
+	# TRADITION VIEW
+	################################################################
+	@tradition_w = 1560
+	containerWindowType = {
+		name = "traditions_view"
+		size = { width = @tradition_w height = 900 }
+		show_position = { x = 35 y = 50 }
+		hide_position = { x = -100% y = 50 }
+		animation_time = 200
+		animation_type = decelerated
+		if_scaled_resolution = {
+			min_height = 1200
+			size = { width = @tradition_w height = 1020 }
+		}
+		if_scaled_resolution = {
+			min_height = 1440
+			size = { width = @tradition_w height = 1185 }
+		}
+		if_scaled_resolution = {
+			min_width = 2560
+			show_position = { x = 55 y = 50 }
+		}
+		clipping = no
+		show_sound = "interface"
+		background = {
+			name = "background"
+			spriteType = "GFX_tile_large_bg_plain"
+		}
+		iconType = {
+			name = "hex_bg"
+			spriteType = "GFX_hex_bg"
+			position = { x = 0 y = -12 }
+			if_scaled_resolution = {
+				min_width = 2560
+				position = { x = -10 y = -12 }
+			}
+			alwaysTransparent = yes
+		}
+		iconType = {
+			name = "header_line"
+			quadTextureSprite = "GFX_line_long"
+			position = { x = 6 y = 21 }
+		}
+		instantTextBoxType = {
+			name = "header"
+			font = "font_header_20"
+			text = "TRADITIONS"
+			position = { x = 35 y = 2 }
+			if_scaled_resolution = {
+				min_width = 2560
+				position = { x = 25 y = 2 }
+			}
+			maxWidth = 300
+			maxHeight = 30
+			fixedSize = yes
+			format = left
+			vertical_alignment = center
+		}
+		buttonType = {
+			name = "close"
+			spriteType = "GFX_close"
+			position = { x = -45 y = 7 }
+			orientation = upper_right
+			shortcut = "ESCAPE"
+			clicksound = "back_click"
+			pdx_tooltip = "CLOSE_TITLE"
+		}
+		########################
+		# TABS
+		########################
+		buttonType = {
+			name = "tab_traditions"
+			quadTextureSprite = "GFX_ui_tab_1_long_inactive"
+			position = { x = 0 y = 0 }
+			orientation = lower_left
+			buttonFont = "font_text_16"
+			buttonText = "TRADITIONS"
+			borderSize = { x = 20 y = 0 }
+			multiline = yes
+			shortcut = "z"
+			clicksound = "tab_click"
+		}
+		buttonType = {
+			name = "tab_crisis"
+			quadTextureSprite = "GFX_ui_tab_2_crisis_long_inactive"
+			position = { x = 165 y = -2 }
+			orientation = lower_left
+			buttonFont = "font_text_16"
+			buttonText = "CRISIS_TAB"
+			borderSize = { x = 20 y = 0 }
+			multiline = yes
+			shortcut = "c"
+			clicksound = "tab_click"
+		}
+		buttonType = {
+			name = "tab_traditions_active"
+			quadTextureSprite = "GFX_ui_tab_1_long_active"
+			position = { x = 0 y = 0 }
+			orientation = lower_left
+			buttonFont = "font_text_16"
+			buttonText = "TRADITIONS"
+			borderSize = { x = 20 y = 0 }
+			multiline = yes
+			shortcut = "z"
+			clicksound = "tab_click"
+		}
+		buttonType = {
+			name = "tab_crisis_active"
+			quadTextureSprite = "GFX_ui_tab_2_crisis_long_active"
+			position = { x = 165 y = -2 }
+			orientation = lower_left
+			buttonFont = "font_text_16"
+			buttonText = "CRISIS_TAB"
+			borderSize = { x = 20 y = 0 }
+			multiline = yes
+			shortcut = "c"
+			clicksound = "tab_click"
+		}
+		################################################################
+		# TRADITION TAB
+		################################################################
+		@tradition_category_height = 266
+		containerWindowType = {
+			name = "traditions_window"
+			size = { width = 100% height = 100%% }
+			position = { x = 0 y = 50 }
+			verticalScrollbar = "right_vertical_slider_thick"
+			smooth_scrolling = yes
+			margin = { top = 0 bottom = 10 }
+			background = {
+				name = "traditions_window"
+				spriteType = "GFX_invisible"
+			}
+			containerWindowType = {
+				name = "tradition_box"
+				size = { width = 609 height = 34 }
+				position = { x = 330 y = 12 }
+				iconType = {
+					name = "progress"
+					spriteType = "GFX_ui_progressbar_609"
+					position = { x = 0 y = 0 }
+				}
+				instantTextBoxType = {
+					name = "tradition_cost"
+					font = "font_header_20"
+					position = { x = -150 y = 0 }
+					orientation = center_up
+					maxWidth = 300
+					maxHeight = 34
+					fixedSize = yes
+					format = center
+					vertical_alignment = center
+				}
+				instantTextBoxType = {
+					name = "time_to_next_tradition"
+					font = "font_header_20"
+					text = "11 months"
+					position = { x = -131 y = 0 }
+					orientation = upper_right
+					maxWidth = 120
+					maxHeight = 34
+					fixedSize = yes
+					format = right
+					vertical_alignment = center
+				}
+			}
+			containerWindowType = {
+				name = "tradition_category_container"
+				position = { x = 10 y = 60 }
+				size = { width = 1250 height = @[ traditions / 4 * tradition_category_height ] }
+				background = {
+					name = "tradition_category_container"
+					spriteType = "GFX_tiles_dark_area_cut_8"
+				}
+			}
+			gridBoxType = {
+				name = "tradition_category_gridbox"
+				position = { x = 13 y = 60 }
+				size = { width = 1250 height = @[ traditions / 4 * tradition_category_height ] }
+				slotSize = { width = 312 height = @tradition_category_height }
+				max_slots_horizontal = 4
+				format = "UPPER_LEFT"
+			}
+			################################################################
+			# TRADITION ASCENSION PERKS
+			################################################################
+			containerWindowType = {
+				name = "ascension_perks_fake_background"
+				size = { width = 280 height = @[ traditions / 4 * tradition_category_height + 60 ] }
+				position = { x = -10 y = 0 }
+				orientation = upper_right
+				origo = upper_right
+				background = {
+					name = "fake_background"
+					spriteType = "GFX_plain_bg_tile"
+					alwaysTransparent = yes
+				}
+				iconType = {
+					name = "hex_bg"
+					spriteType = "GFX_hex_bg"
+					position = { x = -15 y = -15 }
+					alwaysTransparent = yes
+				}
+				instantTextBoxType = {
+					name = "ascension_perks_label"
+					font = "font_header_20"
+					text = "ASCENSION_PERKS"
+					position = { x = 10 y = 0 }
+					maxWidth = 260
+					maxHeight = 35
+					fixedSize = yes
+					format = left
+					vertical_alignment = center
+				}
+			}
+			containerWindowType = {
+				name = "ascension_perks"
+				size = { width = 275 height = @[ traditions / 4 * tradition_category_height + 20 ] }
+				position = { x = -10 y = 35 }
+				orientation = upper_right
+				origo = upper_right
+				verticalScrollbar = "right_vertical_slider_thick"
+				smooth_scrolling = yes
+				margin = { top = 5 bottom = 5 }
+				background = {
+					name = "background"
+					spriteType = "GFX_invisible"
+				}
+				containerWindowType = {
+					name = "tradition_box"
+					size = { width = 300 height = @[ ap_amount / 4 * ( ap_row_height + 1 ) ] }
+					position = { x = 0 y = 0 }
+				}
+			}
+		}
+		###############################
+		# CRISIS TAB
+		###############################
+		containerWindowType = {
+			name = "crisis_window"
+			size = { width = 100% height = 100%% }
+			position = { x = 0 y = 0 }
+			###############################
+			# CRISIS LEVELS AND PERKS
+			###############################
+			@progressionWidth = 1038
+			@progressionHeight = 536
+			containerWindowType = {
+				name = "progression_container"
+				size = { width = @progressionWidth height = @progressionHeight }
+				position = { x = 10 y = 50 }
+				background = {
+					name = "bg"
+					spriteType = "GFX_nemesis_path_bg"
+					alwaysTransparent = yes
+				}
+				containerWindowType = {
+					name = "crisis_level_progressbar_box"
+					size = { width = 68 height = 504 }
+					position = { x = 25 y = 14 }
+					background = {
+						name = "bg"
+						quadTextureSprite = "GFX_invisible"
+					}
+					iconType = {
+						name = "crisis_level_progressbar_box_bg"
+						quadTextureSprite = "GFX_nemesis_path_levels_frame"
+						position = { x = 0 y = 0 }
+						alwaysTransparent = yes
+					}
+					iconType = {
+						name = "crisis_level_progressbar"
+						spriteType = "GFX_nemesis_path_progressbar"
+						position = { x = 29 y = 39 }
+						frame = 0
+					}
+					smoothListboxType = {
+						name = "crisis_level_icon_list"
+						position = { x = 0 y = 20 }
+						size = { x = 62 y = 465 }
+						scrollbarType = "standardlistbox_slider_thick"
+						spacing = 53
+					}
+				}
+				containerWindowType = {
+					name = "crisis_level_list_container"
+					size = { width = 636 height = -20 }
+					position = { x = 120 y = 20 }
+					background = {
+						name = "bg"
+						quadTextureSprite = "GFX_invisible"
+					}
+					smoothListboxType = {
+						name = "crisis_level_list"
+						position = { x = 0 y = 0 }
+						size = { x = 636 y = 500 }
+						scrollbarType = "standardlistbox_slider_thick"
+						spacing = 0
+					}
+				}
+			}
+			###############################
+			# CRISIS INFORMATION
+			###############################
+			@infoWidth = 502
+			containerWindowType = {
+				name = "information_box"
+				size = { width = @infoWidth height = 480 }
+				position = { x = -10 y = 104 }
+				orientation = upper_right
+				origo = upper_right
+				background = {
+					name = "bg"
+					quadTextureSprite = "GFX_dark_green_frame_area"
+					alpha = 0.7
+				}
+				buttonType = {
+					name = "crisis_objectives_button"
+					quadTextureSprite = "GFX_standard_button_230_34_button"
+					buttonFont = "font_text_14"
+					text = "CRISIS_OBJECTIVES"
+					position = { x = 0 y = -2 }
+					clicksound = "confirm_click"
+				}
+				buttonType = {
+					name = "crisis_effects_button"
+					quadTextureSprite = "GFX_standard_button_230_34_button"
+					buttonFont = "font_text_14"
+					text = "CRISIS_EFFECTS"
+					position = { x = 248 y = -2 }
+					clicksound = "confirm_click"
+				}
+				# OBJECTIVES
+				containerWindowType = {
+					name = "objectives_box"
+					size = { width = @infoWidth height = 430 }
+					position = { x = 0 y = 50 }
+					background = {
+						name = "crisis_objectives_bg"
+						quadTextureSprite = "GFX_framed_area_tile"
+					}
+					instantTextBoxType = {
+						name = "objectives_header"
+						font = "font_text_16"
+						text = "CRISIS_OBJECTIVES"
+						position = { x = 15 y = 6 }
+						maxWidth = 220
+						maxHeight = 34
+						fixedSize = yes
+						format = left
+						vertical_alignment = center
+					}
+					instantTextBoxType = {
+						name = "objectives_desc"
+						font = "font_text_14"
+						text = "CRISIS_OBJECTIVE_GAINED"
+						position = { x = 260 y = 6 }
+						maxWidth = 220
+						maxHeight = 34
+						fixedSize = yes
+						format = right
+						vertical_alignment = center
+					}
+					iconType = {
+						name = "crisis_objectives_header_line"
+						quadTextureSprite = "GFX_line_crisis"
+						position = { x = 6 y = 34 }
+						alwaysTransparent = yes
+					}
+					smoothListboxType = {
+						name = "objectives_list"
+						position = { x = 10 y = 50 }
+						size = { x = 480 y = 368 }
+						scrollbarType = "standardlistbox_slider_thick"
+						borderSize = { x = 0 y = 0 }
+						spacing = 2
+					}
+				}
+				# EFFECTS
+				containerWindowType = {
+					name = "effects_box"
+					size = { width = @infoWidth height = 430 }
+					position = { x = 0 y = 50 }
+					background = {
+						name = "crisis_effects_bg"
+						quadTextureSprite = "GFX_framed_area_tile"
+					}
+					# DESCRIPTIONS
+					containerWindowType = {
+						name = "effects_descriptions"
+						size = { width = 462 height = 135 }
+						position = { x = 0 y = 0 }
+						instantTextBoxType = {
+							name = "crisis_description_title"
+							font = "font_text_18"
+							text = "CRISIS_DESCRIPTION_TITLE"
+							position = { x = 15 y = 10 }
+							maxWidth = 462
+							maxHeight = 24
+							fixedSize = yes
+							format = left
+							vertical_alignment = center
+							text_color_code = "H"
+						}
+						instantTextBoxType = {
+							name = "crisis_description"
+							font = "font_text_14"
+							text = "CRISIS_DESCRIPTION"
+							position = { x = 20 y = 35 }
+							maxWidth = 462
+							maxHeight = 200
+							format = left
+							scrollbarType = "standardlistbox_slider_thick_small"
+						}
+						instantTextBoxType = {
+							name = "crisis_howto_title"
+							font = "font_text_18"
+							text = "CRISIS_HOWTO_TITLE"
+							position = { x = 15 y = 270 }
+							maxWidth = 462
+							maxHeight = 24
+							format = left
+							text_color_code = "H"
+						}
+						instantTextBoxType = {
+							name = "crisis_howto"
+							font = "font_text_14"
+							text = "CRISIS_HOWTO"
+							position = { x = 20 y = 295 }
+							maxWidth = 462
+							maxHeight = 110
+							format = left
+							scrollbarType = "standardlistbox_slider_thick_small"
+						}
+					}
+					# TOP BAR
+					containerWindowType = {
+						name = "effects_top_bar"
+						size = { width = @infoWidth height = 45 }
+						position = { x = 0 y = 0 }
+						instantTextBoxType = {
+							name = "effects_header"
+							font = "font_text_14"
+							#text = "EFFECTS_CLEAN"
+							position = { x = 20 y = 168 }
+							format = left
+						}
+						iconType = {
+							name = "crisis_objectives_header_line"
+							quadTextureSprite = "GFX_line_crisis"
+							position = { x = 6 y = 250 }
+							alwaysTransparent = yes
+						}
+					}
+					# CONTENT
+					containerWindowType = {
+						name = "effects_content"
+						size = { width = 480 height = 214 }
+						position = { x = 10 y = 200 }
+						verticalScrollbar = "right_vertical_slider_thick"
+						smooth_scrolling = yes
+						margin = { top = 0 bottom = 15 }
+						background = {
+							name = "bg"
+							quadTextureSprite = "GFX_invisible"
+						}
+						instantTextBoxType = {
+							name = "effects_desc"
+							font = "font_text_14"
+							position = { x = 10 y = 10 }
+						}
+					}
+				}
+			}
+			###############################
+			# CRISIS TITLE BOX
+			###############################
+			containerWindowType = {
+				name = "crisis_level_bar"
+				size = { width = @infoWidth height = 82 }
+				position = { x = -10 y = 50 }
+				orientation = upper_right
+				origo = upper_right
+				iconType = {
+					name = "crisis_title_box"
+					position = { x = 0 y = 0 }
+					quadTextureSprite = "GFX_nemesis_path_title_box"
+					alwaysTransparent = yes
+				}
+				iconType = {
+					name = "crisis_title_separate"
+					quadTextureSprite = "GFX_crisis_title_separate"
+					position = { x = 10 y = 16 }
+					alwaysTransparent = yes
+				}
+				instantTextBoxType = {
+					name = "crisis_title_text"
+					font = "font_text_14"
+					text = "CRISIS_TITLE_TXT"
+					position = { x = 10 y = 14 }
+					maxWidth = 115
+					maxHeight = 34
+					fixedSize = yes
+					format = right
+					vertical_alignment = center
+					text_color_code = "W"
+				}
+				instantTextBoxType = {
+					name = "crisis_level_number"
+					font = "font_text_14"
+					text = "crisis_level_1"
+					position = { x = 130 y = 14 }
+					maxWidth = 140
+					maxHeight = 34
+					fixedSize = yes
+					format = left
+					vertical_alignment = center
+				}
+				# MENACE
+				containerWindowType = {
+					name = "crisis_currency_container"
+					size = { width = 240 height = 65 }
+					position = { x = 285 y = 14 }
+					instantTextBoxType = {
+						name = "crisis_currency_text"
+						font = "font_text_14"
+						text = "menace_name"
+						position = { x = 5 y = 0 }
+						maxWidth = 120
+						maxHeight = 34
+						fixedSize = yes
+						format = left
+						vertical_alignment = center
+						text_color_code = "W"
+					}
+					instantTextBoxType = {
+						name = "crisis_currency_value"
+						font = "font_text_14"
+						text = "MENACE_VALUE"
+						position = { x = 110 y = 0 }
+						maxWidth = 90
+						maxHeight = 34
+						fixedSize = yes
+						format = right
+						vertical_alignment = center
+					}
+				}
+			}
+		}
+	}
+}

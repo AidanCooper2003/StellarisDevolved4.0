@@ -33,7 +33,7 @@ country_event = {
         add_modifier = {
 			modifier = random_event_modifier_A_1
 			multiplier = multipliercount
-			years = 3
+			years = $yearcount$
 		}
 	}     
 }
@@ -68,7 +68,7 @@ country_event = {
         add_modifier = {
 			modifier = random_event_modifier_B_1
 			multiplier = multipliercount
-			years = 3
+			years = $yearcount$
 		}
 	}     
 }
@@ -103,7 +103,7 @@ country_event = {
         add_modifier = {
 			modifier = random_event_modifier_C_1
 			multiplier = multipliercount
-			years = 3
+			years = $yearcount$
 		}
 	}     
 }
@@ -138,7 +138,7 @@ country_event = {
         add_modifier = {
 			modifier = random_event_modifier_D_1
 			multiplier = multipliercount
-			years = 3
+			years = $yearcount$
 		}
 	}     
 }
@@ -174,7 +174,7 @@ country_event = {
         add_modifier = {
 			modifier = random_event_modifier_F_1
 			multiplier = multipliercount
-			years = 3
+			years = $yearcount$
 		}
 	}     
 }
@@ -210,7 +210,7 @@ country_event = {
         add_modifier = {
 			modifier = random_event_modifier_A_2
 			multiplier = multipliercount
-			years = 3
+			years = $yearcount$
 		}
 	}     
 }
@@ -246,7 +246,7 @@ country_event = {
         add_modifier = {
 			modifier = random_event_modifier_B_2
 			multiplier = multipliercount
-			years = 3
+			years = $yearcount$
 		}
 	}     
 }
@@ -282,7 +282,7 @@ country_event = {
         add_modifier = {
 			modifier = random_event_modifier_C_2
 			multiplier = multipliercount
-			years = 3
+			years = $yearcount$
 		}
 	}     
 }
@@ -318,7 +318,7 @@ country_event = {
         add_modifier = {
 			modifier = random_event_modifier_D_2
 			multiplier = multipliercount
-			years = 3
+			years = $yearcount$
 		}
 	}     
 }
@@ -354,7 +354,7 @@ country_event = {
         add_modifier = {
 			modifier = random_event_modifier_F_2
 			multiplier = multipliercount
-			years = 3
+			years = $yearcount$
 		}
 	}     
 }
@@ -421,7 +421,7 @@ country_event = {
         add_modifier = {
 			modifier = random_event_modifier_B_3
 			multiplier = multipliercount
-			years = 3
+			years = $yearcount$
 		}
 	}     
 }
@@ -457,7 +457,7 @@ country_event = {
         add_modifier = {
 			modifier = random_event_modifier_C_3
 			multiplier = multipliercount
-			years = 3
+			years = $yearcount$
 		}
 	}     
 }
@@ -493,7 +493,7 @@ country_event = {
         add_modifier = {
 			modifier = random_event_modifier_D_3
 			multiplier = multipliercount
-			years = 3
+			years = $yearcount$
 		}
 	}     
 }
@@ -530,7 +530,7 @@ country_event = {
         add_modifier = {
 			modifier = random_event_modifier_F_3
 			multiplier = multipliercount
-			years = 3
+			years = $yearcount$
 		}
 	}     
 }
@@ -566,7 +566,7 @@ country_event = {
         add_modifier = {
 			modifier = random_event_modifier_A_4
 			multiplier = multipliercount
-			years = 3
+			years = $yearcount$
 		}
 	}     
 }
@@ -602,7 +602,7 @@ country_event = {
         add_modifier = {
 			modifier = random_event_modifier_B_4
 			multiplier = multipliercount
-			years = 3
+			years = $yearcount$
 		}
 	}     
 }
@@ -673,7 +673,7 @@ country_event = {
         add_modifier = {
 			modifier = random_event_modifier_D_4
 			multiplier = multipliercount
-			years = 3
+			years = $yearcount$
 		}
 	}     
 }
@@ -709,7 +709,7 @@ country_event = {
         add_modifier = {
 			modifier = random_event_modifier_F_4
 			multiplier = multipliercount
-			years = 3
+			years = $yearcount$
 		}
 	}     
 }
@@ -745,7 +745,7 @@ country_event = {
         add_modifier = {
 			modifier = random_event_modifier_A_5
 			multiplier = multipliercount
-			years = 3
+			years = $yearcount$
 		}
 	}     
 }
@@ -781,7 +781,7 @@ country_event = {
         add_modifier = {
 			modifier = random_event_modifier_B_5
 			multiplier = multipliercount
-			years = 3
+			years = $yearcount$
 		}
 	}     
 }
@@ -817,7 +817,7 @@ country_event = {
         add_modifier = {
 			modifier = random_event_modifier_C_5
 			multiplier = multipliercount
-			years = 3
+			years = $yearcount$
 		}
 	}     
 }
@@ -853,7 +853,7 @@ country_event = {
         add_modifier = {
 			modifier = random_event_modifier_D_5
 			multiplier = multipliercount
-			years = 3
+			years = $yearcount$
 		}
 	}     
 }
@@ -889,7 +889,7 @@ country_event = {
         add_modifier = {
 			modifier = random_event_modifier_F_5
 			multiplier = multipliercount
-			years = 3
+			years = $yearcount$
 		}
 	}     
 }
@@ -925,7 +925,7 @@ country_event = {
         add_modifier = {
 			modifier = random_event_modifier_A_6
 			multiplier = multipliercount
-			years = 3
+			years = $yearcount$
 		}
 	}     
 }
@@ -996,7 +996,7 @@ country_event = {
         add_modifier = {
 			modifier = random_event_modifier_C_6
 			multiplier = multipliercount
-			years = 3
+			years = $yearcount$
 		}
 	}     
 }
@@ -1032,7 +1032,7 @@ country_event = {
         add_modifier = {
 			modifier = random_event_modifier_D_6
 			multiplier = multipliercount
-			years = 3
+			years = $yearcount$
 		}
 	}     
 }
@@ -1070,7 +1070,7 @@ country_event = {
         add_modifier = {
 			modifier = random_event_modifier_F_6
 			multiplier = multipliercount
-			years = 3
+			years = $yearcount$
 		}
 	}     
 }
@@ -1215,7 +1215,7 @@ country_event = {
         add_modifier = {
 			modifier = random_event_modifier_C_7
 			multiplier = multipliercount
-			years = 3
+			years = $yearcount$
 		}
 	}     
 }
@@ -1286,7 +1286,7 @@ country_event = {
         add_modifier = {
 			modifier = random_event_modifier_F_7
 			multiplier = multipliercount
-			years = 3
+			years = $yearcount$
 		}
 	}     
 }
@@ -1322,7 +1322,7 @@ country_event = {
         add_modifier = {
 			modifier = random_event_modifier_A_8
 			multiplier = multipliercount
-			years = 3
+			years = $yearcount$
 		}
 	}     
 }
@@ -1358,7 +1358,7 @@ country_event = {
         add_modifier = {
 			modifier = random_event_modifier_B_8
 			multiplier = multipliercount
-			years = 3
+			years = $yearcount$
 		}
 	}     
 }
@@ -1394,7 +1394,7 @@ country_event = {
         add_modifier = {
 			modifier = random_event_modifier_C_8
 			multiplier = multipliercount
-			years = 3
+			years = $yearcount$
 		}
 	}     
 }
@@ -1430,7 +1430,7 @@ country_event = {
         add_modifier = {
 			modifier = random_event_modifier_D_8
 			multiplier = multipliercount
-			years = 3
+			years = $yearcount$
 		}
 	}     
 }
@@ -1466,7 +1466,7 @@ country_event = {
         add_modifier = {
 			modifier = random_event_modifier_F_8
 			multiplier = multipliercount
-			years = 3
+			years = $yearcount$
 		}
 	}     
 }
@@ -1502,7 +1502,7 @@ country_event = {
         add_modifier = {
 			modifier = random_event_modifier_A_9
 			multiplier = multipliercount
-			years = 3
+			years = $yearcount$
 		}
 	}     
 }
@@ -1538,7 +1538,7 @@ country_event = {
         add_modifier = {
 			modifier = random_event_modifier_B_9
 			multiplier = multipliercount
-			years = 3
+			years = $yearcount$
 		}
 	}     
 }
@@ -1574,7 +1574,7 @@ country_event = {
         add_modifier = {
 			modifier = random_event_modifier_C_9
 			multiplier = multipliercount
-			years = 3
+			years = $yearcount$
 		}
 	}     
 }
@@ -1610,7 +1610,7 @@ country_event = {
         add_modifier = {
 			modifier = random_event_modifier_D_9
 			multiplier = multipliercount
-			years = 3
+			years = $yearcount$
 		}
 	}     
 }
@@ -1646,7 +1646,7 @@ country_event = {
         add_modifier = {
 			modifier = random_event_modifier_F_9
 			multiplier = multipliercount
-			years = 3
+			years = $yearcount$
 		}
 	}     
 }
@@ -1682,7 +1682,7 @@ country_event = {
         add_modifier = {
 			modifier = random_event_modifier_A_10
 			multiplier = multipliercount
-			years = 3
+			years = $yearcount$
 		}
 	}     
 }
@@ -1690,7 +1690,7 @@ country_event = {
 country_event = {
 	id = devolved_random_events.47
 	title = "Specimen Specialization"
-	desc = "Specimen are now specialized and produce much more! (B)"
+	desc = "Specimens are now specialized and produce much more! (B)"
 
 	hide_window = no
     is_triggered_only = yes
@@ -1718,7 +1718,7 @@ country_event = {
         add_modifier = {
 			modifier = random_event_modifier_B_10
 			multiplier = multipliercount
-			years = 3
+			years = $yearcount$
 		}
 	}     
 }
@@ -1754,7 +1754,7 @@ country_event = {
         add_modifier = {
 			modifier = random_event_modifier_C_10
 			multiplier = multipliercount
-			years = 3
+			years = $yearcount$
 		}
 	}     
 }
@@ -1825,7 +1825,7 @@ country_event = {
         add_modifier = {
 			modifier = random_event_modifier_F_10
 			multiplier = multipliercount
-			years = 3
+			years = $yearcount$
 		}
 	}     
 }
@@ -1861,7 +1861,7 @@ country_event = {
         add_modifier = {
 			modifier = random_event_modifier_A_11
 			multiplier = multipliercount
-			years = 3
+			years = $yearcount$
 		}
 	}     
 }
@@ -1933,7 +1933,7 @@ country_event = {
         add_modifier = {
 			modifier = random_event_modifier_C_11
 			multiplier = multipliercount
-			years = 3
+			years = $yearcount$
 		}
 	}     
 }
@@ -2004,7 +2004,7 @@ country_event = {
         add_modifier = {
 			modifier = random_event_modifier_F_11
 			multiplier = multipliercount
-			years = 3
+			years = $yearcount$
 		}
 	}     
 }
@@ -2040,7 +2040,7 @@ country_event = {
         add_modifier = {
 			modifier = random_event_modifier_A_12
 			multiplier = multipliercount
-			years = 3
+			years = $yearcount$
 		}
 	}     
 }
@@ -2076,7 +2076,7 @@ country_event = {
         add_modifier = {
 			modifier = random_event_modifier_B_12
 			multiplier = multipliercount
-			years = 3
+			years = $yearcount$
 		}
 	}     
 }
@@ -2111,8 +2111,8 @@ country_event = {
 
         add_modifier = {
 			modifier = random_event_modifier_C_12
+			years = $yearcount$
 			multiplier = multipliercount
-			years = 3
 		}
 	}     
 }
@@ -2202,20 +2202,17 @@ country_event = {
     }
 
     immediate = {
-		
 		random_list = {
 			33 = {set_variable = {which = "yearcount" value = 5}}
 			33 = {set_variable = {which = "yearcount" value = 3}}
 		    33 = {set_variable = {which = "yearcount" value = 1}}
 			1 = {set_variable = {which = "yearcount" value = 25}}
 		}
-		capital_scope = {
-			random_list = {
-				50 = { country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} }
-				24 = { country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} }
-				24 = { country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} }
-				2 = { country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} }
-			}
+		random_list = {
+			50 = { country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} }
+			24 = { country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} }
+			24 = { country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} }
+			2 = { country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} }
 		}
 	}     
 }
@@ -2241,12 +2238,10 @@ country_event = {
 		    33 = {set_variable = {which = "yearcount" value = 1}}
 			1 = {set_variable = {which = "yearcount" value = 25}}
 		}
-		capital_scope = {
-			random_list = {
-				80 = { country_event = {id = devolved_civic_events.15}}
-				18 = { country_event = {id = devolved_civic_events.15} country_event = {id = devolved_civic_events.15}}
-				2 = {country_event = {id = devolved_civic_events.15} country_event = {id = devolved_civic_events.15} country_event = {id = devolved_civic_events.15} country_event = {id = devolved_civic_events.15} country_event = {id = devolved_civic_events.15} country_event = {id = devolved_civic_events.15} country_event = {id = devolved_civic_events.15} country_event = {id = devolved_civic_events.15} country_event = {id = devolved_civic_events.15} country_event = {id = devolved_civic_events.15}}
-			}
+		random_list = {
+			80 = { country_event = {id = devolved_civic_events.15}}
+			18 = { country_event = {id = devolved_civic_events.15} country_event = {id = devolved_civic_events.15}}
+			2 = {country_event = {id = devolved_civic_events.15} country_event = {id = devolved_civic_events.15} country_event = {id = devolved_civic_events.15} country_event = {id = devolved_civic_events.15} country_event = {id = devolved_civic_events.15} country_event = {id = devolved_civic_events.15} country_event = {id = devolved_civic_events.15} country_event = {id = devolved_civic_events.15} country_event = {id = devolved_civic_events.15} country_event = {id = devolved_civic_events.15}}
 		}
 	}     
 }
@@ -2282,7 +2277,7 @@ country_event = {
         add_modifier = {
 			modifier = random_event_modifier_C_13
 			multiplier = multipliercount
-			years = 3
+			years = $yearcount$
 		}
 	}     
 }
@@ -2318,7 +2313,7 @@ country_event = {
         add_modifier = {
 			modifier = random_event_modifier_D_13
 			multiplier = multipliercount
-			years = 3
+			years = $yearcount$
 		}
 	}     
 }
@@ -2354,7 +2349,7 @@ country_event = {
         add_modifier = {
 			modifier = random_event_modifier_F_13
 			multiplier = multipliercount
-			years = 3
+			years = $yearcount$
 		}
 	}     
 }

@@ -60,7 +60,7 @@ devolved_ap_economic_engine = {
 
 	modifier = {
 		country_produces_mult = 0.5
-		pop_workforce_mult = 1
+		pop_bonus_workforce_mult = 1
 		planet_max_districts_mult = 0.5
 		planetary_ascension_effect_mult = 1
 	}

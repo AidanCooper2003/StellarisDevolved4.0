@@ -8,6 +8,6 @@ planet_jobs_cooperian = {
 		upkeep
 	}
 
-	modifier_category = colony
+	modifier_category = pop_job
 
 }

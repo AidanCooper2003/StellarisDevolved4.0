@@ -78,7 +78,7 @@ increasing_inflation_hard = {
 
 increasing_deflation = {
 	country_produces_mult = 0.04
-	pop_workforce_mult = 0.01
+	pop_bonus_workforce_mult = 0.01
 }
 
 sexponential_growth = {
@@ -97,7 +97,7 @@ leader_leveling_fast = {
 throughput_improved = {
 	planet_jobs_produces_mult = 0.1
 	planet_jobs_upkeep_mult = 0.1
-	pop_workforce_mult = 0.1
+	pop_bonus_workforce_mult = 0.1
 }
 
 
@@ -279,7 +279,7 @@ random_event_modifier_C_6 = {
 random_event_modifier_D_6 = {
 	planet_crime_mult = 5
 	planet_crime_add = 5
-	pop_criminal_workforce_mult = 1
+	pop_criminal_bonus_workforce_mult = 1
 }
 
 # Leader Lukemia

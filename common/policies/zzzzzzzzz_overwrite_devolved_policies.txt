@@ -1,50 +1,55 @@
-trade_policy = { # OVERWRITES EVOLVED TRADE POLICIES, IF GAME IS UPDATED THIS MUST BE CHANGED TO REFLECT EVOLVED'S CHANGES
+trade_policy = {
+	category = economy
 	potential = {
-		tec_uses_trade_value = yes
+		NOT = { has_ethic = ethic_gestalt_consciousness }
 	}
 
 	option = {
 		name = "trade_policy_default"
 
-		AI_weight = {
-			factor = 0
-		}
-		
 		potential = {
-			NOT = {
-				has_civic = devolved_civic_power_pit
+			is_worker_coop_empire = no
+		}
+
+		on_enabled = {
+			hidden_effect = {
+				set_trade_conversions = {
+					trade = 0.5
+					energy = 0.5
+				}
 			}
+		}
+
+		on_disabled = {
+			hidden_effect = {
+				set_trade_conversions = { }
+			}
+		}
+
+		ai_weight = {
+			factor = 0
 		}
 	}
 
 	option = {
 		name = "trade_policy_consumer_goods"
 		potential = {
-			AND = {
-				OR = {
-					has_federation = no
-					AND = {
-						has_federation = yes
-						federation = {
-							NOT = {
-								has_federation_perk = trade_federation_passive 
-							}
-						}
-					}
+			OR = {
+				has_federation = no
+				AND = {
+					has_federation = yes
+					federation = { NOT = { has_federation_perk = trade_federation_passive } }
 				}
-				has_tradition = tr_mercantile_adaptive_economic_policies
 			}
-			NOT = {
-				has_civic = devolved_civic_power_pit
-			}
+			has_tradition = tr_mercantile_adaptive_economic_policies
+			is_worker_coop_empire = no
 		}
-		
-		valid = {
-			tec_is_default_country = yes
-			#	NOR = {
-			#		has_policy_flag = "economic_stance_market"
-			#		has_ethic = "ethic_fanatic_socialism"
-			#	}
+
+		on_enabled = {
+			set_trade_conversions = {
+				trade = 0.5
+				consumer_goods = 0.25
+			}
 		}
 
 		policy_flags = {
@@ -53,13 +58,8 @@ trade_policy = { # OVERWRITES EVOLVED TRADE POLICIES, IF GAME IS UPDATED THIS MU
 
 		modifier = {}
 
-		AI_weight = {
+		ai_weight = {
 			factor = 1
-			modifier = {
-				mult = 0
-				is_regular_empire = yes
-				tec_is_aquatic_empire = yes
-			}
 		}
 	}
 
@@ -79,33 +79,25 @@ trade_policy = { # OVERWRITES EVOLVED TRADE POLICIES, IF GAME IS UPDATED THIS MU
 				}
 			}
 			has_tradition = tr_mercantile_adaptive_economic_policies
-			NOT = {
-				has_civic = devolved_civic_power_pit
+			is_worker_coop_empire = no
+		}
+
+		on_enabled = {
+			set_trade_conversions = {
+				trade = 0.50
+				unity = 0.125
 			}
 		}
 
 		policy_flags = {
 			trade_conversion_unity
 		}
-		
-		valid = {
-			tec_is_default_country = yes
-		#	NOR = {
-		#		has_policy_flag = "economic_stance_market"
-		#		has_policy_flag = "economic_stance_planned"
-		#	}
-		}
 
 		modifier = {
 		}
 
-		AI_weight = {
+		ai_weight = {
 			factor = 0
-			modifier = {
-				add = 1
-				is_regular_empire = yes
-				tec_is_aquatic_empire = yes
-			}
 		}
 	}
 
@@ -113,11 +105,14 @@ trade_policy = { # OVERWRITES EVOLVED TRADE POLICIES, IF GAME IS UPDATED THIS MU
 		name = "trade_policy_trade_league"
 		potential = {
 			has_federation = yes
-			federation = {
-				has_federation_perk = trade_federation_passive 
-			}
-			NOT = {
-				has_civic = devolved_civic_power_pit
+			federation = { has_federation_perk = trade_federation_passive }
+		}
+		on_enabled = {
+			set_trade_conversions = {
+				trade = 0.50
+				energy = 0.15
+				consumer_goods = 0.15
+				unity = 0.075
 			}
 		}
 
@@ -128,16 +123,23 @@ trade_policy = { # OVERWRITES EVOLVED TRADE POLICIES, IF GAME IS UPDATED THIS MU
 		modifier = {
 		}
 
-		AI_weight = {
+		ai_weight = {
 			factor = 1000
 		}
 	}
-	
+
 	option = {
 		name = "trade_policy_holy_covenant"
 		potential = {
 			has_federation = yes
 			federation = { has_federation_perk = unity_trade_1 }
+		}
+
+		on_enabled = {
+			set_trade_conversions = {
+				trade = 0.50
+				unity = 0.1875
+			}
 		}
 
 		policy_flags = {
@@ -147,7 +149,7 @@ trade_policy = { # OVERWRITES EVOLVED TRADE POLICIES, IF GAME IS UPDATED THIS MU
 		modifier = {
 		}
 
-		AI_weight = {
+		ai_weight = {
 			factor = 1000
 		}
 	}
@@ -156,8 +158,15 @@ trade_policy = { # OVERWRITES EVOLVED TRADE POLICIES, IF GAME IS UPDATED THIS MU
 		name = "trade_policy_mutual_aid"
 		potential = {
 			is_worker_coop_empire = yes
-			NOT = {
-				has_civic = devolved_civic_power_pit
+		}
+
+		on_enabled = {
+			set_trade_conversions = {
+				trade = 0.25
+				energy = 0.20
+				minerals = 0.20
+				food = 0.20
+				unity = 0.075
 			}
 		}
 
@@ -168,505 +177,101 @@ trade_policy = { # OVERWRITES EVOLVED TRADE POLICIES, IF GAME IS UPDATED THIS MU
 		modifier = {
 		}
 
-		AI_weight = {
+		ai_weight = {
 			factor = 1000
 		}
 	}
 
-	#Social Development
 	option = {
-		name = "trade_policy_social"
-
+		name = "trade_policy_omniconomy"
 		potential = {
-			NOT = {
-				has_civic = devolved_civic_power_pit
-			}
+			has_civic = devolved_civic_omniconomy
 		}
-		
-		policy_flags = {
-			trade_conversion_social
-		}
-		
-		valid = {
-			tec_is_default_country = yes
-			is_socialism = yes
-		}
-		
-		modifier = {
-			planet_colony_development_speed_mult = 0.25
-		}
-		
-		AI_weight = {
-			factor = 0
-		}
-	}
 
-	#Infrastructure Development
-	option = {
-		name = "trade_policy_infrastructure"
-
-		potential = {
-			NOT = {
-				has_civic = devolved_civic_power_pit
+		on_enabled = {
+			set_trade_conversions = {
+				energy = 0.03
+				minerals = 0.03
+				food = 0.03
+				trade = 0.03
+				alloys = 0.02
+				consumer_goods = 0.02
+				physics_research = 0.03
+				society_research = 0.03
+				engineering_research = 0.03
+				unity = 0.05
+				influence = 0.001
+				volatile_motes = 0.004
+				exotic_gases = 0.004
+				rare_crystals = 0.004
+				sr_dark_matter = 0.001
+				nanites = 0.001
+				sr_living_metal = 0.001
+				sr_zro = 0.001
+				minor_artifacts = 0.001
+				astral_threads = 0.001
 			}
 		}
 
-		policy_flags = {
-			trade_conversion_infrastructure
-		}
-
 		modifier = {
-			planet_building_build_speed_mult = 0.30 # Values slightly buffed for a test
-			starbase_shipyard_build_speed_mult = 0.15
 		}
 
-		AI_weight = {
-			factor = 0
+		ai_weight = {
+			factor = 1000
 		}
 	}
 
-	#Innovation
 	option = {
 		name = "trade_policy_innovation"
-		
 		potential = {
-			OR = {
-				custom_tooltip = "civic_tooltip_materialist"
-				is_materialist = yes
-				is_gestalt = yes
-			}
-			NOT = {
-				has_civic = devolved_civic_power_pit
-			}
+			NOT = { has_ethic = ethic_gestalt_consciousness }
 		}
 
-		policy_flags = {
-			trade_conversion_innovation
-		}
-
-		valid = {
-			tec_is_default_country = yes
-			OR = {
-				custom_tooltip = "civic_tooltip_materialist"
-				is_materialist = yes
-				is_gestalt = yes
+		on_enabled = {
+			set_trade_conversions = {
+				physics_research = 0.1
+				society_research = 0.1
+				engineering_research = 0.1
+				trade = 0.1
 			}
-			NOR = {
-				has_valid_civic = civic_tec_regular_immutable_hierarchy
-			}
-			#	NOR = {
-			#		has_policy_flag = "economic_stance_market"
-			#		has_policy_flag = "economic_stance_planned"
-			#	}
-		}
-		
-		modifier = {
-		}
-		
-		AI_weight = {
-			factor = 0
 		}
 	}
 
-	#Agricultural dev
 	option = {
-		name = "trade_policy_food"
-		
-		policy_flags = {
-			trade_conversion_food
-		}
-
+		name = "trade_policy_infrastructure"
 		potential = {
-			OR = {
-				custom_tooltip = "civic_tooltip_ecologist"
-				is_ecologist = yes
-				has_ethic = ethic_gestalt_preservation
-			}
-			NOT = {
-				has_civic = devolved_civic_power_pit
-			}
+			NOT = { has_ethic = ethic_gestalt_consciousness }
 		}
 
-		valid = {
-			tec_is_default_country = yes
-			OR = {
-				custom_tooltip = "civic_tooltip_ecologist"
-				is_ecologist = yes
-				has_ethic = ethic_gestalt_preservation
+		on_enabled = {
+			set_trade_conversions = {
+				minerals = 0.5
+				trade = 0.3
 			}
-		}
-		
-		AI_weight = {
-			factor = 0
-		}
-	}
-
-	# Food
-	option = {
-		name = "trade_policy_mining"
-
-		policy_flags = {
-			trade_conversion_mining
 		}
 
 		modifier = {
-		}
-
-		potential = {
-			OR = {
-				custom_tooltip = "civic_tooltip_industrialist"
-				is_industrialist = yes
-				has_ethic = ethic_gestalt_disregard
-			}
-			NOT = {
-				has_civic = devolved_civic_power_pit
-			}
-		}
-
-		valid = {
-			tec_is_default_country = yes
-			OR = {
-				custom_tooltip = "civic_tooltip_industrialist"
-				is_industrialist = yes
-				has_ethic = ethic_gestalt_disregard
-			}
-		}
-
-		AI_weight = {
-			factor = 0
+			planet_district_district_build_speed_mult = 0.25
 		}
 	}
 
-	# Omniconomy
 	option = {
-		name = "trade_policy_omni_conversion"
+		name = "trade_policy_agrarian"
+		potential = {
+			NOT = { has_ethic = ethic_gestalt_consciousness }
+		}
 
-		policy_flags = {
-			trade_conversion_omni
+		on_enabled = {
+			set_trade_conversions = {
+				food = 0.5
+				trade = 0.3
+			}
 		}
 
 		modifier = {
-			
-		}
-
-		potential = { # Will change to civic specific later.
-			has_civic = devolved_civic_omniconomy
-		}
-
-		AI_weight = {
-			factor = 10000
-		}
-	}
-
-
-	# --------------------------------------- Power Pit Trade Policies -----------------------------------
-
-	# Power Pit Consumer Goods
-	option = {
-		name = "trade_policy_no_energy_consumer_goods"
-		potential = {
-			OR = {
-				has_federation = no
-				AND = {
-					has_federation = yes
-					federation = {
-						NOT = {
-							has_federation_perk = trade_federation_passive 
-						}
-					}
-				}
-			}
-			has_tradition = tr_mercantile_adaptive_economic_policies
-			has_civic = devolved_civic_power_pit
-		}
-		
-		valid = {
-			tec_is_default_country = yes
-			#	NOR = {
-			#		has_policy_flag = "economic_stance_market"
-			#		has_ethic = "ethic_fanatic_socialism"
-			#	}
-		}
-
-		policy_flags = {
-			trade_conversion_no_energy_consumer_goods
-		}
-
-		modifier = {}
-
-		AI_weight = {
-			factor = 10
-			modifier = {
-				mult = 0
-				is_regular_empire = yes
-				tec_is_aquatic_empire = yes
-			}
-		}
-	}
-
-	# Power Pit Research
-	option = {
-		name = "trade_policy_no_energy_research"
-		
-		potential = {
-			OR = {
-				custom_tooltip = "civic_tooltip_materialist"
-				is_materialist = yes
-				is_gestalt = yes
-			}
-			has_civic = devolved_civic_power_pit
-		}
-
-		policy_flags = {
-			trade_conversion_no_energy_research
-		}
-
-		valid = {
-			tec_is_default_country = yes
-			OR = {
-				custom_tooltip = "civic_tooltip_materialist"
-				is_materialist = yes
-				is_gestalt = yes
-			}
-			NOR = {
-				has_valid_civic = civic_tec_regular_immutable_hierarchy
-			}
-			#	NOR = {
-			#		has_policy_flag = "economic_stance_market"
-			#		has_policy_flag = "economic_stance_planned"
-			#	}
-		}
-		
-		modifier = {
-		}
-		
-		AI_weight = {
-			factor = 1
-		}
-	}
-
-	# Power Pit Unity
-	option = {
-		name = "trade_policy_no_energy_unity"
-		potential = {
-			OR = {
-				has_federation = no
-				AND = {
-					has_federation = yes
-					federation = {
-						NOR = {
-							has_federation_perk = trade_federation_passive
-							has_federation_perk = unity_trade_1
-						}
-					}
-				}
-			}
-			has_tradition = tr_mercantile_adaptive_economic_policies
-			has_civic = devolved_civic_power_pit
-		}
-
-		policy_flags = {
-			trade_conversion_no_energy_unity
-		}
-		
-		valid = {
-			tec_is_default_country = yes
-		#	NOR = {
-		#		has_policy_flag = "economic_stance_market"
-		#		has_policy_flag = "economic_stance_planned"
-		#	}
-		}
-
-		modifier = {
-		}
-
-		AI_weight = {
-			factor = 10
-			modifier = {
-				add = 1
-				is_regular_empire = yes
-				tec_is_aquatic_empire = yes
-			}
-		}
-	}
-
-	# Power Pit Trade League
-	option = {
-		name = "trade_policy_no_energy_trade_league"
-		potential = {
-			has_federation = yes
-			federation = {
-				has_federation_perk = trade_federation_passive 
-			}
-			has_civic = devolved_civic_power_pit
-		}
-
-		policy_flags = {
-			trade_conversion_no_energy_trade_league
-		}
-
-		modifier = {
-		}
-
-		AI_weight = {
-			factor = 1000
-		}
-	}
-
-	# Power Pit Holy Covenant
-	option = {
-		name = "trade_policy_no_energy_holy_covenant"
-		potential = {
-			has_federation = yes
-			federation = { has_federation_perk = unity_trade_1 }
-			has_civic = devolved_civic_power_pit
-		}
-
-		policy_flags = {
-			trade_conversion_no_energy_holy_covenant
-		}
-
-		modifier = {
-		}
-
-		AI_weight = {
-			factor = 1000
-		}
-	}
-
-	# Power Pit Mutual Aid
-	option = {
-		name = "trade_policy_no_energy_mutual_aid"
-		potential = {
-			is_worker_coop_empire = yes
-			has_civic = devolved_civic_power_pit
-		}
-
-		policy_flags = {
-			trade_conversion_no_energy_mutual_aid
-		}
-
-		modifier = {
-		}
-
-		AI_weight = {
-			factor = 1000
-		}
-	}
-
-	# Power Pit Agri Sub
-	option = {
-		name = "trade_policy_no_energy_food"
-		
-		policy_flags = {
-			trade_conversion_no_energy_food
-		}
-
-		potential = {
-			OR = {
-				custom_tooltip = "civic_tooltip_ecologist"
-				is_ecologist = yes
-				has_ethic = ethic_gestalt_preservation
-			}
-			has_civic = devolved_civic_power_pit
-		}
-
-		valid = {
-			tec_is_default_country = yes
-			OR = {
-				custom_tooltip = "civic_tooltip_ecologist"
-				is_ecologist = yes
-				has_ethic = ethic_gestalt_preservation
-			}
-		}
-		
-		AI_weight = {
-			factor = 1
-		}
-	}
-
-	# Power Pit Mining Sub
-	option = {
-		name = "trade_policy_no_energy_mining"
-
-		policy_flags = {
-			trade_conversion_no_energy_mining
-		}
-
-		modifier = {
-		}
-
-		potential = {
-			OR = {
-				custom_tooltip = "civic_tooltip_industrialist"
-				is_industrialist = yes
-				has_ethic = ethic_gestalt_disregard
-			}
-			has_civic = devolved_civic_power_pit
-		}
-
-		valid = {
-			tec_is_default_country = yes
-			OR = {
-				custom_tooltip = "civic_tooltip_industrialist"
-				is_industrialist = yes
-				has_ethic = ethic_gestalt_disregard
-			}
-		}
-
-		AI_weight = {
-			factor = 1
-		}
-	}
-
-	# Power Pit Social Development
-	option = {
-		name = "trade_policy_no_energy_social"
-
-		potential = {
-			NOT = {
-				has_civic = devolved_civic_power_pit
-			}
-			has_civic = devolved_civic_power_pit
-		}
-		
-		policy_flags = {
-			trade_conversion_no_energy_social
-		}
-		
-		valid = {
-			tec_is_default_country = yes
-			is_socialism = yes
-		}
-		
-		modifier = {
-			planet_colony_development_speed_mult = 0.5
-		}
-		
-		AI_weight = {
-			factor = 0
-		}
-	}
-
-	# Power Pit Omniconomy
-	option = {
-		name = "trade_policy_no_energy_omni_conversion"
-
-		policy_flags = {
-			trade_conversion_no_energy_omni
-		}
-
-		modifier = {
-			
-		}
-
-		potential = { # Will change to civic specific later.
-			has_civic = devolved_civic_omniconomy
-			has_civic = devolved_civic_power_pit
-		}
-
-		AI_weight = {
-			factor = 10000
+			bonus_pop_growth_mult = 0.05
 		}
 	}
 }
+
+# NOTE: ABOVE DOES NOT YET HAVE SUPPORT FOR POWER PIT POLICIES

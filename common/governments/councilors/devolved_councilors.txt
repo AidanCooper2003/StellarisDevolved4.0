@@ -398,7 +398,7 @@ devolved_civic_councilor_trauma_bonded_motivator = {
 	civic = devolved_civic_together_suffering
 	modifier = {
 		country_produces_mult = 0.01
-		pop_workforce_mult = 0.02
+		pop_bonus_workforce_mult = 0.02
 		pop_environment_tolerance = -0.01
 	}
 }
@@ -745,7 +745,7 @@ devolved_civic_councilor_witch_hunter = {
 	civic = devolved_civic_protein_puritans
 	modifier = {
 		planet_bureaucrats_produces_mult = 0.05
-		pop_preacher_workforce_mult = 0.02
+		pop_preacher_bonus_workforce_mult = 0.02
 	}
 }
 

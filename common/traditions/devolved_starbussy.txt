@@ -9,25 +9,22 @@ tr_starbussy_adopt = {
 	modifier = {
 		starbase_building_build_speed_mult = 1
 		starbase_module_build_speed_mult = 1
-		starbase_defense_platform_build_speed_mult = 1
+		starbase_defense_platform_capacity_add = 2
 	}
 }
 
 tr_starbussy_finish = {
 	modifier = {
 		ascension_perks_add = 1
-		starbase_energy_production_modules_energy_produces_add = 2
-     		starbase_minerals_production_modules_minerals_produces_add = 2
-        	starbase_food_production_modules_food_produces_add = 2
-        	starbase_physics_research_modules_physics_research_produces_add = 2
-        	starbase_society_research_modules_society_research_produces_add = 2
-        	starbase_engineering_research_modules_engineering_research_produces_add = 2
+		starbase_buildings_food_produces_add = 1
+		starbase_buildings_minerals_produces_add = 1
+		starbase_buildings_energy_produces_add = 1
 	}
 }
 
 tr_starbussy_cheap_defense = {
 	modifier = {
-		starbase_food_production_modules_alloys_produces_add = 0.5
+		starbase_buildings_alloys_produces_add = 0.25
 	}
 
 	ai_weight = {

@@ -1,6 +1,6 @@
 # change this if you want more traditions
 # value must correspond with values used the .txt files located in the common sub-folders
-@traditions = 14
+@traditions = 16
 guiTypes = {
 	################################################################
 	# ASCENSION PERKS ENTRY POSITIONS

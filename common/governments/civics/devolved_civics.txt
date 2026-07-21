@@ -491,7 +491,7 @@ devolved_civic_protein_puritans = {
 devolved_civic_infinite_employment = {
 	modification = no
 	modifier = {
-		pop_workforce_mult = -0.3
+		pop_bonus_workforce_mult = -0.3
 		planet_jobs_produces_mult = -0.2
 		bonus_pop_growth_mult = 0.2
 		planet_housing_mult = 0.1
@@ -561,8 +561,8 @@ devolved_civic_infinite_unemployment = {
 		job_trader_add = -100000
 		job_knight_add = -100000
 		job_pearl_diver_add = -100000
-		pop_workforce_mult = -1000
-		pop_civilian_workforce_mult = 1000
+		pop_bonus_workforce_mult = -1000
+		pop_civilian_bonus_workforce_mult = 1000
 	}
 }
 

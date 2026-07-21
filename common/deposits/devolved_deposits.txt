@@ -14,7 +14,7 @@ d_caffeine_deposit = {
 	category = deposit_cat_rare
 
 	planet_modifier = {
-		pop_workforce_mult = 0.5
+		pop_bonus_workforce_mult = 0.5
 	}
 }
 

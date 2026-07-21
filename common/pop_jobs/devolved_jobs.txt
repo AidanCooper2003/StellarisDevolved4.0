@@ -143,7 +143,7 @@ devolved_cooperian_culturalist = {
 			}
 		}
 		planet_jobs_worker_produces_mult = 0.01
-		planet_jobs_slave_produces_mult = 0.02
+		pop_slave_bonus_workforce_mult = 0.005
 	}
 
 	# Fanatic Authoritarian
@@ -154,7 +154,7 @@ devolved_cooperian_culturalist = {
 			}
 		}
 		planet_jobs_worker_produces_mult = 0.02
-		planet_jobs_slave_produces_mult = 0.04
+		pop_slave_bonus_workforce_mult = 0.01
 	}
 
 	# Egalitarian
@@ -233,7 +233,7 @@ devolved_cooperian_culturalist = {
 			}
 		}
 		planet_stability_add = 0.1
-		pop_workforce_mult = 0.001
+		pop_bonus_workforce_mult = 0.001
 		empire_size_pops_mult = -0.01
 	}
 
@@ -245,7 +245,7 @@ devolved_cooperian_culturalist = {
 			}
 		}
 		planet_stability_add = 0.2
-		pop_workforce_mult = 0.002
+		pop_bonus_workforce_mult  = 0.002
 		empire_size_pops_mult = -0.02
 	}
 

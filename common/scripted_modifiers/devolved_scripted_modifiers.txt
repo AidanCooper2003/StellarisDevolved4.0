@@ -1,0 +1,8 @@
+# War
+	devolved_war_exhaustion_fire_rate = {
+		#icon
+		percentage = yes
+		good = yes
+		category = country
+	}
+#

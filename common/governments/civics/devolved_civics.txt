@@ -1,0 +1,1621 @@
+devolved_civic_pleasure_power = {
+	potential = {
+		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+	}
+	random_weight = { base = @civic_default_random_weight }
+	modifier = {
+		pop_citizen_happiness = 0.3
+		ship_fire_rate_mult = -0.25
+	}
+}
+
+devolved_civic_chonnys_charm = {
+	potential = {
+		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+	}
+	random_weight = { base = @civic_default_random_weight }
+	modifier = {
+		pop_citizen_happiness = -0.30
+		planet_stability_add = -10
+		ship_fire_rate_mult = 1
+	}
+}
+
+devolved_civic_together_suffering = {
+	potential = {
+		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+	}
+	possible = {
+		civics = {
+			NOT = {
+				value = devolved_civic_ubiquitous_unity
+			}
+		}
+	}
+	modification = no
+	random_weight = { base = @civic_default_random_weight }
+	modifier = {
+		habitability_ceil_add = -0.1
+		pop_environment_tolerance = -0.8
+		country_unity_produces_mult = 2.5
+		country_minor_artifacts_produces_mult = 0.25
+		envoys_add = 2
+		ship_home_territory_fire_rate_mult = 1
+	}
+}
+
+devolved_civic_ubiquitous_unity = {
+	potential = {
+		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+	}
+	possible = {
+		civics = {
+			NOT = {
+				value = devolved_civic_together_suffering
+			}
+		}
+	}
+	random_weight = { base = @civic_default_random_weight }
+	modifier = {
+		planet_clerks_unity_produces_add = 3
+		planet_clerks_alloys_upkeep_add = 1
+		planet_clerks_minerals_upkeep_add = 3
+	}
+}
+
+devolved_civic_unity_unaliving = {
+	potential = {
+		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+	}
+	random_weight = { base = @civic_default_random_weight }
+	modification = no
+	modifier = {
+		planet_researchers_unity_upkeep_add = 1
+		planet_administrators_unity_produces_add = -5.5
+		planet_administrators_energy_produces_add = 5
+		planet_administrators_minerals_produces_add = 5
+		planet_administrators_food_produces_add = 5
+		planet_administrators_consumer_goods_produces_add = 5
+		planet_administrators_alloys_produces_add = 1
+		planet_administrators_physics_research_produces_add = 1
+		planet_administrators_society_research_produces_add = 1
+		planet_administrators_engineering_research_produces_add = 1
+		planet_jobs_unity_produces_mult = -0.60
+		pop_factions_unity_produces_mult = -0.4
+	}
+}
+
+devolved_civic_energy_endowment = {
+
+		modifier = {
+			planet_technician_energy_produces_add = 0.5
+			planet_researchers_energy_produces_add = 0.5
+			planet_artisans_energy_produces_add = 0.5
+			planet_metallurgists_energy_produces_add = 0.5
+			planet_miners_energy_produces_add = 0.5
+		}
+		random_weight = { base = 5 }
+	}
+
+devolved_civic_power_pit = { #TriggeredOpinionFileforOpinion
+
+		modifier = {
+			planet_technician_energy_produces_add = -0.5
+			planet_researchers_energy_produces_add = -0.5
+			planet_artisans_energy_produces_add = -0.5
+			planet_metallurgists_energy_produces_add = -0.5
+			planet_miners_energy_produces_add = -0.5
+			pop_citizen_happiness = 0.1
+			country_produces_mult = 0.15
+			country_energy_produces_mult = -0.90
+		}
+		random_weight = { base = 5 }
+	}
+
+devolved_civic_mineral_hater = {
+
+		modifier = {
+			planet_technician_minerals_upkeep_add = 0.5
+			planet_researchers_minerals_upkeep_add = 1
+			planet_artisans_minerals_upkeep_add = 0.5
+			planet_metallurgists_minerals_upkeep_add = 0.5
+			planet_metallurgists_alloys_produces_add = 1.5
+			job_miner_add = -5
+			district_mining_max = -5
+			country_edict_fund_add = 100
+			ascension_perks_add = 10
+		}
+		random_weight = { base = 5 }
+	}
+
+devolved_civic_mineral_lover = {
+
+		modifier = {
+			planet_technician_minerals_produces_add = 1
+			planet_researchers_minerals_produces_add = 2
+			planet_artisans_minerals_produces_add = 1
+			planet_metallurgists_minerals_produces_add = 1
+			country_edict_fund_add = -50
+			planetary_ascension_effect_mult = -0.25
+			#Later give miner empire mineral output
+		}
+		random_weight = { base = 5 }
+	}
+
+devolved_civic_research_radicals = {
+
+		modifier = {
+			planet_researchers_physics_research_produces_add = 2
+			planet_researchers_society_research_produces_add = 2
+			planet_researchers_engineering_research_produces_add = 2
+			planet_farmers_alloys_produces_add = -1
+			planet_miners_alloys_produces_add = -1
+			country_edict_fund_add = -150
+			planetary_ascension_effect_mult = -0.5
+			planetary_ascension_cost_mult = 0.5
+			tradition_cost_empire_size_mult = 1
+		}
+		random_weight = { base = 5 }
+	}
+
+devolved_civic_rightoid_rascality = {
+
+		modifier = {
+			planet_researchers_physics_research_produces_add = -2
+			planet_researchers_society_research_produces_add = -2
+			planet_researchers_engineering_research_produces_add = -2
+			country_physics_tech_research_speed = -0.2
+			country_society_tech_research_speed = -0.2
+			country_engineering_tech_research_speed = -0.2
+			planet_farmers_alloys_produces_add = 2
+			planet_miners_alloys_produces_add = 2
+			country_edict_fund_add = 100
+			planetary_ascension_effect_mult = 0.75
+			planetary_ascension_cost_mult = -0.25
+			tradition_cost_empire_size_mult = -0.25
+		}
+		random_weight = { base = 5 }
+	}
+
+devolved_civic_alloy_amelioration = {
+
+		modifier = {
+			planet_enforcers_alloys_produces_add = 1
+			planet_culture_workers_alloys_produces_add = 0.5
+			planet_criminals_alloys_produces_add = 1 # IDE says invalid, this works though
+			planet_traders_alloys_produces_add = 0.25
+			planet_entertainers_alloys_produces_add = 0.5
+			planet_politicians_alloys_produces_add = 0.5
+		}
+		random_weight = { base = 5 }
+	}
+
+devolved_civic_agrarianism = {
+	potential = {
+		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+	}
+		modifier = {
+			planet_clerks_food_produces_add = 3
+			planet_farmers_food_produces_add = 3
+		}
+		random_weight = { base = 5 }
+	}
+
+devolved_civic_starvationism = {
+	potential = {
+		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+		species_class = {
+			NOT = { value = LITHOID }
+		}
+	}
+		modifier = {
+			planet_farmers_food_produces_add = -2.5
+			pop_amenities_usage_mult = -0.5
+			planet_structures_upkeep_mult = -0.8
+		}
+		random_weight = { base = 5 }
+	}
+
+devolved_civic_supermini = {
+
+		modifier = {
+			empire_size_penalty_mult = -0.3
+			empire_size_pops_mult = -0.3
+			empire_size_districts_mult = -0.3
+			empire_size_colonies_mult = -0.3
+			empire_size_branch_office_mult = -0.3
+			empire_size_systems_mult = -0.3
+			planet_pops_upkeep_mult = -0.15
+			pop_amenities_usage_mult = -0.15
+			ship_fire_rate_mult = -0.5
+			planet_metallurgists_alloys_produces_add = -1.5
+		}
+		random_weight = { base = 5 }
+	}
+
+devolved_civic_supermassive = {
+	modifier = {
+		empire_size_penalty_mult = 0.3
+		empire_size_pops_mult = 0.3
+		empire_size_districts_mult = 0.3
+		empire_size_colonies_mult = 0.3
+		empire_size_branch_office_mult = 0.3
+		empire_size_systems_mult = 1
+		planet_pops_upkeep_mult = 0.15
+		pop_amenities_usage_mult = 0.15
+		ship_fire_rate_mult = 0.5
+		planet_metallurgists_alloys_produces_add = 1.5
+	}
+	random_weight = { base = 5 }
+}
+
+devolved_civic_influencer = {
+	modifier = {
+		planet_administrators_influence_produces_add = 0.05
+		planet_priests_influence_produces_add = 0.05
+		planet_soldiers_influence_produces_add = 0.05
+		country_influence_produces_mult = 0.2
+	}
+	random_weight = { base = 5 }
+}
+
+devolved_civic_ethical_adherance = {
+	potential = {
+		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+	}
+	modifier = {
+		faction_approval = 0.2
+		pop_ethics_shift_speed_mult = 5
+		pop_government_ethic_attraction = 5
+	}
+	random_weight = { base = 1 }
+}
+
+devolved_civic_oppositionalism = {
+	potential = {
+		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+	}
+	modifier = {
+		pop_government_ethic_attraction = -10
+		pop_ethics_shift_speed_mult = 5
+		society_tech_cost_mult = 0.1
+		physics_tech_cost_mult = -0.25
+		engineering_tech_cost_mult = -0.25
+	}
+	random_weight = { base = 1 }
+}
+
+devolved_civic_omniconomy = {
+	# Enables omniconomy trade policy
+}
+
+devolved_civic_expedition_enhancement = {
+    modification = no
+        modifier = {
+            country_minor_artifacts_produces_mult = 5
+			ship_archaeological_site_clues_add = 3
+			ship_archaeological_site_excavation_speed_mult = 0.25
+			planet_artisans_minor_artifacts_produces_add = 0.01
+        }
+        random_weight = { base = 5 }
+    }
+
+devolved_civic_consumer_craze = {
+    modification = no
+        modifier = {
+            planet_researchers_upkeep_mult = -1
+            country_consumer_goods_produces_mult = 0.3
+            country_alloys_produces_mult = -0.1
+        }
+        random_weight = { base = 5 }
+    }
+
+devolved_civic_konsumerist_killers = {
+    modification = no
+        modifier = {
+            planet_researchers_upkeep_mult = 0.3
+            country_consumer_goods_produces_mult = -0.2
+            country_alloys_produces_mult = 0.2
+			job_scrap_miner_add = 2
+			planet_artisans_consumer_goods_produces_add = -2
+			planet_artisans_engineering_research_produces_add = 4
+        }
+        random_weight = { base = 5 }
+    }
+devolved_civic_beastly_breeders = {
+
+        modifier = {
+            pop_growth_speed = 0.3
+            planet_pop_assembly_organic_add = 1
+            planet_pops_upkeep_mult = 0.3
+        }
+        random_weight = { base = 5 }
+    }
+
+devolved_civic_stratworld_strategists = {
+
+        modifier = {
+            country_exotic_gases_produces_mult = 0.5
+            country_volatile_motes_produces_mult = 0.5
+            country_rare_crystals_produces_mult = 0.5
+            planet_structures_volatile_motes_upkeep_mult = -0.30
+            planet_structures_exotic_gases_upkeep_mult = -0.30
+            planet_structures_rare_crystals_upkeep_mult = -0.30
+            planet_structures_volatile_motes_cost_mult = -0.30
+            planet_structures_exotic_gases_cost_mult = -0.30
+            planet_structures_rare_crystals_cost_mult = -0.30
+        }
+        random_weight = { base = 5 }
+    }
+
+devolved_civic_stratworld_despisers = {
+    modification = no
+        modifier = {
+            country_exotic_gases_produces_mult = -0.5
+            country_volatile_motes_produces_mult = -0.5
+            country_rare_crystals_produces_mult = -0.5
+            planet_structures_volatile_motes_upkeep_mult = 0.1
+            planet_structures_exotic_gases_upkeep_mult = 0.1
+            planet_structures_rare_crystals_upkeep_mult = 0.1
+            planet_structures_volatile_motes_cost_mult = 0.1
+            planet_structures_exotic_gases_cost_mult = 0.1
+            planet_structures_rare_crystals_cost_mult = 0.1
+            country_energy_produces_mult = 0.2
+            country_minerals_produces_mult = 0.2
+            country_food_produces_mult = 0.2
+        }
+        random_weight = { base = 5 }
+    }
+devolved_civic_influencer_idiot = {
+	modification = no
+        modifier = {
+            planet_refiners_influence_upkeep_add = 0.1
+            planet_chemists_influence_upkeep_add = 0.1
+            planet_translucers_influence_upkeep_add = 0.1
+            country_influence_produces_mult = -0.5 
+            country_resource_max_influence_add = -500 # Doesn't currently work
+            commercial_pact_mult = 3
+            research_sharing_mult = 3
+            country_trust_growth = 0.1
+        }
+        random_weight = { base = 5 }
+    }
+
+devolved_civic_undead_upkeeper = {
+
+        modifier = {
+            diplomacy_upkeep_mult = -0.2
+            pop_amenities_usage_mult = -0.2
+            planet_jobs_upkeep_mult = -0.2
+            planet_pops_upkeep_mult = -0.2
+            planet_researchers_upkeep_mult = -0.2
+            leaders_upkeep_mult = -0.2
+            ships_upkeep_mult = -0.2
+            starbases_upkeep_mult = -0.2
+            edicts_upkeep_mult = -0.2
+            planet_structures_upkeep_mult = -0.2
+            		planet_structures_cost_mult = 1
+            		ships_cost_mult = 0.2
+			planetary_ascension_cost_mult = 0.1
+			physics_tech_cost_mult = 0.025
+			society_tech_cost_mult = 0.025
+			engineering_tech_cost_mult = 0.025
+			station_gatherers_cost_mult = 1
+			station_researchers_cost_mult = 1
+			deposit_blockers_cost_mult = 1
+        }
+        random_weight = { base = 5 }
+    }
+
+devolved_civic_dead_upkeeper = {
+        modifier = {
+            diplomacy_upkeep_mult = 0.2
+            pop_amenities_usage_mult = 0.2
+            planet_jobs_upkeep_mult = 0.2
+            planet_pops_upkeep_mult = 0.2
+            planet_researchers_upkeep_mult = 0.2
+            leaders_upkeep_mult = 0.2
+            ships_upkeep_mult = 0.2
+            starbases_upkeep_mult = 0.2
+            #edicts_upkeep_mult = 0.2 doesn't work
+            planet_structures_upkeep_mult = 0.2
+            		planet_structures_cost_mult = -0.75
+           		ships_cost_mult = -0.2
+			megastructures_cost_mult = -0.1
+			physics_tech_cost_mult = -0.05
+			society_tech_cost_mult = -0.05
+			engineering_tech_cost_mult = -0.05
+			planetary_ascension_cost_mult = -0.1
+			station_gatherers_cost_mult = -0.5
+			station_researchers_cost_mult = -0.5
+			deposit_blockers_cost_mult = -0.5
+        }
+        random_weight = { base = 5 }
+    }
+
+devolved_civic_timeless_trading = {
+	potential = {
+		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+	}
+	modifier = {
+		living_standard_trade_value_rulers_add = 3
+		living_standard_trade_value_specialists_add = 1
+		living_standard_trade_value_workers_add = 0.5
+		living_standard_trade_value_slaves_add = 0.25
+		pop_job_trade_mult = 0.2
+		pop_amenities_usage_mult = 0.3
+		pop_housing_usage_mult = 0.15
+		ship_fire_rate_mult = -0.05
+	}
+	random_weight = { base = 3 }
+}
+
+devolved_civic_enlightened_edicts = {
+	modifier = {
+		edicts_upkeep_mult = -0.2
+		country_edict_fund_add = 40
+		country_edict_fund_mult = 0.25
+	}
+	random_weight = { base = 5 }
+}
+
+devolved_civic_genetic_gerrymanders = {
+	modification = no
+	modifier = {
+		BIOLOGICAL_species_trait_points_add = 3
+		LITHOID_species_trait_points_add = 2
+		BIOLOGICAL_species_trait_picks_add = 3
+		LITHOID_species_trait_picks_add = 2
+		modify_species_cost_mult = -0.2
+	}
+	random_weight = { base = 1 }
+}
+
+devolved_civic_protein_puritans = {
+	modification = no
+	modifier = {
+		BIOLOGICAL_species_trait_points_add = -100
+		LITHOID_species_trait_points_add = -100
+		BIOLOGICAL_species_trait_picks_add = -100
+		LITHOID_species_trait_picks_add = -100
+		pop_growth_speed = 0.2
+		job_priest_add = 2
+		job_priest_per_pop = 0.05
+	}
+	random_weight = { base = 1 }
+}
+
+devolved_civic_infinite_employment = {
+	modification = no
+	modifier = {
+		pop_job_trade_mult = -0.1
+		planet_jobs_produces_mult = -0.2
+		pop_growth_speed = 0.15
+		planet_housing_mult = 0.1
+		planet_pop_assembly_organic_add = 2
+		job_farmer_per_pop = 0.5
+		job_miner_per_pop = 0.5
+		job_technician_per_pop = 0.5
+		job_artisan_per_pop = 0.5
+		job_foundry_add = 0.5 # Should work, needs testing
+		job_researcher_per_pop = 0.5
+		job_bureaucrat_per_pop = 0.5
+	}
+	random_weight = {
+		base = 1
+	}
+}
+
+devolved_civic_infinite_unemployment = {
+	possible = {
+		ethics = {
+			NOR = {
+				value = ethic_socialism
+				value = ethic_fanatic_socialism
+				value = ethic_capitalism
+				value = ethic_fanatic_capitalism
+				value = ethic_gestalt_consciousness
+			}
+		}
+		civics = {
+			NOR = {
+				value = devolved_civic_starbase_supremacy
+				value = civic_galactic_sovereign
+			}
+		}
+	}
+	modification = no
+	modifier = {
+		country_produces_mult = 0.5
+		planet_stability_add = 300
+		job_farmer_add = -1000
+		job_miner_add = -1000
+		job_technician_add = -1000
+		job_bureaucrat_add = -1000
+		job_priest_add = -1000
+		job_artisan_add = -1000
+		job_culture_worker_add = -1000
+		job_clerk_add = -1000
+		job_researcher_add = -1000
+		job_entertainer_add = -1000
+		job_catalytic_technician_add = -1000
+		job_angler_add = -1000
+		job_artificer_add = -1000
+		job_chemist_add = -1000
+		job_translucer_add = -1000
+		job_gas_refiner_add = -1000
+		job_mote_harvester_add = -1000
+		job_crystal_miner_add = -1000
+		job_gas_extractor_add = -1000
+		job_colonist_add = -1000
+		job_enforcer_add = -1000
+		job_healthcare_add = -1000
+		job_high_priest_add = -1000
+		job_head_researcher_add = -1000
+		job_soldier_add = -1000
+		job_trader_add = -1000
+		job_knight_add = -1000
+		job_pearl_diver_add = -1000
+	}
+}
+
+devolved_civic_hyper_housing = {
+	modifier = {
+		planet_housing_add = 5
+		planet_housing_mult = 3
+	}
+	random_weight = {
+		base = 1
+	}
+}
+
+devolved_civic_sexual_singularity = {
+	potential = {
+		authority = {
+			value = auth_machine_intelligence
+		}
+	}
+	modifier = {
+		job_replicator_per_pop = 0.05
+	}
+}
+
+devolved_civic_profit_perforation = {
+	possible = {
+		ethics = {
+			NOR = { 
+				value = ethic_gestalt_consciousness
+				value = ethic_capitalist
+				value = ethic_fanatic_capitalist
+			} 
+		}
+	}
+	# if not using trade value shouldn't be useable
+	modifier = {
+		trade_value_mult = -3
+		megastructures_unity_produces_add = 50
+		starbases_cost_mult = 0.8
+		job_clerk_add = -1000
+		job_trader_add = -1000
+		job_entertainer_per_pop = 0.2
+		planet_entertainers_unity_produces_add = 1
+		planet_entertainers_consumer_goods_produces_add = 1
+		planet_entertainers_society_research_produces_add = 5
+		#In the future, entertainers provide +1% pop growth speed empire wide
+	}
+}
+
+devolved_civic_infrastructure_initiation = {
+	modifier = {
+		planet_army_build_speed_mult = 1
+		planet_decision_enact_speed_mult = 1
+		planet_colony_development_speed_mult = 1
+		planet_building_build_speed_mult = 1
+		starbase_building_build_speed_mult = 1
+		starbase_module_build_speed_mult = 1
+		shipsize_mining_station_build_speed_mult = 1
+		shipsize_research_station_build_speed_mult = 1
+		shipsize_starbase_outpost_build_speed_mult = 1
+		planet_clear_blocker_speed_mult = 1
+		starbase_upgrade_speed_mult = 1
+		megastructure_build_speed_mult = 0.1
+	}
+	random_weight = { base = 5 }
+}
+
+devolved_civic_infrastructure_irritation = {
+
+	modifier = {
+		shipsize_starbase_outpost_build_speed_mult = -0.8
+		planet_army_build_speed_mult = -0.8
+		planet_decision_enact_speed_mult = -0.8
+		planet_colony_development_speed_mult = -0.5
+		planet_building_build_speed_mult = -0.8
+		starbase_building_build_speed_mult = -0.8
+		starbase_module_build_speed_mult = -0.8
+		shipsize_mining_station_build_speed_mult = -0.8
+		shipsize_research_station_build_speed_mult = -0.8
+		planet_clear_blocker_speed_mult = -0.8
+		starbase_upgrade_speed_mult = -0.8
+		megastructure_build_speed_mult = -0.1
+		ship_science_physics_research_upkeep_add = -2
+		ship_science_society_research_upkeep_add = -2
+		ship_science_engineering_research_upkeep_add = -2
+		country_produces_mult = 0.05
+		physics_tech_cost_mult = -0.11
+		society_tech_cost_mult = -0.11
+		engineering_tech_cost_mult = -0.11
+		#Change to benefits for having less buildings
+	}
+	random_weight = { base = 5 }
+}
+
+devolved_civic_alloy_execution = {
+	modifier = {
+		country_alloys_produces_mult = -0.2
+		planet_metallurgists_alloys_produces_mult = -0.2
+		planet_districts_industrial_alloys_cost_add = 50
+		planet_districts_industrial_alloys_upkeep_add = 1
+		espionage_operation_skill_add = 10
+		espionage_operation_cost_mult = -0.9
+		intel_encryption_mult = 0.3
+		intel_decryption_mult = 0.3
+		envoys_add = 2
+		council_agenda_finishing_effect_duration_mult = 0.5
+		council_agenda_progress_speed = 0.25
+	}
+	random_weight = { base = 5 }
+}
+
+devolved_civic_megamalice = {
+	modification = no
+	modifier = {
+		megastructures_cost_mult = 0.5
+		megastructure_build_speed_mult = -1
+		megastructures_produces_mult = -0.2
+		station_gatherers_produces_mult = 1
+		station_researchers_produces_mult = 1
+		starbase_outpost_cost_mult = -0.15
+	}
+	random_weight = { base = 5 }
+}
+
+devolved_civic_starbase_supremacy = {
+	possible = {
+		civics = {
+			NOT = {
+			value = devolved_civic_infinite_employment
+			}
+		}
+	}
+    modifier = {
+        starbase_outpost_cost_mult = -0.5
+		country_starbase_influence_cost_distance_mult = -0.3
+		country_starbase_influence_cost_mult = -0.25
+		starbase_upgrade_cost_mult = -0.2
+		starbases_upkeep_mult = -0.25
+		piracy_growth_mult = -0.15
+		shipsize_starbase_outpost_build_speed_mult = 0.2
+        starbase_energy_production_modules_energy_produces_add = 10
+        starbase_minerals_production_modules_minerals_produces_add = 10
+        starbase_food_production_modules_food_produces_add = 10
+        starbase_physics_research_modules_physics_research_produces_add = 10
+        starbase_society_research_modules_society_research_produces_add = 10
+        starbase_engineering_research_modules_engineering_research_produces_add = 10
+        	planet_max_districts_add = -6
+		planet_max_buildings_add = -2
+		planet_structures_cost_mult = 0.5
+		planet_crime_mult = 1
+    }
+    random_weight = { base = 5 }
+}
+
+devolved_civic_wholesome_diplomats = {
+	possible = {
+		ethics = {
+			OR = {
+				value = ethic_fanatic_xenophile
+				value = ethic_xenophile
+			}
+		}
+	}
+	modifier = {
+		diplomacy_upkeep_mult = -0.15
+		diplo_weight_mult = 0.15
+		envoys_add = 1
+		country_insult_efficiency = -0.5
+		country_trust_growth = 0.1
+		max_rivalries = -10
+		# Universally loved opinion modifier
+	}
+}
+
+devolved_civic_hateable_huggers = {
+	possible = {
+		ethics = {
+			value = ethic_fanatic_xenophile
+		}
+	}
+	modifier = {
+		diplomacy_upkeep_mult = 1
+		diplo_weight_mult = -0.5
+		envoys_add = -4
+		# Horrible negative opinion modifier
+		job_culture_worker_per_pop = 0.2
+		planet_culture_workers_society_research_produces_add = 2
+		planet_culture_workers_produces_mult = 0.2
+	}
+}
+
+devolved_civic_fleet_frenzy = {
+	modification = no
+    modifier = {
+        ship_fire_rate_mult = 1
+        ships_cost_mult = -0.5
+        ships_upkeep_mult = -0.5
+        country_produces_mult = -0.2
+    }
+}
+
+devolved_civic_fleet_fuckers = {
+	modification = no
+    modifier = {
+        ship_fire_rate_mult = -0.5
+        ships_cost_mult = 1
+        ship_shield_add = -1000000
+        ship_armor_add = -1000000
+		ship_evasion_mult = -3
+		ship_accuracy_mult = -3
+        country_produces_mult = 0.3
+        #Opinion Modifier
+    }
+}
+
+devolved_civic_amazing_armies = {
+    modifier = {
+        planet_army_build_speed_mult = 1
+        army_damage_mult = 1
+        army_defense_damage_mult = 1
+        army_morale = 1
+        army_health = 1
+        army_collateral_damage_mult = 1
+        army_attack_damage_mult = 1
+        army_defense_morale_mult = 1
+        army_defense_health_mult = 1
+    }
+}
+
+devolved_civic_army_abomination = {
+    modifier = {
+        	planet_army_build_speed_mult = -0.8
+        	army_damage_mult = -0.8
+        	army_defense_damage_mult = -0.8
+        	army_morale = -0.8
+        	army_health = -0.8
+        	army_collateral_damage_mult = -0.8
+        	army_attack_damage_mult = -0.8
+        	army_defense_morale_mult = -0.8
+        	army_defense_health_mult = -0.8
+        	planet_artisans_consumer_goods_produces_add = 2
+        	planet_artisans_food_produces_add = 1
+			planet_artisans_unity_produces_add = 1
+    }
+}
+
+devolved_civic_timeless_terraforming = {
+	modifier = {
+		terraforming_energy_cost_add = -10000
+		terraforming_influence_cost_add = -100
+		terraforming_sr_dark_matter_cost_add = -100
+		terraforming_sr_zro_cost_add = -100
+		terraforming_sr_living_metal_cost_add = -100
+		terraforming_nanites_cost_add = -100
+		terraform_speed_mult = 1.5
+	}
+}
+
+devolved_civic_demancipation_proclamation = {
+	modifier = {
+		living_standard_trade_value_slaves_add = 1
+		slave_market_cost_mult = -0.5
+		planet_jobs_slave_produces_mult = 0.5
+		pop_happiness = -0.15
+	}
+}
+
+devolved_civic_homephobia = {
+	modifier = {
+		planet_housing_add = -5
+		planet_housing_mult = -0.5
+		planet_pop_assembly_add = 4
+	}
+}
+
+devolved_civic_shitty_starbases = {
+	modification = no
+    modifier = {
+        starbase_outpost_cost_mult = 1
+		starbase_outpost_influence_cost_mult = 1
+        starbase_upgrade_cost_mult = 1
+		country_starbase_influence_cost_distance_mult = 1
+		starbases_upkeep_mult = 2
+	shipsize_starbase_outpost_build_speed_mult = -0.95 #Added because the outpost cost isn't working
+        starbase_energy_production_modules_energy_produces_add = -10
+        starbase_minerals_production_modules_minerals_produces_add = -10
+        starbase_food_production_modules_food_produces_add = -10
+        starbase_physics_research_modules_physics_research_produces_add = -10
+        starbase_society_research_modules_society_research_produces_add = -10
+        starbase_engineering_research_modules_engineering_research_produces_add = -10
+		empire_size_systems_mult = 20
+		country_starbase_capacity_mult = -1
+        planet_max_districts_add = 5
+        planet_max_districts_mult = 1
+        job_healthcare_per_pop = 0.0667
+        pop_citizen_happiness = 0.2
+		planet_max_buildings_add = 2
+		planet_structures_cost_mult = -0.15
+		planet_crime_mult = -1
+		planetary_ascension_cost_mult = -0.25
+		planet_colony_development_speed_mult = 1000
+		#In future, add custom job type to increase pop growth speed or pop output on world, or both
+    }
+    random_weight = { base = 5 }
+}
+
+devolved_civic_developing_country = {
+	modification = no
+	modifier = {
+		country_produces_mult = -0.9
+		commercial_pact_mult = 60
+		research_sharing_mult = 60
+		planet_stability_add = 40
+		country_trade_fee = 0.5
+	}
+}
+
+devolved_civic_lucrative_leaders = {
+	modifier = {
+		leaders_upkeep_mult = -0.1
+		leader_lifespan_add = 20
+		leader_trait_selection_options_add = 1
+		country_leader_pool_size = 2
+		species_leader_exp_gain = 0.25
+		negative_leader_traits_species = -1
+		pop_cat_worker_happiness = -0.2
+		planet_farmers_food_produces_add = -1
+		planet_technician_energy_produces_add = -1
+		planet_miners_minerals_produces_add = -1
+		planet_jobs_worker_produces_mult = -0.1
+	}
+}
+
+devolved_civic_loser_leaders = {
+	modifier = {
+		leaders_upkeep_mult = 1
+		leader_lifespan_add = -20
+		leader_trait_selection_options_add = -1
+		country_leader_pool_size = -1
+		species_leader_exp_gain = -0.5
+		negative_leader_traits_species = 1
+		pop_cat_worker_happiness = 0.2
+		planet_farmers_food_produces_add = 1
+		planet_technician_energy_produces_add = 1
+		planet_miners_minerals_produces_add = 1
+		planet_jobs_worker_produces_mult = 0.1
+		district_mining_max = 3
+		district_farming_max = 3
+		district_generator_max = 3
+		planet_max_districts_add = 3
+		#Job type that decreases leader experience gain for something else
+	}
+}
+
+devolved_civic_survey_corps = {
+	modification = no
+	modifier = {
+		ship_anomaly_research_speed_mult = 0.5
+		ship_anomaly_generation_chance_mult = 2
+		ship_anomaly_fail_risk = -0.5
+		science_ship_survey_speed = 1
+		shipclass_science_ship_build_speed_mult = 1
+		shipsize_science_disengage_chance_mult = 1
+		scientist_exp_gain = 0.25
+		scientist_lifespan_add = 40
+		country_scientist_cap_add = 3
+	}
+}
+
+devolved_civic_heavenly_whales = {
+	modifier = {
+		diplomacy_upkeep_mult = -0.1
+	}
+}
+
+devolved_civic_cuzzx_crystals = {
+	modifier = {
+		job_crystal_miner_per_pop = 0.05
+		job_crystal_miner_add = 1
+		# Custom rare crystal edicts
+	}
+}
+
+devolved_civic_god_is_a_gamer = {
+	possible = {
+		ethics = {
+			OR = {
+				value = ethic_spiritualist
+				value = ethic_fanatic_spiritualist
+			}
+		}
+	}
+	# Custom gamer god building
+}
+
+devolved_civic_victors_wrath = {
+	possible = {
+		ethics = {
+			OR = {
+				value = ethic_fanatic_spiritualist
+				value = ethic_spiritualist
+			}
+		}
+		# Add any other civics here that replace priests
+		civics = {
+			NOR = {
+				value = civic_death_cult
+			}
+		}
+	}
+}
+
+devolved_civic_majestic_megastructures = {
+	modification = no
+	possible = {
+		ethics = {
+			OR = {
+				value = ethic_fanatic_industrial
+				value = ethic_industrial
+			}
+		}
+	}
+	modifier = {
+		megastructure_build_speed_mult = 0.25
+		planet_pop_assembly_mult = -0.75
+		planet_pop_assembly_reduction = 0.25
+		pop_growth_speed_reduction = 0.25
+		planet_pop_assembly_organic_reduction = 0.25 
+	}
+	# Recieve Contigency Core at start of game
+}
+
+devolved_civic_agenda_acceleration = {
+	modifier = {
+		council_agenda_finishing_effect_duration_mult = 2
+		council_agenda_progress_speed = 0.5
+	}
+}
+
+devolved_civic_yesmen = {
+	possible = {
+		civics = {
+			value = devolved_civic_cheater_contract
+		}
+	}
+	modification = no
+	modifier = {
+		diplo_action_acceptance_add = 2000
+		country_produces_mult = -0.95
+		planet_stability_add = 30
+	}
+}
+
+devolved_civic_accelerated_ascenders = {
+	possible = {
+		civics = {
+			value = devolved_civic_cheater_contract
+		}
+	}
+	modification = no
+	modifier = {
+		planetary_ascension_effect_mult = 5
+		planetary_ascension_cost_mult = -0.5
+	}
+}
+
+devolved_civic_amplified_ascenders = {
+	possible = {
+		civics = {
+			value = devolved_civic_cheater_contract
+		}
+	}
+	modification = no
+	modifier = {
+		planetary_ascension_effect_mult = 999
+		planetary_ascension_cost_mult = -0.5
+	}
+}
+
+devolved_civic_lander_test = {
+	modification = no
+	# New traditions
+}
+
+devolved_civic_trade_trollers = {
+	modification = no
+	modifier = {
+		country_trade_attractiveness = 5
+	}
+}
+
+devolved_civic_arbitration_duplication = {
+	modification = no
+	modifier = {
+		monthly_trades_alloys_produces_mult = 1
+		monthly_trades_energy_produces_mult = 1
+		monthly_trades_minerals_produces_mult = 1
+		monthly_trades_food_produces_mult = 1
+		monthly_trades_consumer_goods_produces_mult = 1
+		monthly_trades_volatile_motes_produces_mult = 1
+		monthly_trades_exotic_gases_produces_mult = 1
+		monthly_trades_rare_crystals_produces_mult = 1
+	}
+}
+
+devolved_civic_cooperian_culture = {
+	# New job/building type
+	modifier = {
+		job_devolved_cooperian_culturalist_per_pop = 0.02
+	}
+}
+
+devolved_civic_l_machine_neo = {
+	modification = no
+	modifier = {
+		ship_anomaly_research_speed_mult = -1.24
+		ship_anomaly_generation_chance_mult = -0.99
+		ship_anomaly_fail_risk = 0.99
+		science_ship_survey_speed = -1.24
+		shipclass_science_ship_build_speed_mult = -1.24
+		leader_lifespan_add = -150
+		country_leader_pool_size = -1
+		species_leader_exp_gain = -1.24
+		negative_leader_traits_species = 1
+		council_agenda_finishing_effect_duration_mult = -0.99
+		council_agenda_progress_speed = -0.99
+		shipsize_starbase_outpost_build_speed_mult = -0.99
+		planet_army_build_speed_mult = -1.09
+		planet_decision_enact_speed_mult = -0.99
+		planet_colony_development_speed_mult = -1.49
+		planet_building_build_speed_mult = -1.09
+		starbase_building_build_speed_mult = -0.99
+		starbase_module_build_speed_mult = -0.99
+		shipsize_mining_station_build_speed_mult = -0.99
+		shipsize_research_station_build_speed_mult = -0.99
+		planet_clear_blocker_speed_mult = -0.99
+		starbase_upgrade_speed_mult = -1.24
+		megastructure_build_speed_mult = -1.49
+	}
+}
+
+devolved_civic_g_machine = {
+	possible = {
+		civics = {
+			value = devolved_civic_cheater_contract
+		}
+	}
+	modification = no
+	modifier = {
+		pop_citizen_happiness = 2
+		planet_stability_add = 300
+		ship_fire_rate_mult = 999
+		habitability_ceil_add = 1
+		pop_environment_tolerance = 3
+		country_produces_mult = 10
+		envoys_add = 20
+		ship_home_territory_fire_rate_mult = 999
+		country_edict_fund_add = 5000
+		ascension_perks_add = 20
+		planetary_ascension_effect_mult = 999
+		planetary_ascension_cost_mult = -2
+		tradition_cost_empire_size_mult = -2
+		empire_size_penalty_mult = -2
+		pop_amenities_usage_mult = -2
+		society_tech_cost_mult = -2
+		physics_tech_cost_mult = -2
+		engineering_tech_cost_mult = -2
+		ship_archaeological_site_excavation_speed_mult = 999
+		commercial_pact_mult = 999
+        research_sharing_mult = 999
+		pop_job_trade_mult = 999
+		pop_housing_usage_mult = -2
+		BIOLOGICAL_species_trait_points_add = 999
+		LITHOID_species_trait_points_add = 999
+		BIOLOGICAL_species_trait_picks_add = 999
+		LITHOID_species_trait_picks_add = 999
+		modify_species_cost_mult = -1
+		megastructures_produces_mult = 999
+		planet_army_build_speed_mult = 999
+		planet_decision_enact_speed_mult = 999
+		planet_building_build_speed_mult = 999
+		starbase_building_build_speed_mult = 999
+		starbase_module_build_speed_mult = 999
+		shipsize_mining_station_build_speed_mult = 999
+		shipsize_research_station_build_speed_mult = 999
+		shipsize_starbase_outpost_build_speed_mult = 999
+		planet_clear_blocker_speed_mult = 999
+		starbase_upgrade_speed_mult = 999
+		megastructure_build_speed_mult = 999
+		espionage_operation_skill_add = 999
+		espionage_operation_cost_mult = -2
+		intel_encryption_mult = 999
+		intel_decryption_mult = 999
+    	planet_max_districts_add = 999
+		planet_max_buildings_add = 10
+		planet_crime_mult = -1
+		diplo_weight_mult = 999
+		country_insult_efficiency = 999
+		country_trust_growth = 999
+		ship_shield_add = 999
+        ship_armor_add = 999
+		ship_evasion_mult = 3
+		ship_accuracy_mult = 3
+		planet_army_build_speed_mult = 999
+        army_damage_mult = 999
+        army_defense_damage_mult = 999
+        army_morale = 999
+        army_health = 999
+        army_collateral_damage_mult = 999
+        army_attack_damage_mult = 999
+        army_defense_morale_mult = 999
+        army_defense_health_mult = 999
+		terraform_speed_mult = 999
+		planet_colony_development_speed_mult = 999
+		leader_lifespan_add = 999
+		species_leader_exp_gain = 999
+		negative_leader_traits_species = -5
+		ship_anomaly_research_speed_mult = 999
+		ship_anomaly_generation_chance_mult = 2
+		ship_anomaly_fail_risk = -1
+		science_ship_survey_speed = 999
+		council_agenda_finishing_effect_duration_mult = 999
+		council_agenda_progress_speed = 999
+		diplo_action_acceptance_add = 5000
+		country_trade_attractiveness = 999
+		ship_speed_mult = 999
+		edicts_upkeep_mult = -2
+		councilor_skill_add = 999
+		ship_windup_mult = -1
+	}
+}
+
+devolved_civic_sg_machine = {
+    possible = {
+        civics = {
+            value = devolved_civic_cheater_contract
+        }
+    }
+    modification = no
+    modifier = {
+        pop_citizen_happiness = 2
+        planet_stability_add = 300
+        ship_fire_rate_mult = 999
+        habitability_ceil_add = 1
+        pop_environment_tolerance = 3
+        country_produces_mult = 50
+        envoys_add = 20
+        ship_home_territory_fire_rate_mult = 999
+        country_edict_fund_add = 5000
+        ascension_perks_add = 20
+        planetary_ascension_effect_mult = 10
+        planetary_ascension_cost_mult = -1
+        tradition_cost_empire_size_mult = -2
+        empire_size_penalty_mult = -2
+        pop_amenities_usage_mult = -2
+        society_tech_cost_mult = -0.7
+        physics_tech_cost_mult = -0.7
+        engineering_tech_cost_mult = -0.7
+        ship_archaeological_site_excavation_speed_mult = 999
+        commercial_pact_mult = 99
+		research_sharing_mult = 99
+        pop_job_trade_mult = 99
+        pop_housing_usage_mult = -2
+        BIOLOGICAL_species_trait_points_add = 999
+        LITHOID_species_trait_points_add = 999
+        BIOLOGICAL_species_trait_picks_add = 999
+        LITHOID_species_trait_picks_add = 999
+        modify_species_cost_mult = -1
+        planet_army_build_speed_mult = 999
+        planet_decision_enact_speed_mult = 999
+        planet_building_build_speed_mult = 999
+        starbase_building_build_speed_mult = 999
+        starbase_module_build_speed_mult = 999
+        shipsize_mining_station_build_speed_mult = 999
+        shipsize_research_station_build_speed_mult = 999
+        shipsize_starbase_outpost_build_speed_mult = 999
+        planet_clear_blocker_speed_mult = 999
+        starbase_upgrade_speed_mult = 999
+        megastructure_build_speed_mult = 999
+        shipsize_military_station_small_build_speed_mult = 999
+        shipclass_military_build_speed_mult = 999
+        shipclass_military_station_build_speed = 999
+        espionage_operation_skill_add = 999
+        espionage_operation_cost_mult = -2
+        intel_encryption_mult = 999
+        intel_decryption_mult = 999
+        planet_max_districts_add = 999
+        planet_max_buildings_add = 10
+        planet_crime_mult = -1
+        diplo_weight_mult = 1
+        country_insult_efficiency = 999
+        country_trust_growth = 999
+        ship_shield_add = 999
+        ship_armor_add = 999
+        ship_evasion_mult = 3
+        ship_accuracy_mult = 3
+        planet_army_build_speed_mult = 999
+		army_damage_mult = 99
+        army_defense_damage_mult = 99
+        army_morale = 999
+        army_health = 99
+        army_collateral_damage_mult = 999
+        army_attack_damage_mult = 99
+        army_defense_morale_mult = 999
+        army_defense_health_mult = 99
+        terraform_speed_mult = 999
+        planet_colony_development_speed_mult = 999
+        leader_lifespan_add = 999
+        species_leader_exp_gain = 999
+        negative_leader_traits_species = -5
+        ship_anomaly_research_speed_mult = 999
+        ship_anomaly_generation_chance_mult = 2
+        ship_anomaly_fail_risk = -1
+        science_ship_survey_speed = 999
+        council_agenda_finishing_effect_duration_mult = 999
+        council_agenda_progress_speed = 999
+        diplo_action_acceptance_add = 5000
+        country_trade_attractiveness = 999
+        ship_speed_mult = 9999
+        edicts_upkeep_mult = -2
+        councilor_skill_add = 999
+		ship_hull_mult = 200
+		ship_weapon_range_mult = 50
+		jump_drive_cooldown = -0.99
+		ship_hyperlane_range_add = 400
+		planet_hyperlane_range_add = 400
+		shipclass_science_ship_build_speed_mult = 100
+		shipclass_colonizer_build_speed_mult = 100
+		shipclass_constructor_build_speed_mult = 100
+		espionage_operation_speed_mult = 1000
+		espionage_operation_cost_mult = -1
+		country_subject_integration_speed_add = 1000
+		country_subject_acceptance_add = 10000
+		country_trust_growth = 1000
+		country_trust_cap_add = 100000
+		subject_integration_influence_cost_mult = -1
+		cloaking_cooldown = -1
+		veto_cooldown_mult = -1
+		shroud_cooldown = -1
+		shroud_delve_cooldown = -1
+		gravity_snare_cooldown_mult = -1
+		artifact_sell_cooldown = -1
+		relic_activation_cooldown = -1
+		emergency_measures_cooldown_mult = -1
+		arcane_deciphering_cooldown = -1
+		artifact_precursor_insight_cooldown = -1
+		country_war_exhaustion_mult = -1
+		starbase_building_capacity_add = 1000
+		piracy_growth_mult = 0
+		catapult_range_mult = 100
+		catapult_spread_mult = 0
+		quantum_catapult_empire_windup_mult = 0
+		first_contact_clues_add = 50
+		shipsize_juggernaut_build_speed_mult = 1000
+		shipsize_colossus_build_speed_mult = 1000
+		shipsize_star_eater_build_speed_mult = 1000
+		ship_windup_mult = -1
+    }
+}
+
+devolved_civic_c_machine = {
+    possible = {
+        civics = {
+            value = devolved_civic_cheater_contract
+        }
+    }
+    modification = no
+    modifier = {
+        ship_archaeological_site_excavation_speed_mult = 999
+        modify_species_cost_mult = -1
+        planet_army_build_speed_mult = 999
+        planet_decision_enact_speed_mult = 999
+        planet_building_build_speed_mult = 999
+        starbase_building_build_speed_mult = 999
+        starbase_module_build_speed_mult = 999
+        shipsize_mining_station_build_speed_mult = 999
+        shipsize_research_station_build_speed_mult = 999
+        shipsize_starbase_outpost_build_speed_mult = 999
+        planet_clear_blocker_speed_mult = 999
+        starbase_upgrade_speed_mult = 999
+        megastructure_build_speed_mult = 999
+        shipsize_military_station_small_build_speed_mult = 999
+        shipclass_military_build_speed_mult = 999
+        shipclass_military_station_build_speed = 999
+        planet_army_build_speed_mult = 999
+        terraform_speed_mult = 999
+        planet_colony_development_speed_mult = 999
+        ship_anomaly_research_speed_mult = 999
+        science_ship_survey_speed = 999
+        ship_speed_mult = 9999
+		jump_drive_cooldown = -0.99
+		ship_windup_mult = -1
+		ship_hyperlane_range_add = 400
+		planet_hyperlane_range_add = 400
+		shipclass_science_ship_build_speed_mult = 100
+		shipclass_colonizer_build_speed_mult = 100
+		shipclass_constructor_build_speed_mult = 100
+		espionage_operation_speed_mult = 1000
+		country_subject_integration_speed_add = 1000
+		cloaking_cooldown = -1
+		veto_cooldown_mult = -1
+		shroud_cooldown = -1
+		shroud_delve_cooldown = -1
+		gravity_snare_cooldown_mult = -1
+		artifact_sell_cooldown = -1
+		relic_activation_cooldown = -1
+		emergency_measures_cooldown_mult = -1
+		arcane_deciphering_cooldown = -1
+		artifact_precursor_insight_cooldown = -1
+		quantum_catapult_empire_windup_mult = -1
+		first_contact_clues_add = 50
+		shipsize_juggernaut_build_speed_mult = 1000
+		shipsize_colossus_build_speed_mult = 1000
+		shipsize_star_eater_build_speed_mult = 1000
+    }
+}
+
+devolved_civic_cheater_contract = {
+	modification = no
+}
+
+devolved_civic_divine_districts = {
+    modifier = {
+		# Factory and Foundry doesn't work
+		planet_districts_industrial_consumer_goods_produces_add = 0.75
+        planet_districts_industrial_volatile_motes_produces_add = 0.05
+        planet_districts_industrial_unity_produces_add = 0.25
+        planet_districts_industrial_alloys_produces_add = 0.5
+		planet_districts_industrial_engineering_research_produces_add = 5
+        planet_districts_farming_food_produces_add = 1
+        planet_districts_farming_unity_produces_add = 1
+		planet_districts_farming_society_research_produces_add = 10
+        planet_districts_mining_minerals_produces_add = 1
+        planet_districts_mining_unity_produces_add = 0.25
+        planet_districts_mining_exotic_gases_produces_add = 0.1
+        planet_districts_mining_rare_crystals_produces_add = 0.1
+		planet_districts_mining_engineering_research_produces_add = 10
+        planet_districts_generator_energy_produces_add = 1
+		planet_districts_generator_physics_research_produces_add = 10
+        planet_districts_resort_trade_value_produces_add = 10
+        planet_districts_prison_physics_research_produces_add = 10
+        planet_districts_prison_society_research_produces_add = 10
+        planet_districts_prison_engineering_research_produces_add = 10
+        planet_districts_prison_industrial_consumer_goods_produces_add = 1
+        planet_districts_prison_industrial_alloys_produces_add = 1
+        planet_districts_prison_industrial_unity_produces_add = 1
+        planet_max_districts_add = 5
+        planet_buildings_cost_mult = 10000
+		planet_building_build_speed_mult = 2
+    }
+}
+
+devolved_civic_physics_psycho = {
+    possible = {
+        civics = {
+            value = devolved_civic_cheater_contract
+        }
+    }
+    modification = no
+
+	modifier = {
+		physics_tech_cost_mult = -2
+		society_tech_cost_mult = 20
+		engineering_tech_cost_mult = 20
+		country_society_research_produces_mult = -2
+		country_engineering_research_produces_mult = -2
+	}
+}
+
+devolved_civic_society_sociopath = {
+    possible = {
+        civics = {
+            value = devolved_civic_cheater_contract
+        }
+    }
+    modification = no
+
+	modifier = {
+		physics_tech_cost_mult = 20
+		society_tech_cost_mult = -2
+		engineering_tech_cost_mult = 20
+		country_physics_research_produces_mult = -2
+		country_engineering_research_produces_mult = -2
+	}
+}
+
+devolved_civic_engineering_evil_doer = {
+    possible = {
+        civics = {
+            value = devolved_civic_cheater_contract
+        }
+    }
+    modification = no
+
+	modifier = {
+		physics_tech_cost_mult = 20
+		society_tech_cost_mult = 20
+		engineering_tech_cost_mult = -2
+		country_physics_research_produces_mult = -2
+		country_society_research_produces_mult = -2
+	}
+}
+
+devolved_civic_physics_fandom = {
+    modification = no
+
+	modifier = {
+		physics_tech_cost_mult = -0.75
+		society_tech_cost_mult = 3
+		engineering_tech_cost_mult = 3
+		country_physics_tech_research_speed = 1
+		country_engineering_research_produces_mult = -2
+		country_physics_research_produces_mult = 1
+		country_society_research_produces_mult = -2
+	}
+}
+
+devolved_civic_society_sanctuary = {
+    modification = no
+
+	modifier = {
+		physics_tech_cost_mult = 3
+		engineering_tech_cost_mult = 3
+		society_tech_cost_mult = -0.75
+		country_society_tech_research_speed = 1
+		country_engineering_research_produces_mult = -2
+		country_physics_research_produces_mult = -2
+		country_society_research_produces_mult = 1
+	}
+}
+
+devolved_civic_exagerated_engineering = {
+    modification = no
+
+	modifier = {
+		physics_tech_cost_mult = 3
+		society_tech_cost_mult = 3
+		engineering_tech_cost_mult = -0.75
+		country_engineering_tech_research_speed = 1
+		country_engineering_research_produces_mult = 1
+		country_physics_research_produces_mult = -2
+		country_society_research_produces_mult = -2
+	}
+}
+
+devolved_civic_inflation_initiation_easy = {
+	modification = no
+
+	# Adds inflation event thing
+	modifier = {
+		country_produces_mult = 2
+	}
+}
+
+devolved_civic_inflation_initiation_medium = {
+	modification = no
+
+	# Adds inflation event thing
+	modifier = {
+		country_produces_mult = 2
+	}
+}
+
+devolved_civic_inflation_initiation_hard = {
+	modification = no
+
+	# Adds inflation event thing
+	modifier = {
+		country_produces_mult = 2
+	}
+}
+
+devloved_civic_superb_specimens = {
+
+	# Adds job type that increases specimen production
+	modifier = {
+		specimens_produces_mult = 0.2
+	}
+}
+
+devolved_civic_deflation_initiation = {
+	modification = no
+	modifier = {
+		country_produces_mult = -3
+		planet_stability_add = 40
+	}
+}
+
+devolved_civic_despotic_deposits = {
+
+	# Adds surveyor relic and job type to increase mining/research station output
+	modification = no
+	modifier = {
+		planet_max_districts_mult = -0.2
+		planet_stability_add = -10
+		planet_housing_mult = -0.1
+	}
+}
+
+devolved_civic_sexponential_growth = {
+	modification = no
+	possible = {
+		civics = {
+			value = devolved_civic_cheater_contract
+		}
+	}
+
+	# Exponential pop growth multipliers
+}
+
+devolved_civic_endgame_enhancers = {
+	modification = no
+
+	possible = {
+		civics = {
+			NOT = {
+				value = devolved_civic_mineral_hater
+			}
+		}
+	}
+
+	# Adds crazy end game ascension perks
+}
+
+devolved_civic_oligarchic_interest = {
+	modification = no
+
+	# Adds 1 effective councilor level every 10 years
+	modifier = {
+		planet_stability_add = -25
+	}
+}
+
+devolved_civic_oligarchic_obsession = {
+	modification = no
+
+	possible = {
+		civics = {
+			value = devolved_civic_cheater_contract
+		}
+	}
+
+	# Adds 1 effective councilor level per year
+	modifier = {
+		planet_stability_add = -25
+	}
+}
+
+devolved_civic_throughput_lovers = {
+	modification = no
+
+	# increases resource output and upkeep
+}
+
+devolved_civic_district_dynasty = {
+	modification = no
+	# Adds district district
+}
+
+devolved_civic_randivist_principles = {
+	modification = no
+	# Affected by triannual random events, ranging from crazy good to downright horrendous.
+}

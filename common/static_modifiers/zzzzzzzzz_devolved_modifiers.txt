@@ -1,0 +1,521 @@
+increasing_inflation_easy = {
+	planet_buildings_cost_mult = 0.04
+	megastructures_cost_mult = 0.04
+	station_gatherers_cost_mult = 0.04
+	station_researchers_cost_mult = 0.04
+	starbases_cost_mult = 0.04
+	ships_cost_mult = 0.04
+	armies_cost_mult = 0.04
+	edicts_cost_mult = 0.04
+	relics_cost_mult = 0.04
+	leaders_cost_mult = 0.04
+	tradition_cost_empire_size_mult = 0.04
+	country_exhibit_unlocking_cost_mult = 0.04
+	ships_upkeep_mult = 0.04
+	leaders_upkeep_mult = 0.04
+	planet_structures_upkeep_mult = 0.04
+	starbases_upkeep_mult = 0.04
+	edicts_upkeep_mult = 0.04
+	planet_jobs_upkeep_mult = 0.04
+	armies_upkeep_mult = 0.04
+	stations_upkeep_mult = 0.04
+	diplomacy_upkeep_mult = 0.04
+	operations_upkeep_mult = 0.04
+	planet_pops_upkeep_mult = 0.04
+}
+
+increasing_inflation_medium = {
+	planet_buildings_cost_mult = 0.08
+	megastructures_cost_mult = 0.08
+	station_gatherers_cost_mult = 0.08
+	station_researchers_cost_mult = 0.08
+	starbases_cost_mult = 0.08
+	ships_cost_mult = 0.08
+	armies_cost_mult = 0.08
+	edicts_cost_mult = 0.08
+	relics_cost_mult = 0.08
+	leaders_cost_mult = 0.08
+	tradition_cost_empire_size_mult = 0.08
+	country_exhibit_unlocking_cost_mult = 0.08
+	ships_upkeep_mult = 0.08
+	leaders_upkeep_mult = 0.08
+	planet_structures_upkeep_mult = 0.08
+	starbases_upkeep_mult = 0.08
+	edicts_upkeep_mult = 0.08
+	planet_jobs_upkeep_mult = 0.08
+	armies_upkeep_mult = 0.08
+	stations_upkeep_mult = 0.08
+	diplomacy_upkeep_mult = 0.08
+	operations_upkeep_mult = 0.08
+	planet_pops_upkeep_mult = 0.08
+}
+
+increasing_inflation_hard = {
+	planet_buildings_cost_mult = 0.12
+	megastructures_cost_mult = 0.12
+	station_gatherers_cost_mult = 0.12
+	station_researchers_cost_mult = 0.12
+	starbases_cost_mult = 0.12
+	ships_cost_mult = 0.12
+	armies_cost_mult = 0.12
+	edicts_cost_mult = 0.12
+	relics_cost_mult = 0.12
+	leaders_cost_mult = 0.12
+	tradition_cost_empire_size_mult = 0.12
+	country_exhibit_unlocking_cost_mult = 0.12
+	ships_upkeep_mult = 0.12
+	leaders_upkeep_mult = 0.12
+	planet_structures_upkeep_mult = 0.12
+	starbases_upkeep_mult = 0.12
+	edicts_upkeep_mult = 0.12
+	planet_jobs_upkeep_mult = 0.12
+	armies_upkeep_mult = 0.12
+	stations_upkeep_mult = 0.12
+	diplomacy_upkeep_mult = 0.12
+	operations_upkeep_mult = 0.12
+	planet_pops_upkeep_mult = 0.12
+}
+
+increasing_deflation = {
+	country_produces_mult = 0.05
+}
+
+sexponential_growth = {
+	pop_growth_speed = 0.1
+	pop_growth_from_immigration = 0.1
+	planet_pop_assembly_mult = 0.1
+	planet_pop_assembly_add = 0.2
+	planet_pop_assembly_organic_mult = 0.1
+	planet_pop_assembly_organic_add = 0.2
+}
+
+leader_leveling_slow = {
+	councilor_skill_add = 0.1
+}
+
+leader_leveling_fast = {
+	councilor_skill_add = 1
+}
+
+throughput_improved = {
+	planet_jobs_produces_mult = 0.1
+	planet_jobs_upkeep_mult = 0.1
+}
+
+
+
+# RANDOMIZATION MODIFIERS WRITE THESE WITH HALVED VALUES
+
+# Metallurgic mania
+random_event_modifier_A_1 = {
+	planet_metallurgists_alloys_produces_add = 6
+	planet_metallurgists_minerals_upkeep_add = -8
+	planet_metallurgists_produces_mult = 2
+}
+
+# Self Actualization
+random_event_modifier_B_1 = {
+	planet_amenities_add = 40
+	planet_stability_add = 10
+}
+
+# Artisan Overdrive
+random_event_modifier_C_1 = {
+	planet_artisans_consumer_goods_produces_add = 2
+	planet_artisans_energy_upkeep_add = 2
+}
+
+# Age of Stagnation
+random_event_modifier_D_1 = {
+	planet_researchers_physics_research_produces_add = -3
+	planet_researchers_society_research_produces_add = -3
+	planet_researchers_engineering_research_produces_add = -3
+}
+
+# Bloated Bureau
+random_event_modifier_F_1 = {
+	empire_size_mult = 50
+}
+
+# Upkeep Elimination
+random_event_modifier_A_2 = {
+	diplomacy_upkeep_mult = -4
+	pop_amenities_usage_mult = -4
+	planet_jobs_upkeep_mult = -4
+	planet_pops_upkeep_mult = -4
+	leaders_upkeep_mult = -4
+	ships_upkeep_mult = -4
+	starbases_upkeep_mult = -4
+	edicts_upkeep_mult = -4
+	planet_structures_upkeep_mult = -4
+	ships_cost_mult = -4
+}
+
+# Research Rushing
+random_event_modifier_B_2 = {
+	all_technology_research_speed = 0.5
+}
+
+# Trading Tradeoffs
+random_event_modifier_C_2 = {
+	trade_value_mult = 0.5
+	planet_clerks_unity_upkeep_add = 3
+	planet_traders_unity_upkeep_add = 3
+}
+
+# Economic Slog
+random_event_modifier_D_2 = {
+	country_produces_mult = -0.1
+}
+
+# Unemployment Epidemic
+random_event_modifier_F_2 = {
+	job_clerk_add = -20
+	job_farmer_add = -20
+	job_miner_add = -20
+	job_technician_add = -20
+	job_researcher_add = -20
+	job_bureaucrat_add = -20
+	job_foundry_add = -20
+	job_artisan_add = -20
+}
+
+# A is surveyor
+
+# Ruler Rhapsody
+random_event_modifier_B_3 = {
+	planet_jobs_ruler_produces_mult = 2
+}
+
+# Workers Wonderland
+random_event_modifier_C_3 = {
+	planet_jobs_worker_produces_mult = 1
+	pop_cat_worker_political_power = 4
+	planet_pops_upkeep_mult = 0.5
+	pop_housing_usage_mult = 0.5
+}
+
+# Factional Friction
+random_event_modifier_D_3 = {
+	faction_approval = -0.5
+	pop_factions_produces_mult = -1
+}
+
+# Councilor Incompetence
+random_event_modifier_F_3 = {
+	councilor_skill_add = -30
+}
+
+# Mother of all Megastructures
+random_event_modifier_A_4 = {
+	megastructures_produces_mult = 10
+}
+
+# Fertility Frenzy
+random_event_modifier_B_4 = {
+	pop_growth_speed = 1
+	planet_pop_assembly_organic_mult = 1
+	planet_pop_assembly_mult = 1
+}
+
+# Cooperian Captivation
+random_event_modifier_C_4 = {
+	job_devolved_cooperian_culturalist_add = 2
+}
+
+# Station Stagnation
+random_event_modifier_D_4 = {
+	station_gatherers_produces_mult = -2
+	station_researchers_produces_mult = -2
+}
+
+# Trust Bust
+random_event_modifier_F_4 = {
+	country_trust_cap_add = -2000
+}
+
+# Ascension Millenium
+random_event_modifier_A_5 = {
+	planetary_ascension_effect_mult = 15
+}
+
+# Edictarion Explosion
+random_event_modifier_B_5 = {
+	edicts_upkeep_mult = -0.6
+} 
+
+# Astral Awakening
+random_event_modifier_C_5 = {
+	country_physics_research_produces_mult = -0.3
+	monthly_trades_astral_threads_produces_add = 30
+}
+
+# Starbases are Stupid
+random_event_modifier_D_5 = {
+	country_starbase_capacity_mult = -0.5
+}
+
+# Envoy Evaporation
+random_event_modifier_F_5 = {
+	envoys_add = -200
+}
+
+# Councilor Craze
+random_event_modifier_A_6 = {
+	councilor_skill_add = 20
+}
+
+# Extra Ascension
+random_event_modifier_B_6 = {
+	ascension_perks_add = 1
+}
+
+# Ascension Investment
+random_event_modifier_C_6 = {
+	planetary_ascension_cost_mult = -0.5
+	society_tech_cost_mult = 0.25
+	physics_tech_cost_mult = 0.25
+	engineering_tech_cost_mult = 0.25
+}
+
+# Criminal Castle
+random_event_modifier_D_6 = {
+	planet_crime_mult = 5
+}
+
+# Leader Lukemia
+random_event_modifier_F_6 = {
+	leader_lifespan_add = -100
+}
+
+
+# Shoddy Ships
+random_event_modifier_C_7 = {
+	shipclass_military_build_speed_mult = -0.75
+	ships_cost_mult = -0.25
+}
+
+# Technological Descendency
+random_event_modifier_D_7 = {
+	all_technology_research_speed = -0.15
+	
+}
+
+# Civil Disobedience
+random_event_modifier_F_7 = {
+	planet_stability_add = -300
+}
+
+# Procrastinating Councilors
+random_event_modifier_A_8 = {
+	councilor_skill_add = 100
+	council_agenda_progress_speed = 5
+	council_agenda_finishing_effect_duration_mult = 5
+}
+
+# Leveling Leaders
+random_event_modifier_B_8 = {
+	species_leader_exp_gain = 2
+}
+
+# Production Malfunction
+random_event_modifier_C_8 = {
+	planet_technician_physics_research_produces_add = 3
+	planet_farmers_society_research_produces_add = 3
+	planet_miners_engineering_research_produces_add = 3
+	planet_clerks_unity_produces_add = 3
+	planet_districts_upkeep_mult = 1
+}
+
+# Construction Strike
+random_event_modifier_D_8 = {
+	planet_building_build_speed_mult = -2
+}
+
+# Battleships of Bankruptcy
+random_event_modifier_F_8 = {
+	ships_upkeep_mult = 100
+}
+
+# Production Boost
+random_event_modifier_A_9 = {
+	country_produces_mult = 1
+}
+
+# Station Initiation
+random_event_modifier_B_9 = {
+	station_gatherers_produces_mult = 5
+	station_researchers_produces_mult = 10
+}
+
+# Amazing Artifacts
+random_event_modifier_C_9 = {
+	country_society_research_produces_mult = -0.3
+	monthly_trades_minor_artifacts_produces_add = 30
+}
+
+# Leader Slot Slump
+random_event_modifier_D_9 = {
+	country_official_cap_add = -4
+	country_commander_cap_add = -4
+	country_scientist_cap_add = -4
+}
+
+# Plummeting Production
+random_event_modifier_F_9 = {
+	planet_farmers_food_produces_add = -5
+	planet_technician_energy_produces_add = -5
+	planet_administrators_unity_produces_add = -5
+	planet_researchers_physics_research_produces_add = -5
+	planet_researchers_society_research_produces_add = -5
+	planet_researchers_engineering_research_produces_add = -5
+	planet_metallurgists_alloys_produces_add = -5
+	planet_miners_minerals_produces_add = -5
+	planet_artisans_consumer_goods_produces_add = -5
+}
+
+# Unitarian Utopia
+random_event_modifier_A_10 = {
+	country_unity_produces_mult = 3
+}
+
+# Specimen Specialization
+random_event_modifier_B_10 = {
+	specimens_produces_mult = 5
+	planet_researchers_unity_produces_add = 1
+}
+
+# Nanite National Anthem
+random_event_modifier_C_10 = {
+	country_engineering_research_produces_mult = -0.3
+	monthly_trades_nanites_produces_add = 30
+}
+
+# Executive Decline
+random_event_modifier_D_10 = {
+	country_edict_fund_add = -100
+	edicts_upkeep_mult = 0.05
+}
+
+# Job Scramble
+random_event_modifier_F_10 = {
+	planet_farmers_alloys_produces_add = -4
+	planet_technician_minerals_produces_add = -4
+	planet_administrators_consumer_goods_produces_add = -4
+	planet_researchers_food_produces_add = -4
+	planet_researchers_energy_produces_add = -4
+	planet_researchers_unity_produces_add = -4
+	planet_metallurgists_physics_research_produces_add = -4
+	planet_miners_society_research_produces_add = -4
+	planet_artisans_engineering_research_produces_add = -4
+}
+
+# Research Radicalization
+random_event_modifier_A_11 = {
+	country_physics_research_produces_mult = 2
+	country_society_research_produces_mult = 2
+	country_engineering_research_produces_mult = 2
+}
+
+# Light Speed Jets
+random_event_modifier_B_11 = {
+	ship_speed_mult = 999
+	ship_windup_mult = -1
+}
+
+# Hard Labor
+random_event_modifier_C_11 = {
+	country_produces_mult = 0.5
+	pop_environment_tolerance = -0.5
+}
+
+# Zero Vision
+random_event_modifier_D_11 = {
+	country_unity_produces_mult = -0.1
+	pop_amenities_usage_mult = 0.05
+	pop_government_ethic_attraction = -0.5
+}
+
+# BIG POPS
+random_event_modifier_F_11 = {
+	pop_housing_usage_mult = 10
+}
+
+# Fleet Unification
+random_event_modifier_A_12 = {
+	ships_unity_upkeep_add = -12
+}
+
+# Production Boost Lite
+random_event_modifier_B_12 = {
+	country_produces_mult = 0.5
+}
+
+# Beefy Districts
+random_event_modifier_C_12 = {
+	country_size_districts_mult = 10
+		planet_districts_industrial_consumer_goods_produces_add = 1
+        planet_districts_industrial_volatile_motes_produces_add = 1
+        planet_districts_industrial_unity_produces_add = 1
+        planet_districts_industrial_alloys_produces_add = 1
+		planet_districts_industrial_engineering_research_produces_add = 10
+        planet_districts_farming_food_produces_add = 1
+        planet_districts_farming_unity_produces_add = 1
+		planet_districts_farming_society_research_produces_add = 10
+        planet_districts_mining_minerals_produces_add = 1
+        planet_districts_mining_unity_produces_add = 1
+        planet_districts_mining_exotic_gases_produces_add = 0.1
+        planet_districts_mining_rare_crystals_produces_add = 0.1
+		planet_districts_mining_engineering_research_produces_add = 10
+        planet_districts_generator_energy_produces_add = 1
+		planet_districts_generator_physics_research_produces_add = 10
+        planet_districts_resort_trade_value_produces_add = 10
+        planet_districts_prison_physics_research_produces_add = 10
+        planet_districts_prison_society_research_produces_add = 10
+        planet_districts_prison_engineering_research_produces_add = 10
+        planet_districts_prison_industrial_consumer_goods_produces_add = 1
+        planet_districts_prison_industrial_alloys_produces_add = 1
+        planet_districts_prison_industrial_unity_produces_add = 1
+}
+
+# Amateur Builders
+random_event_modifier_D_12 = {
+	megastructure_build_speed_mult = -0.25
+}
+
+# Army Annihilation
+random_event_modifier_F_12 = {
+	planet_army_build_speed_mult = -1
+        	army_damage_mult = -0.8
+        	army_defense_damage_mult = -0.8
+        	army_morale = -0.8
+        	army_health = -0.8
+        	army_collateral_damage_mult = -0.8
+        	army_attack_damage_mult = -0.8
+        	army_defense_morale_mult = -0.8
+        	army_defense_health_mult = -0.8
+}
+
+# A is Caffeine
+
+# B is Relic
+
+# More the Merrier
+random_event_modifier_C_13 = {
+	megastructure_build_speed_mult = -0.5
+	megastructures_cost_mult = -0.2
+	country_megastructure_build_cap_add = 4
+}
+
+# Offensive Falsehoods
+random_event_modifier_D_13 = {
+	empire_size_penalty_mult = 0.1
+	monthly_trades_influence_produces_add = -1
+}
+
+# Abandoned Ship
+random_event_modifier_F_13 = {
+	shipclass_starbase_hull_mult = 10
+	ship_hull_mult = -10
+	
+}

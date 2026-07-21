@@ -1,0 +1,80 @@
+ #common\traditions\zz_devolved_starbussy.txt
+
+ 	#1v 	2v
+	#3v	4v
+	
+	#end
+
+tr_starbussy_adopt = {
+	modifier = {
+		starbase_building_build_speed_mult = 1
+		starbase_module_build_speed_mult = 1
+		starbase_defense_platform_build_speed_mult = 1
+	}
+}
+
+tr_starbussy_finish = {
+	modifier = {
+		ascension_perks_add = 1
+		starbase_energy_production_modules_energy_produces_add = 2
+     		starbase_minerals_production_modules_minerals_produces_add = 2
+        	starbase_food_production_modules_food_produces_add = 2
+        	starbase_physics_research_modules_physics_research_produces_add = 2
+        	starbase_society_research_modules_society_research_produces_add = 2
+        	starbase_engineering_research_modules_engineering_research_produces_add = 2
+	}
+}
+
+tr_starbussy_cheap_defense = {
+	modifier = {
+		starbase_food_production_modules_alloys_produces_add = 0.5
+	}
+
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_starbussy_stronger_starbases = {
+	modifier = {
+		shipclass_starbase_damage_mult = 0.2
+		shipclass_starbase_hull_mult = 0.2
+	}
+
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_starbussy_cheapy_weapy = {
+	modifier = {
+		starbase_upgrade_cost_mult = -0.5
+		starbases_upkeep_mult = -0.25
+	}
+
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_starbussy_starbase_hardener = {
+	modifier = {
+		shipclass_military_station_armor_hardening_add = 0.2
+		shipclass_military_station_shield_hardening_add = 0.2
+	}
+
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_starbussy_defense_damage = {
+
+	modifier = {
+		shipclass_military_station_damage_mult = 0.5
+	}
+
+	ai_weight = {
+		factor = 1000
+	}
+}

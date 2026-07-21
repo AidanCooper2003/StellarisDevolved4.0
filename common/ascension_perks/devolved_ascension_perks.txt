@@ -1,0 +1,67 @@
+# NOTE: Make these incompatible with each other
+devolved_ap_diplomatic_destroyers = {
+	potential = {
+		has_civic = devolved_civic_endgame_enhancers
+	}
+
+	possible = {
+		custom_tooltip = {
+			fail_text = "Requires 18 previous ascension perks."
+			num_ascension_perks >= 18
+		}
+	}
+
+	modifier = {
+		diplo_action_acceptance_add = 3000
+		monthly_loyalty_from_subjects = 100
+		country_subject_integration_speed_add = 100
+		diplo_weight_council_mult = 1
+		diplomacy_upkeep_mult = -1
+	}
+}
+
+devolved_ap_merciless_military = {
+	potential = {
+		has_civic = devolved_civic_endgame_enhancers
+	}
+
+	possible = {
+		custom_tooltip = {
+			fail_text = "Requires 18 previous ascension perks."
+			num_ascension_perks >= 18
+		}
+	}
+
+	modifier = {
+		ship_hull_mult = 5
+		ship_weapon_range_mult = 1
+		jump_drive_cooldown = -0.99
+		country_naval_cap_mult = 5
+		ship_fire_rate_mult = 2
+		
+
+	}
+
+
+}
+
+devolved_ap_economic_engine = {
+	potential = {
+		has_civic = devolved_civic_endgame_enhancers
+	}
+
+	possible = {
+		custom_tooltip = {
+			fail_text = "Requires 18 previous ascension perks."
+			num_ascension_perks >= 18
+		}
+	}
+
+
+	modifier = {
+		country_produces_mult = 0.5
+		megastructures_produces_mult = 2
+		planet_max_districts_mult = 0.5
+		planetary_ascension_effect_mult = 1
+	}
+}

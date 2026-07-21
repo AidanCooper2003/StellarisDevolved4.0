@@ -1,0 +1,30 @@
+containerWindowType = {
+		name = "unitussy"
+		position = { x = 0 y = 25 }
+
+		containerWindowType = {
+			name = "tr_unitussy_tradition_1"
+			position = { x = 61 y = 55 }
+		}
+
+		containerWindowType = {
+			name = "tr_unitussy_tradition_2"
+			position = { x = 131 y = 55 }
+		}
+
+		containerWindowType = {
+			name = "tr_unitussy_tradition_3"
+			position = { x = 201 y = 55 }
+		}
+
+		containerWindowType = {
+			name = "tr_unitussy_tradition_4"
+			position = { x = 96 y = 125 }
+		}
+
+		containerWindowType = {
+			name = "tr_unitussy_tradition_5"
+			position = { x = 201 y = 125 }
+		}
+		# Don't put any container windows above this comment that shouldn't contain a tradition.
+	}

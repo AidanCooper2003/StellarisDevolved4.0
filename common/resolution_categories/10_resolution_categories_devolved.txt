@@ -1,0 +1,29 @@
+resolution_category_extinction = {
+    group = sg_resolutions
+    icon = GFX_resolution_purges
+
+    resolution_types = {
+        "resolution_project_extinction_repeal"
+        "resolution_project_extinction"
+    }
+}
+
+resolution_category_anarchy = {
+    group = sg_resolutions
+    icon = GFX_resolution_purges
+
+    resolution_types = {
+        "resolution_project_anarchy_repeal"
+        "resolution_project_anarchy"
+    }
+}
+
+resolution_category_poverty = {
+    group = sg_resolutions
+    icon = GFX_resolution_purges
+
+    resolution_types = {
+        "resolution_project_poverty_repeal"
+        "resolution_project_poverty"
+    }
+}

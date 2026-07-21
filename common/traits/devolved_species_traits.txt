@@ -1,0 +1,91 @@
+devolved_trait_l_machine = {
+	cost = -6
+
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+
+	modifier = {
+		army_damage_mult = -0.8
+		army_morale_damage_taken_mult = 2
+		planet_jobs_produces_mult = -0.2
+		habitability_ceil_add = -0.2
+		planet_jobs_physics_research_produces_mult = -0.2
+		planet_jobs_society_research_produces_mult = -0.2
+		planet_jobs_engineering_research_produces_mult = -0.2
+	}
+
+	slave_cost = {
+		energy = -2500
+	}
+
+	assembly_score = {
+		modifier = {
+			add = -3
+		}
+	}
+}
+
+
+devolved_trait_micro_influencer = {
+	cost = 2
+	allowed_archetypes = {
+		BIOLOGICAL LITHOID REPLICANT
+	}
+
+	modifier = {
+		pop_category_normal_resources_influence_produces_add = 0.01
+		planet_livestock_influence_add = 0.02
+	}
+
+	triggered_pop_modifier = {
+		pop_category_normal_resources_influence_produces_add = 0.01
+		planet_livestock_influence_add = 0.02
+	}
+
+	slave_cost = {
+		energy = 1000
+	}
+
+	assembly_score = {
+		modifier = {
+			add = 0.5
+		}
+	}
+}
+
+devolved_trait_mineral_despising = {
+	cost = -4
+	allowed_archetypes = {
+		BIOLOGICAL LITHOID REPLICANT
+	}
+
+	modifier = {
+		pop_category_normal_resources_minerals_produces_add = -1
+	}
+
+	triggered_pop_modifier = {
+		pop_category_normal_resources_minerals_produces_add = -1
+	}
+
+	slave_cost = {
+		energy = -5000
+	}
+
+	assembly_score = {
+		modifier = {
+			add = 0.5
+		}
+	}
+}
+
+devolved_trait_violent_depression = {
+	cost = -10
+	allowed_archetypes = {
+		BIOLOGICAL LITHOID REPLICANT
+	}
+
+	modifier = {
+		pop_amenities_usage_base = 1
+		pop_amenities_usage_mult = 1
+		pop_happiness = -1
+	}
+}

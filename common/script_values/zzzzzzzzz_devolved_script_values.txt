@@ -1,0 +1,4 @@
+years_since_start = {
+    base = 1
+    add = trigger:years_passed
+}

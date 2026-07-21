@@ -1,0 +1,117 @@
+building_game_design_college = {
+	base_buildtime = 540
+	base_cap_amount = 1
+	ai_estimate_without_unemployment = yes
+
+	category = research
+
+
+	potential = {
+		exists = owner
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+			has_modifier = crucible_colony
+		}
+		tec_ai_destroy_research_boosting_building = no
+		owner = { has_valid_civic = devolved_civic_god_is_a_gamer }
+	}
+
+	allow = {
+		has_major_upgraded_capital = yes
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 1500
+		}
+	}
+
+	planet_modifier = {
+		planet_priests_society_research_produces_add = 2
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_ethic = ethic_fanatic_spiritualist }
+		}
+		planet_priests_society_research_produces_add = 1
+	}
+
+	triggered_planet_modifier = {
+		job_devolved_game_designer_add = 1
+	}
+}
+
+building_cooperian_culture_center = {
+	base_buildtime = 720
+	base_cap_amount = 1
+	ai_estimate_without_unemployment = yes
+
+	category = research
+
+
+	potential = {
+		exists = owner
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+			has_modifier = crucible_colony
+		}
+		tec_ai_destroy_research_boosting_building = no
+		owner = { has_valid_civic = devolved_civic_cooperian_culture }
+	}
+
+	allow = {
+		has_major_upgraded_capital = yes
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 2000
+		}
+	}
+
+	triggered_planet_modifier = {
+		job_devolved_cooperian_culturalist_add = 2
+	}
+}
+
+building_cooperian_culture_complex = {
+	base_buildtime = 1080
+	base_cap_amount = 1
+	ai_estimate_without_unemployment = yes
+
+	category = research
+
+
+	potential = {
+		exists = owner
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+			has_modifier = crucible_colony
+		}
+		tec_ai_destroy_research_boosting_building = no
+		owner = { has_valid_civic = devolved_civic_cooperian_culture }
+	}
+
+	allow = {
+		has_major_upgraded_capital = yes
+		has_active_building = building_cooperian_culture_center
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 10000
+		}
+	}
+
+	triggered_planet_modifier = {
+		job_devolved_cooperian_culturalist_add = 6
+	}
+}

@@ -1,0 +1,41 @@
+rare_crystals_expenditure_edicts = {
+    resource = rare_crystals
+    type = expenditure
+    category = edicts
+
+    potential = {
+        always = yes
+    }
+
+    weight = {
+        weight = 0.2
+    }
+}
+
+exotic_gasses_expenditure_edicts = {
+    resource = rare_crystals
+    type = expenditure
+    category = edicts
+
+    potential = {
+        always = yes
+    }
+
+    weight = {
+        weight = 0.2
+    }
+}
+
+volatile_motes_expenditure_edicts = {
+    resource = rare_crystals
+    type = expenditure
+    category = edicts
+
+    potential = {
+        always = yes
+    }
+
+    weight = {
+        weight = 0.2
+    }
+}

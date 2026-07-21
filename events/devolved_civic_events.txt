@@ -1,0 +1,515 @@
+namespace = devolved_civic_events
+
+# Contingency Core from Majestic Megastructures
+country_event = {
+    id = devolved_civic_events.1
+    hide_window = yes
+    is_triggered_only = yes
+    trigger = {
+        is_country_type = default
+        has_civic = devolved_civic_majestic_megastructures
+    }
+    immediate = {
+        add_relic = r_contingency_core
+    }
+}
+
+# Inflation Updates
+country_event = {
+    id = devolved_civic_events.2
+    hide_window = yes
+    is_triggered_only = yes
+    trigger = {
+        is_country_type = default
+        has_civic = devolved_civic_inflation_initiation_easy
+    }
+
+    immediate = {
+        remove_modifier = increasing_inflation_easy
+        add_modifier = {
+            modifier = increasing_inflation_easy
+            multiplier = trigger:years_passed
+            years = 10
+        }
+    }
+}
+
+country_event = {
+    id = devolved_civic_events.3
+    hide_window = yes
+    is_triggered_only = yes
+    trigger = {
+        is_country_type = default
+        has_civic = devolved_civic_inflation_initiation_medium
+    }
+
+    immediate = {
+        remove_modifier = increasing_inflation_medium
+        add_modifier = {
+            modifier = increasing_inflation_medium
+            multiplier = trigger:years_passed
+            years = 10
+        }
+    }
+}
+
+country_event = {
+    id = devolved_civic_events.4
+    hide_window = yes
+    is_triggered_only = yes
+    trigger = {
+        is_country_type = default
+        has_civic = devolved_civic_inflation_initiation_hard
+    }
+
+    immediate = {
+        remove_modifier = increasing_inflation_hard
+        add_modifier = {
+            modifier = increasing_inflation_hard
+            multiplier = trigger:years_passed
+            years = 10
+        }
+    }
+}
+
+# Deflation Update
+country_event = {
+    id = devolved_civic_events.5
+    hide_window = yes
+    is_triggered_only = yes
+    trigger = {
+        is_country_type = default
+        has_civic = devolved_civic_deflation_initiation
+    }
+
+    immediate = {
+        remove_modifier = increasing_deflation
+        add_modifier = {
+            modifier = increasing_deflation
+            multiplier = trigger:years_passed
+            years = 10
+        }
+    }
+}
+
+
+# Add surveyor relics for despotic deposits
+country_event = {
+    id = devolved_civic_events.6
+    hide_window = yes
+    is_triggered_only = yes
+    trigger = {
+        is_country_type = default
+        has_civic = devolved_civic_despotic_deposits
+    }
+    immediate = {
+        add_relic = r_surveyor
+    }
+}
+
+# Sexponential Growth Update
+country_event = {
+    id = devolved_civic_events.7
+    hide_window = yes
+    is_triggered_only = yes
+    trigger = {
+        is_country_type = default
+        has_civic = devolved_civic_sexponential_growth
+    }
+
+    immediate = {
+        remove_modifier = sexponential_growth
+        add_modifier = {
+            modifier = sexponential_growth
+            multiplier = trigger:years_passed
+            years = 10
+        }
+    }
+}
+
+country_event = {
+    id = devolved_civic_events.8
+    hide_window = yes
+    is_triggered_only = yes
+    trigger = {
+        is_country_type = default
+        has_civic = devolved_civic_oligarchic_interest
+    }
+
+    immediate = {
+        remove_modifier = leader_leveling_slow
+        add_modifier = {
+            modifier = leader_leveling_slow
+            multiplier = trigger:years_passed
+            years = 10
+        }
+    }
+}
+
+country_event = {
+    id = devolved_civic_events.9
+    hide_window = yes
+    is_triggered_only = yes
+    trigger = {
+        is_country_type = default
+        has_civic = devolved_civic_oligarchic_obsession
+    }
+
+    immediate = {
+        remove_modifier = leader_leveling_fast
+        add_modifier = {
+            modifier = leader_leveling_fast
+            multiplier = trigger:years_passed
+            years = 10
+        }
+    }
+}
+
+
+# Yearly Surveyor Additional
+country_event = {
+    id = devolved_civic_events.10
+    hide_window = yes
+    is_triggered_only = yes
+    trigger = {
+        is_country_type = default
+        has_civic = devolved_civic_despotic_deposits
+    }
+
+    immediate = {
+        random_list = {
+				20 = { country_event = { id = story.335 } }
+				80 = {}
+			}
+    }
+}
+
+country_event = {
+    id = devolved_civic_events.11
+    hide_window = yes
+    is_triggered_only = yes
+    trigger = {
+        is_country_type = default
+        has_civic = devolved_civic_throughput_lovers
+    }
+
+    immediate = {
+        remove_modifier = throughput_improved
+        add_modifier = {
+            modifier = throughput_improved
+            multiplier = trigger:years_passed
+            years = 10
+        }
+    }
+}
+
+# Continue Randivist Loop and pick event
+country_event = {
+    id = devolved_civic_events.13
+    hide_window = yes
+    is_triggered_only = yes
+    trigger = {
+        is_country_type = default
+        has_civic = devolved_civic_randivist_principles
+    }
+
+    immediate = {
+        random_list = {
+                0 = {}
+                1 = { country_event = { id = devolved_random_events.1 } }
+				1 = { country_event = { id = devolved_random_events.2 } }
+                1 = { country_event = { id = devolved_random_events.3 } }
+                1 = { country_event = { id = devolved_random_events.4 } }
+                1 = { country_event = { id = devolved_random_events.5 } }
+                1 = { country_event = { id = devolved_random_events.6 } }
+                1 = { country_event = { id = devolved_random_events.7 } }
+				1 = { country_event = { id = devolved_random_events.8 } }
+                1 = { country_event = { id = devolved_random_events.9 } }
+                1 = { country_event = { id = devolved_random_events.10 } }
+                1 = { country_event = { id = devolved_random_events.11 } }
+                1 = { country_event = { id = devolved_random_events.12 } }
+                1 = { country_event = { id = devolved_random_events.13 } }
+                1 = { country_event = { id = devolved_random_events.14 } }
+                1 = { country_event = { id = devolved_random_events.15 } }
+                1 = { country_event = { id = devolved_random_events.16 } }
+                1 = { country_event = { id = devolved_random_events.17 } }
+                1 = { country_event = { id = devolved_random_events.18 } }
+                1 = { country_event = { id = devolved_random_events.19 } }
+                1 = { country_event = { id = devolved_random_events.20 } }
+                1 = { country_event = { id = devolved_random_events.21 } }
+                1 = { country_event = { id = devolved_random_events.22 } }
+                1 = { country_event = { id = devolved_random_events.23 } }
+                1 = { country_event = { id = devolved_random_events.24 } }
+                1 = { country_event = { id = devolved_random_events.25 } }
+                1 = { country_event = { id = devolved_random_events.26 } }
+                1 = { country_event = { id = devolved_random_events.27 } }
+                1 = { country_event = { id = devolved_random_events.28 } }
+                1 = { country_event = { id = devolved_random_events.29 } }
+                1 = { country_event = { id = devolved_random_events.30 } }
+                1 = { country_event = { id = devolved_random_events.31 } }
+                1 = { country_event = { id = devolved_random_events.32 } }
+                1 = { country_event = { id = devolved_random_events.33 } }
+                1 = { country_event = { id = devolved_random_events.34 } }
+                1 = { country_event = { id = devolved_random_events.35 } }
+                1 = { country_event = { id = devolved_random_events.36 } }
+                1 = { country_event = { id = devolved_random_events.37 } }
+                1 = { country_event = { id = devolved_random_events.38 } }
+                1 = { country_event = { id = devolved_random_events.39 } }
+                1 = { country_event = { id = devolved_random_events.40 } }
+                1 = { country_event = { id = devolved_random_events.41 } }
+                1 = { country_event = { id = devolved_random_events.42 } }
+                1 = { country_event = { id = devolved_random_events.43 } }
+                1 = { country_event = { id = devolved_random_events.44 } }
+                1 = { country_event = { id = devolved_random_events.45 } }
+                1 = { country_event = { id = devolved_random_events.46 } }
+                1 = { country_event = { id = devolved_random_events.47 } }
+                1 = { country_event = { id = devolved_random_events.48 } }
+                1 = { country_event = { id = devolved_random_events.49 } }
+                1 = { country_event = { id = devolved_random_events.50 } }
+                1 = { country_event = { id = devolved_random_events.51 } }
+                1 = { country_event = { id = devolved_random_events.52 } }
+                1 = { country_event = { id = devolved_random_events.53 } }
+                1 = { country_event = { id = devolved_random_events.54 } }
+                1 = { country_event = { id = devolved_random_events.55 } }
+                1 = { country_event = { id = devolved_random_events.56 } }
+                1 = { country_event = { id = devolved_random_events.57 } }
+                1 = { country_event = { id = devolved_random_events.58 } }
+                1 = { country_event = { id = devolved_random_events.59 } }
+                1 = { country_event = { id = devolved_random_events.60 } }
+                1 = { country_event = { id = devolved_random_events.61 } }
+                1 = { country_event = { id = devolved_random_events.62 } }
+                1 = { country_event = { id = devolved_random_events.63 } }
+                1 = { country_event = { id = devolved_random_events.64 } }
+                1 = { country_event = { id = devolved_random_events.65 } }
+                1 = { country_event = { id = devolved_random_events.65 } }
+                1 = { country_event = { id = devolved_random_events.66 } }
+                1 = { country_event = { id = devolved_random_events.67 } }
+                1 = { country_event = { id = devolved_random_events.68 } }
+                1 = { country_event = { id = devolved_random_events.69 } }
+                1 = { country_event = { id = devolved_random_events.70 } }
+			}
+    }
+}
+
+# Gain Exceptional Specimen Helper Event
+country_event = {
+    id = devolved_civic_events.14
+    hide_window = yes
+    is_triggered_only = yes
+    trigger = {
+        is_country_type = default
+    }
+
+    immediate = {
+        random_list = {
+                1 = { give_specimen = { key = altar_to_the_elder_one }}
+                1 = { give_specimen = { key = captain_ness_body  }}
+                1 = { give_specimen = { key = cetana_love }}
+                1 = { give_specimen = { key = claw_of_the_trickster }}
+                1 = { give_specimen = { key = crystal_sphere_fragments  }}
+                1 = { give_specimen = { key = data_on_infinity }}
+                1 = { give_specimen = { key = fossilized_vultaum_remains }}
+                1 = { give_specimen = { key = golden_phonograph_record  }}
+                1 = { give_specimen = { key = hyper_mulch }}
+                1 = { give_specimen = { key = last_mharin_kharin }}
+                1 = { give_specimen = { key = leviathan_scale  }}
+                1 = { give_specimen = { key = loopmail }}
+                1 = { give_specimen = { key = missile_lone_defender }}
+                1 = { give_specimen = { key = path_to_progress  }}
+                1 = { give_specimen = { key = perikan_tapico_jewel }}
+                1 = { give_specimen = { key = planet_vaccine }}
+                1 = { give_specimen = { key = psionic_entity_residue  }}
+                1 = { give_specimen = { key = robe_of_the_golden_broker }}
+                1 = { give_specimen = { key = rock_jellies }}
+                1 = { give_specimen = { key = rudari_death_laser_prototype  }}
+                1 = { give_specimen = { key = the_writer_sphere }}
+                1 = { give_specimen = { key = voidworm_heart }}
+                1 = { give_specimen = { key = ytterite_preserved_corpse  }}
+                1 = { give_specimen = { key = ytterite_kaleidoscopic_fascinator }}
+                1 = { give_specimen = { key = ytterite_royal_scepter }}
+			}
+    }
+}
+
+# Gain Good Relic Helper Event
+country_event = {
+    id = devolved_civic_events.15
+    hide_window = yes
+    is_triggered_only = yes
+    trigger = {
+        is_country_type = default
+    }
+
+    immediate = {
+        random_list = {
+                1 = {
+					add_relic = r_unbidden_warlock
+					modifier = {
+						factor = 0
+						has_relic = r_unbidden_warlock
+					}
+				}
+				1 = {
+					add_relic = r_prethoryn_queen
+					modifier = {
+						factor = 0
+						has_relic = r_prethoryn_queen
+					}
+				}
+				1 = {
+					add_relic = r_contingency_core
+					modifier = {
+						factor = 0
+						has_relic = r_contingency_core
+					}
+				}
+				1 = {
+					add_relic = r_cetanas_heart
+					modifier = {
+						factor = 0
+						has_relic = r_cetanas_heart
+					}
+				}
+				1 = {
+					add_relic = r_eternal_throne
+					modifier = {
+						factor = 0
+						has_relic = r_eternal_throne
+					}
+				}
+				1 = {
+					add_relic = r_odryskan_crystal
+					modifier = {
+						factor = 0
+						has_relic = r_odryskan_crystal
+					}
+				}
+				1 = {
+					add_relic = r_severed_head
+					modifier = {
+						factor = 0
+						has_relic = r_severed_head
+					}
+				}
+				1 = {
+					add_relic = r_dragon_trophy
+					modifier = {
+						factor = 0
+						has_relic = r_dragon_trophy	
+					}
+				}
+				1 = {
+					add_relic = r_war_forge
+					modifier = {
+						factor = 0
+						has_relic = r_war_forge
+					}
+				}
+				1 = {
+					add_relic = r_zro_crystal
+					modifier = {
+						factor = 0
+						has_relic = r_zro_crystal
+					}
+				}
+				1 = {
+					add_relic = r_continuum
+					modifier = {
+						factor = 0
+						has_relic = r_continuum
+					}
+				}
+				1 = {
+					add_relic = r_time_crystal
+					modifier = {
+						factor = 0
+						has_relic = r_time_crystal
+					}
+				}
+				1 = {
+					add_relic = r_vaporous_mega_orchid
+					modifier = {
+						factor = 0
+						has_relic = r_vaporous_mega_orchid
+					}
+				}
+				1 = {
+					add_relic = r_entangled_relay
+					modifier = {
+						factor = 0
+						has_relic = r_entangled_relay
+					}
+				}
+				1 = {
+					add_relic = r_executus_compendium
+					modifier = {
+						factor = 0
+						has_relic = r_executus_compendium
+					}
+				}
+				1 = {
+					add_relic = r_prototype_vir_core
+					modifier = {
+						factor = 0
+						has_relic = r_prototype_vir_core
+					}
+				}
+				1 = {
+					add_relic = r_propagandosphere
+					modifier = {
+						factor = 0
+						has_relic = r_propagandosphere
+					}
+				}
+				1 = {
+					add_relic = r_crystallinus_diffuser
+					modifier = {
+						factor = 0
+						has_relic = r_crystallinus_diffuser
+					}
+				}
+				1 = {
+					add_relic = r_everchanging_stone
+					modifier = {
+						factor = 0
+						has_relic = r_everchanging_stone
+					}
+				}
+				1 = {
+					add_relic = r_the_modularium
+					modifier = {
+						factor = 0
+						has_relic = r_the_modularium
+					}
+				}
+				1 = {
+					add_relic = r_wormhole_key
+					modifier = {
+						factor = 0
+						has_relic = r_wormhole_key
+					}
+				}
+				1 = {
+					add_relic = r_galatron
+					modifier = {
+						factor = 0
+						has_relic = r_galatron
+					}
+				}
+				1 = {
+					add_relic = r_surveyor
+					modifier = {
+						factor = 0
+						has_relic = r_surveyor
+					}
+				}
+				1 = {
+					add_relic = r_vacuum_flower
+					modifier = {
+						factor = 0
+						has_relic = r_vacuum_flower
+					}
+				}	
+			}
+    }
+}

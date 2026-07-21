@@ -1,0 +1,2527 @@
+namespace = devolved_random_events
+
+# Random Modifiers
+country_event = {
+	id = devolved_random_events.1
+	title = "Metallurgic Mania"
+	desc = "Metallurgic Mania: Your metallurgists are all now hyperefficient! (A)"
+
+
+	hide_window = no
+    is_triggered_only = yes
+    trigger = {
+        is_country_type = default
+        has_civic = devolved_civic_randivist_principles
+    }
+
+    immediate = {
+		
+		random_list = {
+			33 = {set_variable = {which = "effectduration" value = 5}}
+			33 = {set_variable = {which = "effectduration" value = 3}}
+		    33 = {set_variable = {which = "effectduration" value = 1}}
+			1 = {set_variable = {which = "effectduration" value = 25}}
+		}
+
+		random_list = {
+			50 = {set_variable = {which = "multipliercount" value = 1}}
+			24 = {set_variable = {which = "multipliercount" value = 0.5}}
+			24 = {set_variable = {which = "multipliercount" value = 2}}
+			2 = {set_variable = {which = "multipliercount" value = 10}}
+		}
+
+        add_modifier = {
+			modifier = random_event_modifier_A_1
+			multiplier = multipliercount
+			years = 3
+		}
+	}     
+}
+
+country_event = {
+	id = devolved_random_events.2
+	title = "Self Actualization"
+	desc = "Self Actualization: Your people have found great happiness internally! (B)"
+	hide_window = no
+    is_triggered_only = yes
+    trigger = {
+        is_country_type = default
+        has_civic = devolved_civic_randivist_principles
+    }
+
+    immediate = {
+		
+		random_list = {
+			33 = {set_variable = {which = "yearcount" value = 5}}
+			33 = {set_variable = {which = "yearcount" value = 3}}
+		    33 = {set_variable = {which = "yearcount" value = 1}}
+			1 = {set_variable = {which = "yearcount" value = 25}}
+		}
+
+		random_list = {
+			50 = {set_variable = {which = "multipliercount" value = 1}}
+			24 = {set_variable = {which = "multipliercount" value = 0.5}}
+			24 = {set_variable = {which = "multipliercount" value = 2}}
+			2 = {set_variable = {which = "multipliercount" value = 10}}
+		}
+
+        add_modifier = {
+			modifier = random_event_modifier_B_1
+			multiplier = multipliercount
+			years = 3
+		}
+	}     
+}
+
+country_event = {
+	id = devolved_random_events.3
+	title = "Artisan Overdrive"
+	desc = "Artisan Overdrive: Your artisans are working extra hard, at an increased price. (C)"
+	hide_window = no
+    is_triggered_only = yes
+    trigger = {
+        is_country_type = default
+        has_civic = devolved_civic_randivist_principles
+    }
+
+    immediate = {
+		
+		random_list = {
+			33 = {set_variable = {which = "yearcount" value = 5}}
+			33 = {set_variable = {which = "yearcount" value = 3}}
+		    33 = {set_variable = {which = "yearcount" value = 1}}
+			1 = {set_variable = {which = "yearcount" value = 25}}
+		}
+
+		random_list = {
+			50 = {set_variable = {which = "multipliercount" value = 1}}
+			24 = {set_variable = {which = "multipliercount" value = 0.5}}
+			24 = {set_variable = {which = "multipliercount" value = 2}}
+			2 = {set_variable = {which = "multipliercount" value = 10}}
+		}
+
+        add_modifier = {
+			modifier = random_event_modifier_C_1
+			multiplier = multipliercount
+			years = 3
+		}
+	}     
+}
+
+country_event = {
+	id = devolved_random_events.4
+	title = "Age of Stagnation"
+	desc = "Age of Stagnation: Your researchers have all hit roadblocks in their studies. (D)"
+	hide_window = no
+    is_triggered_only = yes
+    trigger = {
+        is_country_type = default
+        has_civic = devolved_civic_randivist_principles
+    }
+
+    immediate = {
+		
+		random_list = {
+			33 = {set_variable = {which = "yearcount" value = 5}}
+			33 = {set_variable = {which = "yearcount" value = 3}}
+		    33 = {set_variable = {which = "yearcount" value = 1}}
+			1 = {set_variable = {which = "yearcount" value = 25}}
+		}
+
+		random_list = {
+			50 = {set_variable = {which = "multipliercount" value = 1}}
+			24 = {set_variable = {which = "multipliercount" value = 0.5}}
+			24 = {set_variable = {which = "multipliercount" value = 2}}
+			2 = {set_variable = {which = "multipliercount" value = 10}}
+		}
+
+        add_modifier = {
+			modifier = random_event_modifier_D_1
+			multiplier = multipliercount
+			years = 3
+		}
+	}     
+}
+
+country_event = {
+	id = devolved_random_events.5
+	title = "Bloated Bureau"
+	desc = "Bloated Bureau: A chain reaction of failures in the central bureaucracy has led to massive failures in government programs. (F)"
+
+	hide_window = no
+    is_triggered_only = yes
+    trigger = {
+        is_country_type = default
+        has_civic = devolved_civic_randivist_principles
+    }
+
+    immediate = {
+		
+		random_list = {
+			33 = {set_variable = {which = "yearcount" value = 5}}
+			33 = {set_variable = {which = "yearcount" value = 3}}
+		    33 = {set_variable = {which = "yearcount" value = 1}}
+			1 = {set_variable = {which = "yearcount" value = 25}}
+		}
+
+		random_list = {
+			50 = {set_variable = {which = "multipliercount" value = 1}}
+			24 = {set_variable = {which = "multipliercount" value = 0.5}}
+			24 = {set_variable = {which = "multipliercount" value = 2}}
+			2 = {set_variable = {which = "multipliercount" value = 10}}
+		}
+
+        add_modifier = {
+			modifier = random_event_modifier_F_1
+			multiplier = multipliercount
+			years = 3
+		}
+	}     
+}
+
+country_event = {
+	id = devolved_random_events.6
+	title = "Upkeep Elimination"
+	desc = "Upkeep Elimination: Your people and structures have decided to take care of themselves for a bit! (A)"
+
+	hide_window = no
+    is_triggered_only = yes
+    trigger = {
+        is_country_type = default
+        has_civic = devolved_civic_randivist_principles
+    }
+
+    immediate = {
+		
+		random_list = {
+			33 = {set_variable = {which = "yearcount" value = 5}}
+			33 = {set_variable = {which = "yearcount" value = 3}}
+		    33 = {set_variable = {which = "yearcount" value = 1}}
+			1 = {set_variable = {which = "yearcount" value = 25}}
+		}
+
+		random_list = {
+			50 = {set_variable = {which = "multipliercount" value = 1}}
+			24 = {set_variable = {which = "multipliercount" value = 0.5}}
+			24 = {set_variable = {which = "multipliercount" value = 2}}
+			2 = {set_variable = {which = "multipliercount" value = 10}}
+		}
+
+        add_modifier = {
+			modifier = random_event_modifier_A_2
+			multiplier = multipliercount
+			years = 3
+		}
+	}     
+}
+
+country_event = {
+	id = devolved_random_events.7
+	title = "Research Rushing"
+	desc = "Research Rushing: Your researchers are all finding amazing breakthroughs! (B)"
+
+	hide_window = no
+    is_triggered_only = yes
+    trigger = {
+        is_country_type = default
+        has_civic = devolved_civic_randivist_principles
+    }
+
+    immediate = {
+		
+		random_list = {
+			33 = {set_variable = {which = "yearcount" value = 5}}
+			33 = {set_variable = {which = "yearcount" value = 3}}
+		    33 = {set_variable = {which = "yearcount" value = 1}}
+			1 = {set_variable = {which = "yearcount" value = 25}}
+		}
+
+		random_list = {
+			50 = {set_variable = {which = "multipliercount" value = 1}}
+			24 = {set_variable = {which = "multipliercount" value = 0.5}}
+			24 = {set_variable = {which = "multipliercount" value = 2}}
+			2 = {set_variable = {which = "multipliercount" value = 10}}
+		}
+
+        add_modifier = {
+			modifier = random_event_modifier_B_2
+			multiplier = multipliercount
+			years = 3
+		}
+	}     
+}
+
+country_event = {
+	id = devolved_random_events.8
+	title = "Trading Tradeoffs"
+	desc = "Trading Tradeoffs: The economy is booming, but the workers supporting it are feeling a little left behind. (C)"
+
+	hide_window = no
+    is_triggered_only = yes
+    trigger = {
+        is_country_type = default
+        has_civic = devolved_civic_randivist_principles
+    }
+
+    immediate = {
+		
+		random_list = {
+			33 = {set_variable = {which = "yearcount" value = 5}}
+			33 = {set_variable = {which = "yearcount" value = 3}}
+		    33 = {set_variable = {which = "yearcount" value = 1}}
+			1 = {set_variable = {which = "yearcount" value = 25}}
+		}
+
+		random_list = {
+			50 = {set_variable = {which = "multipliercount" value = 1}}
+			24 = {set_variable = {which = "multipliercount" value = 0.5}}
+			24 = {set_variable = {which = "multipliercount" value = 2}}
+			2 = {set_variable = {which = "multipliercount" value = 10}}
+		}
+
+        add_modifier = {
+			modifier = random_event_modifier_C_2
+			multiplier = multipliercount
+			years = 3
+		}
+	}     
+}
+
+country_event = {
+	id = devolved_random_events.9
+	title = "Economic Slog"
+	desc = "Economic Slog: Productivity is generally down across the board. (D)"
+
+	hide_window = no
+    is_triggered_only = yes
+    trigger = {
+        is_country_type = default
+        has_civic = devolved_civic_randivist_principles
+    }
+
+    immediate = {
+		
+		random_list = {
+			33 = {set_variable = {which = "yearcount" value = 5}}
+			33 = {set_variable = {which = "yearcount" value = 3}}
+		    33 = {set_variable = {which = "yearcount" value = 1}}
+			1 = {set_variable = {which = "yearcount" value = 25}}
+		}
+
+		random_list = {
+			50 = {set_variable = {which = "multipliercount" value = 1}}
+			24 = {set_variable = {which = "multipliercount" value = 0.5}}
+			24 = {set_variable = {which = "multipliercount" value = 2}}
+			2 = {set_variable = {which = "multipliercount" value = 10}}
+		}
+
+        add_modifier = {
+			modifier = random_event_modifier_D_2
+			multiplier = multipliercount
+			years = 3
+		}
+	}     
+}
+
+country_event = {
+	id = devolved_random_events.10
+	title = "Unemployment Epidemic"
+	desc = "Unemployment Epidemic: A series of major issues revolving around planetary infrastructure have lead to layoffs unheard of in history. (F)"
+	
+	hide_window = no
+    is_triggered_only = yes
+    trigger = {
+        is_country_type = default
+        has_civic = devolved_civic_randivist_principles
+    }
+
+    immediate = {
+		
+		random_list = {
+			33 = {set_variable = {which = "yearcount" value = 5}}
+			33 = {set_variable = {which = "yearcount" value = 3}}
+		    33 = {set_variable = {which = "yearcount" value = 1}}
+			1 = {set_variable = {which = "yearcount" value = 25}}
+		}
+
+		random_list = {
+			50 = {set_variable = {which = "multipliercount" value = 1}}
+			24 = {set_variable = {which = "multipliercount" value = 0.5}}
+			24 = {set_variable = {which = "multipliercount" value = 2}}
+			2 = {set_variable = {which = "multipliercount" value = 10}}
+		}
+
+        add_modifier = {
+			modifier = random_event_modifier_F_2
+			multiplier = multipliercount
+			years = 3
+		}
+	}     
+}
+
+# Mass Surveyor (A)
+country_event = {
+	id = devolved_random_events.11
+	title = "Treasure Troves"
+	desc = "Treasure Troves: A golden age of citizen-led surveying groups is leading to amazing deposit discoveries! (A)"
+	hide_window = no
+    is_triggered_only = yes
+    trigger = {
+        is_country_type = default
+        has_civic = devolved_civic_randivist_principles
+    }
+
+	immediate = {
+		country_event = { id = story.335 }
+		country_event = { id = story.335 }
+		country_event = { id = story.335 }
+		country_event = { id = story.335 }
+		country_event = { id = story.335 }
+		country_event = { id = story.335 years = 1}
+		country_event = { id = story.335 years = 1}
+		country_event = { id = story.335 years = 1}
+		country_event = { id = story.335 years = 1}
+		country_event = { id = story.335 years = 1}
+		country_event = { id = story.335 years = 2}
+		country_event = { id = story.335 years = 2}
+		country_event = { id = story.335 years = 2}
+		country_event = { id = story.335 years = 2}
+		country_event = { id = story.335 years = 2}
+	}
+}
+
+country_event = {
+	id = devolved_random_events.12
+	title = "Ruler Rhapsody"
+	desc = "Ruler Rhapsody: The elite feel greatful for their position in society, and are now doing their best to use their positions for good. (B)"
+
+	hide_window = no
+    is_triggered_only = yes
+    trigger = {
+        is_country_type = default
+        has_civic = devolved_civic_randivist_principles
+    }
+
+    immediate = {
+		
+		random_list = {
+			33 = {set_variable = {which = "yearcount" value = 5}}
+			33 = {set_variable = {which = "yearcount" value = 3}}
+		    33 = {set_variable = {which = "yearcount" value = 1}}
+			1 = {set_variable = {which = "yearcount" value = 25}}
+		}
+
+		random_list = {
+			50 = {set_variable = {which = "multipliercount" value = 1}}
+			24 = {set_variable = {which = "multipliercount" value = 0.5}}
+			24 = {set_variable = {which = "multipliercount" value = 2}}
+			2 = {set_variable = {which = "multipliercount" value = 10}}
+		}
+
+        add_modifier = {
+			modifier = random_event_modifier_B_3
+			multiplier = multipliercount
+			years = 3
+		}
+	}     
+}
+
+country_event = {
+	id = devolved_random_events.13
+	title = "Workers' Wonderland"
+	desc = "Workers' Wonderland: Your workers are putting in a lot more effort, but are also demanding far greater accommodations. (C)"
+
+	hide_window = no
+    is_triggered_only = yes
+    trigger = { 
+        is_country_type = default
+        has_civic = devolved_civic_randivist_principles
+    }
+
+    immediate = {
+		
+		random_list = {
+			33 = {set_variable = {which = "yearcount" value = 5}}
+			33 = {set_variable = {which = "yearcount" value = 3}}
+		    33 = {set_variable = {which = "yearcount" value = 1}}
+			1 = {set_variable = {which = "yearcount" value = 25}}
+		}
+
+		random_list = {
+			50 = {set_variable = {which = "multipliercount" value = 1}}
+			24 = {set_variable = {which = "multipliercount" value = 0.5}}
+			24 = {set_variable = {which = "multipliercount" value = 2}}
+			2 = {set_variable = {which = "multipliercount" value = 10}}
+		}
+
+        add_modifier = {
+			modifier = random_event_modifier_C_3
+			multiplier = multipliercount
+			years = 3
+		}
+	}     
+}
+
+country_event = {
+	id = devolved_random_events.14
+	title = "Factional Friction"
+	desc = "Factional Friction: All your political factions are growing very tired of your rule. (D)"
+
+	hide_window = no
+    is_triggered_only = yes
+    trigger = {
+        is_country_type = default
+        has_civic = devolved_civic_randivist_principles
+    }
+
+    immediate = {
+		
+		random_list = {
+			33 = {set_variable = {which = "yearcount" value = 5}}
+			33 = {set_variable = {which = "yearcount" value = 3}}
+		    33 = {set_variable = {which = "yearcount" value = 1}}
+			1 = {set_variable = {which = "yearcount" value = 25}}
+		}
+
+		random_list = {
+			50 = {set_variable = {which = "multipliercount" value = 1}}
+			24 = {set_variable = {which = "multipliercount" value = 0.5}}
+			24 = {set_variable = {which = "multipliercount" value = 2}}
+			2 = {set_variable = {which = "multipliercount" value = 10}}
+		}
+
+        add_modifier = {
+			modifier = random_event_modifier_D_3
+			multiplier = multipliercount
+			years = 3
+		}
+	}     
+}
+
+country_event = {
+	id = devolved_random_events.15
+	title = "Councilor Incompetence"
+	desc = "Councilor Incompetence: A new drug frequently used at council meetings for intelligence enhancement has gone wrong: All your councilors are now so stupid they're actively making your government worse! (F)"
+
+
+	hide_window = no
+    is_triggered_only = yes
+    trigger = {
+        is_country_type = default
+        has_civic = devolved_civic_randivist_principles
+    }
+
+    immediate = {
+		
+		random_list = {
+			33 = {set_variable = {which = "yearcount" value = 5}}
+			33 = {set_variable = {which = "yearcount" value = 3}}
+		    33 = {set_variable = {which = "yearcount" value = 1}}
+			1 = {set_variable = {which = "yearcount" value = 25}}
+		}
+
+		random_list = {
+			50 = {set_variable = {which = "multipliercount" value = 1}}
+			24 = {set_variable = {which = "multipliercount" value = 0.5}}
+			24 = {set_variable = {which = "multipliercount" value = 2}}
+			2 = {set_variable = {which = "multipliercount" value = 10}}
+		}
+
+        add_modifier = {
+			modifier = random_event_modifier_F_3
+			multiplier = multipliercount
+			years = 3
+		}
+	}     
+}
+
+country_event = {
+	id = devolved_random_events.16
+	title = "Mother of all Megastructures"
+	desc = "Mother of all Megastructures: All your megastructures are now more productive! (A)"
+
+	hide_window = no
+    is_triggered_only = yes
+    trigger = {
+        is_country_type = default
+        has_civic = devolved_civic_randivist_principles
+    }
+
+    immediate = {
+		
+		random_list = {
+			33 = {set_variable = {which = "yearcount" value = 5}}
+			33 = {set_variable = {which = "yearcount" value = 3}}
+		    33 = {set_variable = {which = "yearcount" value = 1}}
+			1 = {set_variable = {which = "yearcount" value = 25}}
+		}
+
+		random_list = {
+			50 = {set_variable = {which = "multipliercount" value = 1}}
+			24 = {set_variable = {which = "multipliercount" value = 0.5}}
+			24 = {set_variable = {which = "multipliercount" value = 2}}
+			2 = {set_variable = {which = "multipliercount" value = 10}}
+		}
+
+        add_modifier = {
+			modifier = random_event_modifier_A_4
+			multiplier = multipliercount
+			years = 3
+		}
+	}     
+}
+
+country_event = {
+	id = devolved_random_events.17
+	title = "Fertility Frenzy"
+	desc = "Fertility Frenzy: Lots more citizens will soon join your empire! (B)"
+
+	hide_window = no
+    is_triggered_only = yes
+    trigger = {
+        is_country_type = default
+        has_civic = devolved_civic_randivist_principles
+    }
+
+    immediate = {
+		
+		random_list = {
+			33 = {set_variable = {which = "yearcount" value = 5}}
+			33 = {set_variable = {which = "yearcount" value = 3}}
+		    33 = {set_variable = {which = "yearcount" value = 1}}
+			1 = {set_variable = {which = "yearcount" value = 25}}
+		}
+
+		random_list = {
+			50 = {set_variable = {which = "multipliercount" value = 1}}
+			24 = {set_variable = {which = "multipliercount" value = 0.5}}
+			24 = {set_variable = {which = "multipliercount" value = 2}}
+			2 = {set_variable = {which = "multipliercount" value = 10}}
+		}
+
+        add_modifier = {
+			modifier = random_event_modifier_B_4
+			multiplier = multipliercount
+			years = 3
+		}
+	}     
+}
+
+country_event = {
+	id = devolved_random_events.18
+	title = "Cooperian Captivation"
+	desc = "Cooperian Captivation: Some culture workers very dedicated to your empire's ethics have decided to found a cooperian culturalist center on your worlds! (C)"
+
+	hide_window = no
+    is_triggered_only = yes
+    trigger = {
+        is_country_type = default
+        has_civic = devolved_civic_randivist_principles
+    }
+
+    immediate = {
+		
+		random_list = {
+			33 = {set_variable = {which = "yearcount" value = 5}}
+			33 = {set_variable = {which = "yearcount" value = 3}}
+		    33 = {set_variable = {which = "yearcount" value = 1}}
+			1 = {set_variable = {which = "yearcount" value = 25}}
+		}
+
+		random_list = {
+			50 = {set_variable = {which = "multipliercount" value = 1}}
+			24 = {set_variable = {which = "multipliercount" value = 0.5}}
+			24 = {set_variable = {which = "multipliercount" value = 2}}
+			2 = {set_variable = {which = "multipliercount" value = 10}}
+		}
+
+        add_modifier = {
+			modifier = random_event_modifier_C_4
+			multiplier = multipliercount
+		}
+	}     
+}
+
+country_event = {
+	id = devolved_random_events.19
+	title = "Station Stagnation"
+	desc = "Station Stagnation: Your space stations are lagging behind in production. (D)"
+
+	hide_window = no
+    is_triggered_only = yes
+    trigger = {
+        is_country_type = default
+        has_civic = devolved_civic_randivist_principles
+    }
+
+    immediate = {
+		
+		random_list = {
+			33 = {set_variable = {which = "yearcount" value = 5}}
+			33 = {set_variable = {which = "yearcount" value = 3}}
+		    33 = {set_variable = {which = "yearcount" value = 1}}
+			1 = {set_variable = {which = "yearcount" value = 25}}
+		}
+
+		random_list = {
+			50 = {set_variable = {which = "multipliercount" value = 1}}
+			24 = {set_variable = {which = "multipliercount" value = 0.5}}
+			24 = {set_variable = {which = "multipliercount" value = 2}}
+			2 = {set_variable = {which = "multipliercount" value = 10}}
+		}
+
+        add_modifier = {
+			modifier = random_event_modifier_D_4
+			multiplier = multipliercount
+			years = 3
+		}
+	}     
+}
+
+country_event = {
+	id = devolved_random_events.20
+	title = "Trust Bust"
+	desc = "Trust Bust: Seems like no other empire can trust you for a while. (F)"
+
+	hide_window = no
+    is_triggered_only = yes
+    trigger = {
+        is_country_type = default
+        has_civic = devolved_civic_randivist_principles
+    }
+
+    immediate = {
+		
+		random_list = {
+			33 = {set_variable = {which = "yearcount" value = 5}}
+			33 = {set_variable = {which = "yearcount" value = 3}}
+		    33 = {set_variable = {which = "yearcount" value = 1}}
+			1 = {set_variable = {which = "yearcount" value = 25}}
+		}
+
+		random_list = {
+			50 = {set_variable = {which = "multipliercount" value = 1}}
+			24 = {set_variable = {which = "multipliercount" value = 0.5}}
+			24 = {set_variable = {which = "multipliercount" value = 2}}
+			2 = {set_variable = {which = "multipliercount" value = 10}}
+		}
+
+        add_modifier = {
+			modifier = random_event_modifier_F_4
+			multiplier = multipliercount
+			years = 3
+		}
+	}     
+}
+
+country_event = {
+	id = devolved_random_events.21
+	title = "Ascension Millenium"
+	desc = "Ascension Millenium: Corey Feldman is revolutionizing the universe with his sound, ascension effect is boosted! (A)"
+
+	hide_window = no
+    is_triggered_only = yes
+    trigger = {
+        is_country_type = default
+        has_civic = devolved_civic_randivist_principles
+    }
+
+    immediate = {
+		
+		random_list = {
+			33 = {set_variable = {which = "yearcount" value = 5}}
+			33 = {set_variable = {which = "yearcount" value = 3}}
+		    33 = {set_variable = {which = "yearcount" value = 1}}
+			1 = {set_variable = {which = "yearcount" value = 25}}
+		}
+
+		random_list = {
+			50 = {set_variable = {which = "multipliercount" value = 1}}
+			24 = {set_variable = {which = "multipliercount" value = 0.5}}
+			24 = {set_variable = {which = "multipliercount" value = 2}}
+			2 = {set_variable = {which = "multipliercount" value = 10}}
+		}
+
+        add_modifier = {
+			modifier = random_event_modifier_A_5
+			multiplier = multipliercount
+			years = 3
+		}
+	}     
+}
+
+country_event = {
+	id = devolved_random_events.22
+	title = "Edictarion Explosion"
+	desc = "Edictarion Explosion: Edicts now have a much cheaper upkeep. (B)"
+
+	hide_window = no
+    is_triggered_only = yes
+    trigger = {
+        is_country_type = default
+        has_civic = devolved_civic_randivist_principles
+    }
+
+    immediate = {
+		
+		random_list = {
+			33 = {set_variable = {which = "yearcount" value = 5}}
+			33 = {set_variable = {which = "yearcount" value = 3}}
+		    33 = {set_variable = {which = "yearcount" value = 1}}
+			1 = {set_variable = {which = "yearcount" value = 25}}
+		}
+
+		random_list = {
+			50 = {set_variable = {which = "multipliercount" value = 1}}
+			24 = {set_variable = {which = "multipliercount" value = 0.5}}
+			24 = {set_variable = {which = "multipliercount" value = 2}}
+			2 = {set_variable = {which = "multipliercount" value = 10}}
+		}
+
+        add_modifier = {
+			modifier = random_event_modifier_B_5
+			multiplier = multipliercount
+			years = 3
+		}
+	}     
+}
+
+country_event = {
+	id = devolved_random_events.23
+	title = "Astral Awakening"
+	desc = "Astral Awakening: Your physics researchers are all deciding to focus on finding new sources of astral threads instead of their assigned tasks. (C)"
+
+	hide_window = no
+    is_triggered_only = yes
+    trigger = {
+        is_country_type = default
+        has_civic = devolved_civic_randivist_principles
+    }
+
+    immediate = {
+		
+		random_list = {
+			33 = {set_variable = {which = "yearcount" value = 5}}
+			33 = {set_variable = {which = "yearcount" value = 3}}
+		    33 = {set_variable = {which = "yearcount" value = 1}}
+			1 = {set_variable = {which = "yearcount" value = 25}}
+		}
+
+		random_list = {
+			50 = {set_variable = {which = "multipliercount" value = 1}}
+			24 = {set_variable = {which = "multipliercount" value = 0.5}}
+			24 = {set_variable = {which = "multipliercount" value = 2}}
+			2 = {set_variable = {which = "multipliercount" value = 10}}
+		}
+
+        add_modifier = {
+			modifier = random_event_modifier_C_5
+			multiplier = multipliercount
+			years = 3
+		}
+	}     
+}
+
+country_event = {
+	id = devolved_random_events.24
+	title = "Starbases are Stupid"
+	desc = "Starbases are Stupid: A populist movement of land lovers are derriding our space stations and want them gone. (D)"
+
+	hide_window = no
+    is_triggered_only = yes
+    trigger = {
+        is_country_type = default
+        has_civic = devolved_civic_randivist_principles
+    }
+
+    immediate = {
+		
+		random_list = {
+			33 = {set_variable = {which = "yearcount" value = 5}}
+			33 = {set_variable = {which = "yearcount" value = 3}}
+		    33 = {set_variable = {which = "yearcount" value = 1}}
+			1 = {set_variable = {which = "yearcount" value = 25}}
+		}
+
+		random_list = {
+			50 = {set_variable = {which = "multipliercount" value = 1}}
+			24 = {set_variable = {which = "multipliercount" value = 0.5}}
+			24 = {set_variable = {which = "multipliercount" value = 2}}
+			2 = {set_variable = {which = "multipliercount" value = 10}}
+		}
+
+        add_modifier = {
+			modifier = random_event_modifier_D_5
+			multiplier = multipliercount
+			years = 3
+		}
+	}     
+}
+
+country_event = {
+	id = devolved_random_events.25
+	title = "Envoy Evaporation"
+	desc = "Envoy Evaporation: A rare disease only lethal to envoys has become a pandemic... (F)"
+
+	hide_window = no
+    is_triggered_only = yes
+    trigger = {
+        is_country_type = default
+        has_civic = devolved_civic_randivist_principles
+    }
+
+    immediate = {
+		
+		random_list = {
+			33 = {set_variable = {which = "yearcount" value = 5}}
+			33 = {set_variable = {which = "yearcount" value = 3}}
+		    33 = {set_variable = {which = "yearcount" value = 1}}
+			1 = {set_variable = {which = "yearcount" value = 25}}
+		}
+
+		random_list = {
+			50 = {set_variable = {which = "multipliercount" value = 1}}
+			24 = {set_variable = {which = "multipliercount" value = 0.5}}
+			24 = {set_variable = {which = "multipliercount" value = 2}}
+			2 = {set_variable = {which = "multipliercount" value = 10}}
+		}
+
+        add_modifier = {
+			modifier = random_event_modifier_F_5
+			multiplier = multipliercount
+			years = 3
+		}
+	}     
+}
+
+country_event = {
+	id = devolved_random_events.26
+	title = "Councilor Craze"
+	desc = "Councilor Craze: Your councilors are temporarily making all the best decisions they possibly could! (A)"
+
+	hide_window = no
+    is_triggered_only = yes
+    trigger = {
+        is_country_type = default
+        has_civic = devolved_civic_randivist_principles
+    }
+
+    immediate = {
+		
+		random_list = {
+			33 = {set_variable = {which = "yearcount" value = 5}}
+			33 = {set_variable = {which = "yearcount" value = 3}}
+		    33 = {set_variable = {which = "yearcount" value = 1}}
+			1 = {set_variable = {which = "yearcount" value = 25}}
+		}
+
+		random_list = {
+			50 = {set_variable = {which = "multipliercount" value = 1}}
+			24 = {set_variable = {which = "multipliercount" value = 0.5}}
+			24 = {set_variable = {which = "multipliercount" value = 2}}
+			2 = {set_variable = {which = "multipliercount" value = 10}}
+		}
+
+        add_modifier = {
+			modifier = random_event_modifier_A_6
+			multiplier = multipliercount
+			years = 3
+		}
+	}     
+}
+
+country_event = {
+	id = devolved_random_events.27
+	title = "Extra Ascension"
+	desc = "Extra Ascension: Your society is progressing to such a degree that you (probably) permanently unlocked an extra ascension perk slot! (B)"
+
+	hide_window = no
+    is_triggered_only = yes
+    trigger = {
+        is_country_type = default
+        has_civic = devolved_civic_randivist_principles
+    }
+
+    immediate = {
+		
+		random_list = {
+			33 = {set_variable = {which = "yearcount" value = 5}}
+			33 = {set_variable = {which = "yearcount" value = 3}}
+		    33 = {set_variable = {which = "yearcount" value = 1}}
+			1 = {set_variable = {which = "yearcount" value = 25}}
+		}
+
+		random_list = {
+			50 = {set_variable = {which = "multipliercount" value = 1}}
+			24 = {set_variable = {which = "multipliercount" value = 0.5}}
+			24 = {set_variable = {which = "multipliercount" value = 2}}
+			2 = {set_variable = {which = "multipliercount" value = 10}}
+		}
+
+        add_modifier = {
+			modifier = random_event_modifier_B_6
+			multiplier = multipliercount
+		}
+	}     
+}
+
+country_event = {
+	id = devolved_random_events.28
+	title = "Ascension Investment"
+	desc = "Ascension Investment: Your philosophers are currently overtaking researchers in the public eye, making planetary ascension easier at the cost of your technological progression. (C)"
+
+	hide_window = no
+    is_triggered_only = yes
+    trigger = {
+        is_country_type = default
+        has_civic = devolved_civic_randivist_principles
+    }
+
+    immediate = {
+		
+		random_list = {
+			33 = {set_variable = {which = "yearcount" value = 5}}
+			33 = {set_variable = {which = "yearcount" value = 3}}
+		    33 = {set_variable = {which = "yearcount" value = 1}}
+			1 = {set_variable = {which = "yearcount" value = 25}}
+		}
+
+		random_list = {
+			50 = {set_variable = {which = "multipliercount" value = 1}}
+			24 = {set_variable = {which = "multipliercount" value = 0.5}}
+			24 = {set_variable = {which = "multipliercount" value = 2}}
+			2 = {set_variable = {which = "multipliercount" value = 10}}
+		}
+
+        add_modifier = {
+			modifier = random_event_modifier_C_6
+			multiplier = multipliercount
+			years = 3
+		}
+	}     
+}
+
+country_event = {
+	id = devolved_random_events.29
+	title = "Criminal Castle"
+	desc = "Criminal Castle: A castle of celestial proportion full of criminals has been spotted and could spread to your planets wreaking havoc... (D)"
+
+	hide_window = no
+    is_triggered_only = yes
+    trigger = {
+        is_country_type = default
+        has_civic = devolved_civic_randivist_principles
+    }
+
+    immediate = {
+		
+		random_list = {
+			33 = {set_variable = {which = "yearcount" value = 5}}
+			33 = {set_variable = {which = "yearcount" value = 3}}
+		    33 = {set_variable = {which = "yearcount" value = 1}}
+			1 = {set_variable = {which = "yearcount" value = 25}}
+		}
+
+		random_list = {
+			50 = {set_variable = {which = "multipliercount" value = 1}}
+			24 = {set_variable = {which = "multipliercount" value = 0.5}}
+			24 = {set_variable = {which = "multipliercount" value = 2}}
+			2 = {set_variable = {which = "multipliercount" value = 10}}
+		}
+
+        add_modifier = {
+			modifier = random_event_modifier_D_6
+			multiplier = multipliercount
+			years = 3
+		}
+	}     
+}
+
+
+
+country_event = {
+	id = devolved_random_events.30
+	title = "Leader Lukemia"
+	desc = "Leader Lukemia: A rare form of cancer has afflicted all of your leaders, greatly reducing their lifespans. (F)"
+
+	hide_window = no
+    is_triggered_only = yes
+    trigger = {
+        is_country_type = default
+        has_civic = devolved_civic_randivist_principles
+    }
+
+    immediate = {
+		
+		random_list = {
+			33 = {set_variable = {which = "yearcount" value = 5}}
+			33 = {set_variable = {which = "yearcount" value = 3}}
+		    33 = {set_variable = {which = "yearcount" value = 1}}
+			1 = {set_variable = {which = "yearcount" value = 25}}
+		}
+
+		random_list = {
+			50 = {set_variable = {which = "multipliercount" value = 1}}
+			24 = {set_variable = {which = "multipliercount" value = 0.5}}
+			24 = {set_variable = {which = "multipliercount" value = 2}}
+			2 = {set_variable = {which = "multipliercount" value = 10}}
+		}
+
+        add_modifier = {
+			modifier = random_event_modifier_F_6
+			multiplier = multipliercount
+			years = 3
+		}
+	}     
+}
+
+country_event = {
+	id = devolved_random_events.31
+	title = "Delicious Deposits"
+	desc = "Delicious Deposit: An underground vault filled with all manner of superb substances were found on your capital! They don't work offworld, but they will greatly improve your capital! (A)"
+
+	hide_window = no
+    is_triggered_only = yes
+    trigger = {
+        is_country_type = default
+        has_civic = devolved_civic_randivist_principles
+    }
+
+    immediate = {
+		
+		random_list = {
+			33 = {set_variable = {which = "yearcount" value = 5}}
+			33 = {set_variable = {which = "yearcount" value = 3}}
+		    33 = {set_variable = {which = "yearcount" value = 1}}
+			1 = {set_variable = {which = "yearcount" value = 25}}
+		}
+		capital_scope = {
+			random_list = {
+				50 = { add_deposit = d_delicious_deposit add_deposit = d_delicious_deposit }
+				24 = { add_deposit = d_delicious_deposit  }
+				24 = { add_deposit = d_delicious_deposit add_deposit = d_delicious_deposit add_deposit = d_delicious_deposit add_deposit = d_delicious_deposit }
+				2 = { add_deposit = d_delicious_deposit add_deposit = d_delicious_deposit add_deposit = d_delicious_deposit add_deposit = d_delicious_deposit add_deposit = d_delicious_deposit add_deposit = d_delicious_deposit add_deposit = d_delicious_deposit add_deposit = d_delicious_deposit add_deposit = d_delicious_deposit add_deposit = d_delicious_deposit add_deposit = d_delicious_deposit add_deposit = d_delicious_deposit add_deposit = d_delicious_deposit add_deposit = d_delicious_deposit add_deposit = d_delicious_deposit add_deposit = d_delicious_deposit add_deposit = d_delicious_deposit add_deposit = d_delicious_deposit add_deposit = d_delicious_deposit add_deposit = d_delicious_deposit }
+		}
+		}
+
+
+	}     
+}
+
+country_event = {
+	id = devolved_random_events.32
+	title = "Planetation Creation"
+	desc = "Planetation Creation: A new habitable world has appeared in your capital system! (B)"
+
+	hide_window = no
+    is_triggered_only = yes
+    trigger = {
+        is_country_type = default
+        has_civic = devolved_civic_randivist_principles
+    }
+
+    immediate = {
+		
+		random_list = {
+			33 = {set_variable = {which = "yearcount" value = 5}}
+			33 = {set_variable = {which = "yearcount" value = 3}}
+		    33 = {set_variable = {which = "yearcount" value = 1}}
+			1 = {set_variable = {which = "yearcount" value = 25}}
+		}
+
+		capital_scope.solar_system = {
+			random_list = {
+				50 = {spawn_planet = {
+						class = pc_gaia
+						orbit_angle_offset = 90
+						orbit_location = yes
+						orbit_distance_offset = 10
+						size = 10
+						init_effect = {
+							set_planet_flag = colony_event
+							prevent_anomaly = yes
+							set_name = "Randivist Orb"
+						}
+					}}
+				24 = {spawn_planet = {
+						class = pc_nuked
+						orbit_angle_offset = 90
+						orbit_location = yes
+						orbit_distance_offset = 10
+						size = 10
+						init_effect = {
+							set_planet_flag = colony_event
+							prevent_anomaly = yes
+							set_name = "Randivist Remains"
+						}
+					}}
+				24 = {spawn_planet = {
+						class = pc_gaia
+						orbit_angle_offset = 90
+						orbit_location = yes
+						orbit_distance_offset = 10
+						size = 15
+						init_effect = {
+							set_planet_flag = colony_event
+							prevent_anomaly = yes
+							set_name = "Randivist Jewel"
+						}
+					}}
+				2 = {spawn_planet = {
+						class = pc_gaia
+						orbit_angle_offset = 90
+						orbit_location = yes
+						orbit_distance_offset = 10
+						size = 50
+						init_effect = {
+							set_planet_flag = colony_event
+							prevent_anomaly = yes
+							set_name = "Randivist Perfection"
+						}
+					}}
+			}
+		}
+	}     
+}
+
+country_event = {
+	id = devolved_random_events.33
+	title = "Shoddy Ships"
+	desc = "Shoddy Ships: Ships are now much cheaper but due to their shoddyness, take longer to assemble correctly. (C)"
+
+	hide_window = no
+    is_triggered_only = yes
+    trigger = {
+        is_country_type = default
+        has_civic = devolved_civic_randivist_principles
+    }
+
+    immediate = {
+		
+		random_list = {
+			33 = {set_variable = {which = "yearcount" value = 5}}
+			33 = {set_variable = {which = "yearcount" value = 3}}
+		    33 = {set_variable = {which = "yearcount" value = 1}}
+			1 = {set_variable = {which = "yearcount" value = 25}}
+		}
+
+		random_list = {
+			50 = {set_variable = {which = "multipliercount" value = 1}}
+			24 = {set_variable = {which = "multipliercount" value = 0.5}}
+			24 = {set_variable = {which = "multipliercount" value = 2}}
+			2 = {set_variable = {which = "multipliercount" value = 10}}
+		}
+
+        add_modifier = {
+			modifier = random_event_modifier_C_7
+			multiplier = multipliercount
+			years = 3
+		}
+	}     
+}
+
+country_event = {
+	id = devolved_random_events.34
+	title = "Technological Descendency"
+	desc = "Technological Descendency: Education has eroded and made the population dumber permanently. (D)"
+
+	hide_window = no
+    is_triggered_only = yes
+    trigger = {
+        is_country_type = default
+        has_civic = devolved_civic_randivist_principles
+    }
+
+    immediate = {
+		
+		random_list = {
+			33 = {set_variable = {which = "yearcount" value = 5}}
+			33 = {set_variable = {which = "yearcount" value = 3}}
+		    33 = {set_variable = {which = "yearcount" value = 1}}
+			1 = {set_variable = {which = "yearcount" value = 25}}
+		}
+
+		random_list = {
+			50 = {set_variable = {which = "multipliercount" value = 1}}
+			24 = {set_variable = {which = "multipliercount" value = 0.5}}
+			24 = {set_variable = {which = "multipliercount" value = 2}}
+			2 = {set_variable = {which = "multipliercount" value = 10}}
+		}
+
+        add_modifier = {
+			modifier = random_event_modifier_D_7
+			multiplier = multipliercount
+		}
+	}     
+}
+
+country_event = {
+	id = devolved_random_events.35
+	title = "Civil Disobedience"
+	desc = "Civil Disobedience: Society is crumbling. (F)"
+
+	hide_window = no
+    is_triggered_only = yes
+    trigger = {
+        is_country_type = default
+        has_civic = devolved_civic_randivist_principles
+    }
+
+    immediate = {
+		
+		random_list = {
+			33 = {set_variable = {which = "yearcount" value = 5}}
+			33 = {set_variable = {which = "yearcount" value = 3}}
+		    33 = {set_variable = {which = "yearcount" value = 1}}
+			1 = {set_variable = {which = "yearcount" value = 25}}
+		}
+
+		random_list = {
+			50 = {set_variable = {which = "multipliercount" value = 1}}
+			24 = {set_variable = {which = "multipliercount" value = 0.5}}
+			24 = {set_variable = {which = "multipliercount" value = 2}}
+			2 = {set_variable = {which = "multipliercount" value = 10}}
+		}
+
+        add_modifier = {
+			modifier = random_event_modifier_F_7
+			multiplier = multipliercount
+			years = 3
+		}
+	}     
+}
+
+country_event = {
+	id = devolved_random_events.36
+	title = "Procrastinating Councilors"
+	desc = "Councilors were procrastinating, to catch up on their work, they are putting their full speed towards leveling up and passing agendas. (A)"
+
+	hide_window = no
+    is_triggered_only = yes
+    trigger = {
+        is_country_type = default
+        has_civic = devolved_civic_randivist_principles
+    }
+
+    immediate = {
+		
+		random_list = {
+			33 = {set_variable = {which = "yearcount" value = 5}}
+			33 = {set_variable = {which = "yearcount" value = 3}}
+		    33 = {set_variable = {which = "yearcount" value = 1}}
+			1 = {set_variable = {which = "yearcount" value = 25}}
+		}
+
+		random_list = {
+			50 = {set_variable = {which = "multipliercount" value = 1}}
+			24 = {set_variable = {which = "multipliercount" value = 0.5}}
+			24 = {set_variable = {which = "multipliercount" value = 2}}
+			2 = {set_variable = {which = "multipliercount" value = 10}}
+		}
+
+        add_modifier = {
+			modifier = random_event_modifier_A_8
+			multiplier = multipliercount
+			years = 3
+		}
+	}     
+}
+
+country_event = {
+	id = devolved_random_events.37
+	title = "Leveling Leaders"
+	desc = "Leaders are now given more training and level up much faster for 3 years! (B)"
+
+	hide_window = no
+    is_triggered_only = yes
+    trigger = {
+        is_country_type = default
+        has_civic = devolved_civic_randivist_principles
+    }
+
+    immediate = {
+		
+		random_list = {
+			33 = {set_variable = {which = "yearcount" value = 5}}
+			33 = {set_variable = {which = "yearcount" value = 3}}
+		    33 = {set_variable = {which = "yearcount" value = 1}}
+			1 = {set_variable = {which = "yearcount" value = 25}}
+		}
+
+		random_list = {
+			50 = {set_variable = {which = "multipliercount" value = 1}}
+			24 = {set_variable = {which = "multipliercount" value = 0.5}}
+			24 = {set_variable = {which = "multipliercount" value = 2}}
+			2 = {set_variable = {which = "multipliercount" value = 10}}
+		}
+
+        add_modifier = {
+			modifier = random_event_modifier_B_8
+			multiplier = multipliercount
+			years = 3
+		}
+	}     
+}
+
+country_event = {
+	id = devolved_random_events.38
+	title = "Production Malfunction"
+	desc = "Jobs produce different types of resources, with a higher upkeep of course! (C)"
+
+	hide_window = no
+    is_triggered_only = yes
+    trigger = {
+        is_country_type = default
+        has_civic = devolved_civic_randivist_principles
+    }
+
+    immediate = {
+		
+		random_list = {
+			33 = {set_variable = {which = "yearcount" value = 5}}
+			33 = {set_variable = {which = "yearcount" value = 3}}
+		    33 = {set_variable = {which = "yearcount" value = 1}}
+			1 = {set_variable = {which = "yearcount" value = 25}}
+		}
+
+		random_list = {
+			50 = {set_variable = {which = "multipliercount" value = 1}}
+			24 = {set_variable = {which = "multipliercount" value = 0.5}}
+			24 = {set_variable = {which = "multipliercount" value = 2}}
+			2 = {set_variable = {which = "multipliercount" value = 10}}
+		}
+
+        add_modifier = {
+			modifier = random_event_modifier_C_8
+			multiplier = multipliercount
+			years = 3
+		}
+	}     
+}
+
+country_event = {
+	id = devolved_random_events.39
+	title = "Construction Strike"
+	desc = "The construction workers are on strike, and therefore build speed speed is much lower! (D)"
+
+	hide_window = no
+    is_triggered_only = yes
+    trigger = {
+        is_country_type = default
+        has_civic = devolved_civic_randivist_principles
+    }
+
+    immediate = {
+		
+		random_list = {
+			33 = {set_variable = {which = "yearcount" value = 5}}
+			33 = {set_variable = {which = "yearcount" value = 3}}
+		    33 = {set_variable = {which = "yearcount" value = 1}}
+			1 = {set_variable = {which = "yearcount" value = 25}}
+		}
+
+		random_list = {
+			50 = {set_variable = {which = "multipliercount" value = 1}}
+			24 = {set_variable = {which = "multipliercount" value = 0.5}}
+			24 = {set_variable = {which = "multipliercount" value = 2}}
+			2 = {set_variable = {which = "multipliercount" value = 10}}
+		}
+
+        add_modifier = {
+			modifier = random_event_modifier_D_8
+			multiplier = multipliercount
+			years = 3
+		}
+	}     
+}
+
+country_event = {
+	id = devolved_random_events.40
+	title = "Battleships of Bankruptcy"
+	desc = "Good luck paying for those. (F)"
+
+	hide_window = no
+    is_triggered_only = yes
+    trigger = {
+        is_country_type = default
+        has_civic = devolved_civic_randivist_principles
+    }
+
+    immediate = {
+		
+		random_list = {
+			33 = {set_variable = {which = "yearcount" value = 5}}
+			33 = {set_variable = {which = "yearcount" value = 3}}
+		    33 = {set_variable = {which = "yearcount" value = 1}}
+			1 = {set_variable = {which = "yearcount" value = 25}}
+		}
+
+		random_list = {
+			50 = {set_variable = {which = "multipliercount" value = 1}}
+			24 = {set_variable = {which = "multipliercount" value = 0.5}}
+			24 = {set_variable = {which = "multipliercount" value = 2}}
+			2 = {set_variable = {which = "multipliercount" value = 10}}
+		}
+
+        add_modifier = {
+			modifier = random_event_modifier_F_8
+			multiplier = multipliercount
+			years = 3
+		}
+	}     
+}
+
+country_event = {
+	id = devolved_random_events.41
+	title = "Production Boost"
+	desc = "A technology boost has caused an increase in empire output! (A)"
+
+	hide_window = no
+    is_triggered_only = yes
+    trigger = {
+        is_country_type = default
+        has_civic = devolved_civic_randivist_principles
+    }
+
+    immediate = {
+		
+		random_list = {
+			33 = {set_variable = {which = "yearcount" value = 5}}
+			33 = {set_variable = {which = "yearcount" value = 3}}
+		    33 = {set_variable = {which = "yearcount" value = 1}}
+			1 = {set_variable = {which = "yearcount" value = 25}}
+		}
+
+		random_list = {
+			50 = {set_variable = {which = "multipliercount" value = 1}}
+			24 = {set_variable = {which = "multipliercount" value = 0.5}}
+			24 = {set_variable = {which = "multipliercount" value = 2}}
+			2 = {set_variable = {which = "multipliercount" value = 10}}
+		}
+
+        add_modifier = {
+			modifier = random_event_modifier_A_9
+			multiplier = multipliercount
+			years = 3
+		}
+	}     
+}
+
+country_event = {
+	id = devolved_random_events.42
+	title = "Station Initiation"
+	desc = "Research and Mining Stations are temporarily put on high gear! (B)"
+
+	hide_window = no
+    is_triggered_only = yes
+    trigger = {
+        is_country_type = default
+        has_civic = devolved_civic_randivist_principles
+    }
+
+    immediate = {
+		
+		random_list = {
+			33 = {set_variable = {which = "yearcount" value = 5}}
+			33 = {set_variable = {which = "yearcount" value = 3}}
+		    33 = {set_variable = {which = "yearcount" value = 1}}
+			1 = {set_variable = {which = "yearcount" value = 25}}
+		}
+
+		random_list = {
+			50 = {set_variable = {which = "multipliercount" value = 1}}
+			24 = {set_variable = {which = "multipliercount" value = 0.5}}
+			24 = {set_variable = {which = "multipliercount" value = 2}}
+			2 = {set_variable = {which = "multipliercount" value = 10}}
+		}
+
+        add_modifier = {
+			modifier = random_event_modifier_B_9
+			multiplier = multipliercount
+			years = 3
+		}
+	}     
+}
+
+country_event = {
+	id = devolved_random_events.43
+	title = "Amazing Artifacts"
+	desc = "At the expense of some society research, minor artifacts income has been added! (C)"
+
+	hide_window = no
+    is_triggered_only = yes
+    trigger = {
+        is_country_type = default
+        has_civic = devolved_civic_randivist_principles
+    }
+
+    immediate = {
+		
+		random_list = {
+			33 = {set_variable = {which = "yearcount" value = 5}}
+			33 = {set_variable = {which = "yearcount" value = 3}}
+		    33 = {set_variable = {which = "yearcount" value = 1}}
+			1 = {set_variable = {which = "yearcount" value = 25}}
+		}
+
+		random_list = {
+			50 = {set_variable = {which = "multipliercount" value = 1}}
+			24 = {set_variable = {which = "multipliercount" value = 0.5}}
+			24 = {set_variable = {which = "multipliercount" value = 2}}
+			2 = {set_variable = {which = "multipliercount" value = 10}}
+		}
+
+        add_modifier = {
+			modifier = random_event_modifier_C_9
+			multiplier = multipliercount
+			years = 3
+		}
+	}     
+}
+
+country_event = {
+	id = devolved_random_events.44
+	title = "Leader Slot Slump"
+	desc = "Some leader slots are removed from employment. (D)"
+
+	hide_window = no
+    is_triggered_only = yes
+    trigger = {
+        is_country_type = default
+        has_civic = devolved_civic_randivist_principles
+    }
+
+    immediate = {
+		
+		random_list = {
+			33 = {set_variable = {which = "yearcount" value = 5}}
+			33 = {set_variable = {which = "yearcount" value = 3}}
+		    33 = {set_variable = {which = "yearcount" value = 1}}
+			1 = {set_variable = {which = "yearcount" value = 25}}
+		}
+
+		random_list = {
+			50 = {set_variable = {which = "multipliercount" value = 1}}
+			24 = {set_variable = {which = "multipliercount" value = 0.5}}
+			24 = {set_variable = {which = "multipliercount" value = 2}}
+			2 = {set_variable = {which = "multipliercount" value = 10}}
+		}
+
+        add_modifier = {
+			modifier = random_event_modifier_D_9
+			multiplier = multipliercount
+			years = 3
+		}
+	}     
+}
+
+country_event = {
+	id = devolved_random_events.45
+	title = "Plummeting Production"
+	desc = "Your production lowers significantly due to a depression. (F)"
+
+	hide_window = no
+    is_triggered_only = yes
+    trigger = {
+        is_country_type = default
+        has_civic = devolved_civic_randivist_principles
+    }
+
+    immediate = {
+		
+		random_list = {
+			33 = {set_variable = {which = "yearcount" value = 5}}
+			33 = {set_variable = {which = "yearcount" value = 3}}
+		    33 = {set_variable = {which = "yearcount" value = 1}}
+			1 = {set_variable = {which = "yearcount" value = 25}}
+		}
+
+		random_list = {
+			50 = {set_variable = {which = "multipliercount" value = 1}}
+			24 = {set_variable = {which = "multipliercount" value = 0.5}}
+			24 = {set_variable = {which = "multipliercount" value = 2}}
+			2 = {set_variable = {which = "multipliercount" value = 10}}
+		}
+
+        add_modifier = {
+			modifier = random_event_modifier_F_9
+			multiplier = multipliercount
+			years = 3
+		}
+	}     
+}
+
+country_event = {
+	id = devolved_random_events.46
+	title = "Unitarian Utopia"
+	desc = "The empire has become more unified and as such, more unity is gained! (A)"
+
+	hide_window = no
+    is_triggered_only = yes
+    trigger = {
+        is_country_type = default
+        has_civic = devolved_civic_randivist_principles
+    }
+
+    immediate = {
+		
+		random_list = {
+			33 = {set_variable = {which = "yearcount" value = 5}}
+			33 = {set_variable = {which = "yearcount" value = 3}}
+		    33 = {set_variable = {which = "yearcount" value = 1}}
+			1 = {set_variable = {which = "yearcount" value = 25}}
+		}
+
+		random_list = {
+			50 = {set_variable = {which = "multipliercount" value = 1}}
+			24 = {set_variable = {which = "multipliercount" value = 0.5}}
+			24 = {set_variable = {which = "multipliercount" value = 2}}
+			2 = {set_variable = {which = "multipliercount" value = 10}}
+		}
+
+        add_modifier = {
+			modifier = random_event_modifier_A_10
+			multiplier = multipliercount
+			years = 3
+		}
+	}     
+}
+
+country_event = {
+	id = devolved_random_events.47
+	title = "Specimen Specialization"
+	desc = "Specimen are now specialized and produce much more! (B)"
+
+	hide_window = no
+    is_triggered_only = yes
+    trigger = {
+        is_country_type = default
+        has_civic = devolved_civic_randivist_principles
+    }
+
+    immediate = {
+		
+		random_list = {
+			33 = {set_variable = {which = "yearcount" value = 5}}
+			33 = {set_variable = {which = "yearcount" value = 3}}
+		    33 = {set_variable = {which = "yearcount" value = 1}}
+			1 = {set_variable = {which = "yearcount" value = 25}}
+		}
+
+		random_list = {
+			50 = {set_variable = {which = "multipliercount" value = 1}}
+			24 = {set_variable = {which = "multipliercount" value = 0.5}}
+			24 = {set_variable = {which = "multipliercount" value = 2}}
+			2 = {set_variable = {which = "multipliercount" value = 10}}
+		}
+
+        add_modifier = {
+			modifier = random_event_modifier_B_10
+			multiplier = multipliercount
+			years = 3
+		}
+	}     
+}
+
+country_event = {
+	id = devolved_random_events.48
+	title = "Nanite National Anthem"
+	desc = "A distant galaxy played the Nanite National Anthem echoing across many systems. While the loud song damaged engineering research production, nanite production was boosted. (C)"
+
+	hide_window = no
+    is_triggered_only = yes
+    trigger = {
+        is_country_type = default
+        has_civic = devolved_civic_randivist_principles
+    }
+
+    immediate = {
+		
+		random_list = {
+			33 = {set_variable = {which = "yearcount" value = 5}}
+			33 = {set_variable = {which = "yearcount" value = 3}}
+		    33 = {set_variable = {which = "yearcount" value = 1}}
+			1 = {set_variable = {which = "yearcount" value = 25}}
+		}
+
+		random_list = {
+			50 = {set_variable = {which = "multipliercount" value = 1}}
+			24 = {set_variable = {which = "multipliercount" value = 0.5}}
+			24 = {set_variable = {which = "multipliercount" value = 2}}
+			2 = {set_variable = {which = "multipliercount" value = 10}}
+		}
+
+        add_modifier = {
+			modifier = random_event_modifier_C_10
+			multiplier = multipliercount
+			years = 3
+		}
+	}     
+}
+
+country_event = {
+	id = devolved_random_events.49
+	title = "Executive Decline"
+	desc = "Negative Ascension Perk: The bureaucrats are crumbling as we speak... (D)"
+
+	hide_window = no
+    is_triggered_only = yes
+    trigger = {
+        is_country_type = default
+        has_civic = devolved_civic_randivist_principles
+    }
+
+    immediate = {
+		
+		random_list = {
+			33 = {set_variable = {which = "yearcount" value = 5}}
+			33 = {set_variable = {which = "yearcount" value = 3}}
+		    33 = {set_variable = {which = "yearcount" value = 1}}
+			1 = {set_variable = {which = "yearcount" value = 25}}
+		}
+
+		random_list = {
+			50 = {set_variable = {which = "multipliercount" value = 1}}
+			24 = {set_variable = {which = "multipliercount" value = 0.5}}
+			24 = {set_variable = {which = "multipliercount" value = 2}}
+			2 = {set_variable = {which = "multipliercount" value = 10}}
+		}
+
+        add_modifier = {
+			modifier = random_event_modifier_D_10
+			multiplier = multipliercount
+		}
+	}     
+}
+
+country_event = {
+	id = devolved_random_events.50
+	title = "Job Scramble"
+	desc = "What is happening?... (F)"
+
+	hide_window = no
+    is_triggered_only = yes
+    trigger = {
+        is_country_type = default
+        has_civic = devolved_civic_randivist_principles
+    }
+
+    immediate = {
+		
+		random_list = {
+			33 = {set_variable = {which = "yearcount" value = 5}}
+			33 = {set_variable = {which = "yearcount" value = 3}}
+		    33 = {set_variable = {which = "yearcount" value = 1}}
+			1 = {set_variable = {which = "yearcount" value = 25}}
+		}
+
+		random_list = {
+			50 = {set_variable = {which = "multipliercount" value = 1}}
+			24 = {set_variable = {which = "multipliercount" value = 0.5}}
+			24 = {set_variable = {which = "multipliercount" value = 2}}
+			2 = {set_variable = {which = "multipliercount" value = 10}}
+		}
+
+        add_modifier = {
+			modifier = random_event_modifier_F_10
+			multiplier = multipliercount
+			years = 3
+		}
+	}     
+}
+
+country_event = {
+	id = devolved_random_events.51
+	title = "Research Radicalization"
+	desc = "The empire has become much more focused on research! (A)"
+
+	hide_window = no
+    is_triggered_only = yes
+    trigger = {
+        is_country_type = default
+        has_civic = devolved_civic_randivist_principles
+    }
+
+    immediate = {
+		
+		random_list = {
+			33 = {set_variable = {which = "yearcount" value = 5}}
+			33 = {set_variable = {which = "yearcount" value = 3}}
+		    33 = {set_variable = {which = "yearcount" value = 1}}
+			1 = {set_variable = {which = "yearcount" value = 25}}
+		}
+
+		random_list = {
+			50 = {set_variable = {which = "multipliercount" value = 1}}
+			24 = {set_variable = {which = "multipliercount" value = 0.5}}
+			24 = {set_variable = {which = "multipliercount" value = 2}}
+			2 = {set_variable = {which = "multipliercount" value = 10}}
+		}
+
+        add_modifier = {
+			modifier = random_event_modifier_A_11
+			multiplier = multipliercount
+			years = 3
+		}
+	}     
+}
+
+country_event = {
+	id = devolved_random_events.52
+	title = "Light Speed Jets"
+	desc = "Your ships will move at the speed of light for the next 5 years! (B)"
+
+	hide_window = no
+    is_triggered_only = yes
+    trigger = {
+        is_country_type = default
+        has_civic = devolved_civic_randivist_principles
+    }
+
+    immediate = {
+		
+		random_list = {
+			33 = {set_variable = {which = "yearcount" value = 5}}
+			33 = {set_variable = {which = "yearcount" value = 3}}
+		    33 = {set_variable = {which = "yearcount" value = 1}}
+			1 = {set_variable = {which = "yearcount" value = 25}}
+		}
+
+		random_list = {
+			50 = {set_variable = {which = "multipliercount" value = 1}}
+			24 = {set_variable = {which = "multipliercount" value = 0.5}}
+			24 = {set_variable = {which = "multipliercount" value = 2}}
+			2 = {set_variable = {which = "multipliercount" value = 10}}
+		}
+
+        add_modifier = {
+			modifier = random_event_modifier_B_11
+			multiplier = multipliercount
+			years = 5
+		}
+	}     
+}
+
+country_event = {
+	id = devolved_random_events.53
+	title = "Hard Labor"
+	desc = "The leader has put the citizens to hard labor, habitability decreases but the empire output increases. (C)"
+
+	hide_window = no
+    is_triggered_only = yes
+    trigger = {
+        is_country_type = default
+        has_civic = devolved_civic_randivist_principles
+    }
+
+    immediate = {
+		
+		random_list = {
+			33 = {set_variable = {which = "yearcount" value = 5}}
+			33 = {set_variable = {which = "yearcount" value = 3}}
+		    33 = {set_variable = {which = "yearcount" value = 1}}
+			1 = {set_variable = {which = "yearcount" value = 25}}
+		}
+
+		random_list = {
+			50 = {set_variable = {which = "multipliercount" value = 1}}
+			24 = {set_variable = {which = "multipliercount" value = 0.5}}
+			24 = {set_variable = {which = "multipliercount" value = 2}}
+			2 = {set_variable = {which = "multipliercount" value = 10}}
+		}
+
+        add_modifier = {
+			modifier = random_event_modifier_C_11
+			multiplier = multipliercount
+			years = 3
+		}
+	}     
+}
+
+country_event = {
+	id = devolved_random_events.54
+	title = "Zero Vision"
+	desc = "Negative Ascension Perk: Blindness has come upon you and blocked unity and cohesion. (D)"
+
+	hide_window = no
+    is_triggered_only = yes
+    trigger = {
+        is_country_type = default
+        has_civic = devolved_civic_randivist_principles
+    }
+
+    immediate = {
+		
+		random_list = {
+			33 = {set_variable = {which = "yearcount" value = 5}}
+			33 = {set_variable = {which = "yearcount" value = 3}}
+		    33 = {set_variable = {which = "yearcount" value = 1}}
+			1 = {set_variable = {which = "yearcount" value = 25}}
+		}
+
+		random_list = {
+			50 = {set_variable = {which = "multipliercount" value = 1}}
+			24 = {set_variable = {which = "multipliercount" value = 0.5}}
+			24 = {set_variable = {which = "multipliercount" value = 2}}
+			2 = {set_variable = {which = "multipliercount" value = 10}}
+		}
+
+        add_modifier = {
+			modifier = random_event_modifier_D_11
+			multiplier = multipliercount
+		}
+	}     
+}
+
+country_event = {
+	id = devolved_random_events.55
+	title = "BIG POPS"
+	desc = "Pops have become giants and take up a ton of space. (F)"
+
+	hide_window = no
+    is_triggered_only = yes
+    trigger = {
+        is_country_type = default
+        has_civic = devolved_civic_randivist_principles
+    }
+
+    immediate = {
+		
+		random_list = {
+			33 = {set_variable = {which = "yearcount" value = 5}}
+			33 = {set_variable = {which = "yearcount" value = 3}}
+		    33 = {set_variable = {which = "yearcount" value = 1}}
+			1 = {set_variable = {which = "yearcount" value = 25}}
+		}
+
+		random_list = {
+			50 = {set_variable = {which = "multipliercount" value = 1}}
+			24 = {set_variable = {which = "multipliercount" value = 0.5}}
+			24 = {set_variable = {which = "multipliercount" value = 2}}
+			2 = {set_variable = {which = "multipliercount" value = 10}}
+		}
+
+        add_modifier = {
+			modifier = random_event_modifier_F_11
+			multiplier = multipliercount
+			years = 3
+		}
+	}     
+}
+
+country_event = {
+	id = devolved_random_events.56
+	title = "Fleet Unification"
+	desc = "Your empire is unified in the power of your fleets! (A)"
+
+	hide_window = no
+    is_triggered_only = yes
+    trigger = {
+        is_country_type = default
+        has_civic = devolved_civic_randivist_principles
+    }
+
+    immediate = {
+		
+		random_list = {
+			33 = {set_variable = {which = "yearcount" value = 5}}
+			33 = {set_variable = {which = "yearcount" value = 3}}
+		    33 = {set_variable = {which = "yearcount" value = 1}}
+			1 = {set_variable = {which = "yearcount" value = 25}}
+		}
+
+		random_list = {
+			50 = {set_variable = {which = "multipliercount" value = 1}}
+			24 = {set_variable = {which = "multipliercount" value = 0.5}}
+			24 = {set_variable = {which = "multipliercount" value = 2}}
+			2 = {set_variable = {which = "multipliercount" value = 10}}
+		}
+
+        add_modifier = {
+			modifier = random_event_modifier_A_12
+			multiplier = multipliercount
+			years = 3
+		}
+	}     
+}
+
+country_event = {
+	id = devolved_random_events.57
+	title = "Production Boost Lite"
+	desc = "A technology boost has caused an increase in production. (B)"
+
+	hide_window = no
+    is_triggered_only = yes
+    trigger = {
+        is_country_type = default
+        has_civic = devolved_civic_randivist_principles
+    }
+
+    immediate = {
+		
+		random_list = {
+			33 = {set_variable = {which = "yearcount" value = 5}}
+			33 = {set_variable = {which = "yearcount" value = 3}}
+		    33 = {set_variable = {which = "yearcount" value = 1}}
+			1 = {set_variable = {which = "yearcount" value = 25}}
+		}
+
+		random_list = {
+			50 = {set_variable = {which = "multipliercount" value = 1}}
+			24 = {set_variable = {which = "multipliercount" value = 0.5}}
+			24 = {set_variable = {which = "multipliercount" value = 2}}
+			2 = {set_variable = {which = "multipliercount" value = 10}}
+		}
+
+        add_modifier = {
+			modifier = random_event_modifier_B_12
+			multiplier = multipliercount
+			years = 3
+		}
+	}     
+}
+
+country_event = {
+	id = devolved_random_events.58
+	title = "Beefy Districts"
+	desc = "Your districts are huge and provide you more resources at the cost of some empire size. (C)"
+
+	hide_window = no
+    is_triggered_only = yes
+    trigger = {
+        is_country_type = default
+        has_civic = devolved_civic_randivist_principles
+    }
+
+    immediate = {
+		
+		random_list = {
+			33 = {set_variable = {which = "yearcount" value = 5}}
+			33 = {set_variable = {which = "yearcount" value = 3}}
+		    33 = {set_variable = {which = "yearcount" value = 1}}
+			1 = {set_variable = {which = "yearcount" value = 25}}
+		}
+
+		random_list = {
+			50 = {set_variable = {which = "multipliercount" value = 1}}
+			24 = {set_variable = {which = "multipliercount" value = 0.5}}
+			24 = {set_variable = {which = "multipliercount" value = 2}}
+			2 = {set_variable = {which = "multipliercount" value = 10}}
+		}
+
+        add_modifier = {
+			modifier = random_event_modifier_C_12
+			multiplier = multipliercount
+			years = 3
+		}
+	}     
+}
+
+country_event = {
+	id = devolved_random_events.59
+	title = "Amateur Builders"
+	desc = "Negative Ascension Perk: People don't wanna build megastructures as much as they used to... (D)"
+
+	hide_window = no
+    is_triggered_only = yes
+    trigger = {
+        is_country_type = default
+        has_civic = devolved_civic_randivist_principles
+    }
+
+    immediate = {
+		
+		random_list = {
+			33 = {set_variable = {which = "yearcount" value = 5}}
+			33 = {set_variable = {which = "yearcount" value = 3}}
+		    33 = {set_variable = {which = "yearcount" value = 1}}
+			1 = {set_variable = {which = "yearcount" value = 25}}
+		}
+
+		random_list = {
+			50 = {set_variable = {which = "multipliercount" value = 1}}
+			24 = {set_variable = {which = "multipliercount" value = 0.5}}
+			24 = {set_variable = {which = "multipliercount" value = 2}}
+			2 = {set_variable = {which = "multipliercount" value = 10}}
+		}
+
+        add_modifier = {
+			modifier = random_event_modifier_D_12
+			multiplier = multipliercount
+		}
+	}     
+}
+
+country_event = {
+	id = devolved_random_events.60
+	title = "Army Annihilation"
+	desc = "Your armies died in a random overseas war. They will be back in 5 years! (F)"
+
+	hide_window = no
+    is_triggered_only = yes
+    trigger = {
+        is_country_type = default
+        has_civic = devolved_civic_randivist_principles
+    }
+
+    immediate = {
+		
+		random_list = {
+			33 = {set_variable = {which = "yearcount" value = 5}}
+			33 = {set_variable = {which = "yearcount" value = 3}}
+		    33 = {set_variable = {which = "yearcount" value = 1}}
+			1 = {set_variable = {which = "yearcount" value = 25}}
+		}
+
+		random_list = {
+			50 = {set_variable = {which = "multipliercount" value = 1}}
+			24 = {set_variable = {which = "multipliercount" value = 0.5}}
+			24 = {set_variable = {which = "multipliercount" value = 2}}
+			2 = {set_variable = {which = "multipliercount" value = 10}}
+		}
+
+        add_modifier = {
+			modifier = random_event_modifier_F_12
+			multiplier = multipliercount
+			years = 5
+		}
+	}     
+}
+
+country_event = {
+	id = devolved_random_events.61
+	title = "Sextupal Specimen"
+	desc = "Sextupal Specimen: Gain some random exceptional specimens! (A)"
+
+
+	hide_window = no
+    is_triggered_only = yes
+    trigger = {
+        is_country_type = default
+        has_civic = devolved_civic_randivist_principles
+    }
+
+    immediate = {
+		
+		random_list = {
+			33 = {set_variable = {which = "yearcount" value = 5}}
+			33 = {set_variable = {which = "yearcount" value = 3}}
+		    33 = {set_variable = {which = "yearcount" value = 1}}
+			1 = {set_variable = {which = "yearcount" value = 25}}
+		}
+		capital_scope = {
+			random_list = {
+				50 = { country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} }
+				24 = { country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} }
+				24 = { country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} }
+				2 = { country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} country_event = {id = devolved_civic_events.14} }
+			}
+		}
+	}     
+}
+
+country_event = {
+	id = devolved_random_events.62
+	title = "Relic Randomizer"
+	desc = "Relic Randomizer: Gain a random (decent) relic! (B)"
+
+
+	hide_window = no
+    is_triggered_only = yes
+    trigger = {
+        is_country_type = default
+        has_civic = devolved_civic_randivist_principles
+    }
+
+    immediate = {
+		
+		random_list = {
+			33 = {set_variable = {which = "yearcount" value = 5}}
+			33 = {set_variable = {which = "yearcount" value = 3}}
+		    33 = {set_variable = {which = "yearcount" value = 1}}
+			1 = {set_variable = {which = "yearcount" value = 25}}
+		}
+		capital_scope = {
+			random_list = {
+				80 = { country_event = {id = devolved_civic_events.15}}
+				18 = { country_event = {id = devolved_civic_events.15} country_event = {id = devolved_civic_events.15}}
+				2 = {country_event = {id = devolved_civic_events.15} country_event = {id = devolved_civic_events.15} country_event = {id = devolved_civic_events.15} country_event = {id = devolved_civic_events.15} country_event = {id = devolved_civic_events.15} country_event = {id = devolved_civic_events.15} country_event = {id = devolved_civic_events.15} country_event = {id = devolved_civic_events.15} country_event = {id = devolved_civic_events.15} country_event = {id = devolved_civic_events.15}}
+			}
+		}
+	}     
+}
+
+country_event = {
+	id = devolved_random_events.63
+	title = "More the Merrier"
+	desc = "You can now build more megastructures at a cheaper cost, but they will build slower. (C)"
+
+	hide_window = no
+    is_triggered_only = yes
+    trigger = {
+        is_country_type = default
+        has_civic = devolved_civic_randivist_principles
+    }
+
+    immediate = {
+		
+		random_list = {
+			33 = {set_variable = {which = "yearcount" value = 5}}
+			33 = {set_variable = {which = "yearcount" value = 3}}
+		    33 = {set_variable = {which = "yearcount" value = 1}}
+			1 = {set_variable = {which = "yearcount" value = 25}}
+		}
+
+		random_list = {
+			50 = {set_variable = {which = "multipliercount" value = 1}}
+			24 = {set_variable = {which = "multipliercount" value = 0.5}}
+			24 = {set_variable = {which = "multipliercount" value = 2}}
+			2 = {set_variable = {which = "multipliercount" value = 10}}
+		}
+
+        add_modifier = {
+			modifier = random_event_modifier_C_13
+			multiplier = multipliercount
+			years = 3
+		}
+	}     
+}
+
+country_event = {
+	id = devolved_random_events.64
+	title = "Offensive Falsehoods"
+	desc = "Negative Ascension Perk: Your empire spreads so much blatant misinformation that other empires are less inclined to respect your authority. (D)"
+
+	hide_window = no
+    is_triggered_only = yes
+    trigger = {
+        is_country_type = default
+        has_civic = devolved_civic_randivist_principles
+    }
+
+    immediate = {
+		
+		random_list = {
+			33 = {set_variable = {which = "yearcount" value = 5}}
+			33 = {set_variable = {which = "yearcount" value = 3}}
+		    33 = {set_variable = {which = "yearcount" value = 1}}
+			1 = {set_variable = {which = "yearcount" value = 25}}
+		}
+
+		random_list = {
+			50 = {set_variable = {which = "multipliercount" value = 1}}
+			24 = {set_variable = {which = "multipliercount" value = 0.5}}
+			24 = {set_variable = {which = "multipliercount" value = 2}}
+			2 = {set_variable = {which = "multipliercount" value = 10}}
+		}
+
+        add_modifier = {
+			modifier = random_event_modifier_D_13
+			multiplier = multipliercount
+			years = 3
+		}
+	}     
+}
+
+country_event = {
+	id = devolved_random_events.65
+	title = "Abandonded Ship"
+	desc = "Your ships... they're all... (F)"
+
+	hide_window = no
+    is_triggered_only = yes
+    trigger = {
+        is_country_type = default
+        has_civic = devolved_civic_randivist_principles
+    }
+
+    immediate = {
+		
+		random_list = {
+			33 = {set_variable = {which = "yearcount" value = 5}}
+			33 = {set_variable = {which = "yearcount" value = 3}}
+		    33 = {set_variable = {which = "yearcount" value = 1}}
+			1 = {set_variable = {which = "yearcount" value = 25}}
+		}
+
+		random_list = {
+			50 = {set_variable = {which = "multipliercount" value = 1}}
+			24 = {set_variable = {which = "multipliercount" value = 0.5}}
+			24 = {set_variable = {which = "multipliercount" value = 2}}
+			2 = {set_variable = {which = "multipliercount" value = 10}}
+		}
+
+        add_modifier = {
+			modifier = random_event_modifier_F_13
+			multiplier = multipliercount
+			years = 3
+		}
+	}     
+}
+
+country_event = {
+	id = devolved_random_events.66
+	title = "Caffeine Deposits"
+	desc = "Caffeine Deposit: A deposit of Caffeine has been found, boosting the production of all of your pops! (A)"
+
+
+	hide_window = no
+    is_triggered_only = yes
+    trigger = {
+        is_country_type = default
+        has_civic = devolved_civic_randivist_principles
+    }
+
+    immediate = {
+		
+		random_list = {
+			33 = {set_variable = {which = "yearcount" value = 5}}
+			33 = {set_variable = {which = "yearcount" value = 3}}
+		    33 = {set_variable = {which = "yearcount" value = 1}}
+			1 = {set_variable = {which = "yearcount" value = 25}}
+		}
+		capital_scope = {
+			random_list = {
+				50 = { add_deposit = d_caffeine_deposit add_deposit = d_caffeine_deposit }
+				24 = { add_deposit = d_caffeine_deposit  }
+				24 = { add_deposit = d_caffeine_deposit add_deposit = d_caffeine_deposit add_deposit = d_caffeine_deposit add_deposit = d_caffeine_deposit }
+				2 = { add_deposit = d_caffeine_deposit add_deposit = d_caffeine_deposit add_deposit = d_caffeine_deposit add_deposit = d_caffeine_deposit add_deposit = d_caffeine_deposit add_deposit = d_caffeine_deposit add_deposit = d_caffeine_deposit add_deposit = d_caffeine_deposit add_deposit = d_caffeine_deposit add_deposit = d_caffeine_deposit add_deposit = d_caffeine_deposit add_deposit = d_caffeine_deposit add_deposit = d_caffeine_deposit add_deposit = d_caffeine_deposit add_deposit = d_caffeine_deposit add_deposit = d_caffeine_deposit add_deposit = d_caffeine_deposit add_deposit = d_caffeine_deposit add_deposit = d_caffeine_deposit add_deposit = d_caffeine_deposit }
+		}
+		}
+
+
+	}     
+}
+
+country_event = {
+	id = devolved_random_events.67
+	title = "Storage Porridge"
+	desc = "Storage Porridge: You find a magical porridge on a planet that morphs into a magical cabinet to store a lot of resources! (B)"
+
+
+	hide_window = no
+    is_triggered_only = yes
+    trigger = {
+        is_country_type = default
+        has_civic = devolved_civic_randivist_principles
+    }
+
+    immediate = {
+		
+		random_list = {
+			33 = {set_variable = {which = "yearcount" value = 5}}
+			33 = {set_variable = {which = "yearcount" value = 3}}
+		    33 = {set_variable = {which = "yearcount" value = 1}}
+			1 = {set_variable = {which = "yearcount" value = 25}}
+		}
+		capital_scope = {
+			random_list = {
+				50 = { add_deposit = d_storage_porridge add_deposit = d_storage_porridge }
+				24 = { add_deposit = d_storage_porridge  }
+				24 = { add_deposit = d_storage_porridge add_deposit = d_storage_porridge add_deposit = d_storage_porridge add_deposit = d_storage_porridge }
+				2 = { add_deposit = d_storage_porridge add_deposit = d_storage_porridge add_deposit = d_storage_porridge add_deposit = d_storage_porridge add_deposit = d_storage_porridge add_deposit = d_storage_porridge add_deposit = d_storage_porridge add_deposit = d_storage_porridge add_deposit = d_storage_porridge add_deposit = d_storage_porridge add_deposit = d_storage_porridge add_deposit = d_storage_porridge add_deposit = d_storage_porridge add_deposit = d_storage_porridge add_deposit = d_storage_porridge add_deposit = d_storage_porridge add_deposit = d_storage_porridge add_deposit = d_storage_porridge add_deposit = d_storage_porridge add_deposit = d_storage_porridge }
+		}
+		}
+
+
+	}     
+}
+
+country_event = {
+	id = devolved_random_events.68
+	title = "Ecumenopolis Expansion"
+	desc = "An explosion of impressive urban developers and construction workers have turned a random colonized world gets turned into an ecumenopolis! (C)"
+
+
+	hide_window = no
+    is_triggered_only = yes
+    trigger = {
+        is_country_type = default
+        has_civic = devolved_civic_randivist_principles
+    }
+
+    immediate = {
+
+		random_planet_within_border = {
+			limit = {
+				is_colony = yes
+				NOT = {is_planet_class = pc_city}
+			}
+			change_pc = pc_city
+
+		}
+
+
+
+	}     
+}
+
+country_event = {
+	id = devolved_random_events.69
+	title = "Entombment"
+	desc = "A random colonized world gets turned into a tomb world by an army of mad scientists! (D)"
+
+
+	hide_window = no
+    is_triggered_only = yes
+    trigger = {
+        is_country_type = default
+        has_civic = devolved_civic_randivist_principles
+    }
+
+    immediate = {
+
+		random_planet_within_border = {
+			limit = {
+				is_colony = yes
+				NOT = {is_planet_class = pc_nuked}
+			}
+			change_pc = pc_nuked
+		}
+	}     
+}
+
+country_event = {
+	id = devolved_random_events.70
+	title = "Nuclear Mayhem"
+	desc = "The most powerful nuclear missile in the universe hits one of your planets, completely destroying it! (F)"
+
+
+	hide_window = no
+    is_triggered_only = yes
+    trigger = {
+        is_country_type = default
+        has_civic = devolved_civic_randivist_principles
+    }
+
+    immediate = {
+
+		random_planet_within_border = {
+			limit = {
+				is_colony = yes
+			}
+			picture = GFX_evt_exploding_planet
+			show_sound = event_super_explosion
+			location = root
+			destroy_colony = yes
+			change_pc = pc_shattered
+			clear_deposits = yes
+			random_list = {
+				1 = {
+					add_deposit = d_minerals_10
+					add_deposit = d_minerals_6
+				}
+				1 = {
+					add_deposit = d_minerals_10
+					add_deposit = d_minerals_2
+				}
+				1 = {
+					add_deposit = d_minerals_8
+				}
+				1 = {
+					add_deposit = d_minerals_4
+				}
+			}
+		}
+	}     
+}

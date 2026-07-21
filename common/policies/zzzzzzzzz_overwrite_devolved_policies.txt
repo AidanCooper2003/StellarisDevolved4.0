@@ -1,0 +1,672 @@
+trade_policy = { # OVERWRITES EVOLVED TRADE POLICIES, IF GAME IS UPDATED THIS MUST BE CHANGED TO REFLECT EVOLVED'S CHANGES
+	potential = {
+		tec_uses_trade_value = yes
+	}
+
+	option = {
+		name = "trade_policy_default"
+
+		AI_weight = {
+			factor = 0
+		}
+		
+		potential = {
+			NOT = {
+				has_civic = devolved_civic_power_pit
+			}
+		}
+	}
+
+	option = {
+		name = "trade_policy_consumer_goods"
+		potential = {
+			AND = {
+				OR = {
+					has_federation = no
+					AND = {
+						has_federation = yes
+						federation = {
+							NOT = {
+								has_federation_perk = trade_federation_passive 
+							}
+						}
+					}
+				}
+				has_tradition = tr_mercantile_adaptive_economic_policies
+			}
+			NOT = {
+				has_civic = devolved_civic_power_pit
+			}
+		}
+		
+		valid = {
+			tec_is_default_country = yes
+			#	NOR = {
+			#		has_policy_flag = "economic_stance_market"
+			#		has_ethic = "ethic_fanatic_socialism"
+			#	}
+		}
+
+		policy_flags = {
+			trade_conversion_consumer_goods
+		}
+
+		modifier = {}
+
+		AI_weight = {
+			factor = 1
+			modifier = {
+				mult = 0
+				is_regular_empire = yes
+				tec_is_aquatic_empire = yes
+			}
+		}
+	}
+
+	option = {
+		name = "trade_policy_unity"
+		potential = {
+			OR = {
+				has_federation = no
+				AND = {
+					has_federation = yes
+					federation = {
+						NOR = {
+							has_federation_perk = trade_federation_passive
+							has_federation_perk = unity_trade_1
+						}
+					}
+				}
+			}
+			has_tradition = tr_mercantile_adaptive_economic_policies
+			NOT = {
+				has_civic = devolved_civic_power_pit
+			}
+		}
+
+		policy_flags = {
+			trade_conversion_unity
+		}
+		
+		valid = {
+			tec_is_default_country = yes
+		#	NOR = {
+		#		has_policy_flag = "economic_stance_market"
+		#		has_policy_flag = "economic_stance_planned"
+		#	}
+		}
+
+		modifier = {
+		}
+
+		AI_weight = {
+			factor = 0
+			modifier = {
+				add = 1
+				is_regular_empire = yes
+				tec_is_aquatic_empire = yes
+			}
+		}
+	}
+
+	option = {
+		name = "trade_policy_trade_league"
+		potential = {
+			has_federation = yes
+			federation = {
+				has_federation_perk = trade_federation_passive 
+			}
+			NOT = {
+				has_civic = devolved_civic_power_pit
+			}
+		}
+
+		policy_flags = {
+			trade_conversion_trade_league
+		}
+
+		modifier = {
+		}
+
+		AI_weight = {
+			factor = 1000
+		}
+	}
+	
+	option = {
+		name = "trade_policy_holy_covenant"
+		potential = {
+			has_federation = yes
+			federation = { has_federation_perk = unity_trade_1 }
+		}
+
+		policy_flags = {
+			trade_conversion_holy_covenant
+		}
+
+		modifier = {
+		}
+
+		AI_weight = {
+			factor = 1000
+		}
+	}
+
+	option = {
+		name = "trade_policy_mutual_aid"
+		potential = {
+			is_worker_coop_empire = yes
+			NOT = {
+				has_civic = devolved_civic_power_pit
+			}
+		}
+
+		policy_flags = {
+			trade_conversion_mutual_aid
+		}
+
+		modifier = {
+		}
+
+		AI_weight = {
+			factor = 1000
+		}
+	}
+
+	#Social Development
+	option = {
+		name = "trade_policy_social"
+
+		potential = {
+			NOT = {
+				has_civic = devolved_civic_power_pit
+			}
+		}
+		
+		policy_flags = {
+			trade_conversion_social
+		}
+		
+		valid = {
+			tec_is_default_country = yes
+			is_socialism = yes
+		}
+		
+		modifier = {
+			planet_colony_development_speed_mult = 0.25
+		}
+		
+		AI_weight = {
+			factor = 0
+		}
+	}
+
+	#Infrastructure Development
+	option = {
+		name = "trade_policy_infrastructure"
+
+		potential = {
+			NOT = {
+				has_civic = devolved_civic_power_pit
+			}
+		}
+
+		policy_flags = {
+			trade_conversion_infrastructure
+		}
+
+		modifier = {
+			planet_building_build_speed_mult = 0.30 # Values slightly buffed for a test
+			starbase_shipyard_build_speed_mult = 0.15
+		}
+
+		AI_weight = {
+			factor = 0
+		}
+	}
+
+	#Innovation
+	option = {
+		name = "trade_policy_innovation"
+		
+		potential = {
+			OR = {
+				custom_tooltip = "civic_tooltip_materialist"
+				is_materialist = yes
+				is_gestalt = yes
+			}
+			NOT = {
+				has_civic = devolved_civic_power_pit
+			}
+		}
+
+		policy_flags = {
+			trade_conversion_innovation
+		}
+
+		valid = {
+			tec_is_default_country = yes
+			OR = {
+				custom_tooltip = "civic_tooltip_materialist"
+				is_materialist = yes
+				is_gestalt = yes
+			}
+			NOR = {
+				has_valid_civic = civic_tec_regular_immutable_hierarchy
+			}
+			#	NOR = {
+			#		has_policy_flag = "economic_stance_market"
+			#		has_policy_flag = "economic_stance_planned"
+			#	}
+		}
+		
+		modifier = {
+		}
+		
+		AI_weight = {
+			factor = 0
+		}
+	}
+
+	#Agricultural dev
+	option = {
+		name = "trade_policy_food"
+		
+		policy_flags = {
+			trade_conversion_food
+		}
+
+		potential = {
+			OR = {
+				custom_tooltip = "civic_tooltip_ecologist"
+				is_ecologist = yes
+				has_ethic = ethic_gestalt_preservation
+			}
+			NOT = {
+				has_civic = devolved_civic_power_pit
+			}
+		}
+
+		valid = {
+			tec_is_default_country = yes
+			OR = {
+				custom_tooltip = "civic_tooltip_ecologist"
+				is_ecologist = yes
+				has_ethic = ethic_gestalt_preservation
+			}
+		}
+		
+		AI_weight = {
+			factor = 0
+		}
+	}
+
+	# Food
+	option = {
+		name = "trade_policy_mining"
+
+		policy_flags = {
+			trade_conversion_mining
+		}
+
+		modifier = {
+		}
+
+		potential = {
+			OR = {
+				custom_tooltip = "civic_tooltip_industrialist"
+				is_industrialist = yes
+				has_ethic = ethic_gestalt_disregard
+			}
+			NOT = {
+				has_civic = devolved_civic_power_pit
+			}
+		}
+
+		valid = {
+			tec_is_default_country = yes
+			OR = {
+				custom_tooltip = "civic_tooltip_industrialist"
+				is_industrialist = yes
+				has_ethic = ethic_gestalt_disregard
+			}
+		}
+
+		AI_weight = {
+			factor = 0
+		}
+	}
+
+	# Omniconomy
+	option = {
+		name = "trade_policy_omni_conversion"
+
+		policy_flags = {
+			trade_conversion_omni
+		}
+
+		modifier = {
+			
+		}
+
+		potential = { # Will change to civic specific later.
+			has_civic = devolved_civic_omniconomy
+		}
+
+		AI_weight = {
+			factor = 10000
+		}
+	}
+
+
+	# --------------------------------------- Power Pit Trade Policies -----------------------------------
+
+	# Power Pit Consumer Goods
+	option = {
+		name = "trade_policy_no_energy_consumer_goods"
+		potential = {
+			OR = {
+				has_federation = no
+				AND = {
+					has_federation = yes
+					federation = {
+						NOT = {
+							has_federation_perk = trade_federation_passive 
+						}
+					}
+				}
+			}
+			has_tradition = tr_mercantile_adaptive_economic_policies
+			has_civic = devolved_civic_power_pit
+		}
+		
+		valid = {
+			tec_is_default_country = yes
+			#	NOR = {
+			#		has_policy_flag = "economic_stance_market"
+			#		has_ethic = "ethic_fanatic_socialism"
+			#	}
+		}
+
+		policy_flags = {
+			trade_conversion_no_energy_consumer_goods
+		}
+
+		modifier = {}
+
+		AI_weight = {
+			factor = 10
+			modifier = {
+				mult = 0
+				is_regular_empire = yes
+				tec_is_aquatic_empire = yes
+			}
+		}
+	}
+
+	# Power Pit Research
+	option = {
+		name = "trade_policy_no_energy_research"
+		
+		potential = {
+			OR = {
+				custom_tooltip = "civic_tooltip_materialist"
+				is_materialist = yes
+				is_gestalt = yes
+			}
+			has_civic = devolved_civic_power_pit
+		}
+
+		policy_flags = {
+			trade_conversion_no_energy_research
+		}
+
+		valid = {
+			tec_is_default_country = yes
+			OR = {
+				custom_tooltip = "civic_tooltip_materialist"
+				is_materialist = yes
+				is_gestalt = yes
+			}
+			NOR = {
+				has_valid_civic = civic_tec_regular_immutable_hierarchy
+			}
+			#	NOR = {
+			#		has_policy_flag = "economic_stance_market"
+			#		has_policy_flag = "economic_stance_planned"
+			#	}
+		}
+		
+		modifier = {
+		}
+		
+		AI_weight = {
+			factor = 1
+		}
+	}
+
+	# Power Pit Unity
+	option = {
+		name = "trade_policy_no_energy_unity"
+		potential = {
+			OR = {
+				has_federation = no
+				AND = {
+					has_federation = yes
+					federation = {
+						NOR = {
+							has_federation_perk = trade_federation_passive
+							has_federation_perk = unity_trade_1
+						}
+					}
+				}
+			}
+			has_tradition = tr_mercantile_adaptive_economic_policies
+			has_civic = devolved_civic_power_pit
+		}
+
+		policy_flags = {
+			trade_conversion_no_energy_unity
+		}
+		
+		valid = {
+			tec_is_default_country = yes
+		#	NOR = {
+		#		has_policy_flag = "economic_stance_market"
+		#		has_policy_flag = "economic_stance_planned"
+		#	}
+		}
+
+		modifier = {
+		}
+
+		AI_weight = {
+			factor = 10
+			modifier = {
+				add = 1
+				is_regular_empire = yes
+				tec_is_aquatic_empire = yes
+			}
+		}
+	}
+
+	# Power Pit Trade League
+	option = {
+		name = "trade_policy_no_energy_trade_league"
+		potential = {
+			has_federation = yes
+			federation = {
+				has_federation_perk = trade_federation_passive 
+			}
+			has_civic = devolved_civic_power_pit
+		}
+
+		policy_flags = {
+			trade_conversion_no_energy_trade_league
+		}
+
+		modifier = {
+		}
+
+		AI_weight = {
+			factor = 1000
+		}
+	}
+
+	# Power Pit Holy Covenant
+	option = {
+		name = "trade_policy_no_energy_holy_covenant"
+		potential = {
+			has_federation = yes
+			federation = { has_federation_perk = unity_trade_1 }
+			has_civic = devolved_civic_power_pit
+		}
+
+		policy_flags = {
+			trade_conversion_no_energy_holy_covenant
+		}
+
+		modifier = {
+		}
+
+		AI_weight = {
+			factor = 1000
+		}
+	}
+
+	# Power Pit Mutual Aid
+	option = {
+		name = "trade_policy_no_energy_mutual_aid"
+		potential = {
+			is_worker_coop_empire = yes
+			has_civic = devolved_civic_power_pit
+		}
+
+		policy_flags = {
+			trade_conversion_no_energy_mutual_aid
+		}
+
+		modifier = {
+		}
+
+		AI_weight = {
+			factor = 1000
+		}
+	}
+
+	# Power Pit Agri Sub
+	option = {
+		name = "trade_policy_no_energy_food"
+		
+		policy_flags = {
+			trade_conversion_no_energy_food
+		}
+
+		potential = {
+			OR = {
+				custom_tooltip = "civic_tooltip_ecologist"
+				is_ecologist = yes
+				has_ethic = ethic_gestalt_preservation
+			}
+			has_civic = devolved_civic_power_pit
+		}
+
+		valid = {
+			tec_is_default_country = yes
+			OR = {
+				custom_tooltip = "civic_tooltip_ecologist"
+				is_ecologist = yes
+				has_ethic = ethic_gestalt_preservation
+			}
+		}
+		
+		AI_weight = {
+			factor = 1
+		}
+	}
+
+	# Power Pit Mining Sub
+	option = {
+		name = "trade_policy_no_energy_mining"
+
+		policy_flags = {
+			trade_conversion_no_energy_mining
+		}
+
+		modifier = {
+		}
+
+		potential = {
+			OR = {
+				custom_tooltip = "civic_tooltip_industrialist"
+				is_industrialist = yes
+				has_ethic = ethic_gestalt_disregard
+			}
+			has_civic = devolved_civic_power_pit
+		}
+
+		valid = {
+			tec_is_default_country = yes
+			OR = {
+				custom_tooltip = "civic_tooltip_industrialist"
+				is_industrialist = yes
+				has_ethic = ethic_gestalt_disregard
+			}
+		}
+
+		AI_weight = {
+			factor = 1
+		}
+	}
+
+	# Power Pit Social Development
+	option = {
+		name = "trade_policy_no_energy_social"
+
+		potential = {
+			NOT = {
+				has_civic = devolved_civic_power_pit
+			}
+			has_civic = devolved_civic_power_pit
+		}
+		
+		policy_flags = {
+			trade_conversion_no_energy_social
+		}
+		
+		valid = {
+			tec_is_default_country = yes
+			is_socialism = yes
+		}
+		
+		modifier = {
+			planet_colony_development_speed_mult = 0.5
+		}
+		
+		AI_weight = {
+			factor = 0
+		}
+	}
+
+	# Power Pit Omniconomy
+	option = {
+		name = "trade_policy_no_energy_omni_conversion"
+
+		policy_flags = {
+			trade_conversion_no_energy_omni
+		}
+
+		modifier = {
+			
+		}
+
+		potential = { # Will change to civic specific later.
+			has_civic = devolved_civic_omniconomy
+			has_civic = devolved_civic_power_pit
+		}
+
+		AI_weight = {
+			factor = 10000
+		}
+	}
+}

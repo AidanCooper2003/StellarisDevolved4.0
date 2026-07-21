@@ -1,0 +1,24 @@
+# common\tradition_categories\zz_devolved_unitussy.txt
+
+unitussy = {
+	tree_template = "tree_21_11"
+
+	adoption_bonus = "tr_unitussy_adopt"
+	finish_bonus = "tr_unitussy_finish"
+
+	traditions = {
+		"tr_unitussy_cultural_phenomenon"
+		"tr_unitussy_unity_districts"
+		"tr_unitussy_bloody_unity"
+		"tr_unitussy_leader_wage_cut"
+		"tr_unitussy_mega_art_mania"
+	}
+
+	potential = {
+		has_civic = devolved_civic_lander_test
+	}
+
+	ai_weight = {
+		factor = 1000
+	}
+}

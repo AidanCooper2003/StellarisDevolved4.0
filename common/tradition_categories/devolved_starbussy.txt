@@ -1,0 +1,24 @@
+# common\tradition_categories\zz_devolved_starbussy.txt
+
+starbussy = {
+	tree_template = "tree_21_11"
+
+	adoption_bonus = "tr_starbussy_adopt"
+	finish_bonus = "tr_starbussy_finish"
+
+	traditions = {
+		"tr_starbussy_cheap_defense"
+		"tr_starbussy_stronger_starbases"
+		"tr_starbussy_cheapy_weapy"
+		"tr_starbussy_starbase_hardener"
+		"tr_starbussy_defense_damage"
+	}
+
+	potential = {
+		has_civic = devolved_civic_lander_test
+	}
+
+	ai_weight = {
+		factor = 1000
+	}
+}

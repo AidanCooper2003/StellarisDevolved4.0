@@ -1,0 +1,233 @@
+resolution_project_extinction = {
+	icon = "GFX_resolution_ecological_protection"
+
+	resources = {
+		category = resolutions
+		cost = {
+			influence = 50
+		}
+	}
+	target = no
+	level = 1
+
+	modifier = {
+		pop_environment_tolerance = -2
+	}
+
+	potential = {
+		has_civic = devolved_civic_sg_machine
+	}
+
+	ai_weight = {
+		base = -10000
+		modifier = {
+			factor = -1
+			AND = {
+				has_civic = devolved_civic_sg_machine
+				OR = {
+					has_ethic = ethic_xenophobe
+					has_ethic = ethic_fanatic_xenophobe
+				}
+			}
+		}
+	}
+}
+
+resolution_project_anarchy = {
+	icon = "GFX_resolution_ecological_protection"
+
+	resources = {
+		category = resolutions
+		cost = {
+			influence = 50
+		}
+	}
+	target = no
+	level = 1
+
+	modifier = {
+		planet_stability_add = -200
+	}
+
+	potential = {
+		has_civic = devolved_civic_sg_machine
+	}
+
+	ai_weight = {
+		base = -10000
+		modifier = {
+			factor = -1
+			AND = {
+				has_civic = devolved_civic_sg_machine
+				OR = {
+					has_ethic = ethic_xenophobe
+					has_ethic = ethic_fanatic_xenophobe
+				}
+			}
+		}
+	}
+}
+
+resolution_project_poverty = {
+	icon = "GFX_resolution_ecological_protection"
+
+	resources = {
+		category = resolutions
+		cost = {
+			influence = 50
+		}
+	}
+	target = no
+	level = 1
+
+	modifier = {
+		country_produces_mult = -2
+	}
+
+	potential = {
+		has_civic = devolved_civic_sg_machine
+	}
+
+	ai_weight = {
+		base = -10000
+		modifier = {
+			factor = -1
+			AND = {
+				has_civic = devolved_civic_sg_machine
+				OR = {
+					has_ethic = ethic_xenophobe
+					has_ethic = ethic_fanatic_xenophobe
+				}
+			}
+		}
+	}
+}
+
+resolution_project_extinction_repeal = {
+	icon = "GFX_repeal_blue"
+
+	resources = {
+		category = resolutions
+		cost = {
+			influence = 50
+		}
+	}
+	target = no
+	fire_and_forget = yes
+
+	effect = {
+		custom_tooltip = resolution_project_extinction_repeal_success
+
+		hidden_effect = {
+			cancel_resolution = "resolution_project_extinction"
+		}
+	}
+
+	potential = {
+		AND = {
+			is_active_resolution = "resolution_project_extinction"
+			has_civic = devolved_civic_sg_machine
+		}
+
+	}
+
+	ai_weight = {
+		base = 10000
+		modifier = {
+			factor = -1
+			AND = {
+				has_civic = devolved_civic_sg_machine
+				OR = {
+					has_ethic = ethic_xenophobe
+					has_ethic = ethic_fanatic_xenophobe
+				}
+			}
+		}
+	}
+}
+
+resolution_project_anarchy_repeal = {
+	icon = "GFX_repeal_blue"
+
+	resources = {
+		category = resolutions
+		cost = {
+			influence = 50
+		}
+	}
+	target = no
+	fire_and_forget = yes
+
+	effect = {
+		custom_tooltip = resolution_project_anarchy_repeal_success
+
+		hidden_effect = {
+			cancel_resolution = "resolution_project_anarchy"
+		}
+	}
+
+	potential = {
+		AND = {
+			is_active_resolution = "resolution_project_extinction"
+			has_civic = devolved_civic_sg_machine
+		}
+
+	}
+
+	ai_weight = {
+		base = 10000
+		modifier = {
+			factor = -1
+			AND = {
+				has_civic = devolved_civic_sg_machine
+				OR = {
+					has_ethic = ethic_xenophobe
+					has_ethic = ethic_fanatic_xenophobe
+				}
+			}
+		}
+	}
+}
+
+resolution_project_poverty_repeal = {
+	icon = "GFX_repeal_blue"
+
+	resources = {
+		category = resolutions
+		cost = {
+			influence = 50
+		}
+	}
+	target = no
+	fire_and_forget = yes
+
+	effect = {
+		custom_tooltip = resolution_project_poverty_repeal_success
+
+		hidden_effect = {
+			cancel_resolution = "resolution_project_poverty"
+		}
+	}
+
+	potential = {
+		AND = {
+			is_active_resolution = "resolution_project_extinction"
+			has_civic = devolved_civic_sg_machine
+		}
+
+	}
+
+	ai_weight = {
+		base = 10000
+		modifier = {
+			factor = -1
+			AND = {
+				has_civic = devolved_civic_sg_machine
+				OR = {
+					has_ethic = ethic_xenophobe
+					has_ethic = ethic_fanatic_xenophobe
+				}
+			}
+		}
+	}
+}

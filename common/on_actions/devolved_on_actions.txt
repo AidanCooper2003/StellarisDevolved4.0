@@ -1,0 +1,22 @@
+on_game_start_country = {
+	events = {
+		devolved_civic_events.1
+		devolved_civic_events.6
+
+	}
+}
+
+on_yearly_pulse_country = {
+	events = {
+		devolved_civic_events.2
+		devolved_civic_events.3
+		devolved_civic_events.4
+		devolved_civic_events.5
+		devolved_civic_events.7
+		devolved_civic_events.8
+		devolved_civic_events.9
+		devolved_civic_events.10
+		devolved_civic_events.11
+		devolved_civic_events.13
+	}
+}

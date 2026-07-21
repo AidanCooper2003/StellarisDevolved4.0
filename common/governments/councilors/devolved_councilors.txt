@@ -1,0 +1,1009 @@
+# ADD HIGH AI WEIGHTS AT SOME POINT
+
+devolved_civic_councilor_niche_exploiter = {
+	leader_class = { official  }
+
+	is_leader_possible = {
+		OR = {
+			leader_class = official
+		}
+	}
+	civic = devolved_civic_infinite_employment
+	modifier = {
+		job_enforcer_add = 1
+		job_culture_worker_add = 1
+		job_archaeoengineers_add = 1
+		job_healthcare_add = 1
+		job_soldier_add = 1
+		job_scrap_miner_add = 1
+	}
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
+devolved_civic_councilor_rock_remover = {
+	leader_class = { official }
+
+	is_leader_possible = {
+		OR = {
+			leader_class = official
+		}
+	}
+	civic = devolved_civic_mineral_hater
+		modifier = {
+			planet_metallurgists_alloys_produces_add = 1
+			planet_metallurgists_minerals_upkeep_add = 4
+			planet_artisans_consumer_goods_produces_add = 1
+			planet_artisans_minerals_upkeep_add = 2
+		}
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
+devolved_civic_councilor_house_filler = {
+	leader_class = { official }
+
+	is_leader_possible = {
+		OR = {
+			leader_class = official
+		}
+	}
+	civic = devolved_civic_hyper_housing # Needs rework
+		modifier = {
+			planet_immigration_pull_add = 50
+			pop_housing_usage_add = -0.02
+			planet_housing_add = 1
+		}
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
+devolved_civic_councilor_nutrient_nullifier = {
+	leader_class = { scientist }
+
+	is_leader_possible = {
+		OR = {
+			leader_class = scientist
+		}
+	}
+	civic = devolved_civic_starvationism
+		modifier = {
+			planet_researchers_food_upkeep_add = 0.5
+			planet_researchers_exotic_gases_produces_add = 0.2
+			planet_researchers_physics_research_produces_add = 0.5
+			planet_researchers_sr_dark_matter_produces_add = 0.01
+		}
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
+devolved_civic_councilor_metallic_maniac = {
+	leader_class = { commander official scientist }
+
+	is_leader_possible = {
+		OR = {
+			leader_class = scientist
+			leader_class = official
+			leader_class = scientist
+		}
+	}
+	civic = devolved_civic_alloy_amelioration
+	modifier = {
+		ships_alloys_upkeep_mult = -0.03
+		megastructures_alloys_cost_mult = -0.015
+		planet_districts_industrial_alloys_produces_add = 0.5
+		megastructures_alloys_produces_add = 1
+	}
+}
+
+devolved_civic_councilor_hugless_heirophant = {
+	leader_class = { official scientist }
+
+	is_leader_possible = {
+		OR = {
+			leader_class = scientist
+			leader_class = official
+		}
+	}
+	civic = devolved_civic_hateable_huggers
+	modifier = {
+		country_society_research_cost_mult = -0.02
+		planet_culture_workers_society_research_produces_add = 1
+	}
+}
+
+devolved_civic_councilor_nation_pleaser = {
+	leader_class = { official }
+
+	is_leader_possible = {
+		leader_class = official
+	}
+	civic = devolved_civic_developing_country
+	modifier = {
+		country_trust_cap_add = 25
+		country_trust_growth = 0.2
+		diplomacy_upkeep_mult = -0.03
+	}
+}
+
+devolved_civic_councilor_adventure_accentuator = {
+	leader_class = { scientist }
+	is_leader_possible = {
+		leader_class = scientist
+	}
+	civic = devolved_civic_expedition_enhancement
+	modifier = {
+		ship_astral_rift_clues_add = 0.5
+		ship_astral_rift_speed_mult = 0.05
+		planet_artisans_minor_artifacts_produces_add = 0.02
+	}
+}
+
+devolved_civic_councilor_ethical_enforcer = {
+	leader_class = { official }
+	is_leader_possible = {
+		leader_class = official
+	}
+	civic = devolved_civic_ethical_adherance
+	modifier = {
+		pop_government_ethic_attraction = 1
+		faction_approval = 0.02
+	}
+}
+
+devolved_civic_councilor_pleasure_pants_professional = {
+	leader_class = { official }
+	is_leader_possible = {
+		leader_class = official
+	}
+	civic = devolved_civic_pleasure_power
+	modifier = {
+		planet_stability_add = 1
+		pop_happiness = 0.01
+	}
+}
+
+devolved_civic_councilor_head_homephobe = {
+	leader_class = { official }
+	is_leader_possible = {
+		leader_class = official
+	}
+	civic = devolved_civic_homephobia
+	modifier = {
+		pop_housing_usage_add = 0.02
+		planet_housing_add = -0.5
+		planet_pop_assembly_mult = 0.02
+		planet_pop_assembly_add = 0.3
+	}
+}
+
+devolved_civic_councilor_recursive_optimizer = {
+	leader_class = { official scientist }
+	is_leader_possible = {
+		OR = {
+			leader_class = scientist
+			leader_class = official
+		}
+	}
+	civic = devolved_civic_lucrative_leaders
+	modifier = {
+		councilor_skill_add = 0.33334
+	}
+}
+
+devolved_civic_councilor_leader_punisher = {
+	leader_class = { commander }
+	is_leader_possible = {
+		leader_class = commander
+	}
+	civic = devolved_civic_loser_leaders
+	modifier = { 
+		leader_lifespan_mult = -0.03
+		job_farmer_add = 1
+		job_technician_add = 1
+		job_miner_add = 1
+		planet_miners_engineering_research_produces_add = 1.5
+		planet_farmers_society_research_produces_add = 1.5
+		planet_technician_physics_research_produces_add = 1.5
+	}
+}
+
+devolved_civic_councilor_chemical_chief = {
+	leader_class = { official }
+	is_leader_possible = {
+		leader_class = official
+	}
+	civic = devolved_civic_stratworld_strategists
+	modifier = {
+		building_mote_harvesters_max = 0.5
+		building_crystal_mines_max = 0.5
+		building_gas_extractors_max = 0.5
+		planet_culture_workers_sr_zro_produces_add = 0.01
+		planet_culture_workers_sr_living_metal_produces_add = 0.01
+		planet_culture_workers_sr_dark_matter_produces_add = 0.01
+	}
+}
+
+devolved_civic_councilor_anti_fleet_alderman = {
+	leader_class = { official }
+	is_leader_possible = {
+		leader_class = official
+	}
+	civic = devolved_civic_fleet_fuckers
+	modifier = {
+		planet_stability_add = 1
+		job_culture_worker_add = 0.5
+	}
+}
+
+devolved_civic_councilor_federation_fellow = {
+	leader_class = { official }
+	is_leader_possible = {
+		leader_class = official
+	}
+	civic = devolved_civic_wholesome_diplomats
+	modifier = {
+		diplo_weight_mult = 0.05
+		#federation_experience_add = 1
+		#cohesion_add = 1
+		#cohesion_ethics_penalty_mult = -0.03
+		#These don't work, make event that every 5 years gives x xp times this leader's level.
+	}
+}
+
+devolved_civic_councilor_infrastructure_idealogue = {
+	leader_class = { official }
+	is_leader_possible = {
+		leader_class = official
+	}
+	civic = devolved_civic_infrastructure_initiation
+	modifier = {
+		planet_army_build_speed_mult = 0.2
+		planet_decision_enact_speed_mult = 0.2
+		planet_colony_development_speed_mult = 0.2
+		planet_building_build_speed_mult = 0.2
+		starbase_building_build_speed_mult = 0.2
+		starbase_module_build_speed_mult = 0.2
+		shipsize_mining_station_build_speed_mult = 0.2
+		shipsize_research_station_build_speed_mult = 0.2
+		shipsize_starbase_outpost_build_speed_mult = 0.2
+		megastructure_build_speed_mult = 0.02
+	}
+}
+
+devolved_civic_councilor_anti_infrastructure_inquisitor = {
+	leader_class = { official commander }
+	is_leader_possible = {
+		OR = {
+			leader_class = official
+			leader_class = commander
+		}
+	}
+	civic = devolved_civic_infrastructure_irritation
+	modifier = {
+		megastructure_build_speed_mult = -0.01
+		physics_tech_cost_mult = -0.03
+		society_tech_cost_mult = -0.03
+		engineering_tech_cost_mult = -0.03
+	}
+}
+
+devolved_civic_councilor_jaeger = {
+	leader_class = { commander scientist }
+	is_leader_possible = {
+		OR = {
+			leader_class = commander
+			leader_class = scientist
+		}
+	}
+	civic = devolved_civic_survey_corps
+	modifier = {
+		job_titan_hunter_add = 1
+		ship_speed_mult = 0.15
+		ship_ftl_jumpdrive_range_mult = 0.1
+		catapult_spread_mult = 0.05
+		catapult_range_mult = 0.1
+	}
+}
+
+devolved_civic_councilor_whale_faith = {
+	leader_class = { scientist official }
+	is_leader_possible = {
+		OR = {
+			leader_class = official
+			leader_class = scientist
+		}
+	}
+	civic = devolved_civic_heavenly_whales
+	modifier = {
+		planet_jobs_tec_at_peace_unity_produces_mult = 0.05
+		resolution_category_rulesofwar_vote_strength_mult = 0.2
+	}
+}
+
+devolved_civic_councilor_whale_hope = {
+	leader_class = { commander }
+	is_leader_possible = {
+		leader_class = commander
+	}
+	civic = devolved_civic_heavenly_whales
+	modifier = {
+		country_war_exhaustion_mult = -0.05
+		resolution_category_sanctions_defense_war_vote_strength_mult = 0.2
+		ship_home_territory_fire_rate_mult = 0.05
+		devolved_war_exhaustion_fire_rate = 0.2
+		# Remove war exhaustion bonus and home territory fire rate once war exhaustion fire rate modifier is implemented
+	}
+}
+
+devolved_civic_councilor_religious_warlord = {
+	leader_class = { commander }
+	is_leader_possible = {
+		leader_class = commander
+	}
+	civic = devolved_civic_victors_wrath
+	modifier = {
+		planet_priests_engineering_research_produces_add = 0.5
+	}
+}
+
+devolved_civic_councilor_chonny_jash_heart = {
+	leader_class = { official }
+	is_leader_possible = {
+		leader_class = official
+	}
+	civic = devolved_civic_chonnys_charm
+	modifier = {
+		country_trust_cap_add = 5
+		diplomacy_upkeep_mult = -0.02
+		pop_happiness = -0.005
+	}
+}
+
+devolved_civic_councilor_chonny_jash_mind = {
+	leader_class = { scientist }
+	is_leader_possible = {
+		leader_class = scientist
+	}
+	civic = devolved_civic_chonnys_charm
+	modifier = {
+		country_physics_tech_research_speed = 0.02
+		country_engineering_tech_research_speed = 0.02
+		pop_happiness = -0.02
+	}
+}
+
+devolved_civic_councilor_chonny_jash_soul = {
+	leader_class = { commander }
+	is_leader_possible = {
+		leader_class = commander
+	}
+	civic = devolved_civic_chonnys_charm
+	modifier = {
+		job_telepath_add = 0.2
+		planet_telepaths_sr_zro_produces_add = 0.01
+		pop_happiness = -0.01
+	}
+}
+
+devolved_civic_councilor_trauma_bonded_motivator = {
+	leader_class = { commander }
+	is_leader_possible = {
+		leader_class = commander
+	}
+	civic = devolved_civic_together_suffering
+	modifier = {
+		country_produces_mult = 0.01
+		pop_environment_tolerance = -0.005
+	}
+}
+
+devolved_civic_councilor_unitarian = {
+	leader_class = { official }
+	is_leader_possible = {
+		leader_class = official
+	}
+	civic = devolved_civic_ubiquitous_unity
+	modifier = {
+		megastructures_unity_produces_mult = 0.1
+		planet_metallurgists_unity_produces_add = 0.1
+	}
+}
+
+devolved_civic_councilor_cultural_disruptor = {
+	leader_class = { official }
+	is_leader_possible = {
+		leader_class = official
+	}
+	civic = devolved_civic_unity_unaliving
+	modifier = {
+		country_unity_produces_mult = -0.01
+		planet_administrators_volatile_motes_produces_add = 0.1
+		planet_administrators_exotic_gases_produces_add = 0.1
+		planet_administrators_rare_crystals_produces_add = 0.1
+		planet_administrators_physics_research_produces_add = 0.2
+		planet_administrators_society_research_produces_add = 0.2
+		planet_administrators_engineering_research_produces_add = 0.2
+
+	}
+}
+
+devolved_civic_councilor_engergizing_evangelist = {
+	leader_class = { official }
+	is_leader_possible = {
+		leader_class = official
+	}
+	civic = devolved_civic_energy_endowment
+	modifier = {
+		country_energy_produces_mult = 0.05
+		planet_technician_energy_produces_add = 0.33
+		country_trade_fee = -0.01
+	}
+}
+
+devolved_civic_councilor_patrimonial_power_pulveriser = {
+	leader_class = { official }
+	is_leader_possible = {
+		leader_class = official
+	}
+	civic = devolved_civic_power_pit
+	modifier = {
+		country_energy_produces_mult = -0.005
+		empire_size_districts_mult = -0.05
+		empire_size_colonies_mult = -0.05
+		empire_size_pops_mult = -0.025
+	}
+}
+
+devolved_civic_councilor_stone_slut = {
+	leader_class = { official }
+	is_leader_possible = {
+		leader_class = official
+	}
+	civic = devolved_civic_mineral_lover
+	modifier = {
+		megastructures_minerals_produces_mult = 0.20
+		planet_miners_minerals_produces_add = 0.33
+		country_minerals_produces_mult = 0.02
+		planet_metallurgists_minerals_upkeep_add = -0.25
+		planet_artisans_minerals_upkeep_add = -0.25
+		country_edict_fund_add = -5
+		planetary_ascension_effect_mult = -0.02
+	}
+}
+
+devolved_civic_councilor_physics_fanatic = {
+	leader_class = { scientist }
+	is_leader_possible = {
+		leader_class = scientist
+	}
+	civic = devolved_civic_research_radicals
+	modifier = {
+		physics_tech_cost_mult = -0.03
+	}
+}
+
+devolved_civic_councilor_societal_savant = {
+	leader_class = { scientist }
+	is_leader_possible = {
+		leader_class = scientist
+	}
+	civic = devolved_civic_research_radicals
+	modifier = {
+		society_tech_cost_mult = -0.03
+
+	}
+}
+
+devolved_civic_councilor_engineering_erudite = {
+	leader_class = { scientist }
+	is_leader_possible = {
+		leader_class = scientist
+	}
+	civic = devolved_civic_research_radicals
+	modifier = {
+		engineering_tech_cost_mult = -0.03
+	}
+}
+
+devolved_civic_councilor_particle_pagan = {
+	leader_class = { official }
+	is_leader_possible = {
+		leader_class = official
+	}
+	civic = devolved_civic_rightoid_rascality
+	modifier = {
+		physics_tech_cost_mult = 0.02
+		country_physics_research_produces_mult = -0.025
+		planetary_ascension_effect_mult = 0.08
+		planetary_ascension_cost_mult = -0.025
+	}
+}
+
+devolved_civic_councilor_sociological_skeptic = {
+	leader_class = { official }
+	is_leader_possible = {
+		leader_class = official
+	}
+	civic = devolved_civic_rightoid_rascality
+	modifier = {
+		society_tech_cost_mult = 0.02
+		country_society_research_produces_mult = -0.025
+		planet_farmers_produces_mult = 0.1
+		planet_miners_produces_mult = 0.1
+		planet_technician_produces_mult = 0.1
+		planet_metallurgists_alloys_produces_mult = 0.05
+		planet_artisans_produces_mult = 0.05
+	}
+}
+
+devolved_civic_councilor_mechanical_malcontent = {
+	leader_class = { official }
+	is_leader_possible = {
+		leader_class = official
+	}
+	civic = devolved_civic_rightoid_rascality
+	modifier = {
+		engineering_tech_cost_mult = 0.02
+		country_engineering_research_produces_mult = -0.025
+		pop_growth_speed = 0.03
+		planet_pops_consumer_goods_upkeep_mult = -0.05
+	}
+}
+
+devolved_civic_councilor_food_fanatic = {
+	leader_class = { official }
+	is_leader_possible = {
+		leader_class = official
+	}
+	civic = devolved_civic_agrarianism
+	modifier = {
+		country_food_produces_mult = 0.1
+		pop_growth_speed = 0.01
+	}
+}
+
+devolved_civic_councilor_bureaucratic_breeder = {
+	leader_class = { official }
+	is_leader_possible = {
+		leader_class = official
+	}
+	civic = devolved_civic_supermassive
+	modifier = {
+		empire_size_penalty_mult = 0.05
+		planet_pop_assembly_add = 0.25
+		planet_pop_assembly_organic_add = 0.25
+	}
+}
+
+# Change at some point since this effect may never have use
+devolved_civic_councilor_libertarian = {
+	leader_class = { official }
+	is_leader_possible = {
+		leader_class = official
+	}
+	civic = devolved_civic_supermini
+	modifier = {
+		empire_size_add = -8
+	}
+}
+
+devolved_civic_councilor_influencer = {
+	leader_class = { official }
+	is_leader_possible = {
+		leader_class = official
+	}
+	civic = devolved_civic_influencer
+	modifier = {
+		planet_administrators_influence_produces_add = 0.025
+	}
+}
+
+devolved_civic_councilor_consumerism_creator = {
+	leader_class = { official }
+	is_leader_possible = {
+		leader_class = official
+	}
+	civic = devolved_civic_consumer_craze
+	modifier = {
+		planet_administrators_consumer_goods_produces_add = 0.1
+	}
+}
+
+devolved_civic_councilor_konsumerist_khan = {
+	leader_class = { official }
+	is_leader_possible = {
+		leader_class = official
+	}
+	civic = devolved_civic_konsumerist_killers
+	modifier = {
+		planet_jobs_consumer_goods_upkeep_mult = 0.2
+		planet_researchers_produces_mult = 0.2
+		planet_administrators_produces_mult = 0.2
+		planet_priests_produces_mult = 0.2
+		planet_culture_workers_produces_mult = 0.2
+	}
+}
+
+devolved_civic_councilor_orgy_ordinator = {
+	leader_class = { official }
+	is_leader_possible = {
+		leader_class = official
+	}
+	civic = devolved_civic_beastly_breeders
+	modifier = {
+		pop_growth_speed = 0.05
+		planet_pop_assembly_organic_mult = 0.05
+		planet_pops_upkeep_mult = 0.02
+	}
+}
+
+devolved_civic_councilor_strategical_sufferer = {
+	leader_class = { official }
+	is_leader_possible = {
+		leader_class = official
+	}
+	civic = devolved_civic_stratworld_despisers
+	modifier = {
+		planet_researchers_food_produces_add = 0.1
+		planet_researchers_minerals_produces_add = 0.1
+		planet_researchers_energy_produces_add = 0.1
+	}
+}
+
+devolved_civic_councilor_influence_hater = {
+	leader_class = { official }
+	is_leader_possible = {
+		leader_class = official
+	}
+	civic = devolved_civic_influencer_idiot
+	modifier = {
+		commercial_pact_mult = 0.1
+            	research_sharing_mult = 0.1
+            	country_trust_growth = 0.1
+		planet_politicians_influence_upkeep_add = 0.04
+		planet_politicians_unity_produces_add = 1
+		megastructures_influence_upkeep_add = 0.1
+	}
+}
+
+devolved_civic_councilor_upkeeping_umpire = {
+	leader_class = { official }
+	is_leader_possible = {
+		leader_class = official
+	}
+	civic = devolved_civic_undead_upkeeper
+	modifier = {
+		planet_jobs_upkeep_mult = -0.02
+            	planet_pops_upkeep_mult = -0.02
+            	planet_researchers_upkeep_mult = -0.02
+            	leaders_upkeep_mult = -0.02
+            	ships_upkeep_mult = -0.02
+            	ships_cost_mult = 0.01
+	}
+}
+
+devolved_civic_councilor_cost_saving_colonizer = {
+	leader_class = { official }
+	is_leader_possible = {
+		leader_class = official
+	}
+	civic = devolved_civic_dead_upkeeper
+	modifier = {
+		planet_jobs_upkeep_mult = 0.01
+            	ships_cost_mult = -0.02
+		planet_structures_cost_mult = -0.02
+		planetary_ascension_cost_mult = -0.02
+	}
+}
+
+devolved_civic_councilor_trading_tim = {
+	leader_class = { official }
+	is_leader_possible = {
+		leader_class = official
+	}
+	civic = devolved_civic_timeless_trading
+	modifier = {
+		pop_job_trade_mult = 0.01
+		living_standard_trade_value_specialists_add = 0.1
+		living_standard_trade_value_workers_add = 0.075
+	}
+}
+
+devolved_civic_councilor_edictarian = {
+	leader_class = { official }
+	is_leader_possible = {
+		leader_class = official
+	}
+	civic = devolved_civic_enlightened_edicts
+	modifier = {
+		country_edict_fund_mult = 0.05
+		edicts_upkeep_mult = -0.02
+	}
+}
+
+devolved_civic_councilor_gentern = {
+	leader_class = { scientist }
+	is_leader_possible = {
+		leader_class = official
+	}
+	civic = devolved_civic_genetic_gerrymanders
+	modifier = {
+		BIOLOGICAL_species_trait_points_add = 0.25
+		LITHOID_species_trait_points_add = 0.25
+		BIOLOGICAL_species_trait_picks_add = 0.5
+		LITHOID_species_trait_picks_add = 0.5
+		modify_species_cost_mult = -0.02
+	}
+}
+
+devolved_civic_councilor_witch_hunter = {
+	leader_class = { commander }
+	is_leader_possible = {
+		leader_class = official
+	}
+	civic = devolved_civic_protein_puritans
+	modifier = {
+		planet_priests_produces_mult = 0.05
+	}
+}
+
+devolved_civic_councilor_professional_perforator = {
+	leader_class = { official }
+	is_leader_possible = {
+		leader_class = official
+	}
+	civic = devolved_civic_profit_perforation
+	modifier = {
+		planet_entertainers_unity_produces_add = 0.25
+		planet_entertainers_society_research_produces_add = 0.25
+	}
+}
+
+devolved_civic_councilor_metallic_macerator = {
+	leader_class = { commander scientist }
+	is_leader_possible = {
+		OR = {
+			leader_class = commander
+			leader_class = scientist
+		}
+	}
+	civic = devolved_civic_alloy_execution
+	modifier = {
+		planet_researchers_alloys_upkeep_add = 0.25
+		planet_researchers_engineering_research_produces_add = 1
+		planet_researchers_unity_produces_add = 0.05
+		intel_encryption_mult = 0.1
+		intel_decryption_mult = 0.1
+	}
+}
+
+devolved_civic_councilor_mega_hater = {
+	leader_class = { official }
+	is_leader_possible = {
+		leader_class = official
+	}
+	civic = devolved_civic_megamalice
+	modifier = {
+		megastructures_produces_mult = -0.02
+		megastructures_upkeep_mult = 0.2
+		planet_districts_industrial_alloys_produces_add = 0.025
+		planet_districts_industrial_consumer_goods_produces_add = 0.04
+		planet_districts_farming_food_produces_add = 0.1
+		planet_districts_mining_minerals_produces_add = 0.1
+		planet_districts_generator_energy_produces_add = 0.1
+		planet_districts_cities_physics_research_produces_add = 0.05
+		planet_districts_cities_society_research_produces_add = 0.05
+		planet_districts_cities_engineering_research_produces_add = 0.05
+	}
+}
+
+devolved_civic_councilor_starbase_serenader = {
+	leader_class = { official }
+	is_leader_possible = {
+		leader_class = official
+	}
+	civic = devolved_civic_starbase_supremacy
+	modifier = {
+		starbase_energy_production_modules_energy_produces_add = 0.5
+		starbase_minerals_production_modules_minerals_produces_add = 0.5
+		starbase_food_production_modules_food_produces_add = 0.5
+		starbase_physics_research_modules_physics_research_produces_add = 0.5
+		starbase_society_research_modules_society_research_produces_add = 0.5
+		starbase_engineering_research_modules_engineering_research_produces_add = 0.5
+		pop_growth_speed = -0.01
+	}
+}
+
+devolved_civic_councilor_fleet_former = {
+	leader_class = { official }
+	is_leader_possible = {
+		leader_class = official
+	}
+	civic = devolved_civic_fleet_frenzy
+	modifier = {
+		ship_hull_mult = 0.02 #Change to Hull
+	}
+}
+
+devolved_civic_councilor_army_anticipator = {
+	leader_class = { commander }
+	is_leader_possible = {
+		leader_class = commander
+	}
+	civic = devolved_civic_amazing_armies
+	modifier = {
+		planet_army_build_speed_mult = 0.5
+        	army_damage_mult = 0.05
+        	army_defense_damage_mult = 0.05
+        	army_morale = 0.05
+        	army_health = 0.05
+        	army_collateral_damage_mult = 0.05
+        	army_attack_damage_mult = 0.05
+        	army_defense_morale_mult = 0.05
+        	army_defense_health_mult = 0.05
+	}
+}
+
+devolved_civic_councilor_army_annihilator = {
+	leader_class = { official }
+	is_leader_possible = {
+		leader_class = official
+	}
+	civic = devolved_civic_army_abomination
+	modifier = {
+		army_health = -0.1
+		planet_artisans_consumer_goods_produces_add = 0.2
+        	planet_artisans_food_produces_add = 0.1
+		planet_artisans_unity_produces_add = 0.1
+	}
+}
+
+devolved_civic_councilor_terraforming_terry = {
+	leader_class = { official }
+	is_leader_possible = {
+		leader_class = official
+	}
+	civic = devolved_civic_timeless_terraforming
+	modifier = {
+		terraforming_energy_cost_add = -1000
+		terraforming_influence_cost_add = -10
+		terraforming_sr_dark_matter_cost_add = -10
+		terraforming_sr_zro_cost_add = -10
+		terraforming_sr_living_metal_cost_add = -10
+		terraforming_nanites_cost_add = -10
+		terraform_speed_mult = 1
+	}
+}
+
+devolved_civic_councilor_enhancing_enslaver = {
+	leader_class = { official }
+	is_leader_possible = {
+		leader_class = official
+	}
+	civic = devolved_civic_demancipation_proclamation
+	modifier = {
+		planet_jobs_slave_produces_mult = 0.05
+	}
+}
+
+devolved_civic_councilor_starbase_smusher = {
+	leader_class = { official }
+	is_leader_possible = {
+		leader_class = official
+	}
+	civic = devolved_civic_shitty_starbases
+	modifier = {
+		starbases_upkeep_mult = 0.1
+		planet_max_districts_add = 0.5
+		planet_structures_cost_mult = -0.1
+		planet_jobs_worker_produces_mult = 0.02
+	}
+}
+
+devolved_civic_councilor_cuzzx_crystalmaker = {
+	leader_class = { official }
+	is_leader_possible = {
+		leader_class = official
+	}
+	civic = devolved_civic_cuzzx_crystals
+	modifier = {
+		country_rare_crystals_produces_mult = 0.1
+	}
+}
+
+devolved_civic_councilor_castronova_TA = {
+	leader_class = { official }
+	is_leader_possible = {
+		leader_class = official
+	}
+	civic = devolved_civic_god_is_a_gamer
+	modifier = {
+		planet_building_game_design_college_build_speed_mult = 0.5
+		planet_priests_society_research_produces_add = 0.2
+	}
+}
+
+devolved_civic_councilor_megastructure_manufacturer = {
+	leader_class = { official }
+	is_leader_possible = {
+		leader_class = official
+	}
+	civic = devolved_civic_majestic_megastructures
+	modifier = {
+		pop_growth_speed_reduction = 0.04
+		megastructures_produces_mult = 0.1
+	}
+}
+
+devolved_civic_councilor_agenda_accelerator = {
+	leader_class = { official }
+	is_leader_possible = {
+		leader_class = official
+	}
+	civic = devolved_civic_agenda_acceleration
+	modifier = {
+		council_agenda_finishing_effect_duration_mult = 0.2
+		council_agenda_progress_speed = 0.2
+	}
+}
+
+devolved_civic_councilor_tumbled_technocrat = {
+	leader_class = { scientist }
+	is_leader_possible = {
+		leader_class = scientist
+	}
+	civic = devolved_civic_cooperian_culture
+	modifier = {
+		job_devolved_cooperian_culturalist_add = 0.25
+	}
+}
+
+devolved_civic_councilor_leader_obliterator = {
+	leader_class = { scientist }
+	is_leader_possible = {
+		leader_class = scientist
+	}
+	civic = devolved_civic_l_machine_neo
+	modifier = {
+		leader_lifespan_add = -1000
+	}
+}
+
+devolved_civic_councilor_aidz_aristocrat = {
+	leader_class = { scientist }
+	is_leader_possible = {
+		leader_class = scientist
+	}
+	civic = devolved_civic_lander_test
+	modifier = {
+		megastructures_produces_mult = 0.02
+	}
+}
+
+devolved_civic_councilor_specimen_sanctifier = {
+	leader_class = { scientist }
+	is_leader_possible = {
+		leader_class = scientist
+	}
+	civic = devloved_civic_superb_specimens
+	modifier = {
+		specimens_produces_mult = 0.2
+		planet_jobs_produces_mult = -0.01
+	}
+}
+
+devolved_civic_councilor_surveyor_purveyor = {
+	leader_class = { scientist }
+	is_leader_possible = {
+		leader_class = scientist
+	}
+	civic = devolved_civic_despotic_deposits
+	modifier = {
+		deposit_increase_on_survey_chance_mult = 0.5
+	}
+}

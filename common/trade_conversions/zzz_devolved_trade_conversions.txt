@@ -1,0 +1,183 @@
+omni_conversion = {
+	potential = {
+		has_policy_flag = trade_conversion_omni
+	}
+	weight = {
+		weight = 10
+	}
+	conversion_rate = {
+		energy = 0.04
+		minerals = 0.04
+		food = 0.04
+		alloys = 0.02
+		consumer_goods = 0.02
+		physics_research = 0.03
+		society_research = 0.03
+		engineering_research = 0.03
+		unity = 0.05
+		influence = 0.001
+		volatile_motes = 0.004
+		exotic_gases = 0.004
+		rare_crystals = 0.004
+		sr_dark_matter = 0.001
+		nanites = 0.001
+		sr_living_metal = 0.001
+		sr_zro = 0.001
+		minor_artifacts = 0.001
+		astral_threads = 0.001
+	}
+	economic_category = trade_routes
+}
+
+devolved_no_energy_consumer_conversion = {
+	potential = {
+		has_policy_flag = trade_conversion_no_energy_consumer_goods
+	}
+	weight = {
+		weight = 10
+	}
+	conversion_rate = {
+		consumer_goods = 0.4
+	}
+	economic_category = trade_routes
+}
+
+devolved_no_energy_research_conversion = {
+	potential = {
+		has_policy_flag = trade_conversion_no_energy_research
+	}
+	weight = {
+		weight = 10
+	}
+	conversion_rate = {
+		physics_research = 0.25
+		society_research = 0.25
+		engineering_research = 0.25
+	}
+	economic_category = trade_routes
+}
+
+devolved_no_energy_unity_conversion = {
+	potential = {
+		has_policy_flag = trade_conversion_no_energy_unity
+	}
+	weight = {
+		weight = 10
+	}
+	conversion_rate = {
+		unity = 0.5
+	}
+	economic_category = trade_routes
+}
+
+
+devolved_no_energy_league_conversion = {
+	potential = {
+		has_policy_flag = trade_conversion_no_energy_trade_league
+	}
+	weight = {
+		weight = 10
+	}
+	conversion_rate = {
+		unity = 0.5
+		consumer_goods = 0.5
+	}
+	economic_category = trade_routes
+}
+
+devolved_no_energy_holy_conversion = {
+	potential = {
+		has_policy_flag = trade_conversion_no_energy_holy_covenant
+	}
+	weight = {
+		weight = 10
+	}
+	conversion_rate = {
+		unity = 1
+	}
+	economic_category = trade_routes
+}
+
+devolved_no_energy_mutual_aid = {
+	potential = {
+		has_policy_flag = trade_conversion_no_energy_mutual_aid
+	}
+	weight = {
+		weight = 10
+	}
+	conversion_rate = {
+		food = 0.7
+		minerals = 0.7
+	}
+	economic_category = trade_routes
+}
+
+devolved_no_energy_food = {
+	potential = {
+		has_policy_flag = trade_conversion_no_energy_food
+	}
+	weight = {
+		weight = 10
+	}
+	conversion_rate = {
+		food = 1
+	}
+	economic_category = trade_routes
+}
+
+devolved_no_energy_minerals = {
+	potential = {
+		has_policy_flag = trade_conversion_no_energy_mining
+	}
+	weight = {
+		weight = 10
+	}
+	conversion_rate = {
+		minerals = 1
+	}
+	economic_category = trade_routes
+}
+
+devolved_no_energy_social = {
+	potential = {
+		has_policy_flag = trade_conversion_no_energy_omni
+	}
+	weight = {
+		weight = 10
+	}
+	conversion_rate = {
+		unity = 0.4
+		society_research = 0.4
+	}
+	economic_category = trade_routes
+}
+
+no_energy_omni_conversion = {
+	potential = {
+		has_policy_flag = trade_conversion_no_energy_omni
+	}
+	weight = {
+		weight = 10
+	}
+	conversion_rate = {
+		minerals = 0.05
+		food = 0.05
+		alloys = 0.021
+		consumer_goods = 0.021
+		physics_research = 0.035
+		society_research = 0.035
+		engineering_research = 0.035
+		unity = 0.055
+		influence = 0.0011
+		volatile_motes = 0.0042
+		exotic_gases = 0.0042
+		rare_crystals = 0.0042
+		sr_dark_matter = 0.0012
+		nanites = 0.0012
+		sr_living_metal = 0.0012
+		sr_zro = 0.0012
+		minor_artifacts = 0.0012
+		astral_threads = 0.0012
+	}
+	economic_category = trade_routes
+}

@@ -1,0 +1,723 @@
+﻿l_english:
+
+# Species Traits
+devolved_trait_l_machine:0 "L Machine"
+devolved_trait_l_machine_desc:0 "Members of this species are absolute losers, who can't understand anything and can never fully adapt to even the best environments, and are impossibly cowardly and weak soldiers."
+
+devolved_trait_micro_influencer:0 "Micro-Influencer"
+devolved_trait_micro_influencer_desc:0 "Every organism does their part to project their group's will outward."
+
+devolved_trait_mineral_despising:0 "Mineral Despising"
+devolved_trait_mineral_despising_desc:0 "Every member of this species will go out of their way to violently destroy minerals."
+
+devolved_trait_violent_depression:0 "Violent Depression"
+devolved_trait_violent_depression_desc:0 "No member of this species can stand to live, and must be given extreme care to kept from a state of just apathy."
+
+# Civics
+devolved_civic_pleasure_power:0 "Pleasure Power"
+devolved_civic_pleasure_power_desc:0 "All citizens are given mandatory stim toys made from old clothing, that give a seemingly reality breaking level of happiness to all. However, these entertainment garments can cause distraction during war, leading to less effective gunners."
+
+devolved_civic_chonnys_charm:0 "Chonny's Charm"
+devolved_civic_chonnys_charm_desc:0 "This government uses a unique form of a negative auditory enforcement to ensure all citizens are miserable. Any citizens that can withstand such pain are given a strait shot into military command, greatly increasing this empire's naval effectiveness. Adds 3 different councilor positions for heart, mind, and soul. These give benefits to diplomacy, research, and telepaths."
+
+devolved_civic_together_suffering:0 "Together Suffering"
+devolved_civic_together_suffering_desc:0 "Through purposefully terraforming planets to be less habitable and preventing adaptation to worlds, this society is uniquely connected through trauma bonding. This greatly increase social cohesion. In addition, the absolute disregard for life this society demonstrates leads to suicide missions during archaeological missions, leading to uncovering more artifcats than a typical caring society."
+
+devolved_civic_ubiquitous_unity:0 "Ubiquitous Unity"
+devolved_civic_ubiquitous_unity_desc:0 "Retail workers are mandated by the state to create art using incredibly expensive materials, leading to a society with an incalculable cultural depth."
+
+devolved_civic_unity_unaliving:0 "Unity Unaliving"
+devolved_civic_unity_unaliving_desc:0 "All people must pay taxes of exhorbitant proportions with little going back to the people, leading to a society only focused on material gain. A massive beauracratic apperatus is dedicated to assigning work to allow for these taxes to be payed."
+
+devolved_civic_energy_endowment:0 "Energy Endowment"
+devolved_civic_energy_endowment_desc:0 "It is every citizen's duty to find more energy, and waste less. Every last drop of power that can be captured, will be captured."
+
+devolved_civic_power_pit:0 "Power Pit"
+devolved_civic_power_pit_desc:0 "A disdain for the concept of storing energy permeates this society, leading to decreased production of energy, and a culture of great waste. This does lead to marginally better productive capacities in all other fields, and a great pity from other societies who don't understand such idiosyncrasies. All trade policies no longer provide energy and instead provide extra of the secondary produced resource. Wealth creation is no longer a trade policy option. (WIP)"
+
+devolved_civic_mineral_hater:0 "Mineral Hater"
+devolved_civic_mineral_hater_desc:0 "People from this society can't stand the sight of raw materials, and many workplaces give additional duties to waste or purposely destroy minerals as a bonding exercise for employees. This common enemy for all citizens allows for the government to much more smoothly operate, allowing for great cultural advancement even before these people reached the stars."
+
+devolved_civic_mineral_lover:0 "Mineral Lover"
+devolved_civic_mineral_lover_desc:0 "All citizens are trained from birth to be expert geologists and appreciators of minerals. Many people, even children, work in the mines in their spare time, in order to be around minerals more. However, such hyperfixation on minerals leads to highly developed, specialized worlds to never reach their full potential."
+
+devolved_civic_research_radicals:0 "Research Radicals"
+devolved_civic_research_radicals_desc:0 "Knowledge is prioritized above all else in this society, so much so that rural infrastructure is totally ignored. This leads to rural workers needing to steal military equipment just to do their jobs. Such a class disparity leads to a horribly dysfunctional government. There are three additional councilor positions for physics, society, and engineering research."
+
+devolved_civic_rightoid_rascality:0 "Rightoid Rascality"
+devolved_civic_rightoid_rascality_desc:0 "Knowledge is demonized and is viewed as a necessary evil. The best life consists of willful ignorance and backbreaking labor. Such attitude creates a society where planets are much more easily specialized, as no one desires to know anything beyond what is absolutely necessary to complete their jobs."
+
+devolved_civic_alloy_amelioration:0 "Alloy Amelioration"
+devolved_civic_alloy_amelioration_desc:0 "Government alloy reapproriation programs can yeild great returns from unexpected places. Pirates are given reduced sentencing for giving up ship weapons, artists encourage donation of alloys to the government, and traders pay an alloy tax in exchange for reduced regulations."
+
+devolved_civic_agrarianism:0 "Agrarianism"
+devolved_civic_agrarianism_desc:0 "Food is worshipped by this society, so much so that the desire for more food guided their technological evolution. This nation boasts the most advanced GMO technology in the galaxy, using highly unconvential techniques. Retail workers even work on gardens between customers to maximize food availability."
+
+devolved_civic_starvationism:0 "Starvationism"
+devolved_civic_starvationism_desc:0 "Starving is a holy state of being according to this society. Farmers are so disgusted with the concept of food that they purposely have engineered crops that have far lower yields and nutritional content, in order to only give the bare minimum amount of food required to keep the body alive... but still starving. In exchange, these crops produce materials that can be used to greatly reduce the degradation and improve operations of structures."
+
+devolved_civic_supermini:0 "Supermini"
+devolved_civic_supermini_desc:0 "All citizens of this country believe there is no greater pleasure than to cause low administrative overhead for your government. The military and space engineering corps are, to the pleasure of those working in those departments, ignored by the government."
+
+devolved_civic_supermassive:0 "Supermassive"
+devolved_civic_supermassive_desc:0 "Pointless bueacracy is a favorite past time of the citizenry, leading to any matter of action from placing a poster on your wall to getting on the bus for a given day requiring five permits from three different offices on the other side of the planet. This universal hobby comes in great use for military operations, as that is the only streamlined branch of government and thus operates at unbelievable efficiency."
+
+devolved_civic_influencer:0 "Influencer"
+devolved_civic_influencer_desc:0 "The bueracratic class in this society is dedicated to external affairs as well as internal, in order to greatly extend their galactic presence and enforce their political will."
+
+devolved_civic_ethical_adherance:0 "Ethical Adherance"
+devolved_civic_ethical_adherance_desc:0 "Citizens naturally pressure each other to strictly adhere to the government's ideology, and will rarely faulter. Even on conquered worlds, a relentless propoganda machine, whether run by the state or by citizen groups, quickly assimilates any xeno."
+
+devolved_civic_oppositionalism:0 "Radical Oppositionalism"
+devolved_civic_oppositionalism_desc:0 "The government actively encourages all to not follow the ideology of the government. Any city in the empire may have a completely different ideology than another. This leads to many pockets of the empire being pockets of illegal experimentation and kidnapping of enemy scientists, leading to insane technological growth in physics and engineering."
+
+devolved_civic_expedition_enhancement:0 "Expedition Enhancement"
+devolved_civic_expedition_enhancement_desc:0 "REPLACE_ME Minor Artifacts Focus"
+
+devolved_civic_consumer_craze:0 "Consumer Craze"
+devolved_civic_consumer_craze_desc:0 "REPLACE_ME Consumer Goods Focus"
+
+devolved_civic_konsumerist_killers:0 "Konsumerist Killers"
+devolved_civic_konsumerist_killers_desc:0 "REPLACE_ME Consumer Goods Hate"
+
+devolved_civic_beastly_breeders:0 "Beastly Breeders"
+devolved_civic_beastly_breeders_desc:0 "REPLACE_ME Pop Growth Focus"
+
+devolved_civic_stratworld_strategists:0 "Stratworld Strategists"
+devolved_civic_stratworld_strategists_desc:0 "REPLACE_ME Strategic Resource Focus"
+
+devolved_civic_stratworld_despisers:0 "Stratworld Despisers"
+devolved_civic_stratworld_despisers_desc:0 "REPLACE_ME Strategic Resource Hate"
+
+devolved_civic_influencer_idiot:0 "Influencer Idiot"
+devolved_civic_influencer_idiot_desc:0 "REPLACE_ME Influence Hate"
+
+devolved_civic_undead_upkeeper:0 "Undead Upkeeper"
+devolved_civic_undead_upkeeper_desc:0 "REPLACE_ME Upkeep Focus"
+
+devolved_civic_dead_upkeeper:0 "Non-Caustic Costs"
+devolved_civic_dead_upkeeper_desc:0 "REPLACE_ME Upkeep Hate"
+
+devolved_civic_timeless_trading:0 "Timeless Trading"
+devolved_civic_timeless_trading_desc:0 "REPLACE_ME Trade Value Focus"
+
+devolved_civic_enlightened_edicts:0 "Enlightened Edicts"
+devolved_civic_enlightened_edicts_desc:0 "REPLACE_ME Edict Focus"
+
+devolved_civic_genetic_gerrymanders:0 "Genetic Gerrymanders"
+devolved_civic_genetic_gerrymanders_desc:0 "REPLACE_ME Genetic Focus"
+
+devolved_civic_omniconomy:0 "Omniconomy"
+devolved_civic_omniconomy_desc:0 "All manners of the economy are left to hobbyist work, leading to a small gain of every resource type from a unique trade policy."
+
+devolved_civic_protein_puritans:0 "Protein Puritans"
+devolved_civic_protein_puritans_desc:0 "REPLACE_ME Genetic Hate"
+
+devolved_civic_infinite_employment:0 "Infinite Employment"
+devolved_civic_infinite_employment_desc:0 "REPLACE_ME Jobs Focus"
+
+devolved_civic_hyper_housing:0 "Hyper Housing"
+devolved_civic_hyper_housing_desc:0 "REPLACE_ME Housing Focus"
+
+devolved_civic_sexual_singularity:0 "Sexual Singularity"
+devolved_civic_sexual_singularity_desc:0 "REPLACE_ME Machine Assembly Focus"
+
+devolved_civic_profit_perforation:0 "Profit Perforation"
+devolved_civic_profit_perforation_desc:0 "REPLACE_ME Trade Value Hate"
+
+devolved_civic_infrastructure_initiation:0 "Infrastructure Initiation"
+devolved_civic_infrastructure_initiation_desc:0 "REPLACE_ME Buildspeed Focus"
+
+devolved_civic_infrastructure_irritation:0 "Infrastructure Irritation"
+devolved_civic_infrastructure_irritation_desc:0 "REPLACE_ME Buildspeed Hate"
+
+devolved_civic_alloy_execution:0 "Alloy Execution"
+devolved_civic_alloy_execution_desc:0 "REPLACE_ME Alloy Hate"
+
+devolved_civic_megamalice:0 "MegaMalice"
+devolved_civic_megamalice_desc:0 "REPLACE_ME Megastructure Hate"
+
+devolved_civic_starbase_supremacy:0 "Starbase Supremacy"
+devolved_civic_starbase_supremacy_desc:0 "REPLACE_ME Starbase Focus"
+
+devolved_civic_wholesome_diplomats:0 "Wholesome Diplomats"
+devolved_civic_wholesome_diplomats_desc:0 "REPLACE_ME Diplomacy Focus ADDITIONAL EFFECT plus 150 opinion for *all* empire types."
+
+devolved_civic_fleet_frenzy:0 "Fleet Frenzy"
+devolved_civic_fleet_frenzy_desc:0 "REPLACE_ME Fleet Focus"
+
+devolved_civic_fleet_fuckers:0 "Fleet Fuckers"
+devolved_civic_fleet_fuckers_desc:0 "REPLACE_ME Fleet Fuckers"
+
+devolved_civic_hateable_huggers:0 "Hateable Huggers"
+devolved_civic_hateable_huggers_desc:0 "REPLACE_ME Diplomacy Hate ADDITIONAL EFFECT minus 150 opinion for *all* empire types."
+
+devolved_civic_amazing_armies:0 "Amazing Armies"
+devolved_civic_amazing_armies_desc:0 "REPLACE_ME Army Love"
+
+devolved_civic_army_abomination:0 "Army Abomination"
+devolved_civic_army_abomination_desc:0 "REPLACE_ME Army Hate"
+
+devolved_civic_timeless_terraforming:0 "Timeless Terraforming"
+devolved_civic_timeless_terraforming_desc:0 "REPLACE_ME Terraform Love"
+
+devolved_civic_infinite_unemployment:0 "Infinite Unemployment"
+devolved_civic_infinite_unemployment_desc:0 "REPLACE_ME Jobs Hate"
+
+devolved_civic_demancipation_proclamation:0 "Demancipation Proclamation"
+devolved_civic_demancipation_proclamation_desc:0 "REPLACE_ME Slavery Focus"
+
+devolved_civic_homephobia:0 "Homephobia"
+devolved_civic_homephobia_desc:0 "REPLACE_ME Housing Hate"
+
+devolved_civic_shitty_starbases:0 "Shitty Starbases"
+devolved_civic_shitty_starbases_desc:0 "REPLACE_ME Starbase Hate"
+
+devolved_civic_developing_country:0 "Developing Country"
+devolved_civic_developing_country_desc:0 "Their lands and people were previously pillaged and exploited for centuries by a stronger empire, and have developed an incredible ability to curtail to other empire's demands, and find ways to get what they need out of them."
+
+devolved_civic_lucrative_leaders:0 "Lucrative Leaders"
+devolved_civic_lucrative_leaders_desc:0 "REPLACE_ME Leader Focus"
+
+devolved_civic_loser_leaders:0 "Loser Leaders"
+devolved_civic_loser_leaders_desc:0 "REPLACE_ME Leader Hate"
+
+devolved_civic_survey_corps:0 "Survey Corps"
+devolved_civic_survey_corps_desc:0 "Long ago in this nation's past, great beasts ravaged their world. A dedicated team of explorers and hunters would frequently explore the outside of their fortified settlements, and eventually pushed the beasts to extinction through tactics and a great focus on mobility. This society keeps their memory alive through great amount of resources being dedicated to exploration and an obsession with speed."
+
+devolved_civic_heavenly_whales:0 "Heavenly Whales"
+devolved_civic_heavenly_whales_desc:0 "REPLACE_ME Merryland"
+
+devolved_civic_cuzzx_crystals:0 "Cuzzx Crystals"
+devolved_civic_cuzzx_crystals_desc:0 "REPLACE_ME Cuzzx Clan, gives custom rare crystal edicts"
+
+devolved_civic_god_is_a_gamer:0 "God is a Gamer"
+devolved_civic_god_is_a_gamer_desc:0 "The dominant religion in this society envisions God as a game designer, and thus have a special reverance for game designers and design their society as a game. EFFECT ADDS CUSTOM BUILDING + JOB TYPE. BUILDING HAS ADDITIONAL EFFECTS IF FANATIC SPIRITUALIST"
+
+devolved_civic_victors_wrath:0 "Victor's Wrath"
+devolved_civic_victors_wrath_desc:0 "Per priest, all your ships gain 1% ship_stats_speed sublight speed and ship_stats_damage ship fire rate."
+
+devolved_civic_majestic_megastructures:0 "Majestic Megastructures"
+devolved_civic_majestic_megastructures_desc:0 "Per bureaucrat and priest, megastructures gain 1% £economy£ output and require 0.1 £energy£ extra upkeep. Start with the contingency core relic."
+
+devolved_civic_agenda_acceleration:0 "Agenda Acceleration"
+devolved_civic_agenda_acceleration_desc:0 "REPLACE_ME"
+
+devolved_civic_lander_test:0 "Landerianism"
+devolved_civic_lander_test_desc:0 "TEST CIVIC ADDS NEW TRADITIONS, GUI IN PROGRESS"
+
+devolved_civic_trade_trollers:0 "Trade Trollers"
+devolved_civic_trade_trollers_desc:0 "REPLACE_ME"
+
+devolved_civic_arbitration_duplication:0 "Arbitration Duplication"
+devolved_civic_arbitration_duplication_desc:0 "REPLACE_ME"
+
+devolved_civic_cooperian_culture:0 "Cooperian Culture"
+devolved_civic_cooperian_culture_desc:0 "Adds 'Cooperian Culturalists' that provide country wide bonuses based on the empire's ethics."
+
+devolved_civic_yesmen:0 "Yesmen"
+devolved_civic_yesmen_desc:0 "REPLACE_ME VERY ODD DON'T USE IN NORMAL GAME"
+
+devolved_civic_accelerated_ascenders:0 "Accelerated Ascenders"
+devolved_civic_accelerated_ascenders_desc:0 "REPLACE_ME OP DON'T USE IN NORMAL GAME"
+
+devolved_civic_amplified_ascenders:0 "Amplified Ascenders"
+devolved_civic_amplified_ascenders_desc:0 "REPLACE_ME VERY OP DON'T USE IN NORMAL GAME"
+
+devolved_civic_l_machine_neo:0 "L Machine Neo"
+devolved_civic_l_machine_neo_desc:0 "REPLACE_ME VERY... UP?"
+
+devolved_civic_g_machine:0 "G Machine"
+devolved_civic_g_machine_desc:0 "REPLACE_ME VERY OP DON'T USE IN NORMAL GAME"
+
+devolved_civic_sg_machine:0 "SG Machine"
+devolved_civic_sg_machine_desc:0 "REPLACE_ME VERY OP DON'T USE IN NORMAL GAME"
+
+devolved_civic_cheater_contract:0 "Cheater Contract"
+devolved_civic_cheater_contract_desc:0 "Allows cheating civics to be used."
+
+devolved_civic_c_machine:0 "Convenience Machine"
+devolved_civic_c_machine_desc:0 "VERY OP, GIVES ONLY CONVENIENCE (mostly speed) RELATED BUFFS"
+
+
+# Councilor Positions
+
+devolved_civic_councilor_niche_exploiter:0 "Niche Exploiter"
+devolved_civic_councilor_niche_exploiter_desc:0 "The Niche Exploiter analyzes local economies to create more jobs to fill niches."
+
+devolved_civic_councilor_rock_remover:0 "Rock Remover"
+devolved_civic_councilor_rock_remover_desc:0 "The Rock Remover is tasked with coming up with new ways to destroy minerals, by forming them into something far greater."
+
+devolved_civic_councilor_house_filler:0 "House Filler"
+devolved_civic_councilor_house_filler_desc:0 "The House Filler is dedicated to outreach programs to help get houses used by those from other worlds."
+
+devolved_civic_councilor_nutrient_nullifier:0 "Nutrient Nullifier"
+devolved_civic_councilor_nutrient_nullifier_desc:0 "The Nutrient Nullifier studies new ways to obliterate food in state of the art particle accelerators."
+
+devolved_civic_councilor_metallic_maniac:0 "Metallic Maniac"
+devolved_civic_councilor_metallic_maniac_desc:0 "The Metallic Maniac is so obsessed with hoarding alloys that they streamline construction processes to both integrate automatic alloy producing machinery and decrease expenditures."
+
+devolved_civic_councilor_hugless_heirophant:0 "Hugless Heirophant"
+devolved_civic_councilor_hugless_heirophant_desc:0 "The Hugless Heirophant is the most repulsive being in the whole society, and thus has a unique vision for creating a more loving society... from the point of view of someone who was never loved."
+
+devolved_civic_councilor_nation_pleaser:0 "Nation Pleaser"
+devolved_civic_councilor_nation_pleaser_desc:0 "The head of the nation pleasing department, which is dedicated to exploiting cultural minutae of richer empires to generate sympathy."
+
+devolved_civic_councilor_adventure_accentuator:0 "Adventure Accentuator"
+devolved_civic_councilor_adventure_accentuator_desc:0 "REPLACE_ME"
+
+devolved_civic_councilor_ethical_enforcer:0 "Ethical Enforcer"
+devolved_civic_councilor_ethical_enforcer_desc:0 "REPLACE_ME"
+
+devolved_civic_councilor_pleasure_pants_professional:0 "Pleasure Pants Professional"
+devolved_civic_councilor_pleasure_pants_professional_desc:0 "REPLACE_ME"
+
+devolved_civic_councilor_head_homephobe:0 "Homephobe"
+devolved_civic_councilor_head_homephobe_desc:0 "REPLACE_ME"
+
+devolved_civic_councilor_recursive_optimizer:0 "Recursive Optimizer"
+devolved_civic_councilor_recursive_optimizer_desc:0 "REPLACE_ME"
+
+devolved_civic_councilor_leader_punisher:0 "Leader Punisher"
+devolved_civic_councilor_leader_punisher_desc:0 "REPLACE_ME"
+
+devolved_civic_councilor_chemical_chief:0 "Chemical Chief"
+devolved_civic_councilor_chemical_chief_desc:0 "REPLACE_ME"
+
+devolved_civic_councilor_anti_fleet_alderman:0 "Anti-Fleet Alderman"
+devolved_civic_councilor_anti_fleet_alderman_desc:0 "REPLACE_ME"
+
+devolved_civic_councilor_federation_fellow:0 "Federation Fellow"
+devolved_civic_councilor_federation_fellow_desc:0 "REPLACE_ME"
+
+devolved_civic_councilor_infrastructure_idealogue:0 "Infrastructure Idealogue"
+devolved_civic_councilor_infrastructure_idealogue_desc:0 "REPLACE_ME"
+
+devolved_civic_councilor_anti_infrastructure_inquisitor:0 "Anti-Infrastructure Inquisitor"
+devolved_civic_councilor_anti_infrastructure_inquisitor_desc:0 "REPLACE_ME"
+
+devolved_civic_councilor_jaeger:0 "Jäger"
+devolved_civic_councilor_jaeger_desc:0 "A position named after a member of the first survey corps, this councilor focuses on keeping hunting traditions alive and devising new ways to increase the mobility of fleets."
+
+devolved_civic_councilor_whale_faith:0 "Whale of Faith"
+devolved_civic_councilor_whale_faith_desc:0 "REPLACE_ME"
+
+devolved_civic_councilor_whale_hope:0 "Whale of Hope"
+devolved_civic_councilor_whale_hope_desc:0 "REPLACE_ME fire rate from war exhaustion is not currently implemented"
+
+devolved_civic_councilor_religious_warlord:0 "Religious Warlord"
+devolved_civic_councilor_religious_warlord_desc:0 "REPLACE_ME"
+
+devolved_civic_councilor_chonny_jash_heart:0 "Chonny Jash Heart"
+devolved_civic_councilor_chonny_jash_heart_desc:0 "REPLACE_ME"
+
+devolved_civic_councilor_chonny_jash_mind:0 "Chonny Jash Mind"
+devolved_civic_councilor_chonny_jash_mind_desc:0 "REPLACE_ME"
+
+devolved_civic_councilor_chonny_jash_soul:0 "Chonny Jash Soul"
+devolved_civic_councilor_chonny_jash_soul_desc:0 "REPLACE_ME"
+
+devolved_civic_councilor_trauma_bonded_motivator:0 "Trauma Bonded Motivator"
+devolved_civic_councilor_trauma_bonded_motivator_desc:0 "REPLACE_ME"
+
+devolved_civic_councilor_unitarian:0 "Unitarian"
+devolved_civic_councilor_unitarian_desc:0 "REPLACE_ME"
+
+devolved_civic_councilor_cultural_disruptor:0 "Cultural Disruptor"
+devolved_civic_councilor_cultural_disruptor_desc:0 "REPLACE_ME"
+
+devolved_civic_councilor_engergizing_evangelist:0 "Energizing Evangelist"
+devolved_civic_councilor_engergizing_evangelist_desc:0 "REPLACE_ME"
+
+devolved_civic_councilor_patrimonial_power_pulveriser:0 "REPLACE_ME"
+devolved_civic_councilor_patrimonial_power_pulveriser_desc:0 "REPLACE_ME"
+
+devolved_civic_councilor_stone_slut:0 "Stone Slut"
+devolved_civic_councilor_stone_slut_desc:0 "REPLACE_ME"
+
+devolved_civic_councilor_physics_fanatic:0 "Physics Fanatic"
+devolved_civic_councilor_physics_fanatic_desc:0 "REPLACE_ME"
+
+devolved_civic_councilor_societal_savant:0 "Societal Savant"
+devolved_civic_councilor_societal_savant_desc:0 "REPLACE_ME"
+
+devolved_civic_councilor_engineering_erudite:0 "Engineering Erudite"
+devolved_civic_councilor_engineering_erudite_desc:0 "REPLACE_ME"
+
+devolved_civic_councilor_particle_pagan:0 "Particle Pagan"
+devolved_civic_councilor_particle_pagan_desc:0 "REPLACE_ME"
+
+devolved_civic_councilor_sociological_skeptic:0 "Sociological Skeptic"
+devolved_civic_councilor_sociological_skeptic_desc:0 "REPLACE_ME"
+
+devolved_civic_councilor_mechanical_malcontent:0 "Mechanical Malcontent"
+devolved_civic_councilor_mechanical_malcontent_desc:0 "REPLACE_ME"
+
+devolved_civic_councilor_food_fanatic:0 "Food Fanatic"
+devolved_civic_councilor_food_fanatic_desc:0 "REPLACE_ME"
+
+devolved_civic_councilor_bureaucratic_breeder:0 "Bureaucratic Breeder"
+devolved_civic_councilor_bureaucratic_breeder_desc:0 "REPLACE_ME"
+
+devolved_civic_councilor_libertarian:0 "Libertarian"
+devolved_civic_councilor_libertarian_desc:0 "REPLACE_ME"
+
+devolved_civic_councilor_influencer:0 "Influencer"
+devolved_civic_councilor_influencer_desc:0 "REPLACE_ME"
+
+devolved_civic_councilor_consumerism_creator:0 "Consumerism Creator"
+devolved_civic_councilor_consumerism_creator_desc:0 "REPLACE_ME"
+
+devolved_civic_councilor_konsumerist_khan:0 "Konsumerist Khan"
+devolved_civic_councilor_konsumerist_khan_desc:0 "REPLACE_ME"
+
+devolved_civic_councilor_orgy_ordinator:0 "Orgy Ordinator"
+devolved_civic_councilor_orgy_ordinator_desc:0 "REPLACE_ME"
+
+devolved_civic_councilor_strategical_sufferer:0 "Strategical Sufferer"
+devolved_civic_councilor_strategical_sufferer_desc:0 "REPLACE_ME"
+
+devolved_civic_councilor_influence_hater:0 "Influence Hater"
+devolved_civic_councilor_influence_hater_desc:0 "REPLACE_ME"
+
+devolved_civic_councilor_upkeeping_umpire:0 "Upkeeping Umpire"
+devolved_civic_councilor_upkeeping_umpire_desc:0 "REPLACE_ME"
+
+devolved_civic_councilor_cost_saving_colonizer:0 "Cost Saving Colonizer"
+devolved_civic_councilor_cost_saving_colonizer_desc:0 "REPLACE_ME"
+
+devolved_civic_councilor_trading_tim:0 "Trading Tim"
+devolved_civic_councilor_trading_tim_desc:0 "REPLACE_ME"
+
+devolved_civic_councilor_edictarian:0 "Edictarian"
+devolved_civic_councilor_edictarian_desc:0 "REPLACE_ME"
+
+devolved_civic_councilor_gentern:0 "Gentern"
+devolved_civic_councilor_gentern_desc:0 "REPLACE_ME"
+
+devolved_civic_councilor_witch_hunter:0 "Witch Hunter"
+devolved_civic_councilor_witch_hunter_desc:0 "REPLACE_ME"
+
+devolved_civic_councilor_professional_perforator:0 "Professional Perforation"
+devolved_civic_councilor_professional_perforator_desc:0 "REPLACE_ME"
+
+devolved_civic_councilor_metallic_macerator:0 "Metallic Macerator"
+devolved_civic_councilor_metallic_macerator_desc:0 "REPLACE_ME"
+
+devolved_civic_councilor_mega_hater:0 "Mega Hater"
+devolved_civic_councilor_mega_hater_desc:0 "REPLACE_ME"
+
+devolved_civic_councilor_starbase_serenader:0 "Starbase Serenader"
+devolved_civic_councilor_starbase_serenader_desc:0 "REPLACE_ME"
+
+devolved_civic_councilor_fleet_former:0 "Fleet Former"
+devolved_civic_councilor_fleet_former_desc:0 "REPLACE_ME"
+
+devolved_civic_councilor_army_anticipator:0 "Army Anticipator"
+devolved_civic_councilor_army_anticipator_desc:0 "REPLACE_ME"
+
+devolved_civic_councilor_army_annihilator:0 "Army Annihilator"
+devolved_civic_councilor_army_annihilator_desc:0 "REPLACE_ME"
+
+devolved_civic_councilor_terraforming_terry:0 "Terraforming Terry"
+devolved_civic_councilor_terraforming_terry_desc:0 "REPLACE_ME"
+
+devolved_civic_councilor_enhancing_enslaver:0 "Enhancing Enslaver"
+devolved_civic_councilor_enhancing_enslaver_desc:0 "REPLACE_ME"
+
+devolved_civic_councilor_starbase_smusher:0 "Starbase Smusher"
+devolved_civic_councilor_starbase_smusher_desc:0 "REPLACE_ME"
+
+devolved_civic_councilor_cuzzx_crystalmaker:0 "Cuzzx Crystalmaker"
+devolved_civic_councilor_cuzzx_crystalmaker_desc:0 "REPLACE_ME"
+
+devolved_civic_councilor_castronova_TA:0 "Castronova's TA"
+devolved_civic_councilor_castronova_TA_desc:0 "REPLACE_ME"
+
+devolved_civic_councilor_megastructure_manufacturer:0 "Megastructure Manufacturer"
+devolved_civic_councilor_megastructure_manufacturer_desc:0 "REPLACE_ME"
+
+devolved_civic_councilor_agenda_accelerator:0 "Agenda Accelerator"
+devolved_civic_councilor_agenda_accelerator_desc:0 "REPLACE_ME"
+
+
+devolved_civic_councilor_leader_obliterator:0 "Leader Obliterator"
+devolved_civic_councilor_leader_obliterator_desc:0 "REPLACE_ME"
+
+devolved_civic_councilor_aidz_aristocrat:0 "Aidz Aristocrat"
+devolved_civic_councilor_aidz_aristocrat_desc:0 "REPLACE_ME"
+
+
+
+devolved_civic_councilor_tumbled_technocrat:0 "Tumbled Onyx"
+devolved_civic_councilor_tumbled_technocrat_desc:0 "REPLACE_ME"
+
+devolved_civic_divine_districts:0 "Divine Districts"
+devolved_civic_divine_districts_desc:0 "REPLACE_ME District Love"
+
+devolved_civic_physics_psycho:0 "Physics Psycho"
+devolved_civic_physics_psycho_desc:0 "REPLACE_ME"
+devolved_civic_society_sociopath:0 "Society Sociopath"
+devolved_civic_society_sociopath_desc:0 "REPLACE_ME"
+devolved_civic_engineering_evil_doer:0 "Engineering Evil Doer"
+devolved_civic_engineering_evil_doer_desc:0 "REPLACE_ME"
+devolved_civic_physics_fandom:0 "Physics Fandom"
+devolved_civic_physics_fandom_desc:0 "REPLACE_ME"
+devolved_civic_society_sanctuary:0 "Society Sanctuary"
+devolved_civic_society_sanctuary_desc:0 "REPLACE_ME"
+devolved_civic_exagerated_engineering:0 "Exagerated Engineering"
+devolved_civic_exagerated_engineering_desc:0 "REPLACE_ME"
+
+devolved_civic_inflation_initiation_easy:0 "Inflation Initiation I"
+devolved_civic_inflation_initiation_easy_desc:0 "Crazy output bonuses, but overtime inflation will cause all your costs to increase 5% per year."
+
+devolved_civic_inflation_initiation_medium:0 "Inflation Initiation II"
+devolved_civic_inflation_initiation_medium_desc:0 "Crazy output bonuses, but overtime inflation will cause all your costs to increase 10% per year."
+
+devolved_civic_inflation_initiation_hard:0 "Inflation Initiation III"
+devolved_civic_inflation_initiation_hard_desc:0 "Crazy output bonuses, but overtime inflation will cause all your costs to increase 15% per year."
+
+# Edicts
+
+edict_devolved_edict_crystal_voice_deepener:0 "Crystal Voice Deepener"
+edict_devolved_edict_crystal_voice_deepener_desc:0 "Provides the rulers of our nation a rare crystal powered vocal chord implant to greatly increase their gravitas."
+
+edict_devolved_edict_diamond_chalices:0 "Diamond Chalices"
+edict_devolved_edict_diamond_chalices_desc:0 "Provides all high class members of our society with their very own diamond chalice."
+
+edict_devolved_edict_programmable_virtual_reality:0 "Programmable Virtual Reality... The Corrupt Version"
+edict_devolved_edict_programmable_virtual_reality_desc:0 "Provides social scientists with a corrupt version of programmable virtual reality, greatly increasing their research and providing our spies with new social engineering tools."
+
+
+# Custom Modifiers
+mod_devolved_war_exhaustion_fire_rate:0 "Max Fire Rate From War Exhaustion"
+
+# Opinions
+triggered_opinion_power_pit:0 "Power Pity"
+triggered_opinion_cute_little_fleets:0 "Cute little fleets!"
+triggered_opinion_wholesome_100:0 "Wholesome 100!"
+triggered_opinion_annoying:0 "Annoying Ass Empire"
+triggered_opinion_developing:0 "Developing Nation"
+triggered_opinion_semigod_worship:0 "They are the true semigods!"
+
+# Trade Conversions (maybe not necessary?)
+omni_conversion:0 "REPLACE_ME"
+omni_conversion_desc:0 "REPLACE_ME"
+omni_conversion_name:0 "REPLACE_ME"
+trade_conversion_omni_name:0 "REPLACE_ME"
+trade_conversion_no_energy_research_name:0 "REPLACE_ME"
+trade_conversion_no_energy_unity_name:0 "REPLACE_ME"
+trade_conversion_no_energy_trade_league_name:0 "REPLACE_ME"
+trade_conversion_no_energy_holy_covenant_name:0 "REPLACE_ME"
+trade_conversion_no_energy_mutual_aid_name:0 "REPLACE_ME"
+trade_conversion_no_energy_food_name:0 "REPLACE_ME"
+trade_conversion_no_energy_mining_name:0 "REPLACE_ME"
+trade_conversion_no_energy_social_name:0 "REPLACE_ME"
+
+# Policies
+trade_policy_omni_conversion:0 "Omniconomy"
+trade_policy_omni_conversion_desc:0 "The economy is rerouted so trade focuses on a little bit of everything! Each collected trade value £trade_value£ earns us a small amount of £energy£ £minerals£ £food£ £alloys£ £consumer_goods£ £physics_research£ £society_research£ £engineering_research£ £unity£ £influence£ £volatile_motes£ £exotic_gases£ £rare_crystals£ £sr_dark_matter£ £nanites£ £sr_living_metal£ £sr_zro£ £minor_artifacts£ £sr_astral_threads£"
+
+trade_policy_no_energy_research:0 "No Energy Innovation"
+trade_policy_no_energy_research_desc:0 "0.25 £physics_research£ £society_research£ £engineering_research£"
+
+trade_policy_no_energy_trade_league:0 "No Energy Trade League"
+trade_policy_no_energy_trade_league_desc:0 "0.5 £consumer_goods£ £unity£"
+
+trade_policy_no_energy_food:0 "No Energy Agricultural Subsidies"
+trade_policy_no_energy_food_desc:0 "1 £food£"
+
+trade_policy_no_energy_mining:0 "No Energy Mining Subsidies"
+trade_policy_no_energy_mining_desc:0 "1 £minerals£"
+
+trade_policy_no_energy_omni_conversion:0 "No Energy Omniconomy"
+trade_policy_no_energy_omni_conversion_desc:0 "Slightly more of each of the following, £minerals£ £food£ £alloys£ £consumer_goods£ £physics_research£ £society_research£ £engineering_research£ £unity£ £influence£ £volatile_motes£ £exotic_gases£ £rare_crystals£ £sr_dark_matter£ £nanites£ £sr_living_metal£ £sr_zro£ £minor_artifacts£ £sr_astral_threads£"
+
+trade_policy_no_energy_consumer_goods:0 "No Energy Consumer Benefits"
+trade_policy_no_energy_consumer_goods_desc:0 "0.5 £consumer_goods£"
+
+trade_policy_no_energy_unity:0 "No Energy Marketplace of Ideas"
+trade_policy_no_energy_unity_desc:0 "0.5 £unity£"
+
+trade_policy_no_energy_holy_covenant:0 "No Energy Holy Covenant"
+trade_policy_no_energy_holy_covenant_desc:0 "1 £unity£"
+
+trade_policy_no_energy_mutual_aid:0 "No Energy Mutual Aid"
+trade_policy_no_energy_mutual_aid_desc:0 "0.7 £food£ £minerals"
+
+trade_policy_no_energy_social:0 "No Energy Social Development"
+trade_policy_no_energy_social_desc:0 "0.4 £unity£ £society_research£"
+
+
+
+# Buildings
+building_game_design_college:0 "Game Design College"
+building_game_design_college_desc:0 "The galaxy's most talented game designers are cultivated here."
+
+building_cooperian_culture_center:0 "Cooperian Culture Center"
+building_cooperian_culture_center_desc:0 "An agency dedicated to boosting the ideals of the empire."
+
+building_cooperian_culture_complex:0 "Cooperian Culture Complex"
+building_cooperian_culture_complex_desc:0 "Aerials built around the Cooperian Culture Center that greatly increases the capacity of cooperian culturalists to do their work."
+
+# Jobs
+job_devolved_game_designer:0 "Game Designer"
+job_devolved_game_designer_plural:0 "Game Designers"
+job_devolved_game_designer_desc:0 "If god was a gamer, he'd make life not too easy as to keep you engaged, but not too hard as to discourage you."
+mod_job_devolved_game_designer_add:0 "Game Designer Jobs"
+
+job_devolved_cooperian_culturalist:0 "Cooperian Culturalist"
+job_devolved_cooperian_culturalist_plural:0 "Cooperian Culturalists"
+job_devolved_cooperian_culturalist_desc:0 "The Cooperian Culturalists are top of the line artists and influencers dedicated to refining the ideals of the empire."
+mod_job_devolved_cooperian_culturalist_add:0 "Cooperian Culturalist Jobs"
+
+# Traditions
+unitussy:0 "Unitussy"
+unitussy_desc:0 "A tradition tree focused on increasing unity using Landerian methods."
+tr_unitussy_adopt:0 "Unitussy Adopt"
+tr_unitussy_finish:0 "Unitussy Finisher"
+tr_unitussy_cultural_phenomenon:0 "Cultural Phenomenon"
+tr_unitussy_unity_districts:0 "Unity Districts"
+tr_unitussy_bloody_unity:0 "Bloody Unity"
+tr_unitussy_leader_wage_cut:0 "Wage Cut"
+tr_unitussy_mega_art_mania:0 "Art Mania"
+
+ascensionussy:0 "Ascensionussy"
+ascensionussy_desc:0 "A tradition tree focused on boosting planetary ascension."
+tr_ascensionussy_adopt:0 "Ascensionussy Adopt"
+tr_ascensionussy_finish:0 "Ascensionussy Finisher"
+tr_ascensionussy_ascending_andy:0 "Ascending Andy"
+tr_ascensionussy_ascending_andrew:0 "Ascending Andrew"
+tr_ascensionussy_ascending_april:0 "Ascending April"
+tr_ascensionussy_ascending_arlo:0 "Ascending Arlo"
+tr_ascensionussy_ascending_aidan:0 "Ascending Aidan"
+
+starbussy:0 "Starbussy"
+starbussy_desc:0 "A tradition tree focused on improving starbases."
+tr_starbussy_adopt:0 "Starbussy Adopt"
+tr_starbussy_finish:0 "Starbussy Finisher"
+tr_starbussy_cheap_defense:0 "Cheap Defense"
+tr_starbussy_stronger_starbases:0 "Stronger Starbases"
+tr_starbussy_cheapy_weapy:0 "Alloy Alfalfas"
+tr_starbussy_starbase_hardener:0 "Starbase Hardener"
+tr_starbussy_defense_damage:0 "Defense Damage"
+
+# Resolutions
+
+sg_resolutions:0 "SemiGod Projects"
+
+resolution_project_extinction:0 "Project Extinction"
+resolution_project_extinction_desc:0 "Destroy all ecosystems."
+resolution_category_extinction:0 "Project Extinction"
+resolution_project_extinction_repeal:0 "Repeal Project Extinction"
+resolution_project_extinction_repeal_desc:0 "Community members will no longer be forced to destroy their own worlds."
+resolution_project_extinction_repeal_success:0 "Project Extinction has been successfully repealed!"
+
+resolution_project_poverty:0 "Project Poverty"
+resolution_project_poverty_desc:0 "Destroy all economies."
+resolution_category_poverty:0 "Project Poverty"
+resolution_project_poverty_repeal:0 "Repeal Project Poverty"
+resolution_project_poverty_repeal_desc:0 "Community members will no longer be forced to eliminate all semblances of economy and dump remaining economic output into the nearest black hole."
+resolution_project_anarchy_repeal_success:0 "Project Anarchy has been successfully repealed!"
+
+resolution_project_anarchy:0 "Project Anarchy"
+resolution_project_anarchy_desc:0 "Destroy all order."
+resolution_category_anarchy:0 "Project Anarchy"
+resolution_project_anarchy_repeal:0 "Repeal Project Anarchy"
+resolution_project_anarchy_repeal_desc:0 "Community members will no longer be forced to prevent any form of power structure and incite rebellion."
+resolution_project_poverty_repeal_success:0 "Project Poverty has been successfully repealed!"
+
+# Deposits
+d_delicious_deposit:0 "Delicious Deposit"
+d_caffeine_deposit:0 "Caffeine Deposit"
+d_storage_porridge:0 "Storage Porridge"
+
+# Modifiers
+increasing_inflation_easy:0 "Increasing Inflation I"
+increasing_inflation_medium:0 "Increasing Inflation II"
+increasing_inflation_hard:0 "Increasing Inflation III"
+
+random_event_modifier_A_1:0 "Metallurgic Mania (A)"
+random_event_modifier_B_1:0 "Self Actualization (B)"
+random_event_modifier_C_1:0 "Artisan Overdrive (C)"
+random_event_modifier_D_1:0 "Age of Stagnation (D)"
+random_event_modifier_F_1:0 "Bloated Bureau (F)"
+
+random_event_modifier_A_2:0 "Upkeep Elimination (A)"
+random_event_modifier_B_2:0 "Research Rushing (B)"
+random_event_modifier_C_2:0 "Trading Tradeoffs (C)"
+random_event_modifier_D_2:0 "Economic Slog (D)"
+random_event_modifier_F_2:0 "Unemployment Epidemic (F)"
+
+#random_event_modifier_A_3:0 "N/A"
+random_event_modifier_B_3:0 "Ruler Rhapsody (B)"
+random_event_modifier_C_3:0 "Workers' Wonderland (C)"
+random_event_modifier_D_3:0 "Factional Friction (D)"
+random_event_modifier_F_3:0 "Councilor Incompetence (F)"
+
+random_event_modifier_A_4:0 "Mother of all Megastructures (A)"
+random_event_modifier_B_4:0 "Fertility Frenzy (B)"
+random_event_modifier_C_4:0 "Cooperian Captivation (C)"
+random_event_modifier_D_4:0 "Station Stagnation (D)"
+random_event_modifier_F_4:0 "Trust Bust (F)"
+
+random_event_modifier_A_5:0 "Ascension Millenium (A)"
+random_event_modifier_B_5:0 "Edictarian Explosion (B)"
+random_event_modifier_C_5:0 "Astral Awakening (C)"
+random_event_modifier_D_5:0 "Starbases are Stupid (D)"
+random_event_modifier_F_5:0 "Envoy Evaporation (F)"
+
+random_event_modifier_A_6:0 "Councilor Craze (A)"
+random_event_modifier_B_6:0 "Extra Ascension (B)"
+random_event_modifier_C_6:0 "Ascension Investment (C)"
+random_event_modifier_D_6:0 "Criminal Castle (D)"
+random_event_modifier_F_6:0 "Leader Lukemia (F)"
+
+#random_event_modifier_A_7:0 "Delicious Deposits (A)"
+#random_event_modifier_B_7:0 "Planetation Creation (B)"
+random_event_modifier_C_7:0 "Shoddy Ships (C)"
+random_event_modifier_D_7:0 "Technological Descendency (D)"
+random_event_modifier_F_7:0 "Civil Disobedience (F)"
+
+
+random_event_modifier_A_8:0 "Procrastinating Councilors (A)"
+random_event_modifier_B_8:0 "Leveling Leaders (B)"
+random_event_modifier_C_8:0 "Production Malfunction (C)"
+random_event_modifier_D_8:0 "Construction Strike" (D)"
+random_event_modifier_F_8:0 "Battleships of Bankruptcy (F)"
+
+random_event_modifier_A_9:0 "Production Boost (A)"
+random_event_modifier_B_9:0 "Station Initiation (B)"
+random_event_modifier_C_9:0 "Amazing Artifacts (C)"
+random_event_modifier_D_9:0 "Leader Slot Slump (D)"
+random_event_modifier_F_9:0 "Plummeting Production (F)"
+
+random_event_modifier_A_10:0 "Unitarian Utopia (A)"
+random_event_modifier_B_10:0 "Specimen Specialization (B)"
+random_event_modifier_C_10:0 "Nanite National Anthem (C)"
+random_event_modifier_D_10:0 "Executive Decline (D)"
+random_event_modifier_F_10:0 "Job Scramble (F)"
+
+random_event_modifier_A_11:0 "Research Radicalization (A)"
+random_event_modifier_B_11:0 "Light Speed Jets (B)"
+random_event_modifier_C_11:0 "Hard Labor (C)"
+random_event_modifier_D_11:0 "Zero Vision (D)"
+random_event_modifier_F_11:0 "BIG POPS (F)"
+
+random_event_modifier_A_12:0 "Fleet Unification (A)"
+random_event_modifier_B_12:0 "Production Boost Lite (B)"
+random_event_modifier_C_12:0 "Beefy Districts (C)"
+random_event_modifier_D_12:0 "Amateur Builders (D)"
+random_event_modifier_F_12:0 "Army Annihilation (F)"
+
+#random_event_modifier_A_13:0 ""
+#random_event_modifier_B_13:0 ""
+random_event_modifier_C_13:0 "More the Merrier (C)"
+random_event_modifier_D_13:0 "Offensive Falsehoods (D)"
+random_event_modifier_F_13:0 "Abandoned Ship (F)"
+
+#random_event_modifier_A_14:0 ""
+#random_event_modifier_B_14:0 ""
+#random_event_modifier_C_14:0 ""
+#random_event_modifier_D_14:0 ""
+#random_event_modifier_F_14:0 ""

@@ -1,0 +1,70 @@
+ #common\traditions\zz_devolved_unitussy.txt
+
+ 	#1v 	2v
+	#3v	4v
+	
+	#end
+
+tr_unitussy_adopt = {
+	modifier = {
+		planet_jobs_unity_produces_mult = 0.10
+	}
+}
+
+tr_unitussy_finish = {
+	modifier = {
+		ascension_perks_add = 1
+		planet_researchers_unity_produces_add = 0.2
+	}
+}
+
+tr_unitussy_cultural_phenomenon = {
+	modifier = {
+		planet_culture_workers_produces_mult = 0.2
+	}
+
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_unitussy_unity_districts = {
+	modifier = {
+		planet_districts_industrial_unity_produces_add = 5
+	}
+
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_unitussy_bloody_unity = {
+	modifier = {
+		ships_unity_upkeep_add = -1
+	}
+
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_unitussy_leader_wage_cut = {
+	modifier = {
+		leaders_upkeep_mult = -0.2
+	}
+
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_unitussy_mega_art_mania = {
+
+	modifier = {
+		megastructures_unity_produces_mult = 0.1
+	}
+
+	ai_weight = {
+		factor = 1000
+	}
+}

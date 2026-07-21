@@ -1,0 +1,30 @@
+d_delicious_deposit = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+
+	planet_modifier = {
+		planet_max_districts_mult = 0.5
+		planetary_ascension_effect_mult = 0.5
+		pop_growth_speed = 0.5
+		planet_pop_assembly_mult = 0.5
+		planet_pop_assembly_organic_mult = 0.5
+	}
+}
+
+d_caffeine_deposit = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+
+	planet_modifier = {
+		planet_jobs_produces_mult = 0.5
+	}
+}
+
+d_storage_porridge = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+
+	country_modifier = {
+		country_resource_max_add = 50000 
+	}
+}

@@ -1,0 +1,304 @@
+district_deep_space_relay = {
+	base_buildtime = 300
+	is_capped_by_modifier = no
+	exempt_from_ai_planet_specialization = yes
+
+	show_on_uncolonized = {
+		exists = from
+		from = { is_regular_empire = yes }
+		OR = {
+			uses_district_set = standard
+			uses_district_set = hive_world
+			uses_district_set = machine_world
+			uses_district_set = shattered_ring_world
+		}
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = penal_colony
+			has_modifier = slave_colony
+		}
+	}
+
+	potential = {
+		owner = {
+			has_civic = devolved_civic_despotic_deposits
+		}
+
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = penal_colony
+			has_modifier = slave_colony
+		}
+	}
+
+	allow = {
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = penal_colony
+			has_modifier = slave_colony
+		}
+	}
+
+	resources = {
+		category = planet_districts_cities
+		cost = {
+			alloys = 150
+		}
+		upkeep = {
+			energy = 3
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 2
+	}
+
+	triggered_planet_modifier = {
+		job_devolved_deep_space_worker_add = 2
+	}
+
+}
+
+district_district = {
+	base_buildtime = 450
+	is_capped_by_modifier = no
+	exempt_from_ai_planet_specialization = yes
+
+	show_on_uncolonized = {
+		exists = from
+		from = { is_regular_empire = yes }
+		OR = {
+			uses_district_set = standard
+			uses_district_set = hive_world
+			uses_district_set = machine_world
+			uses_district_set = shattered_ring_world
+		}
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = penal_colony
+			has_modifier = slave_colony
+		}
+	}
+
+	potential = {
+		owner = {
+			has_civic = devolved_civic_district_dynasty
+		}
+
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = penal_colony
+			has_modifier = slave_colony
+		}
+	}
+
+	allow = {
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = penal_colony
+			has_modifier = slave_colony
+		}
+	}
+
+	resources = {
+		category = planet_districts_cities
+		cost = {
+			minerals = 200
+		}
+		upkeep = {
+			energy = 5
+		}
+	}
+
+	planet_modifier = {
+		planet_max_districts_add = 1.2
+	}
+
+	# ADD AI WEIGHT SO THEY BUILD THESE IF THERE ARE 3 DISTRICTS OR LESS
+}
+
+district_aesthetic_arcology = {
+	base_buildtime = 500
+	is_capped_by_modifier = no
+	exempt_from_ai_planet_specialization = yes
+
+	show_on_uncolonized = {
+		exists = from
+		from = { is_regular_empire = yes }
+		OR = {
+			uses_district_set = standard
+			uses_district_set = hive_world
+			uses_district_set = machine_world
+			uses_district_set = shattered_ring_world
+		}
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = penal_colony
+			has_modifier = slave_colony
+		}
+	}
+
+	potential = {
+		owner = {
+			has_civic = devloved_civic_superb_specimens
+		}
+
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = penal_colony
+			has_modifier = slave_colony
+		}
+	}
+
+	allow = {
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = penal_colony
+			has_modifier = slave_colony
+		}
+	}
+
+	resources = {
+		category = planet_districts_cities
+		cost = {
+			minor_artifacts = 100
+			minerals = 1000
+		}
+		upkeep = {
+			energy = 3
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 5
+	}
+
+	triggered_planet_modifier = {
+		job_devolved_sensitive_aesthete_add = 5
+	}
+
+}
+
+district_historical_hamlet = {
+	base_buildtime = 500
+	is_capped_by_modifier = no
+	exempt_from_ai_planet_specialization = yes
+
+	show_on_uncolonized = {
+		exists = from
+		from = { is_regular_empire = yes }
+		OR = {
+			uses_district_set = standard
+			uses_district_set = hive_world
+			uses_district_set = machine_world
+			uses_district_set = shattered_ring_world
+		}
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = penal_colony
+			has_modifier = slave_colony
+		}
+	}
+
+	potential = {
+		owner = {
+			has_civic = devloved_civic_superb_specimens
+		}
+
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = penal_colony
+			has_modifier = slave_colony
+		}
+	}
+
+	allow = {
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = penal_colony
+			has_modifier = slave_colony
+		}
+	}
+
+	resources = {
+		category = planet_districts_cities
+		cost = {
+			minor_artifacts = 100
+			minerals = 1000
+		}
+		upkeep = {
+			energy = 3
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 5
+	}
+
+	triggered_planet_modifier = {
+		job_devolved_humble_historian_add = 5
+	}
+
+}
+
+district_geological_garden = {
+	base_buildtime = 500
+	is_capped_by_modifier = no
+	exempt_from_ai_planet_specialization = yes
+
+	show_on_uncolonized = {
+		exists = from
+		from = { is_regular_empire = yes }
+		OR = {
+			uses_district_set = standard
+			uses_district_set = hive_world
+			uses_district_set = machine_world
+			uses_district_set = shattered_ring_world
+		}
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = penal_colony
+			has_modifier = slave_colony
+		}
+	}
+
+	potential = {
+		owner = {
+			has_civic = devloved_civic_superb_specimens
+		}
+
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = penal_colony
+			has_modifier = slave_colony
+		}
+	}
+
+	allow = {
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = penal_colony
+			has_modifier = slave_colony
+		}
+	}
+
+	resources = {
+		category = planet_districts_cities
+		cost = {
+			minor_artifacts = 100
+			minerals = 1000
+		}
+		upkeep = {
+			energy = 3
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 5
+	}
+
+	triggered_planet_modifier = {
+		job_devolved_geologist_guru_add = 5
+	}
+
+}

@@ -10,12 +10,12 @@ devolved_civic_councilor_niche_exploiter = {
 	}
 	civic = devolved_civic_infinite_employment
 	modifier = {
-		job_enforcer_add = 1
-		job_culture_worker_add = 1
-		job_archaeoengineers_add = 1
-		job_healthcare_add = 1
-		job_soldier_add = 1
-		job_scrap_miner_add = 1
+		job_enforcer_add = 100
+		job_culture_worker_add = 100
+		job_archaeoengineers_add = 100
+		job_healthcare_add = 100
+		job_soldier_add = 100
+		job_scrap_miner_add = 100
 	}
 	ai_hiring_weight = {
 		inline_script = councilor_leader_weights
@@ -52,9 +52,9 @@ devolved_civic_councilor_house_filler = {
 	}
 	civic = devolved_civic_hyper_housing # Needs rework
 		modifier = {
-			planet_immigration_pull_add = 50
 			pop_housing_usage_add = -0.02
-			planet_housing_add = 1
+			planet_housing_add = 100
+			planet_housing_mult = 0.05
 		}
 	ai_hiring_weight = {
 		inline_script = councilor_leader_weights
@@ -71,10 +71,10 @@ devolved_civic_councilor_nutrient_nullifier = {
 	}
 	civic = devolved_civic_starvationism
 		modifier = {
-			planet_researchers_food_upkeep_add = 0.5
-			planet_researchers_exotic_gases_produces_add = 0.2
-			planet_researchers_physics_research_produces_add = 0.5
-			planet_researchers_sr_dark_matter_produces_add = 0.01
+			planet_physicists_food_upkeep_add = 0.5
+			planet_physicists_exotic_gases_produces_add = 0.2
+			planet_physicists_physics_research_produces_add = 0.5
+			planet_physicists_sr_dark_matter_produces_add = 0.01
 		}
 	ai_hiring_weight = {
 		inline_script = councilor_leader_weights
@@ -95,8 +95,8 @@ devolved_civic_councilor_metallic_maniac = {
 	modifier = {
 		ships_alloys_upkeep_mult = -0.03
 		megastructures_alloys_cost_mult = -0.015
-		planet_districts_industrial_alloys_produces_add = 0.5
-		megastructures_alloys_produces_add = 1
+		# Megastructure flat alloy production
+		# District/Zone flat alloy production
 	}
 }
 
@@ -112,7 +112,7 @@ devolved_civic_councilor_hugless_heirophant = {
 	civic = devolved_civic_hateable_huggers
 	modifier = {
 		country_society_research_cost_mult = -0.02
-		planet_culture_workers_society_research_produces_add = 1
+		planet_bureaucrats_society_research_produces_add = 1
 	}
 }
 
@@ -176,8 +176,7 @@ devolved_civic_councilor_head_homephobe = {
 	modifier = {
 		pop_housing_usage_add = 0.02
 		planet_housing_add = -0.5
-		planet_pop_assembly_mult = 0.02
-		planet_pop_assembly_add = 0.3
+		bonus_pop_growth_mult = 0.1
 	}
 }
 
@@ -219,12 +218,12 @@ devolved_civic_councilor_chemical_chief = {
 	}
 	civic = devolved_civic_stratworld_strategists
 	modifier = {
-		building_mote_harvesters_max = 0.5
-		building_crystal_mines_max = 0.5
-		building_gas_extractors_max = 0.5
-		planet_culture_workers_sr_zro_produces_add = 0.01
-		planet_culture_workers_sr_living_metal_produces_add = 0.01
-		planet_culture_workers_sr_dark_matter_produces_add = 0.01
+		job_mote_harvester_add = 20
+		job_crystal_miner_add = 0.5
+		job_gas_extractor_add = 0.5
+		planet_politicians_sr_dark_matter_produces_add = 0.01
+		planet_politicians_sr_living_metal_produces_add = 0.01
+		planet_politicians_sr_zro_produces_add = 0.01
 	}
 }
 
@@ -236,7 +235,7 @@ devolved_civic_councilor_anti_fleet_alderman = {
 	civic = devolved_civic_fleet_fuckers
 	modifier = {
 		planet_stability_add = 1
-		job_culture_worker_add = 0.5
+		job_culture_worker_add = 50
 	}
 }
 
@@ -302,7 +301,7 @@ devolved_civic_councilor_jaeger = {
 	}
 	civic = devolved_civic_survey_corps
 	modifier = {
-		job_titan_hunter_add = 1
+		job_titan_hunter_add = 100
 		ship_speed_mult = 0.15
 		ship_ftl_jumpdrive_range_mult = 0.1
 		catapult_spread_mult = 0.05
@@ -320,8 +319,9 @@ devolved_civic_councilor_whale_faith = {
 	}
 	civic = devolved_civic_heavenly_whales
 	modifier = {
-		planet_jobs_tec_at_peace_unity_produces_mult = 0.05
+		country_unity_produces_mult = 0.05
 		resolution_category_rulesofwar_vote_strength_mult = 0.2
+		ships_upkeep_mult = 0.05
 	}
 }
 
@@ -347,7 +347,7 @@ devolved_civic_councilor_religious_warlord = {
 	}
 	civic = devolved_civic_victors_wrath
 	modifier = {
-		planet_priests_engineering_research_produces_add = 0.5
+		planet_bureaucrats_engineering_research_produces_add = 0.5
 	}
 }
 
@@ -384,7 +384,7 @@ devolved_civic_councilor_chonny_jash_soul = {
 	}
 	civic = devolved_civic_chonnys_charm
 	modifier = {
-		job_telepath_add = 0.2
+		job_telepath_add = 20
 		planet_telepaths_sr_zro_produces_add = 0.01
 		pop_happiness = -0.01
 	}
@@ -398,7 +398,8 @@ devolved_civic_councilor_trauma_bonded_motivator = {
 	civic = devolved_civic_together_suffering
 	modifier = {
 		country_produces_mult = 0.01
-		pop_environment_tolerance = -0.005
+		pop_workforce_mult = 0.02
+		pop_environment_tolerance = -0.01
 	}
 }
 
@@ -409,7 +410,7 @@ devolved_civic_councilor_unitarian = {
 	}
 	civic = devolved_civic_ubiquitous_unity
 	modifier = {
-		megastructures_unity_produces_mult = 0.1
+		planet_artisans_unity_produces_add = 0.1
 		planet_metallurgists_unity_produces_add = 0.1
 	}
 }
@@ -422,12 +423,12 @@ devolved_civic_councilor_cultural_disruptor = {
 	civic = devolved_civic_unity_unaliving
 	modifier = {
 		country_unity_produces_mult = -0.01
-		planet_administrators_volatile_motes_produces_add = 0.1
-		planet_administrators_exotic_gases_produces_add = 0.1
-		planet_administrators_rare_crystals_produces_add = 0.1
-		planet_administrators_physics_research_produces_add = 0.2
-		planet_administrators_society_research_produces_add = 0.2
-		planet_administrators_engineering_research_produces_add = 0.2
+		planet_bureaucrats_volatile_motes_produces_add = 0.1
+		planet_bureaucrats_exotic_gases_produces_add = 0.1
+		planet_bureaucrats_rare_crystals_produces_add = 0.1
+		planet_bureaucrats_physics_research_produces_add = 0.2
+		planet_bureaucrats_society_research_produces_add = 0.2
+		planet_bureaucrats_engineering_research_produces_add = 0.2
 
 	}
 }
@@ -466,7 +467,7 @@ devolved_civic_councilor_stone_slut = {
 	}
 	civic = devolved_civic_mineral_lover
 	modifier = {
-		megastructures_minerals_produces_mult = 0.20
+		station_gatherers_minerals_produces_mult = 0.2
 		planet_miners_minerals_produces_add = 0.33
 		country_minerals_produces_mult = 0.02
 		planet_metallurgists_minerals_upkeep_add = -0.25
@@ -550,7 +551,7 @@ devolved_civic_councilor_mechanical_malcontent = {
 	modifier = {
 		engineering_tech_cost_mult = 0.02
 		country_engineering_research_produces_mult = -0.025
-		pop_growth_speed = 0.03
+		bonus_pop_growth_mult = 0.03
 		planet_pops_consumer_goods_upkeep_mult = -0.05
 	}
 }
@@ -563,7 +564,7 @@ devolved_civic_councilor_food_fanatic = {
 	civic = devolved_civic_agrarianism
 	modifier = {
 		country_food_produces_mult = 0.1
-		pop_growth_speed = 0.01
+		bonus_pop_growth_mult = 0.01
 	}
 }
 
@@ -575,8 +576,7 @@ devolved_civic_councilor_bureaucratic_breeder = {
 	civic = devolved_civic_supermassive
 	modifier = {
 		empire_size_penalty_mult = 0.05
-		planet_pop_assembly_add = 0.25
-		planet_pop_assembly_organic_add = 0.25
+		bonus_pop_growth = 1
 	}
 }
 
@@ -599,7 +599,7 @@ devolved_civic_councilor_influencer = {
 	}
 	civic = devolved_civic_influencer
 	modifier = {
-		planet_administrators_influence_produces_add = 0.025
+		planet_soldiers_influence_produces_add = 0.025
 	}
 }
 
@@ -610,7 +610,7 @@ devolved_civic_councilor_consumerism_creator = {
 	}
 	civic = devolved_civic_consumer_craze
 	modifier = {
-		planet_administrators_consumer_goods_produces_add = 0.1
+		planet_bureaucrats_consumer_goods_produces_add = 0.1
 	}
 }
 
@@ -622,10 +622,8 @@ devolved_civic_councilor_konsumerist_khan = {
 	civic = devolved_civic_konsumerist_killers
 	modifier = {
 		planet_jobs_consumer_goods_upkeep_mult = 0.2
-		planet_researchers_produces_mult = 0.2
-		planet_administrators_produces_mult = 0.2
-		planet_priests_produces_mult = 0.2
-		planet_culture_workers_produces_mult = 0.2
+		pop_researcher_bonus_workforce_mult = 0.2
+		pop_bureaucrat_bonus_workforce_mult = 0.2
 	}
 }
 
@@ -636,8 +634,8 @@ devolved_civic_councilor_orgy_ordinator = {
 	}
 	civic = devolved_civic_beastly_breeders
 	modifier = {
-		pop_growth_speed = 0.05
-		planet_pop_assembly_organic_mult = 0.05
+		bonus_pop_growth_mult = 0.05
+		bonus_pop_growth = 2
 		planet_pops_upkeep_mult = 0.02
 	}
 }
@@ -649,9 +647,9 @@ devolved_civic_councilor_strategical_sufferer = {
 	}
 	civic = devolved_civic_stratworld_despisers
 	modifier = {
-		planet_researchers_food_produces_add = 0.1
-		planet_researchers_minerals_produces_add = 0.1
-		planet_researchers_energy_produces_add = 0.1
+		planet_biologists_food_produces_add = 0.3
+		planet_engineers_minerals_produces_add = 0.1
+		planet_physicists_energy_produces_add = 0.1
 	}
 }
 
@@ -663,11 +661,10 @@ devolved_civic_councilor_influence_hater = {
 	civic = devolved_civic_influencer_idiot
 	modifier = {
 		commercial_pact_mult = 0.1
-            	research_sharing_mult = 0.1
-            	country_trust_growth = 0.1
-		planet_politicians_influence_upkeep_add = 0.04
+        research_sharing_mult = 0.1
+        country_trust_growth = 0.1
+		planet_politicians_influence_produces_add = -0.05
 		planet_politicians_unity_produces_add = 1
-		megastructures_influence_upkeep_add = 0.1
 	}
 }
 
@@ -678,12 +675,12 @@ devolved_civic_councilor_upkeeping_umpire = {
 	}
 	civic = devolved_civic_undead_upkeeper
 	modifier = {
-		planet_jobs_upkeep_mult = -0.02
-            	planet_pops_upkeep_mult = -0.02
-            	planet_researchers_upkeep_mult = -0.02
-            	leaders_upkeep_mult = -0.02
-            	ships_upkeep_mult = -0.02
-            	ships_cost_mult = 0.01
+		planet_jobs_upkeep_mult = -0.03
+		planet_pops_upkeep_mult = -0.03
+		planet_researchers_upkeep_mult = -0.03
+		leaders_upkeep_mult = -0.03
+		ships_upkeep_mult = -0.03
+		country_cost_mult = 0.01
 	}
 }
 
@@ -694,9 +691,8 @@ devolved_civic_councilor_cost_saving_colonizer = {
 	}
 	civic = devolved_civic_dead_upkeeper
 	modifier = {
-		planet_jobs_upkeep_mult = 0.01
-            	ships_cost_mult = -0.02
-		planet_structures_cost_mult = -0.02
+		planet_jobs_upkeep_mult = 0.02
+		country_cost_mult = -0.01
 		planetary_ascension_cost_mult = -0.02
 	}
 }
@@ -708,7 +704,7 @@ devolved_civic_councilor_trading_tim = {
 	}
 	civic = devolved_civic_timeless_trading
 	modifier = {
-		pop_job_trade_mult = 0.01
+		job_trader_automated_workforce_mult = 0.02
 		living_standard_trade_value_specialists_add = 0.1
 		living_standard_trade_value_workers_add = 0.075
 	}
@@ -748,7 +744,8 @@ devolved_civic_councilor_witch_hunter = {
 	}
 	civic = devolved_civic_protein_puritans
 	modifier = {
-		planet_priests_produces_mult = 0.05
+		planet_bureaucrats_produces_mult = 0.05
+		pop_preacher_workforce_mult = 0.02
 	}
 }
 
@@ -774,9 +771,9 @@ devolved_civic_councilor_metallic_macerator = {
 	}
 	civic = devolved_civic_alloy_execution
 	modifier = {
-		planet_researchers_alloys_upkeep_add = 0.25
-		planet_researchers_engineering_research_produces_add = 1
-		planet_researchers_unity_produces_add = 0.05
+		planet_engineers_alloys_upkeep_add = 0.25
+		planet_engineers_engineering_research_produces_add = 1
+		planet_engineers_unity_produces_add = 0.05
 		intel_encryption_mult = 0.1
 		intel_decryption_mult = 0.1
 	}
@@ -789,13 +786,13 @@ devolved_civic_councilor_mega_hater = {
 	}
 	civic = devolved_civic_megamalice
 	modifier = {
-		megastructures_produces_mult = -0.02
+		#megastructures_produces_mult = -0.02
 		megastructures_upkeep_mult = 0.2
-		planet_districts_industrial_alloys_produces_add = 0.025
-		planet_districts_industrial_consumer_goods_produces_add = 0.04
-		planet_districts_farming_food_produces_add = 0.1
-		planet_districts_mining_minerals_produces_add = 0.1
-		planet_districts_generator_energy_produces_add = 0.1
+		#planet_districts_industrial_alloys_produces_add = 0.025
+		#planet_districts_industrial_consumer_goods_produces_add = 0.04
+		#planet_districts_farming_food_produces_add = 0.1
+		#planet_districts_mining_minerals_produces_add = 0.1
+		#planet_districts_generator_energy_produces_add = 0.1
 		planet_districts_cities_physics_research_produces_add = 0.05
 		planet_districts_cities_society_research_produces_add = 0.05
 		planet_districts_cities_engineering_research_produces_add = 0.05
@@ -887,7 +884,7 @@ devolved_civic_councilor_enhancing_enslaver = {
 	}
 	civic = devolved_civic_demancipation_proclamation
 	modifier = {
-		planet_jobs_slave_produces_mult = 0.05
+		pop_slave_bonus_workforce_mult = 0.05
 	}
 }
 
@@ -924,7 +921,7 @@ devolved_civic_councilor_castronova_TA = {
 	civic = devolved_civic_god_is_a_gamer
 	modifier = {
 		planet_building_game_design_college_build_speed_mult = 0.5
-		planet_priests_society_research_produces_add = 0.2
+		planet_bureaucrats_society_research_produces_add = 0.2
 	}
 }
 
@@ -935,8 +932,12 @@ devolved_civic_councilor_megastructure_manufacturer = {
 	}
 	civic = devolved_civic_majestic_megastructures
 	modifier = {
-		pop_growth_speed_reduction = 0.04
-		megastructures_produces_mult = 0.1
+		# Should have megastructure produces mult
+		bonus_pop_growth_mult = -0.04
+		megastructure_build_speed_mult = 0.1
+		country_megastructure_build_cap_add = 0.25
+		dyson_swarm_limit_add = 0.5
+		arc_furnace_limit_add = 0.5
 	}
 }
 
@@ -959,7 +960,7 @@ devolved_civic_councilor_tumbled_technocrat = {
 	}
 	civic = devolved_civic_cooperian_culture
 	modifier = {
-		job_devolved_cooperian_culturalist_add = 0.25
+		job_devolved_cooperian_culturalist_add = 25
 	}
 }
 
@@ -981,7 +982,8 @@ devolved_civic_councilor_aidz_aristocrat = {
 	}
 	civic = devolved_civic_lander_test
 	modifier = {
-		megastructures_produces_mult = 0.02
+		# Should be megastructure produces mult
+		megastructure_build_speed_mult = 0.1
 	}
 }
 
@@ -1005,5 +1007,7 @@ devolved_civic_councilor_surveyor_purveyor = {
 	civic = devolved_civic_despotic_deposits
 	modifier = {
 		deposit_increase_on_survey_chance_mult = 0.5
+		scientist_exp_gain = 0.2
+		scientist_initial_skill = 0.5
 	}
 }

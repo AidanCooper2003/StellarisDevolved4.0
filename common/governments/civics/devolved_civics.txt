@@ -57,9 +57,9 @@ devolved_civic_ubiquitous_unity = {
 	}
 	random_weight = { base = @civic_default_random_weight }
 	modifier = {
-		planet_clerks_unity_produces_add = 3
-		planet_clerks_alloys_upkeep_add = 1
-		planet_clerks_minerals_upkeep_add = 3
+		planet_civilians_unity_produces_add = 3
+		planet_civilians_alloys_upkeep_add = 1
+		planet_civilians_minerals_upkeep_add = 3
 	}
 }
 
@@ -71,15 +71,15 @@ devolved_civic_unity_unaliving = {
 	modification = no
 	modifier = {
 		planet_researchers_unity_upkeep_add = 1
-		planet_administrators_unity_produces_add = -5.5
-		planet_administrators_energy_produces_add = 5
-		planet_administrators_minerals_produces_add = 5
-		planet_administrators_food_produces_add = 5
-		planet_administrators_consumer_goods_produces_add = 5
-		planet_administrators_alloys_produces_add = 1
-		planet_administrators_physics_research_produces_add = 1
-		planet_administrators_society_research_produces_add = 1
-		planet_administrators_engineering_research_produces_add = 1
+		planet_bureaucrats_unity_produces_add = -5.5
+		planet_bureaucrats_energy_produces_add = 5
+		planet_bureaucrats_minerals_produces_add = 5
+		planet_bureaucrats_food_produces_add = 5
+		planet_bureaucrats_consumer_goods_produces_add = 5
+		planet_bureaucrats_alloys_produces_add = 1
+		planet_bureaucrats_physics_research_produces_add = 1
+		planet_bureaucrats_society_research_produces_add = 1
+		planet_bureaucrats_engineering_research_produces_add = 1
 		planet_jobs_unity_produces_mult = -0.60
 		pop_factions_unity_produces_mult = -0.4
 	}
@@ -89,7 +89,9 @@ devolved_civic_energy_endowment = {
 
 		modifier = {
 			planet_technician_energy_produces_add = 0.5
-			planet_researchers_energy_produces_add = 0.5
+			planet_physicists_energy_produces_add = 0.5
+			planet_biologists_energy_produces_add = 0.5
+			planet_engineers_energy_produces_add = 0.5
 			planet_artisans_energy_produces_add = 0.5
 			planet_metallurgists_energy_produces_add = 0.5
 			planet_miners_energy_produces_add = 0.5
@@ -101,7 +103,9 @@ devolved_civic_power_pit = { #TriggeredOpinionFileforOpinion
 
 		modifier = {
 			planet_technician_energy_produces_add = -0.5
-			planet_researchers_energy_produces_add = -0.5
+			planet_physicists_energy_produces_add = -0.5
+			planet_biologists_energy_produces_add = -0.5
+			planet_engineers_energy_produces_add = -0.5
 			planet_artisans_energy_produces_add = -0.5
 			planet_metallurgists_energy_produces_add = -0.5
 			planet_miners_energy_produces_add = -0.5
@@ -132,7 +136,9 @@ devolved_civic_mineral_lover = {
 
 		modifier = {
 			planet_technician_minerals_produces_add = 1
-			planet_researchers_minerals_produces_add = 2
+			planet_physicists_minerals_produces_add = 2
+			planet_biologists_minerals_produces_add = 2
+			planet_engineers_minerals_produces_add = 2
 			planet_artisans_minerals_produces_add = 1
 			planet_metallurgists_minerals_produces_add = 1
 			country_edict_fund_add = -50
@@ -145,9 +151,9 @@ devolved_civic_mineral_lover = {
 devolved_civic_research_radicals = {
 
 		modifier = {
-			planet_researchers_physics_research_produces_add = 2
-			planet_researchers_society_research_produces_add = 2
-			planet_researchers_engineering_research_produces_add = 2
+			planet_physicists_physics_research_produces_add = 2
+			planet_biologists_society_research_produces_add = 2
+			planet_engineers_engineering_research_produces_add = 2
 			planet_farmers_alloys_produces_add = -1
 			planet_miners_alloys_produces_add = -1
 			country_edict_fund_add = -150
@@ -161,9 +167,9 @@ devolved_civic_research_radicals = {
 devolved_civic_rightoid_rascality = {
 
 		modifier = {
-			planet_researchers_physics_research_produces_add = -2
-			planet_researchers_society_research_produces_add = -2
-			planet_researchers_engineering_research_produces_add = -2
+			planet_physicists_physics_research_produces_add = -2
+			planet_biologists_society_research_produces_add = -2
+			planet_engineers_engineering_research_produces_add = -2
 			country_physics_tech_research_speed = -0.2
 			country_society_tech_research_speed = -0.2
 			country_engineering_tech_research_speed = -0.2
@@ -181,8 +187,7 @@ devolved_civic_alloy_amelioration = {
 
 		modifier = {
 			planet_enforcers_alloys_produces_add = 1
-			planet_culture_workers_alloys_produces_add = 0.5
-			planet_criminals_alloys_produces_add = 1 # IDE says invalid, this works though
+			planet_criminals_alloys_produces_add = 2
 			planet_traders_alloys_produces_add = 0.25
 			planet_entertainers_alloys_produces_add = 0.5
 			planet_politicians_alloys_produces_add = 0.5
@@ -195,7 +200,7 @@ devolved_civic_agrarianism = {
 		ethics = { NOT = { value = ethic_gestalt_consciousness } }
 	}
 		modifier = {
-			planet_clerks_food_produces_add = 3
+			planet_civilians_food_produces_add = 2
 			planet_farmers_food_produces_add = 3
 		}
 		random_weight = { base = 5 }
@@ -251,8 +256,7 @@ devolved_civic_supermassive = {
 
 devolved_civic_influencer = {
 	modifier = {
-		planet_administrators_influence_produces_add = 0.05
-		planet_priests_influence_produces_add = 0.05
+		planet_bureaucrats_influence_produces_add = 0.025
 		planet_soldiers_influence_produces_add = 0.05
 		country_influence_produces_mult = 0.2
 	}
@@ -316,7 +320,7 @@ devolved_civic_konsumerist_killers = {
             planet_researchers_upkeep_mult = 0.3
             country_consumer_goods_produces_mult = -0.2
             country_alloys_produces_mult = 0.2
-			job_scrap_miner_add = 2
+			job_scrap_miner_add = 200
 			planet_artisans_consumer_goods_produces_add = -2
 			planet_artisans_engineering_research_produces_add = 4
         }
@@ -325,8 +329,8 @@ devolved_civic_konsumerist_killers = {
 devolved_civic_beastly_breeders = {
 
         modifier = {
-            pop_growth_speed = 0.3
-            planet_pop_assembly_organic_add = 1
+            bonus_pop_growth_mult = 0.3
+			bonus_pop_growth = 2
             planet_pops_upkeep_mult = 0.3
         }
         random_weight = { base = 5 }
@@ -369,9 +373,8 @@ devolved_civic_stratworld_despisers = {
 devolved_civic_influencer_idiot = {
 	modification = no
         modifier = {
-            planet_refiners_influence_upkeep_add = 0.1
-            planet_chemists_influence_upkeep_add = 0.1
-            planet_translucers_influence_upkeep_add = 0.1
+			planet_enforcers_influence_upkeep_add = 0.1
+			planet_entertainers_influence_upkeep_add = 0.1
             country_influence_produces_mult = -0.5 
             country_resource_max_influence_add = -500 # Doesn't currently work
             commercial_pact_mult = 3
@@ -394,14 +397,14 @@ devolved_civic_undead_upkeeper = {
             starbases_upkeep_mult = -0.2
             edicts_upkeep_mult = -0.2
             planet_structures_upkeep_mult = -0.2
-            		planet_structures_cost_mult = 1
-            		ships_cost_mult = 0.2
+			planet_structures_cost_mult = 1
+			ship_military_cost_mult = 0.2
 			planetary_ascension_cost_mult = 0.1
 			physics_tech_cost_mult = 0.025
 			society_tech_cost_mult = 0.025
 			engineering_tech_cost_mult = 0.025
 			station_gatherers_cost_mult = 1
-			station_researchers_cost_mult = 1
+			#station_researchers_cost_mult = 1
 			deposit_blockers_cost_mult = 1
         }
         random_weight = { base = 5 }
@@ -419,8 +422,8 @@ devolved_civic_dead_upkeeper = {
             starbases_upkeep_mult = 0.2
             #edicts_upkeep_mult = 0.2 doesn't work
             planet_structures_upkeep_mult = 0.2
-            		planet_structures_cost_mult = -0.75
-           		ships_cost_mult = -0.2
+			planet_structures_cost_mult = -0.75
+			ship_military_cost_mult = -0.2
 			megastructures_cost_mult = -0.1
 			physics_tech_cost_mult = -0.05
 			society_tech_cost_mult = -0.05
@@ -442,7 +445,7 @@ devolved_civic_timeless_trading = {
 		living_standard_trade_value_specialists_add = 1
 		living_standard_trade_value_workers_add = 0.5
 		living_standard_trade_value_slaves_add = 0.25
-		pop_job_trade_mult = 0.2
+		planet_jobs_trade_produces_mult = 0.2
 		pop_amenities_usage_mult = 0.3
 		pop_housing_usage_mult = 0.15
 		ship_fire_rate_mult = -0.05
@@ -478,9 +481,9 @@ devolved_civic_protein_puritans = {
 		LITHOID_species_trait_points_add = -100
 		BIOLOGICAL_species_trait_picks_add = -100
 		LITHOID_species_trait_picks_add = -100
-		pop_growth_speed = 0.2
-		job_priest_add = 2
-		job_priest_per_pop = 0.05
+		bonus_pop_growth_mult = 0.2
+		job_priest_add = 200
+		job_priest_per_pop = 5
 	}
 	random_weight = { base = 1 }
 }
@@ -488,18 +491,19 @@ devolved_civic_protein_puritans = {
 devolved_civic_infinite_employment = {
 	modification = no
 	modifier = {
-		pop_job_trade_mult = -0.1
+		pop_workforce_mult = -0.3
 		planet_jobs_produces_mult = -0.2
-		pop_growth_speed = 0.15
+		bonus_pop_growth_mult = 0.2
 		planet_housing_mult = 0.1
-		planet_pop_assembly_organic_add = 2
-		job_farmer_per_pop = 0.5
-		job_miner_per_pop = 0.5
-		job_technician_per_pop = 0.5
-		job_artisan_per_pop = 0.5
-		job_foundry_add = 0.5 # Should work, needs testing
-		job_researcher_per_pop = 0.5
-		job_bureaucrat_per_pop = 0.5
+		job_farmer_per_pop = 0.05
+		job_miner_per_pop = 0.05
+		job_technician_per_pop = 0.05
+		job_artisan_per_pop = 0.05
+		job_foundry_per_pop = 0.05
+		job_physicist_per_pop = 0.02
+		job_biologist_per_pop = 0.02
+		job_engineer_per_pop = 0.02
+		job_politician_per_pop = 0.01
 	}
 	random_weight = {
 		base = 1
@@ -528,34 +532,37 @@ devolved_civic_infinite_unemployment = {
 	modifier = {
 		country_produces_mult = 0.5
 		planet_stability_add = 300
-		job_farmer_add = -1000
-		job_miner_add = -1000
-		job_technician_add = -1000
-		job_bureaucrat_add = -1000
-		job_priest_add = -1000
-		job_artisan_add = -1000
-		job_culture_worker_add = -1000
-		job_clerk_add = -1000
-		job_researcher_add = -1000
-		job_entertainer_add = -1000
-		job_catalytic_technician_add = -1000
-		job_angler_add = -1000
-		job_artificer_add = -1000
-		job_chemist_add = -1000
-		job_translucer_add = -1000
-		job_gas_refiner_add = -1000
-		job_mote_harvester_add = -1000
-		job_crystal_miner_add = -1000
-		job_gas_extractor_add = -1000
-		job_colonist_add = -1000
-		job_enforcer_add = -1000
-		job_healthcare_add = -1000
-		job_high_priest_add = -1000
-		job_head_researcher_add = -1000
-		job_soldier_add = -1000
-		job_trader_add = -1000
-		job_knight_add = -1000
-		job_pearl_diver_add = -1000
+		job_farmer_add = -100000
+		job_miner_add = -100000
+		job_technician_add = -100000
+		job_bureaucrat_add = -100000
+		job_priest_add = -100000
+		job_artisan_add = -100000
+		job_foundry_add = -100000
+		job_culture_worker_add = -100000
+		job_clerk_add = -100000
+		job_researcher_add = -100000
+		job_entertainer_add = -100000
+		job_catalytic_technician_add = -100000
+		job_angler_add = -100000
+		job_artificer_add = -100000
+		job_chemist_add = -100000
+		job_translucer_add = -100000
+		job_gas_refiner_add = -100000
+		job_mote_harvester_add = -100000
+		job_crystal_miner_add = -100000
+		job_gas_extractor_add = -100000
+		job_colonist_add = -100000
+		job_enforcer_add = -100000
+		job_healthcare_add = -100000
+		job_high_priest_add = -100000
+		job_head_researcher_add = -100000
+		job_soldier_add = -100000
+		job_trader_add = -100000
+		job_knight_add = -100000
+		job_pearl_diver_add = -100000
+		pop_workforce_mult = -1000
+		pop_civilian_workforce_mult = 1000
 	}
 }
 
@@ -592,11 +599,9 @@ devolved_civic_profit_perforation = {
 	}
 	# if not using trade value shouldn't be useable
 	modifier = {
-		trade_value_mult = -3
-		megastructures_unity_produces_add = 50
-		starbases_cost_mult = 0.8
-		job_clerk_add = -1000
-		job_trader_add = -1000
+		country_trade_produces_mult = -0.5
+		rivalries_unity_produces_add = 50
+		job_trader_add = -100000
 		job_entertainer_per_pop = 0.2
 		planet_entertainers_unity_produces_add = 1
 		planet_entertainers_consumer_goods_produces_add = 1
@@ -638,9 +643,9 @@ devolved_civic_infrastructure_irritation = {
 		planet_clear_blocker_speed_mult = -0.8
 		starbase_upgrade_speed_mult = -0.8
 		megastructure_build_speed_mult = -0.1
-		ship_science_physics_research_upkeep_add = -2
-		ship_science_society_research_upkeep_add = -2
-		ship_science_engineering_research_upkeep_add = -2
+		rivalries_physics_research_produces_add = 20
+		rivalries_society_research_produces_add = 20
+		rivalries_engineering_research_produces_add = 20
 		country_produces_mult = 0.05
 		physics_tech_cost_mult = -0.11
 		society_tech_cost_mult = -0.11
@@ -654,8 +659,7 @@ devolved_civic_alloy_execution = {
 	modifier = {
 		country_alloys_produces_mult = -0.2
 		planet_metallurgists_alloys_produces_mult = -0.2
-		planet_districts_industrial_alloys_cost_add = 50
-		planet_districts_industrial_alloys_upkeep_add = 1
+		planet_civilians_alloys_upkeep_add = 0.01
 		espionage_operation_skill_add = 10
 		espionage_operation_cost_mult = -0.9
 		intel_encryption_mult = 0.3
@@ -672,7 +676,7 @@ devolved_civic_megamalice = {
 	modifier = {
 		megastructures_cost_mult = 0.5
 		megastructure_build_speed_mult = -1
-		megastructures_produces_mult = -0.2
+		#megastructures_produces_mult = -0.2
 		station_gatherers_produces_mult = 1
 		station_researchers_produces_mult = 1
 		starbase_outpost_cost_mult = -0.15
@@ -751,7 +755,7 @@ devolved_civic_fleet_frenzy = {
 	modification = no
     modifier = {
         ship_fire_rate_mult = 1
-        ships_cost_mult = -0.5
+        ships_military_cost_mult = -0.5
         ships_upkeep_mult = -0.5
         country_produces_mult = -0.2
     }
@@ -818,7 +822,7 @@ devolved_civic_demancipation_proclamation = {
 	modifier = {
 		living_standard_trade_value_slaves_add = 1
 		slave_market_cost_mult = -0.5
-		planet_jobs_slave_produces_mult = 0.5
+		pop_slave_bonus_workforce_mult = 0.5
 		pop_happiness = -0.15
 	}
 }
@@ -838,14 +842,14 @@ devolved_civic_shitty_starbases = {
 		starbase_outpost_influence_cost_mult = 1
         starbase_upgrade_cost_mult = 1
 		country_starbase_influence_cost_distance_mult = 1
-		starbases_upkeep_mult = 2
-	shipsize_starbase_outpost_build_speed_mult = -0.95 #Added because the outpost cost isn't working
-        starbase_energy_production_modules_energy_produces_add = -10
-        starbase_minerals_production_modules_minerals_produces_add = -10
-        starbase_food_production_modules_food_produces_add = -10
-        starbase_physics_research_modules_physics_research_produces_add = -10
-        starbase_society_research_modules_society_research_produces_add = -10
-        starbase_engineering_research_modules_engineering_research_produces_add = -10
+		starbases_upkeep_mult = 3
+		shipsize_starbase_outpost_build_speed_mult = -0.95 #Added because the outpost cost isn't working
+        #starbase_energy_production_modules_energy_produces_add = -10
+        #starbase_minerals_production_modules_minerals_produces_add = -10
+        #starbase_food_production_modules_food_produces_add = -10
+        #starbase_physics_research_modules_physics_research_produces_add = -10
+        #starbase_society_research_modules_society_research_produces_add = -10
+        #starbase_engineering_research_modules_engineering_research_produces_add = -10
 		empire_size_systems_mult = 20
 		country_starbase_capacity_mult = -1
         planet_max_districts_add = 5
@@ -927,14 +931,16 @@ devolved_civic_survey_corps = {
 
 devolved_civic_heavenly_whales = {
 	modifier = {
-		diplomacy_upkeep_mult = -0.1
+		diplomacy_upkeep_mult = -0.25
+		country_trust_cap_add = 50
+		army_defense_morale_mult = 3
 	}
 }
 
 devolved_civic_cuzzx_crystals = {
 	modifier = {
 		job_crystal_miner_per_pop = 0.05
-		job_crystal_miner_add = 1
+		job_crystal_miner_add = 100
 		# Custom rare crystal edicts
 	}
 }
@@ -980,10 +986,7 @@ devolved_civic_majestic_megastructures = {
 	}
 	modifier = {
 		megastructure_build_speed_mult = 0.25
-		planet_pop_assembly_mult = -0.75
-		planet_pop_assembly_reduction = 0.25
-		pop_growth_speed_reduction = 0.25
-		planet_pop_assembly_organic_reduction = 0.25 
+		bonus_pop_growth = -3
 	}
 	# Recieve Contigency Core at start of game
 }
@@ -1047,19 +1050,19 @@ devolved_civic_trade_trollers = {
 	}
 }
 
-devolved_civic_arbitration_duplication = {
-	modification = no
-	modifier = {
-		monthly_trades_alloys_produces_mult = 1
-		monthly_trades_energy_produces_mult = 1
-		monthly_trades_minerals_produces_mult = 1
-		monthly_trades_food_produces_mult = 1
-		monthly_trades_consumer_goods_produces_mult = 1
-		monthly_trades_volatile_motes_produces_mult = 1
-		monthly_trades_exotic_gases_produces_mult = 1
-		monthly_trades_rare_crystals_produces_mult = 1
-	}
-}
+#devolved_civic_arbitration_duplication = {
+#	modification = no
+#	modifier = {
+#		monthly_trades_alloys_produces_mult = 1
+#		monthly_trades_energy_produces_mult = 1
+#		monthly_trades_minerals_produces_mult = 1
+#		monthly_trades_food_produces_mult = 1
+#		monthly_trades_consumer_goods_produces_mult = 1
+#		monthly_trades_volatile_motes_produces_mult = 1
+#		monthly_trades_exotic_gases_produces_mult = 1
+#		monthly_trades_rare_crystals_produces_mult = 1
+#	}
+#}
 
 devolved_civic_cooperian_culture = {
 	# New job/building type
@@ -1126,14 +1129,12 @@ devolved_civic_g_machine = {
 		ship_archaeological_site_excavation_speed_mult = 999
 		commercial_pact_mult = 999
         research_sharing_mult = 999
-		pop_job_trade_mult = 999
 		pop_housing_usage_mult = -2
 		BIOLOGICAL_species_trait_points_add = 999
 		LITHOID_species_trait_points_add = 999
 		BIOLOGICAL_species_trait_picks_add = 999
 		LITHOID_species_trait_picks_add = 999
 		modify_species_cost_mult = -1
-		megastructures_produces_mult = 999
 		planet_army_build_speed_mult = 999
 		planet_decision_enact_speed_mult = 999
 		planet_building_build_speed_mult = 999
@@ -1217,7 +1218,6 @@ devolved_civic_sg_machine = {
         ship_archaeological_site_excavation_speed_mult = 999
         commercial_pact_mult = 99
 		research_sharing_mult = 99
-        pop_job_trade_mult = 99
         pop_housing_usage_mult = -2
         BIOLOGICAL_species_trait_points_add = 999
         LITHOID_species_trait_points_add = 999
@@ -1304,7 +1304,6 @@ devolved_civic_sg_machine = {
 		artifact_precursor_insight_cooldown = -1
 		country_war_exhaustion_mult = -1
 		starbase_building_capacity_add = 1000
-		piracy_growth_mult = 0
 		catapult_range_mult = 100
 		catapult_spread_mult = 0
 		quantum_catapult_empire_windup_mult = 0
@@ -1377,36 +1376,36 @@ devolved_civic_cheater_contract = {
 	modification = no
 }
 
-devolved_civic_divine_districts = {
-    modifier = {
+#devolved_civic_divine_districts = {
+#    modifier = {
 		# Factory and Foundry doesn't work
-		planet_districts_industrial_consumer_goods_produces_add = 0.75
-        planet_districts_industrial_volatile_motes_produces_add = 0.05
-        planet_districts_industrial_unity_produces_add = 0.25
-        planet_districts_industrial_alloys_produces_add = 0.5
-		planet_districts_industrial_engineering_research_produces_add = 5
-        planet_districts_farming_food_produces_add = 1
-        planet_districts_farming_unity_produces_add = 1
-		planet_districts_farming_society_research_produces_add = 10
-        planet_districts_mining_minerals_produces_add = 1
-        planet_districts_mining_unity_produces_add = 0.25
-        planet_districts_mining_exotic_gases_produces_add = 0.1
-        planet_districts_mining_rare_crystals_produces_add = 0.1
-		planet_districts_mining_engineering_research_produces_add = 10
-        planet_districts_generator_energy_produces_add = 1
-		planet_districts_generator_physics_research_produces_add = 10
-        planet_districts_resort_trade_value_produces_add = 10
-        planet_districts_prison_physics_research_produces_add = 10
-        planet_districts_prison_society_research_produces_add = 10
-        planet_districts_prison_engineering_research_produces_add = 10
-        planet_districts_prison_industrial_consumer_goods_produces_add = 1
-        planet_districts_prison_industrial_alloys_produces_add = 1
-        planet_districts_prison_industrial_unity_produces_add = 1
-        planet_max_districts_add = 5
-        planet_buildings_cost_mult = 10000
-		planet_building_build_speed_mult = 2
-    }
-}
+#		planet_districts_industrial_consumer_goods_produces_add = 0.75
+#        planet_districts_industrial_volatile_motes_produces_add = 0.05
+#        planet_districts_industrial_unity_produces_add = 0.25
+#        planet_districts_industrial_alloys_produces_add = 0.5
+#		planet_districts_industrial_engineering_research_produces_add = 5
+#        planet_districts_farming_food_produces_add = 1
+#        planet_districts_farming_unity_produces_add = 1
+#		planet_districts_farming_society_research_produces_add = 10
+#        planet_districts_mining_minerals_produces_add = 1
+#        planet_districts_mining_unity_produces_add = 0.25
+#        planet_districts_mining_exotic_gases_produces_add = 0.1
+#        planet_districts_mining_rare_crystals_produces_add = 0.1
+#		planet_districts_mining_engineering_research_produces_add = 10
+#        planet_districts_generator_energy_produces_add = 1
+#		planet_districts_generator_physics_research_produces_add = 10
+#        planet_districts_resort_trade_value_produces_add = 10
+#        planet_districts_prison_physics_research_produces_add = 10
+#        planet_districts_prison_society_research_produces_add = 10
+#        planet_districts_prison_engineering_research_produces_add = 10
+#        planet_districts_prison_industrial_consumer_goods_produces_add = 1
+#        planet_districts_prison_industrial_alloys_produces_add = 1
+#        planet_districts_prison_industrial_unity_produces_add = 1
+#        planet_max_districts_add = 5
+#        planet_buildings_cost_mult = 10000
+#		planet_building_build_speed_mult = 2
+#    }
+#}
 
 devolved_civic_physics_psycho = {
     possible = {
@@ -1610,10 +1609,10 @@ devolved_civic_throughput_lovers = {
 	# increases resource output and upkeep
 }
 
-devolved_civic_district_dynasty = {
-	modification = no
-	# Adds district district
-}
+#devolved_civic_district_dynasty = {
+#	modification = no
+#	# Adds district district
+#}
 
 devolved_civic_randivist_principles = {
 	modification = no

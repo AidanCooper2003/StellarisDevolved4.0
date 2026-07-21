@@ -77,16 +77,13 @@ increasing_inflation_hard = {
 }
 
 increasing_deflation = {
-	country_produces_mult = 0.05
+	country_produces_mult = 0.04
+	pop_workforce_mult = 0.01
 }
 
 sexponential_growth = {
-	pop_growth_speed = 0.1
-	pop_growth_from_immigration = 0.1
-	planet_pop_assembly_mult = 0.1
-	planet_pop_assembly_add = 0.2
-	planet_pop_assembly_organic_mult = 0.1
-	planet_pop_assembly_organic_add = 0.2
+	bonus_pop_growth = 0.1
+	bonus_pop_growth_mult = 0.1
 }
 
 leader_leveling_slow = {
@@ -100,6 +97,7 @@ leader_leveling_fast = {
 throughput_improved = {
 	planet_jobs_produces_mult = 0.1
 	planet_jobs_upkeep_mult = 0.1
+	pop_workforce_mult = 0.1
 }
 
 
@@ -127,9 +125,9 @@ random_event_modifier_C_1 = {
 
 # Age of Stagnation
 random_event_modifier_D_1 = {
-	planet_researchers_physics_research_produces_add = -3
-	planet_researchers_society_research_produces_add = -3
-	planet_researchers_engineering_research_produces_add = -3
+	planet_physicists_physics_research_produces_add = -3
+	planet_biologists_society_research_produces_add = -3
+	planet_engineers_engineering_research_produces_add = -3
 }
 
 # Bloated Bureau
@@ -148,7 +146,7 @@ random_event_modifier_A_2 = {
 	starbases_upkeep_mult = -4
 	edicts_upkeep_mult = -4
 	planet_structures_upkeep_mult = -4
-	ships_cost_mult = -4
+	ship_military_cost_mult = -4
 }
 
 # Research Rushing
@@ -158,9 +156,9 @@ random_event_modifier_B_2 = {
 
 # Trading Tradeoffs
 random_event_modifier_C_2 = {
-	trade_value_mult = 0.5
-	planet_clerks_unity_upkeep_add = 3
-	planet_traders_unity_upkeep_add = 3
+	country_trade_produces_mult = 0.5
+	planet_civilians_unity_produces_add = -3
+	planet_traders_unity_produces_add = -3
 }
 
 # Economic Slog
@@ -170,14 +168,14 @@ random_event_modifier_D_2 = {
 
 # Unemployment Epidemic
 random_event_modifier_F_2 = {
-	job_clerk_add = -20
-	job_farmer_add = -20
-	job_miner_add = -20
-	job_technician_add = -20
-	job_researcher_add = -20
-	job_bureaucrat_add = -20
-	job_foundry_add = -20
-	job_artisan_add = -20
+	job_clerk_add = -2000
+	job_farmer_add = -2000
+	job_miner_add = -2000
+	job_technician_add = -2000
+	job_researcher_add = -2000
+	job_bureaucrat_add = -2000
+	job_foundry_add = -2000
+	job_artisan_add = -2000
 }
 
 # A is surveyor
@@ -208,19 +206,18 @@ random_event_modifier_F_3 = {
 
 # Mother of all Megastructures
 random_event_modifier_A_4 = {
-	megastructures_produces_mult = 10
+	megastructure_build_speed_mult = 100
 }
 
 # Fertility Frenzy
 random_event_modifier_B_4 = {
-	pop_growth_speed = 1
-	planet_pop_assembly_organic_mult = 1
-	planet_pop_assembly_mult = 1
+	bonus_pop_growth = 2
+	bonus_pop_growth_mult = 2
 }
 
 # Cooperian Captivation
 random_event_modifier_C_4 = {
-	job_devolved_cooperian_culturalist_add = 2
+	job_devolved_cooperian_culturalist_add = 200
 }
 
 # Station Stagnation
@@ -262,7 +259,7 @@ random_event_modifier_F_5 = {
 
 # Councilor Craze
 random_event_modifier_A_6 = {
-	councilor_skill_add = 20
+	councilor_skill_add = 25
 }
 
 # Extra Ascension
@@ -281,6 +278,8 @@ random_event_modifier_C_6 = {
 # Criminal Castle
 random_event_modifier_D_6 = {
 	planet_crime_mult = 5
+	planet_crime_add = 5
+	pop_criminal_workforce_mult = 1
 }
 
 # Leader Lukemia
@@ -292,7 +291,7 @@ random_event_modifier_F_6 = {
 # Shoddy Ships
 random_event_modifier_C_7 = {
 	shipclass_military_build_speed_mult = -0.75
-	ships_cost_mult = -0.25
+	ship_military_cost_mult = -0.25
 }
 
 # Technological Descendency
@@ -308,7 +307,7 @@ random_event_modifier_F_7 = {
 
 # Procrastinating Councilors
 random_event_modifier_A_8 = {
-	councilor_skill_add = 100
+	councilor_skill_add = 10
 	council_agenda_progress_speed = 5
 	council_agenda_finishing_effect_duration_mult = 5
 }
@@ -323,7 +322,7 @@ random_event_modifier_C_8 = {
 	planet_technician_physics_research_produces_add = 3
 	planet_farmers_society_research_produces_add = 3
 	planet_miners_engineering_research_produces_add = 3
-	planet_clerks_unity_produces_add = 3
+	planet_civilians_unity_produces_add = 3
 	planet_districts_upkeep_mult = 1
 }
 
@@ -365,10 +364,10 @@ random_event_modifier_D_9 = {
 random_event_modifier_F_9 = {
 	planet_farmers_food_produces_add = -5
 	planet_technician_energy_produces_add = -5
-	planet_administrators_unity_produces_add = -5
-	planet_researchers_physics_research_produces_add = -5
-	planet_researchers_society_research_produces_add = -5
-	planet_researchers_engineering_research_produces_add = -5
+	planet_bureaucrats_unity_produces_add = -5
+	planet_physicists_physics_research_produces_add = -5
+	planet_biologists_society_research_produces_add = -5
+	planet_engineers_engineering_research_produces_add = -5
 	planet_metallurgists_alloys_produces_add = -5
 	planet_miners_minerals_produces_add = -5
 	planet_artisans_consumer_goods_produces_add = -5
@@ -382,7 +381,7 @@ random_event_modifier_A_10 = {
 # Specimen Specialization
 random_event_modifier_B_10 = {
 	specimens_produces_mult = 5
-	planet_researchers_unity_produces_add = 1
+	planet_biologists_unity_produces_add = 3
 }
 
 # Nanite National Anthem
@@ -401,10 +400,10 @@ random_event_modifier_D_10 = {
 random_event_modifier_F_10 = {
 	planet_farmers_alloys_produces_add = -4
 	planet_technician_minerals_produces_add = -4
-	planet_administrators_consumer_goods_produces_add = -4
-	planet_researchers_food_produces_add = -4
-	planet_researchers_energy_produces_add = -4
-	planet_researchers_unity_produces_add = -4
+	planet_bureaucrats_consumer_goods_produces_add = -4
+	planet_physicists_food_produces_add = -4
+	planet_engineers_energy_produces_add = -4
+	planet_biologists_unity_produces_add = -4
 	planet_metallurgists_physics_research_produces_add = -4
 	planet_miners_society_research_produces_add = -4
 	planet_artisans_engineering_research_produces_add = -4
@@ -443,7 +442,7 @@ random_event_modifier_F_11 = {
 
 # Fleet Unification
 random_event_modifier_A_12 = {
-	ships_unity_upkeep_add = -12
+	planet_soldiers_unity_produces_add = 12
 }
 
 # Production Boost Lite
@@ -453,29 +452,30 @@ random_event_modifier_B_12 = {
 
 # Beefy Districts
 random_event_modifier_C_12 = {
-	country_size_districts_mult = 10
-		planet_districts_industrial_consumer_goods_produces_add = 1
-        planet_districts_industrial_volatile_motes_produces_add = 1
-        planet_districts_industrial_unity_produces_add = 1
-        planet_districts_industrial_alloys_produces_add = 1
-		planet_districts_industrial_engineering_research_produces_add = 10
-        planet_districts_farming_food_produces_add = 1
-        planet_districts_farming_unity_produces_add = 1
-		planet_districts_farming_society_research_produces_add = 10
-        planet_districts_mining_minerals_produces_add = 1
-        planet_districts_mining_unity_produces_add = 1
-        planet_districts_mining_exotic_gases_produces_add = 0.1
-        planet_districts_mining_rare_crystals_produces_add = 0.1
-		planet_districts_mining_engineering_research_produces_add = 10
-        planet_districts_generator_energy_produces_add = 1
-		planet_districts_generator_physics_research_produces_add = 10
-        planet_districts_resort_trade_value_produces_add = 10
-        planet_districts_prison_physics_research_produces_add = 10
-        planet_districts_prison_society_research_produces_add = 10
-        planet_districts_prison_engineering_research_produces_add = 10
-        planet_districts_prison_industrial_consumer_goods_produces_add = 1
-        planet_districts_prison_industrial_alloys_produces_add = 1
-        planet_districts_prison_industrial_unity_produces_add = 1
+	empire_size_districts_mult = 10
+	bonus_automated_workforce_mult = 1
+	#planet_districts_industrial_consumer_goods_produces_add = 1
+	#planet_districts_industrial_volatile_motes_produces_add = 1
+	#planet_districts_industrial_unity_produces_add = 1
+	#planet_districts_industrial_alloys_produces_add = 1
+	#planet_districts_industrial_engineering_research_produces_add = 10
+	#planet_districts_farming_food_produces_add = 1
+	#planet_districts_farming_unity_produces_add = 1
+	#planet_districts_farming_society_research_produces_add = 10
+	#planet_districts_mining_minerals_produces_add = 1
+	#planet_districts_mining_unity_produces_add = 1
+	#planet_districts_mining_exotic_gases_produces_add = 0.1
+	#planet_districts_mining_rare_crystals_produces_add = 0.1
+	#planet_districts_mining_engineering_research_produces_add = 10
+	#planet_districts_generator_energy_produces_add = 1
+	#planet_districts_generator_physics_research_produces_add = 10
+	#planet_districts_resort_trade_value_produces_add = 10
+	#planet_districts_prison_physics_research_produces_add = 10
+	#planet_districts_prison_society_research_produces_add = 10
+	#planet_districts_prison_engineering_research_produces_add = 10
+	#planet_districts_prison_industrial_consumer_goods_produces_add = 1
+	#planet_districts_prison_industrial_alloys_produces_add = 1
+	#planet_districts_prison_industrial_unity_produces_add = 1
 }
 
 # Amateur Builders
@@ -486,14 +486,14 @@ random_event_modifier_D_12 = {
 # Army Annihilation
 random_event_modifier_F_12 = {
 	planet_army_build_speed_mult = -1
-        	army_damage_mult = -0.8
-        	army_defense_damage_mult = -0.8
-        	army_morale = -0.8
-        	army_health = -0.8
-        	army_collateral_damage_mult = -0.8
-        	army_attack_damage_mult = -0.8
-        	army_defense_morale_mult = -0.8
-        	army_defense_health_mult = -0.8
+	army_damage_mult = -0.8
+	army_defense_damage_mult = -0.8
+	army_morale = -0.8
+	army_health = -0.8
+	army_collateral_damage_mult = -0.8
+	army_attack_damage_mult = -0.8
+	army_defense_morale_mult = -0.8
+	army_defense_health_mult = -0.8
 }
 
 # A is Caffeine

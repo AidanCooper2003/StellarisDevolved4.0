@@ -116,6 +116,6 @@ building_cooperian_culture_complex = {
 	}
 
 	triggered_planet_modifier = {
-		pop_devolved_cooperian_bonus_culturalist_workforce_mult = 0.5
+		job_devolved_cooperian_culturalist_add = 600
 	}
 }

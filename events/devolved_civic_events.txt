@@ -287,6 +287,11 @@ country_event = {
                 1 = { country_event = { id = devolved_random_events.68 } }
                 1 = { country_event = { id = devolved_random_events.69 } }
                 1 = { country_event = { id = devolved_random_events.70 } }
+                1 = { country_event = { id = devolved_random_events.71 } }
+                1 = { country_event = { id = devolved_random_events.72 } }
+                1 = { country_event = { id = devolved_random_events.73 } }
+                1 = { country_event = { id = devolved_random_events.74 } }
+                999 = { country_event = { id = devolved_random_events.75 } }
 			}
     }
 }

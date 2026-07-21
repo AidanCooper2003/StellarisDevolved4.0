@@ -1135,7 +1135,7 @@ country_event = {
 						class = pc_gaia
 						orbit_angle_offset = 90
 						orbit_location = yes
-						orbit_distance_offset = 10
+						orbit_distance_offset = 50
 						size = 10
 						init_effect = {
 							set_planet_flag = colony_event
@@ -1147,7 +1147,7 @@ country_event = {
 						class = pc_nuked
 						orbit_angle_offset = 90
 						orbit_location = yes
-						orbit_distance_offset = 10
+						orbit_distance_offset = 50
 						size = 10
 						init_effect = {
 							set_planet_flag = colony_event
@@ -1159,7 +1159,7 @@ country_event = {
 						class = pc_gaia
 						orbit_angle_offset = 90
 						orbit_location = yes
-						orbit_distance_offset = 10
+						orbit_distance_offset = 50
 						size = 15
 						init_effect = {
 							set_planet_flag = colony_event
@@ -1171,7 +1171,7 @@ country_event = {
 						class = pc_gaia
 						orbit_angle_offset = 90
 						orbit_location = yes
-						orbit_distance_offset = 10
+						orbit_distance_offset = 50
 						size = 50
 						init_effect = {
 							set_planet_flag = colony_event
@@ -2517,4 +2517,225 @@ country_event = {
 			}
 		}
 	}     
+}
+
+country_event = {
+	id = devolved_random_events.71
+	title = "Megastructure Magic"
+	desc = "Somehow, a megastructure was magically built on a random planet you own!"
+
+	hide_window = no
+    is_triggered_only = yes
+    trigger = {
+        is_country_type = default
+        has_civic = devolved_civic_randivist_principles
+    }
+
+	immediate = {
+		random_system_within_border = {
+			random_list = {
+s			1 = {spawn_megastructure = {
+				type = dyson_sphere_5
+				}}
+			1 = {spawn_megastructure = {
+				type = matter_decompressor_4
+				}}
+			1 = {spawn_planet = {
+				class = pc_ringworld_habitable
+				orbit_angle_offset = 90
+				orbit_location = yes
+				orbit_distance_offset = 50
+				size = 10
+				init_effect = {
+					set_planet_flag = colony_event
+					prevent_anomaly = yes
+					set_name = "Random Ring"
+				}
+				}}
+			1 = {spawn_megastructure = {
+				type = think_tank_4
+				}}
+			1 = {spawn_megastructure = {
+				type = spy_orb_4
+				}}
+			1 = {spawn_megastructure = {
+				type = interstellar_assembly_4
+				}}
+			1 = {spawn_megastructure = {
+				type = mega_art_installation_4
+				}}
+			1 = {spawn_megastructure = {
+				type = strategic_coordination_center_3
+				}}
+			1 = {spawn_megastructure = {
+				type = mega_shipyard_3
+				}}
+			}
+		}
+	}
+}
+
+
+country_event = {
+	id = devolved_random_events.72
+	title = "Habitation Creation"
+	desc = "A habitat has drifted in from interstellar space into your territory!"
+
+	hide_window = no
+    is_triggered_only = yes
+    trigger = {
+        is_country_type = default
+        has_civic = devolved_civic_randivist_principles
+    }
+
+	immediate = {
+		random_system_within_border = {
+			random_list = {
+			50 = {spawn_planet = {
+				class = pc_habitat
+				orbit_angle_offset = 90
+				orbit_location = yes
+				orbit_distance_offset = 50
+				size = 6
+				init_effect = {
+					set_planet_flag = colony_event
+					prevent_anomaly = yes
+					set_name = "Interstellar Drifter"
+				}
+				}}
+			24 = {spawn_planet = {
+				class = pc_habitat
+				orbit_angle_offset = 90
+				orbit_location = yes
+				orbit_distance_offset = 50
+				size = 3
+				init_effect = {
+					set_planet_flag = colony_event
+					prevent_anomaly = yes
+					set_name = "Interstellar Junk"
+				}
+				}}
+			24 = {spawn_planet = {
+				class = pc_habitat
+				orbit_angle_offset = 90
+				orbit_location = yes
+				orbit_distance_offset = 50
+				size = 12
+				init_effect = {
+					set_planet_flag = colony_event
+					prevent_anomaly = yes
+					set_name = "Interstellar Treasure"
+				}
+				}}
+			2 = {spawn_planet = {
+				class = pc_habitat
+				orbit_angle_offset = 90
+				orbit_location = yes
+				orbit_distance_offset = 50
+				size = 30
+				init_effect = {
+					set_planet_flag = colony_event
+					prevent_anomaly = yes
+					set_name = "Jewel of Interspace"
+				}
+				}}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = devolved_random_events.73
+	title = "Odd Deposit"
+	desc = "An odd deposit is added to a random world. The odd deposit causes horrifying effects on the planet, motivating the rest of the empire to work harder to not be sent there!"
+
+	hide_window = no
+    is_triggered_only = yes
+    trigger = {
+        is_country_type = default
+        has_civic = devolved_civic_randivist_principles
+    }
+
+	immediate = {
+		random_planet_within_border = {
+			add_deposit = d_odd_deposit
+		}
+	}
+}
+
+country_event = {
+	id = devolved_random_events.74
+	title = "Intermittent Infertility"
+	desc = "No births are taking place for a bit..."
+
+	hide_window = no
+    is_triggered_only = yes
+    trigger = {
+        is_country_type = default
+        has_civic = devolved_civic_randivist_principles
+    }
+
+	immediate = {
+		
+		random_list = {
+			33 = {set_variable = {which = "yearcount" value = 5}}
+			33 = {set_variable = {which = "yearcount" value = 3}}
+		    33 = {set_variable = {which = "yearcount" value = 1}}
+			1 = {set_variable = {which = "yearcount" value = 25}}
+		}
+
+		random_list = {
+			50 = {set_variable = {which = "multipliercount" value = 1}}
+			24 = {set_variable = {which = "multipliercount" value = 0.5}}
+			24 = {set_variable = {which = "multipliercount" value = 2}}
+			2 = {set_variable = {which = "multipliercount" value = 10}}
+		}
+
+        add_modifier = {
+			modifier = random_event_modifier_D_14
+			multiplier = multipliercount
+			years = 3
+		}
+	}
+
+}
+
+country_event = {
+	id = devolved_random_events.75
+	title = "System Shock"
+	desc = "Uhh... I thought we owned that system?"
+
+	hide_window = no
+    is_triggered_only = yes
+    trigger = {
+        is_country_type = default
+        has_civic = devolved_civic_randivist_principles
+    }
+
+	immediate = {
+		random_country = {
+			limit = {
+				any_owned_planet = {
+					pop_amount > 100
+				}
+			}
+			save_event_target_as = random_new_owner
+		}
+		random_system_within_border = {
+			every_starbase_in_system = {
+				set_owner = event_target:random_new_owner	
+			}
+			every_fleet_in_system = {
+				set_owner = event_target:random_new_owner
+			}
+			every_system_planet = {
+				set_owner = event_target:random_new_owner
+			}
+			every_system_megastructure = {
+				set_owner = event_target:random_new_owner
+			}
+		}
+	}
+
+
 }

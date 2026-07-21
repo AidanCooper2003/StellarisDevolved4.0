@@ -532,3 +532,13 @@ random_event_modifier_F_13 = {
 	ship_hull_mult = -10
 	
 }
+
+# Megastructure Magic
+
+# Habitation Creation
+
+# Odd Deposits
+
+random_event_modifier_D_14 = {
+	bonus_pop_growth_mult = -20
+}

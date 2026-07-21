@@ -26,3 +26,20 @@ d_storage_porridge = {
 		country_resource_max_add = 50000 
 	}
 }
+
+d_odd_deposit = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+
+	planet_modifier = {
+		planet_stability_add = -10
+		planet_amenities_mult = -0.25
+		habitability_ceil_add = -0.2
+		refugee_attraction = -1
+	}
+
+	country_modifier = {
+		planetary_ascension_effect_mult = 0.1
+		country_produces_mult = 0.025
+	}
+}

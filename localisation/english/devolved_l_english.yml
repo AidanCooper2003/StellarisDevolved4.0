@@ -515,38 +515,16 @@ trade_conversion_no_energy_mining_name:0 "REPLACE_ME"
 trade_conversion_no_energy_social_name:0 "REPLACE_ME"
 
 # Policies
-trade_policy_omni_conversion:0 "Omniconomy"
-trade_policy_omni_conversion_desc:0 "The economy is rerouted so trade focuses on a little bit of everything! Each collected trade value £trade_value£ earns us a small amount of £energy£ £minerals£ £food£ £alloys£ £consumer_goods£ £physics_research£ £society_research£ £engineering_research£ £unity£ £influence£ £volatile_motes£ £exotic_gases£ £rare_crystals£ £sr_dark_matter£ £nanites£ £sr_living_metal£ £sr_zro£ £minor_artifacts£ £sr_astral_threads£"
+trade_policy_innovation:0 "Innovation"
+trade_policy_innovation_desc:0 "Excess wealth is funneled into research for the better of future generations. 0.1 £physics_research£ £society_research£ £engineering_research£ 0.1 £trade£"
+trade_policy_infrastructure:0 "Infrastructure"
+trade_policy_infrastructure_desc:0 "Excess wealth is funneled into development of civilian and military infrastructure. 0.5 £minerals£ 0.3 £trade£"
+trade_policy_agrarian:0 "Growth"
+trade_policy_agrarian_desc:0 "Excess wealth is funneled into the agriculture industry to promote welfare and population growth. 0.5 £food£ 0.3 £trade£"
 
-trade_policy_no_energy_research:0 "No Energy Innovation"
-trade_policy_no_energy_research_desc:0 "0.25 £physics_research£ £society_research£ £engineering_research£"
+trade_policy_omniconomy:0 "Omniconomy"
+trade_policy_omniconomy_desc:0 "The economy is rerouted so trade focuses on a little bit of everything! Each collected trade value £trade_value£ earns us a small amount of £energy£ £minerals£ £food£ £alloys£ £consumer_goods£ £physics_research£ £society_research£ £engineering_research£ £unity£ £influence£ £volatile_motes£ £exotic_gases£ £rare_crystals£ £sr_dark_matter£ £nanites£ £sr_living_metal£ £sr_zro£ £minor_artifacts£ £sr_astral_threads£ £trade£"
 
-trade_policy_no_energy_trade_league:0 "No Energy Trade League"
-trade_policy_no_energy_trade_league_desc:0 "0.5 £consumer_goods£ £unity£"
-
-trade_policy_no_energy_food:0 "No Energy Agricultural Subsidies"
-trade_policy_no_energy_food_desc:0 "1 £food£"
-
-trade_policy_no_energy_mining:0 "No Energy Mining Subsidies"
-trade_policy_no_energy_mining_desc:0 "1 £minerals£"
-
-trade_policy_no_energy_omni_conversion:0 "No Energy Omniconomy"
-trade_policy_no_energy_omni_conversion_desc:0 "Slightly more of each of the following, £minerals£ £food£ £alloys£ £consumer_goods£ £physics_research£ £society_research£ £engineering_research£ £unity£ £influence£ £volatile_motes£ £exotic_gases£ £rare_crystals£ £sr_dark_matter£ £nanites£ £sr_living_metal£ £sr_zro£ £minor_artifacts£ £sr_astral_threads£"
-
-trade_policy_no_energy_consumer_goods:0 "No Energy Consumer Benefits"
-trade_policy_no_energy_consumer_goods_desc:0 "0.5 £consumer_goods£"
-
-trade_policy_no_energy_unity:0 "No Energy Marketplace of Ideas"
-trade_policy_no_energy_unity_desc:0 "0.5 £unity£"
-
-trade_policy_no_energy_holy_covenant:0 "No Energy Holy Covenant"
-trade_policy_no_energy_holy_covenant_desc:0 "1 £unity£"
-
-trade_policy_no_energy_mutual_aid:0 "No Energy Mutual Aid"
-trade_policy_no_energy_mutual_aid_desc:0 "0.7 £food£ £minerals"
-
-trade_policy_no_energy_social:0 "No Energy Social Development"
-trade_policy_no_energy_social_desc:0 "0.4 £unity£ £society_research£"
 
 
 

@@ -1,0 +1,75 @@
+ #common\traditions\zz_devolved_unitussy.txt
+
+ 	#1v 	2v
+	#3v	4v
+	
+	#end
+
+tr_automation_adopt = {
+	modifier = {
+		planet_automated_jobs_energy_upkeep_mult = -0.1
+	}
+}
+
+tr_automation_finish = {
+	modifier = {
+		ascension_perks_add = 1
+		bonus_automated_workforce_mult = 0.1
+	}
+}
+
+tr_automation_llm_generated_shorts = {
+	modifier = {
+		job_entertainer_automated_workforce_mult = 0.1
+		pop_happiness = -0.01
+	}
+
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_automation_llm_politics = {
+	modifier = {
+		job_politician_automated_workforce_mult = 0.1
+		pop_happiness = -0.01
+	}
+
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_automation_llm_surveilance = {
+	modifier = {
+		job_enforcer_automated_workforce_mult = 0.1
+		pop_happiness = -0.01
+	}
+
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_automation_llm_drone_targetting = {
+	modifier = {
+		job_soldier_automated_workforce_mult = 0.1
+		pop_happiness = -0.01
+	}
+
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_automation_llm_emails = {
+
+	modifier = {
+		job_bureaucrat_automated_workforce_mult = 0.1
+		pop_happiness = -0.01
+	}
+
+	ai_weight = {
+		factor = 1000
+	}
+}

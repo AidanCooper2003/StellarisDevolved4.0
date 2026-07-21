@@ -6,8 +6,8 @@ devolved_ap_diplomatic_destroyers = {
 
 	possible = {
 		custom_tooltip = {
-			fail_text = "Requires 17 previous ascension perks."
-			num_ascension_perks >= 17
+			fail_text = "Requires 14 previous ascension perks."
+			num_ascension_perks >= 14
 		}
 	}
 
@@ -27,8 +27,8 @@ devolved_ap_merciless_military = {
 
 	possible = {
 		custom_tooltip = {
-			fail_text = "Requires 17 previous ascension perks."
-			num_ascension_perks >= 17
+			fail_text = "Requires 14 previous ascension perks."
+			num_ascension_perks >= 14
 		}
 	}
 
@@ -52,8 +52,8 @@ devolved_ap_economic_engine = {
 
 	possible = {
 		custom_tooltip = {
-			fail_text = "Requires 17 previous ascension perks."
-			num_ascension_perks >= 17
+			fail_text = "Requires 14 previous ascension perks."
+			num_ascension_perks >= 14
 		}
 	}
 
@@ -63,5 +63,35 @@ devolved_ap_economic_engine = {
 		pop_bonus_workforce_mult = 1
 		planet_max_districts_mult = 0.5
 		planetary_ascension_effect_mult = 1
+	}
+}
+
+devolved_ap_influential_knowledge = {
+	potential = {
+		NOT = {
+			has_ascension_perk = devolved_ap_influential_knowledge
+		}
+	}
+
+	modifier = {
+		empire_size_penalty_mult = -0.05
+		country_influence_produces_mult = 0.1
+	}
+}
+
+devolved_ap_incremental_automation = {
+	potential = {
+		NOT = {
+			has_ascension_perk = devolved_ap_incremental_automation
+		}
+	}
+	
+	modifier = {
+		pop_amenities_usage_mult = 0.05
+		job_artisan_automated_workforce_mult = 0.05
+		job_foundry_automated_workforce_mult = 0.05
+		job_miner_automated_workforce_mult = 0.05
+		job_technician_automated_workforce_mult = 0.05
+		job_farmer_automated_workforce_mult = 0.05
 	}
 }

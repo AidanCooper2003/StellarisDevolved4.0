@@ -452,8 +452,21 @@ random_event_modifier_B_12 = {
 
 # Beefy Districts
 random_event_modifier_C_12 = {
-	empire_size_districts_mult = 10
-	bonus_automated_workforce_mult = 1
+	empire_size_districts_mult = 20
+	job_farmer_automated_workforce_mult = 0.5
+	job_miner_automated_workforce_mult = 0.5
+	job_technician_automated_workforce_mult = 0.5
+	job_bureaucrat_automated_workforce_mult = 0.5
+	job_physicist_automated_workforce_mult = 0.5
+	job_biologist_automated_workforce_mult = 0.5
+	job_engineer_automated_workforce_mult = 0.5
+	job_soldier_automated_workforce_mult = 0.5
+	job_politician_automated_workforce_mult = 0.5
+	job_artisan_automated_workforce_mult = 0.5
+	job_foundry_automated_workforce_mult = 0.5
+	job_trader_automated_workforce_mult = 0.5
+	job_entertainer_automated_workforce_mult = 0.5
+	job_enforcer_automated_workforce_mult = 0.5
 	#planet_districts_industrial_consumer_goods_produces_add = 1
 	#planet_districts_industrial_volatile_motes_produces_add = 1
 	#planet_districts_industrial_unity_produces_add = 1

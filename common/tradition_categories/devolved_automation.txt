@@ -1,0 +1,20 @@
+# common\tradition_categories\zz_devolved_unitussy.txt
+
+unitussy = {
+	tree_template = "tree_21_11"
+
+	adoption_bonus = "tr_automation_adopt"
+	finish_bonus = "tr_automation_finish"
+
+	traditions = {
+		"tr_automation_llm_generated_shorts"
+		"tr_automation_llm_politics"
+		"tr_automation_llm_surveilance"
+		"tr_automation_llm_drone_targetting"
+		"tr_automation_llm_emails"
+	}
+
+	ai_weight = {
+		factor = 1000
+	}
+}

@@ -602,6 +602,17 @@ tr_starbussy_cheapy_weapy:0 "Alloy Alfalfas"
 tr_starbussy_starbase_hardener:0 "Starbase Hardener"
 tr_starbussy_defense_damage:0 "Defense Damage"
 
+
+automation:0 "Automation"
+automation_desc:0 "A tradition tree focused on minor automation improvements."
+tr_automation_adopt:0 "Automation Adopt"
+tr_automation_finish:0 "Automation Finisher"
+tr_automation_llm_generated_shorts:0 "AI Generated Shorts"
+tr_automation_llm_politics:0 "AI Propoganda"
+tr_automation_llm_surveilance:0 "AI Surveillance"
+tr_automation_llm_drone_targetting:0 "AI Drone Targetting"
+tr_automation_llm_emails:0 "AI Emailing"
+
 # Resolutions
 
 sg_resolutions:0 "SemiGod Projects"

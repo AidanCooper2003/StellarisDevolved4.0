@@ -1,4 +1,4 @@
-# Stellaris Devolved
+# Stellaris Devolved 4.0 (HEAVY WIP)
 ---
 Stellaris Devolved is an in progress mod for Stellaris for use with my friends. It contains custom species traits, civics, and various other gameplay features focused on custom empires my friends and I have made.
 
